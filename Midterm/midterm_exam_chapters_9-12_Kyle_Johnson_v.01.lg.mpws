@@ -1,0 +1,706 @@
+Kyle Johnson
+v.01
+
+midterm_exam_chapters_9-12.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get ϴ.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+- The results of "Arc" procedures need to be
+specified as being in radians: ArcTan(V?L/V?R)~rad
+
+
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".279",preserve="false"
+            Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0",base_six_four="true"
+
+CkxvY2FsU3ltYm9scyhmb2xkUmVzdWx0KQp7CiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goZm9sZFJlc3VsdCA6PSBFdmFsKD9mb2xkQ29kZVsxXSksICIiLCAnRXhjZXB0aW9uKSAhPT8gJ0V4Y2VwdGlvbjsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIAogICAgRm9sZEdyYWRlKCJNYXRoUGlwZXIgdmVyc2lvbiA+PSAuMjc5IiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmdUb051bWJlcihWZXJzaW9uKCkpID49PyAuMjc5OwogICAgfQogICAgCiAgICAvLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICAgIAogICAgCgogICAgRm9sZEdyYWRlKCJUaGUgY29kZSBkb2VzIG5vdCBwcm9kdWNlIHNpZGUgZWZmZWN0IG91dHB1dCIsIDEsIEZhbHNlKQogICAgTG9jYWxTeW1ib2xzKHByb2NlZHVyZU5hbWVzKQogICAgewogICAgICAgIHByb2NlZHVyZU5hbWVzIDo9IFByb2NlZHVyZUxpc3QoP2ZvbGRDb2RlKTsKICAgICAgICAKICAgICAgICAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIkVjaG8iKSAmPyAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIldyaXRlIikgJj8gIT8gQ29udGFpbnM/KHByb2NlZHVyZU5hbWVzLCJVbnBhcnNlTWF0aDJEIik7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdmaXJzdE5hbWUnIGEgc3RyaW5nIHRoYXQgaXMgbm90ICd4eHgnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmc/KGZvbGRSZXN1bHRbImZpcnN0TmFtZSJdKSAmPyBmb2xkUmVzdWx0WyJmaXJzdE5hbWUiXSAhPT8gInh4eCI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdsYXN0TmFtZScgaXMgYSBzdHJpbmcgdGhhdCBpcyBub3QgJ3l5eSciLCAxLCBUcnVlKQogICAgewogICAgICAgIFN0cmluZz8oZm9sZFJlc3VsdFsibGFzdE5hbWUiXSkgJj8gZm9sZFJlc3VsdFsibGFzdE5hbWUiXSAhPT8gInl5eSI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdzc3VJRE51bWJlcicgaXMgbm90ICcwMDAwMDAnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAiMDAwMDAwIiAmPyBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAwOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".279",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .279. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9.2",description="p.280."
+========================================================================================================
+
+%mathpiper,name="Problem 9.2",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([P?P])
+{
+    Formulas()
+    {
+        nineZero := Formula('P?P == 'D?D * 'T?T,//W?L = Wavelength
+                         Label: "9.0",
+                         PageNumber: "249",
+                         Description: "Calculate the period of the waveform",
+                         Substitutions: ['D?D <- 5, 'T?T <- 100~μs]);
+    }
+    
+    P?P := EvaluateFormula(nineZero, μs);
+
+}
+%/mathpiper
+
+    %output,parent="Problem 9.2",mpversion=".279",preserve="false"
+      Result: 500~μs
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?P: 500~μs
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                                     \
+      | ( 9.0 ) ( '( P?P ) == '( D?D ) * '( T?T ) ) ( '( P?P ) == '( 5 ) * '( 100 ~ μs ) )  |
+      \                                                                                     /
+      
+      === STEPS (CODE VIEW) ===
+       1: (9.0)  'P?P == 'D?D* 'T?T ==>  'P?P == '5* '(100~μs)
+       2: P?P := EvaluateFormula(nineZero, μs) ==> 500~μs
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9.4",description="p.281."
+========================================================================================================
+
+%mathpiper,name="Problem 9.4",subtype="problem",unassign_all="true"
+
+ProblemSolution([P?P, F?F])
+{
+    Formulas()
+    {
+        nineZero := Formula('P?P == 'D?D * 'T?T,//W?L = Wavelength
+                         Label: "9.0",
+                         PageNumber: "249",
+                         Description: "Calculate the period of the waveform",
+                         Substitutions: ['D?D <- 4, 'T?T <- 20~ms]);
+    }
+    
+    P?P := EvaluateFormula(nineZero, ms);
+
+}
+%/mathpiper
+
+    %output,parent="Problem 9.4",mpversion=".279",preserve="false"
+      Result: 80~ms
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?P: 80~ms
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                                    \
+      | ( 9.0 ) ( '( P?P ) == '( D?D ) * '( T?T ) ) ( '( P?P ) == '( 4 ) * '( 20 ~ ms ) )  |
+      \                                                                                    /
+      
+      === STEPS (CODE VIEW) ===
+       1: (9.0)  'P?P == 'D?D* 'T?T ==>  'P?P == '4* '(20~ms)
+       2: P?P := EvaluateFormula(nineZero, ms) ==> 80~ms
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9.8",description="p.281."
+========================================================================================================
+
+%mathpiper,name="Problem 9.8",subtype="problem",unassign_all="true"
+
+ProblemSolution([P?P, F?F])
+{
+    Formulas()
+    {
+        nineZero := Formula('P?P == 'D?D * 'T?T,//W?L = Wavelength
+                         Label: "9.0",
+                         PageNumber: "249",
+                         Description: "Calculate the period of the waveform",
+                         Substitutions: ['D?D <- 10, 'T?T <- 10~ms]);
+        f9?1 := Formula('F?F == 1/ 'P?P,
+                         Label: "9.1",
+                         PageNumber: "250",
+                         Description: "Calculate the frequency given period");
+    }
+    
+    P?P := EvaluateFormula(nineZero, ms);
+    
+    F?F := EvaluateFormula(f9?1, Hz);
+
+}
+%/mathpiper
+
+    %output,parent="Problem 9.8",mpversion=".279",preserve="false"
+      Result: 10~Hz
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?P: 100~ms
+      F?F: 10~Hz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                                     \
+      | ( 9.0 ) ( '( P?P ) == '( D?D ) * '( T?T ) ) ( '( P?P ) == '( 10 ) * '( 10 ~ ms ) )  |
+      |                                                                                     |
+      | ( 9.1 ) /                1     \            ( No Transformation )                   |
+      |         | '( F?F ) == -------- |                                                    |
+      |         \             '( P?P ) /                                                    |
+      \                                                                                     /
+      
+      === STEPS (CODE VIEW) ===
+       1: (9.0)  'P?P == 'D?D* 'T?T ==>  'P?P == '10* '(10~ms)
+       2: (9.1)  'F?F == 1/ 'P?P
+       3: P?P := EvaluateFormula(nineZero, ms) ==> 100~ms
+       4: F?F := EvaluateFormula(f9?1, Hz) ==> 10~Hz
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9.46",description="p.285."
+========================================================================================================
+
+%mathpiper,name="Problem 9.46",subtype="problem",unassign_all="true"
+
+//calculate in  meters 220kHz sine wvae
+ProblemSolution([λ])
+{
+    Formulas()
+    {
+        f9?18 := Formula(' λ == 'C?C / 'F?F,
+                         Label: "9.18",
+                         PageNumber: "274",
+                         Description: "Calculate length of sine wave given frequncy");
+    }
+    
+    C?C := 300000000~(m/s);//speed of light converted out of sci not to avoid mistakes
+    
+    F?F := 220~kHz;
+    
+    λ := EvaluateFormula(f9?18, m);
+
+}
+%/mathpiper
+
+    %output,parent="Problem 9.46",mpversion=".279",preserve="false"
+      Result: 1363.636364~m
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      λ: 1363.636364~m
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                        \
+      | ( 9.18 ) /           '( C?C ) \ ( No Transformation )  |
+      |          | '( λ ) == -------- |                        |
+      |          \           '( F?F ) /                        |
+      \                                                        /
+      
+      === STEPS (CODE VIEW) ===
+       1: (9.18)  'λ == 'C?C/ 'F?F
+       2: C?C := 300000000~(m/s) ==> 300000000~(m/s)
+       3: F?F := 220~kHz ==> 220~kHz
+       4: λ := EvaluateFormula(f9?18, m) ==> 1363.636364~m
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 10.10",description="p.320."
+========================================================================================================
+
+%mathpiper,name="Problem 10.10",subtype="problem",unassign_all="true"
+
+ProblemSolution([L?T])
+{
+    Formulas()
+    {
+        f10?5 := Formula(' L?T == 'L?1 + 'L?2 + 'L?3,
+                         Label: "10.5",
+                         PageNumber: "297",
+                         Description: "In series inductance when k = 0");
+    }
+    
+    L?1 := 3.3~H;
+    
+    L?2 := 220~mH;
+    
+    L?3 := 470~mH;
+      
+    L?T := EvaluateFormula(f10?5, H);
+
+}
+%/mathpiper
+
+    %output,parent="Problem 10.10",mpversion=".279",preserve="false"
+      Result: 3.99~H
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      L?T: 3.99~H
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                                \
+      | ( 10.5 ) ( '( L?T ) == '( L?1 ) + '( L?2 ) + '( L?3 ) ) ( No Transformation )  |
+      \                                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.5)  'L?T == 'L?1 + 'L?2 + 'L?3
+       2: L?1 := 3.3~H ==> 3.3~H
+       3: L?2 := 220~mH ==> 220~mH
+       4: L?3 := 470~mH ==> 470~mH
+       5: L?T := EvaluateFormula(f10?5, H) ==> 3.99~H
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 10.22",description="p.322."
+========================================================================================================
+
+%mathpiper,name="Problem 10.22",subtype="problem",unassign_all="true"
+//Past assignment format time! (based on 10.21)
+ProblemSolution([F?F])
+{
+    Formulas()
+    {
+        f10?14 := Formula(X?L == 2 * Pi * F?F * L?L,
+                         Label: "10.14",
+                         PageNumber: "302",
+                         Description: "Reactance Formula",
+                         Subject: 'F?F);
+    }
+    
+    X?L := 400~Ω;
+    
+    L?L := 100~mH;
+    
+    F?F := EvaluateFormula(f10?14, Hz);
+
+}
+
+%/mathpiper
+
+    %output,parent="Problem 10.22",mpversion=".279",preserve="false"
+      Result: 636.6197723~Hz
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      F?F: 636.6197723~Hz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( 10.14 ) ( X?L == 2 * Pi * F?F * L?L ) /            X?L      \  |
+      |                                         | F?F == ------------ |  |
+      |                                         \        2 * L?L * Pi /  |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.14) X?L == 2*Pi*F?F*L?L ==> F?F == X?L/(2*L?L*Pi)
+       2: X?L := 400~Ω ==> 400~Ω
+       3: L?L := 100~mH ==> 100~mH
+       4: F?F := EvaluateFormula(f10?14, Hz) ==> 636.6197723~Hz
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11.4",description="p.357."
+========================================================================================================
+
+%mathpiper,name="Problem 11.4",subtype="problem",unassign_all="true"
+//μ Ω ∠ ϴ
+ProblemSolution([Z?T, ϴ])
+{
+    Formulas()
+    {
+        f10?14 := Formula(X?L == 2 * Pi * F?F * L?L,
+                         Label: "10.14",
+                         PageNumber: "302",
+                         Description: "Reactance Formula");
+        f11?4 := Formula(Z?T == Sqrt(X?L^2 + R?R^2),
+                         Label: "11.4",
+                         PageNumber: "332",
+                         Description: "Total circuit impedance");
+        f11?5 := Formula(ϴ == ArcTan(X?L / R?R) ~rad,
+                         Label: "11.5",
+                         PageNumber: "330",
+                         Description: "Phase angle of impedance");
+                         
+    }
+    F?F := 50~kHz;
+    
+    L?L := 100~μH;
+    
+    R?R := 330~Ω;
+    
+    X?L := EvaluateFormula(f10?14, Ω);
+    
+    ϴ := EvaluateFormula(f11?5, degree);
+    
+    Z?T := EvaluateFormula(f11?4, Ω) ∠ EvaluateFormula(f11?5, degree);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 11.4",mpversion=".279",preserve="false"
+      Result: 331.4920216~Ω ∠ 5.438156307~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 331.4920216~Ω ∠ 5.438156307~degree
+      ϴ: 5.438156307~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 10.14 ) ( X?L == 2 * Pi * F?F * L?L )  ( No Transformation )  |
+      |                                                                 |
+      | ( 11.4 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?L  + R?R  / /                        |
+      |                                                                 |
+      | ( 11.5 )  /            / X?L \       \   ( No Transformation )  |
+      |           | ϴ == ArcTan| --- | ~ rad |                          |
+      |           \            \ R?R /       /                          |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.14) X?L == 2*Pi*F?F*L?L
+       2: (11.4) Z?T == Sqrt(X?L^2 + R?R^2)
+       3: (11.5) ϴ == ArcTan(X?L/R?R)~rad
+       4: F?F := 50~kHz ==> 50~kHz
+       5: L?L := 100~μH ==> 100~μH
+       6: R?R := 330~Ω ==> 330~Ω
+       7: X?L := EvaluateFormula(f10?14, Ω) ==> 31.41592654~Ω
+       8: ϴ := EvaluateFormula(f11?5, degree) ==> 5.438156307~degree
+       9: Z?T := EvaluateFormula(f11?4, Ω) ∠ EvaluateFormula(f11?5, degree) ==> 331.4920216~Ω ∠ 5.438156307~degree
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11.20",description="p.359."
+========================================================================================================
+
+%mathpiper,name="Problem 11.20",subtype="problem",unassign_all="true"
+
+ProblemSolution([I?T, ϴ])
+{
+    Formulas()
+    {
+        f11?12 := Formula(I?T == Sqrt(I?L^2 + I?R^2), 
+                         Label: "11.12", 
+                         PageNumber: "343");
+        f11?13 := Formula(ϴ == ArcTan((-I?L)/I?R)~rad, 
+                         Label: "11.13", 
+                         PageNumber: "344");
+    }
+    
+    I?L := 240~mA;
+    I?R := 180~mA;
+    
+    //I?T
+    I?T := EvaluateFormula(f11?12, mA);
+    
+    //ϴ
+    ϴ := EvaluateFormula(f11?13, degree);    
+}
+%/mathpiper
+
+    %output,parent="Problem 11.20",mpversion=".279",preserve="false"
+      Result: (-53.13010235)~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      I?T: 300~mA
+      ϴ: (-53.13010235)~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                    \
+      | ( 11.12 ) /            /    2      2 \ \    ( No Transformation )  |
+      |           \ I?T == Sqrt\ I?L  + I?R  / /                           |
+      |                                                                    |
+      | ( 11.13 ) /            / -( I?L ) \       \ ( No Transformation )  |
+      |           | ϴ == ArcTan| -------- | ~ rad |                        |
+      |           \            \   I?R    /       /                        |
+      \                                                                    /
+      
+      === STEPS (CODE VIEW) ===
+       1: (11.12) I?T == Sqrt(I?L^2 + I?R^2)
+       2: (11.13) ϴ == ArcTan(-I?L/I?R)~rad
+       3: I?L := 240~mA ==> 240~mA
+       4: I?R := 180~mA ==> 180~mA
+       5: I?T := EvaluateFormula(f11?12, mA) ==> 300~mA
+       6: ϴ := EvaluateFormula(f11?13, degree) ==> (-53.13010235)~degree
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 12.14",description="p.384."
+========================================================================================================
+
+%mathpiper,name="Problem 12.14",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([X?C])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C == 1 / (2 * Pi * f?f * C?C),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+    }
+    
+    f?f := 2~kHz;
+    
+    C?C := 100~pF;
+    
+    X?C := EvaluateFormula(f12?10, kΩ);
+}
+%/mathpiper
+
+    %output,parent="Problem 12.14",mpversion=".279",preserve="false"
+      Result: 795.7747151~kΩ
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?C: 795.7747151~kΩ
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 12.10 ) /                1          \ ( No Transformation )  |
+      |           | X?C == ------------------ |                        |
+      |           \        2 * Pi * f?f * C?C /                        |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.10) X?C == 1/(2*Pi*f?f*C?C)
+       2: f?f := 2~kHz ==> 2~kHz
+       3: C?C := 100~pF ==> 100~pF
+       4: X?C := EvaluateFormula(f12?10, kΩ) ==> 795.7747151~kΩ
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 12.22",description="p.385."
+========================================================================================================
+
+%mathpiper,name="Problem 12.22",subtype="problem",unassign_all="true"
+
+ProblemSolution([Q?Q])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C == 1 / (2 * Pi * f?f * C?C),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+        f12?13 := Formula(Q?Q == R?D/ X?C,
+                         Label: "12.13",
+                         PageNumber: "379",
+                         Description: "Quality Q of a capacitor.");
+    }
+    
+    f?f := 1~kHz;
+    
+    C?C := 1~μF;
+    
+    R?D := 180~MΩ;
+    
+    X?C := EvaluateFormula(f12?10, Ω);
+    
+    Q?Q := EvaluateFormula(f12?13);
+}
+%/mathpiper
+
+    %output,parent="Problem 12.22",mpversion=".279",preserve="false"
+      Result: 1130973.355
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Q?Q: 1130973.355
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 12.10 ) /                1          \ ( No Transformation )  |
+      |           | X?C == ------------------ |                        |
+      |           \        2 * Pi * f?f * C?C /                        |
+      |                                                                |
+      | ( 12.13 ) /        R?D \                ( No Transformation )  |
+      |           | Q?Q == --- |                                       |
+      |           \        X?C /                                       |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.10) X?C == 1/(2*Pi*f?f*C?C)
+       2: (12.13) Q?Q == R?D/X?C
+       3: f?f := 1~kHz ==> 1~kHz
+       4: C?C := 1~μF ==> 1~μF
+       5: R?D := 180~MΩ ==> 180~MΩ
+       6: X?C := EvaluateFormula(f12?10, Ω) ==> 159.1549431~Ω
+       7: Q?Q := EvaluateFormula(f12?13) ==> 1130973.355
+      
+      
+.   %/output
+
+%/group
+
+

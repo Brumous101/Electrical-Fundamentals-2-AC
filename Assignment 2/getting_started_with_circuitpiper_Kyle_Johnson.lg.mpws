@@ -1,0 +1,639 @@
+v.01
+
+Complete all of the problems in this worksheet by 
+creating a circuit that will solve the problem in CircuitPiper,
+exporting the netlist for the circuit, and then
+pasting the netlist between the double quotes in
+the problem's MathPiper fold.
+
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".267",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .267", 1, True)
+    {
+        StringToNumber(Version()) >=? .267;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"TableForm");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".267",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The program uses variable names that are longer than a single character. (1/1)
+        PASS: The program uses variable names that start with a lower case letter. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .267. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        13/13 passes
+.   %/output
+
+%/group
+
+
+
+The following code can be used to launch CircuitPiper.
+
+In> ViewCircuitPiper()
+
+
+
+The following example shows how to display a
+netlist in CircuitPiper.
+
+%mathpiper
+
+netList :=
+"
+Capacitor_1 256 67 256 162 9.999999999999999E-6
+VoltageSource_1 162 67 162 162 5.0
+Wire_1 256 162 382 162
+Resistor_1 162 67 256 67 1000.0
+Voltmeter_2 382 67 382 162
+Wire_2 256 67 382 67
+Ammeter_4 162 162 256 162
+";
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+========================================================================================================
+Problem 1
+
+Complete problem 7 which is on
+page 122 in the book.
+
+%mathpiper,name="Problem 1",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+VoltageSource_2 162 67 162 162 11.0
+Resistor_2 319 36 319 130 22.0
+Resistor_3 319 130 319 225 33.0
+Wire_3 162 36 162 67
+Wire_5 162 225 162 162
+Wire_6 162 225 319 225
+Ammeter_2 162 36 319 36
+";
+
+//200mA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+========================================================================================================
+Problem 2
+
+Complete problem 8 which is on
+page 122 in the book.
+
+%mathpiper,name="Problem 2",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+Ammeter_2 288 67 351 67
+Wire_1 351 67 382 67
+Wire_2 382 99 382 67
+Resistor_1 382 99 382 162 1500.0
+Resistor_2 382 193 382 256 11000.0
+Wire_3 382 162 382 193
+Wire_4 382 256 382 288
+Wire_5 382 288 256 288
+Wire_6 256 288 256 225
+Wire_7 288 67 256 67
+Wire_8 256 67 256 130
+VoltageSource_1 256 130 256 225 5.0
+";
+
+//400μA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 3
+
+Complete problem 9 which is on
+page 122 in the book.
+
+%mathpiper,name="Problem 3",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+Resistor_1 382 67 445 67 51.0
+Resistor_2 477 99 477 162 39.0
+Resistor_3 477 225 477 288 10.0
+VoltageSource_1 351 130 351 225 1.0
+Wire_2 351 67 382 67
+Wire_3 445 67 477 67
+Wire_4 477 67 477 99
+Wire_5 477 162 477 225
+Wire_6 477 288 477 319
+Wire_7 477 319 351 319
+Wire_8 351 319 351 225
+Ammeter_2 351 130 351 67
+";
+
+//10mA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 4
+
+Complete problem 10 which is on
+page 122 in the book.
+
+%mathpiper,name="Problem 4",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+VoltageSource_2 288 99 288 162 8.0
+Resistor_1 319 36 351 36 220.0
+Resistor_2 382 67 382 99 270.0
+Resistor_3 382 130 382 162 470.0
+Resistor_4 351 193 319 193 360.0
+Wire_2 288 36 319 36
+Wire_3 351 36 382 36
+Wire_4 382 36 382 67
+Wire_5 382 99 382 130
+Wire_6 382 162 382 193
+Wire_7 382 193 351 193
+Wire_8 319 193 288 193
+Wire_9 288 193 288 162
+Ammeter_2 288 99 288 36
+";
+
+//6.06mA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 4",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 5
+
+Complete problem 29 which is on
+page 124 in the book.
+
+%mathpiper,name="Problem 5",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+VoltageSource_1 193 130 193 225 9.0
+Resistor_1 288 36 288 99 12000.0
+Resistor_2 288 193 288 256 1200.0
+Voltmeter_2 288 162 382 162
+Wire_1 193 130 193 36
+Wire_2 193 36 288 36
+Wire_3 288 99 288 162
+Wire_4 288 162 288 193
+Wire_7 382 162 382 288
+Wire_9 288 288 288 256
+Wire_10 288 288 193 288
+Wire_11 193 288 193 225
+Wire_13 288 288 382 288
+";
+
+//818mV
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 6
+
+Complete problem 30 which is on
+page 124 in the book.
+
+%mathpiper,name="Problem 6",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+VoltageSource_1 193 130 193 225 9.0
+Resistor_1 288 36 288 99 27000.0
+Wire_1 193 130 193 36
+Wire_2 193 36 288 36
+Wire_14 288 99 288 130
+Wire_15 288 130 288 162
+Resistor_3 288 162 288 225 15000.0
+Resistor_4 288 225 288 288 180000.0
+Wire_16 288 288 288 319
+Wire_17 288 319 193 319
+Wire_18 193 319 193 225
+Wire_19 288 319 382 319
+Wire_20 382 319 382 130
+Ammeter_4 288 130 382 130
+";
+
+////333μA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 6",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 7
+
+Complete problem 38 which is on
+page 125 in the book.
+
+%mathpiper,name="Problem 7",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+Resistor_2 634 67 634 130 27.0
+Resistor_3 634 193 634 256 15.0
+Wire_1 445 67 445 193
+Wire_2 445 256 445 414
+Wire_3 445 414 634 414
+Wire_4 634 414 634 382
+Wire_5 634 319 634 256
+Wire_7 634 67 634 36
+Wire_10 445 36 445 67
+VoltageSource_1 445 193 445 256 5.0
+Voltmeter_24 729 193 729 256
+Wire_21 634 130 634 193
+Wire_23 729 162 729 193
+Wire_24 634 414 729 414
+Wire_25 729 256 729 414
+Wire_27 445 36 508 36
+Wire_28 571 36 634 36
+Resistor_5 508 36 571 36 47.0
+Resistor_6 634 319 634 382 180.0
+Wire_29 634 36 729 36
+Wire_30 729 36 729 162
+";
+
+//4.14V
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+
+========================================================================================================
+Problem 8
+
+Complete problem 48 which is on
+page 126 in the book.
+
+%mathpiper,name="Problem 8",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+Resistor_1 414 99 477 99 220.0
+Resistor_2 603 99 666 99 330.0
+VoltageSource_1 351 256 351 193 9.0
+VoltageSource_2 729 193 729 256 3.0
+Resistor_3 508 351 571 351 110.0
+Voltmeter_2 508 414 571 414
+Voltmeter_4 414 36 477 36
+Voltmeter_6 603 36 666 36
+Wire_1 477 99 508 99
+Wire_2 477 36 508 36
+Wire_3 508 36 508 99
+Wire_4 414 36 382 36
+Wire_5 382 36 382 99
+Wire_6 382 99 414 99
+Wire_7 382 99 351 99
+Wire_8 351 99 351 193
+Wire_9 603 36 571 36
+Wire_10 571 36 571 99
+Wire_11 571 99 508 99
+Wire_12 571 99 603 99
+Wire_13 666 36 697 36
+Wire_14 697 36 697 99
+Wire_15 697 99 666 99
+Wire_16 697 99 729 99
+Wire_17 729 99 729 193
+Wire_18 729 256 729 351
+Wire_19 729 351 603 351
+Wire_20 571 414 603 414
+Wire_21 603 414 603 351
+Wire_22 603 351 571 351
+Wire_23 477 351 508 351
+Wire_24 477 351 477 414
+Wire_25 477 414 508 414
+Wire_26 477 351 351 351
+Wire_27 351 351 351 256
+";
+
+//R1 4V
+//R2 6V
+//R3 2V
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 8",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 9
+
+Complete problem 50 which is on
+page 126 in the book.
+
+%mathpiper,name="Problem 9",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+VoltageSource_3 288 225 288 162 4.0
+VoltageSource_4 823 162 823 225 16.0
+Voltmeter_8 351 36 414 36
+Voltmeter_10 634 36 697 36
+Voltmeter_12 634 351 697 351
+Voltmeter_14 351 351 414 351
+Resistor_4 351 288 414 288 1800.0
+Resistor_6 634 288 697 288 200.0
+Resistor_7 634 99 697 99 4700.0
+Resistor_8 351 99 414 99 3300.0
+Wire_28 351 36 351 99
+Wire_29 414 36 414 99
+Wire_30 351 99 288 99
+Wire_31 288 99 288 162
+Wire_32 414 99 634 99
+Wire_33 634 99 634 36
+Wire_34 697 36 697 99
+Wire_35 697 99 823 99
+Wire_36 823 99 823 162
+Wire_37 823 225 823 288
+Wire_38 697 288 823 288
+Wire_39 697 288 697 351
+Wire_40 634 351 634 288
+Wire_41 634 288 414 288
+Wire_42 414 288 414 351
+Wire_43 351 351 351 288
+Wire_44 351 288 288 288
+Wire_45 288 288 288 225
+";
+
+//R8 6.6V
+//R7 9.4V
+//R4 3.6V
+//R6 400mV
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+
+
+
+
+========================================================================================================
+Problem 10
+
+Complete problem 31 which is on
+page 154 in the book. Only determine
+the branch values of current, and I?T.
+
+%mathpiper,name="Problem 10",subtype="problem",truncate="1000",timeout="5000"
+
+netList :=
+"
+Resistor_1 477 162 477 225 36.0
+Resistor_2 571 162 571 225 27.0
+Resistor_3 666 162 666 225 100.0
+Resistor_4 382 162 382 225 12.0
+VoltageSource_2 288 162 288 225 0.3
+Wire_1 288 162 288 99
+Wire_2 288 99 382 99
+Wire_3 382 99 382 162
+Wire_4 288 225 288 351
+Wire_5 382 225 382 256
+Wire_6 382 351 288 351
+Wire_7 382 351 382 319
+Wire_8 382 351 477 351
+Wire_9 477 351 477 319
+Wire_10 477 351 571 351
+Wire_11 571 351 571 319
+Wire_12 571 351 666 351
+Wire_13 666 319 666 351
+Wire_14 382 99 477 99
+Wire_15 477 99 571 99
+Wire_16 571 99 666 99
+Wire_17 666 99 666 162
+Wire_18 571 162 571 99
+Wire_19 477 162 477 99
+Ammeter_2 382 256 382 319
+Ammeter_6 477 256 477 319
+Ammeter_8 571 256 571 319
+Ammeter_10 666 256 666 319
+Wire_21 477 225 477 256
+Wire_22 571 225 571 256
+Wire_23 666 225 666 256
+";
+
+//R4 branch 1 25 mA
+//R1 branch 1 8.33 mA
+//R2 branch 3 11.1 mA
+//R3 branch 4 3 mA
+//current total 47.43 mA
+
+ViewCircuitPiper(Netlist:netList);
+
+%/mathpiper
+
+    %output,parent="Problem 10",mpversion=".267",preserve="false"
+      Result: class org.mathpiper.ui.gui.applications.circuitpiper.model.Circuit
+.   %/output
+
+
+
+

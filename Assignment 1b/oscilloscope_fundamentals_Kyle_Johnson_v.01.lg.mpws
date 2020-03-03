@@ -1,0 +1,809 @@
+v.01
+
+oscilloscope_fundamentals.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".267",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .267", 1, True)
+    {
+        StringToNumber(Version()) >=? .267;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"TableForm");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".267",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The program uses variable names that are longer than a single character. (1/1)
+        PASS: The program uses variable names that start with a lower case letter. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .267. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        13/13 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="Sine wave terminology.."
+========================================================================================================
+Problem 1
+
+Do the following:
+
+1) Evaluate the "Show oscilloscope." fold. 
+
+2) Copy the following code into the (subtype="problem")
+fold: 
+
+-------------------
+
+voltsPeak := 999~volt;
+
+voltsPeakToPeak := 999~volt;
+
+period := .999~s;
+
+frequency := 999~Hz;
+
+True;
+-------------------
+
+3) Use the oscilloscope to determine the
+values that are asked for, and put these
+values in the code in place of the "999"
+values.
+
+4) Evaluate the code you put the fold in
+to make sure it does not contain syntax
+errors.
+
+
+%mathpiper,subtype="obfuscate",title="Show oscilloscope.",base_six_four="true"
+
+CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgNSwgMCwgMjAwMDAsIDUwMCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/mathpiper
+
+    %output,mpversion=".267",preserve="false"
+      Result: Null
+.   %/output
+
+
+
+%mathpiper,name="Problem 1",subtype="hint"
+Hint("CnZvbHRzUGVhayA6PSA1fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTB+dm9sdDsKCnBlcmlvZCA6PSAuMDAyfnM7CgpmcmVxdWVuY3kgOj0gNTAwfkh6OwoKVHJ1ZTsKCg==");
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 1",subtype="problem",truncate="1000",timeout="5000"
+
+voltsPeak := 5~volt;
+
+voltsPeakToPeak := 10~volt;
+
+period := .002~s;
+
+frequency := 500~Hz;
+
+True;
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 1"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        //ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .267", 1, True)
+    {
+        StringToNumber(Version()) >=? .267;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak",1,False)
+    {
+        Local(position, v?peak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeak := a_ ~ volt)));
+        
+        v?peak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peak >? 4.8 &? v?peak <? 5.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak to peak",1,False)
+    {
+        Local(position, v?peakToPeak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeakToPeak := a_ ~ volt)));
+        
+        v?peakToPeak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peakToPeak >? 9.8 &? v?peakToPeak <? 10.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Period",1,False)
+    {
+        Local(position, period);
+        
+        position := First(PositionsPattern2(?foldCode, '(period := a_ ~ s)));
+        
+        ?f0 := period := (PositionGet(?foldCode, position)[2][1]);
+        
+        If(period >? 1/510. &? period <? 1/490.)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Frequency",1,False)
+    {
+        Local(position, frequency);
+        
+        position := First(PositionsPattern2(?foldCode, '(frequency := a_ ~ Hz)));
+        
+        ?f1 := frequency := PositionGet(?foldCode, position)[2][1];
+        
+        If(frequency >? 490 &? frequency <? 510)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 1",mpversion=".267",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        voltsPeak := 5~volt;
+      
+        voltsPeakToPeak := 10~volt;
+      
+        period := .002~s;
+      
+        frequency := 500~Hz;
+      
+        True;
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The program uses variable names that are longer than a single character. (1/1)
+        PASS: The program uses variable names that start with a lower case letter. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .267. (1/1)
+        PASS: Volts: peak. (1/1)
+        PASS: Volts: peak to peak. (1/1)
+        PASS: Period. (1/1)
+        PASS: Frequency. (1/1)
+      
+        13/13 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 2",description="Sine wave terminology.."
+========================================================================================================
+Problem 2
+
+Do the following:
+
+1) Evaluate the "Show oscilloscope." fold. 
+
+2) Copy the following code into the (subtype="problem")
+fold: 
+
+-------------------
+
+voltsPeak := 999~volt;
+
+voltsPeakToPeak := 999~volt;
+
+period := .999~s;
+
+frequency := 999~Hz;
+
+True;
+-------------------
+
+3) Use the oscilloscope to determine the
+values that are asked for, and put these
+values in the code in place of the "999"
+values.
+
+4) Evaluate the code you put the fold in
+to make sure it does not contain syntax
+errors.
+
+
+%mathpiper,subtype="obfuscate",title="Show oscilloscope.",base_six_four="true"
+
+CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgOCwgMCwgMjAwMDAsIDM1MCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/mathpiper
+
+    %output,mpversion=".267",preserve="false"
+      Result: Null
+.   %/output
+
+
+
+%mathpiper,name="Problem 2",subtype="hint"
+Hint("CnZvbHRzUGVhayA6PSA4fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTZ+dm9sdDsKCnBlcmlvZCA6PSAuMDAyOX5zOwoKZnJlcXVlbmN5IDo9IDM1MH5IejsKClRydWU7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 2",subtype="problem",truncate="1000",timeout="5000"
+
+voltsPeak := 8~volt;
+
+voltsPeakToPeak := 16~volt;
+
+period := .0029~s;
+
+frequency := 350~Hz;
+
+True;
+
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 2"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        //ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .267", 1, True)
+    {
+        StringToNumber(Version()) >=? .267;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak",1,False)
+    {
+        Local(position, v?peak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeak := a_ ~ volt)));
+        
+        v?peak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peak >? 7.8 &? v?peak <? 8.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak to peak",1,False)
+    {
+        Local(position, v?peakToPeak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeakToPeak := a_ ~ volt)));
+        
+        v?peakToPeak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peakToPeak >? 15.8 &? v?peakToPeak <? 16.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Period",1,False)
+    {
+        Local(position, period);
+        
+        position := First(PositionsPattern2(?foldCode, '(period := a_ ~ s)));
+        
+        ?f0 := period := (PositionGet(?foldCode, position)[2][1]);
+        
+        If(period >? 1/360. &? period <? 1/340.)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Frequency",1,False)
+    {
+        Local(position, frequency);
+        
+        position := First(PositionsPattern2(?foldCode, '(frequency := a_ ~ Hz)));
+        
+        ?f1 := frequency := PositionGet(?foldCode, position)[2][1];
+        
+        If(frequency >? 340 &? frequency <? 360)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 2",mpversion=".267",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        voltsPeak := 8~volt;
+      
+        voltsPeakToPeak := 16~volt;
+      
+        period := .0029~s;
+      
+        frequency := 350~Hz;
+      
+        True;
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The program uses variable names that are longer than a single character. (1/1)
+        PASS: The program uses variable names that start with a lower case letter. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .267. (1/1)
+        PASS: Volts: peak. (1/1)
+        PASS: Volts: peak to peak. (1/1)
+        PASS: Period. (1/1)
+        PASS: Frequency. (1/1)
+      
+        13/13 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="Sine wave terminology.."
+========================================================================================================
+Problem 3
+
+Do the following:
+
+1) Evaluate the "Show oscilloscope." fold. 
+
+2) Copy the following code into the (subtype="problem")
+fold: 
+
+-------------------
+
+voltsPeak := 999~volt;
+
+voltsPeakToPeak := 999~volt;
+
+period := .999~s;
+
+frequency := 999~Hz;
+
+True;
+-------------------
+
+3) Use the oscilloscope to determine the
+values that are asked for, and put these
+values in the code in place of the "999"
+values.
+
+4) Evaluate the code you put the fold in
+to make sure it does not contain syntax
+errors.
+
+
+%mathpiper,subtype="obfuscate",title="Show oscilloscope.",base_six_four="true"
+
+CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgNywgMCwgMjAwMDAsIDgwMCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/mathpiper
+
+    %output,mpversion=".267",preserve="false"
+      Result: Null
+.   %/output
+
+
+
+%mathpiper,name="Problem 3",subtype="hint"
+Hint("CnZvbHRzUGVhayA6PSA3fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTR+dm9sdDsKCnBlcmlvZCA6PSAwLjAwMTI1fnM7CgpmcmVxdWVuY3kgOj0gODAwfkh6OwoKVHJ1ZTsKCg==");
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 3",subtype="problem",truncate="1000",timeout="5000"
+
+voltsPeak := 7~volt;
+
+voltsPeakToPeak := 14~volt;
+
+period := .00125~s;
+
+frequency := 800~Hz;
+
+True;
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".267",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 3"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        //ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .267", 1, True)
+    {
+        StringToNumber(Version()) >=? .267;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak",1,False)
+    {
+        Local(position, v?peak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeak := a_ ~ volt)));
+        
+        v?peak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peak >? 6.8 &? v?peak <? 7.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Volts: peak to peak",1,False)
+    {
+        Local(position, v?peakToPeak);
+        
+        position := First(PositionsPattern2(?foldCode, '(voltsPeakToPeak := a_ ~ volt)));
+        
+        v?peakToPeak := PositionGet(?foldCode, position)[2][1];
+        
+        If(v?peakToPeak >? 13.8 &? v?peakToPeak <? 14.2)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Period",1,False)
+    {
+        Local(position, period);
+        
+        position := First(PositionsPattern2(?foldCode, '(period := a_ ~ s)));
+        
+        ?f0 := period := (PositionGet(?foldCode, position)[2][1]);
+        
+        If(period >? 1/810. &? period <? 1/790.)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+    
+    //-----------------------------------------------------------------------------------------
+    
+    FoldGrade("Frequency",1,False)
+    {
+        Local(position, frequency);
+        
+        position := First(PositionsPattern2(?foldCode, '(frequency := a_ ~ Hz)));
+        
+        ?f1 := frequency := PositionGet(?foldCode, position)[2][1];
+        
+        If(frequency >? 790 &? frequency <? 810)
+        {
+            True;
+        }
+        Else
+        {
+            False;
+        }
+    }
+
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 3",mpversion=".267",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        voltsPeak := 7~volt;
+      
+        voltsPeakToPeak := 14~volt;
+      
+        period := .00125~s;
+      
+        frequency := 800~Hz;
+      
+        True;
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The program uses variable names that are longer than a single character. (1/1)
+        PASS: The program uses variable names that start with a lower case letter. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .267. (1/1)
+        PASS: Volts: peak. (1/1)
+        PASS: Volts: peak to peak. (1/1)
+        PASS: Period. (1/1)
+        PASS: Frequency. (1/1)
+      
+        13/13 passes
+.   %/output
+
+%/group
+
+

@@ -1,0 +1,1330 @@
+Kyle Johnson
+v.01
+
+chapter_13_odd_practice_problems.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get ϴ.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+1. 12.65V ∠ -71.6 deg
+3. 429 Ω ∠ -69.5 deg
+5. Z?T = 984 Ω, I?T = 8.13 mA, ϴ = -40.3 deg, V?C = 5.18V, V?R = 6.1V
+7. Z?T = 6.42 kΩ, I?T = 1.38mA, ϴ = -81.2 deg, V?C1 = 1.56V, VC2 = 7.33V, VR = 1.38 V
+
+9. At 100 Hz: Z?T = 72.3 kΩ, ϴ = -89.3 deg, I?T = 194 μA, VC = 14V, V?R = 177mV
+   At 12 kHz: Z?T = 1.09 kΩ, ϴ = -33.5 deg, I?T = 12.8 mA, VC = 7.72V, V?R = 11.6V
+11. P?X = 42.1 mVAR, P?R = 49.6 mW
+13.65.1 mVA ∠ -40.3 deg
+15. P?APP = 4.29 μVA, cos ϴ = .35, P?R = 1.5 μW.
+17. P?X = 4.02 μVAR
+19.
+21.
+23.
+25.
+27.
+29.
+31.
+33.
+
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".280",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0",base_six_four="true"
+
+CkxvY2FsU3ltYm9scyhmb2xkUmVzdWx0KQp7CiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goZm9sZFJlc3VsdCA6PSBFdmFsKD9mb2xkQ29kZVsxXSksICIiLCAnRXhjZXB0aW9uKSAhPT8gJ0V4Y2VwdGlvbjsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIAogICAgRm9sZEdyYWRlKCJNYXRoUGlwZXIgdmVyc2lvbiA+PSAuMjgwIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmdUb051bWJlcihWZXJzaW9uKCkpID49PyAuMjgwOwogICAgfQogICAgCiAgICAvLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICAgIAogICAgCgogICAgRm9sZEdyYWRlKCJUaGUgY29kZSBkb2VzIG5vdCBwcm9kdWNlIHNpZGUgZWZmZWN0IG91dHB1dCIsIDEsIEZhbHNlKQogICAgTG9jYWxTeW1ib2xzKHByb2NlZHVyZU5hbWVzKQogICAgewogICAgICAgIHByb2NlZHVyZU5hbWVzIDo9IFByb2NlZHVyZUxpc3QoP2ZvbGRDb2RlKTsKICAgICAgICAKICAgICAgICAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIkVjaG8iKSAmPyAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIldyaXRlIikgJj8gIT8gQ29udGFpbnM/KHByb2NlZHVyZU5hbWVzLCJVbnBhcnNlTWF0aDJEIik7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdmaXJzdE5hbWUnIGEgc3RyaW5nIHRoYXQgaXMgbm90ICd4eHgnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmc/KGZvbGRSZXN1bHRbImZpcnN0TmFtZSJdKSAmPyBmb2xkUmVzdWx0WyJmaXJzdE5hbWUiXSAhPT8gInh4eCI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdsYXN0TmFtZScgaXMgYSBzdHJpbmcgdGhhdCBpcyBub3QgJ3l5eSciLCAxLCBUcnVlKQogICAgewogICAgICAgIFN0cmluZz8oZm9sZFJlc3VsdFsibGFzdE5hbWUiXSkgJj8gZm9sZFJlc3VsdFsibGFzdE5hbWUiXSAhPT8gInl5eSI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdzc3VJRE51bWJlcicgaXMgbm90ICcwMDAwMDAnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAiMDAwMDAwIiAmPyBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAwOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".280",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .280. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="p.417."
+========================================================================================================
+[V?S, ϴ]
+
+%mathpiper,name="Problem 1",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9TLCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTM/MSA6PSBGb3JtdWxhKFY/U35WID09IFNxcnQoKFY/Q35WKV4yICsgKFY/Un5WKV4yKSwKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5MCIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzIgOj0gRm9ybXVsYSjPtCA9PSBBcmNUYW4oKC1WP0MpflYgLyBWP1J+ViksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuMiIsCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTEiKTsKICAgIH0KICAgIAogICAgVj9DIDo9IDEyflY7CiAgICAKICAgIFY/UiA6PSA0flY7CiAgICAKICAgIFY/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzEpOwogIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz8yLCBkZWcpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 1",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([V?S, ϴ])
+{
+    Formulas()
+    {
+        f13?1 := Formula(V?S == Sqrt((V?C)^2 + (V?R)^2),
+                         Label: "13.1",
+                         Page: "390");
+                         
+        f13?2 := Formula(ϴ == ArcTan((-V?C) / V?R),
+                         Label: "13.2",
+                         Page: "391");
+    }
+    
+    V?C := 12~V;
+    
+    V?R := 4~V;
+    
+    V?S := EvaluateFormula(f13?1);
+    
+    ϴ := EvaluateFormula(f13?2, deg);
+}
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".280",preserve="false"
+      Result: (-71.56505115)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      V?S: 12.64911064~V
+      ϴ: (-71.56505115)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 13.1 ) /            /    2      2 \ \ ( No Transformation )  |
+      |          \ V?S == Sqrt\ V?C  + V?R  / /                        |
+      |                                                                |
+      | ( 13.2 ) /            / -( V?C ) \ \    ( No Transformation )  |
+      |          | ϴ == ArcTan| -------- | |                           |
+      |          \            \   V?R    / /                           |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (13.1) V?S == Sqrt(V?C^2 + V?R^2)
+       2: (13.2) ϴ == ArcTan(-V?C/V?R)
+       3: V?C := 12~V ==> 12~V
+       4: V?R := 4~V ==> 4~V
+       5: V?S := EvaluateFormula(f13?1) ==> 12.64911064~V
+       6: ϴ := EvaluateFormula(f13?2, deg) ==> (-71.56505115)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 1",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTMuMSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhWP1NfID09IFNxcnQoKChWP0NfXjIpICsgKFY/Ul9eMikpKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTMuMikgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyjPtF8gPT0gQXJjVGFuKCgoLVY/Q18pL1Y/Ul8pKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJWP1MiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICBVbml0c0VxdWFsPyhWP1MsIDEyLjY0OTExMDY0flYpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICLPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KM+0LCAoLTcxLjU2NTA1MTE1KX5kZWcpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="p.418."
+========================================================================================================
+
+[Z?T, ϴ]
+
+%mathpiper,name="Problem 3",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMiAqIFBpICogZj9mfkh6ICogQz9DfkYpLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi4xMSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydCgoWD9Dfs6pKV4yICsgKFI/Un7OqSleMiksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNCIsCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTMiKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz81IDo9IEZvcm11bGEoz7QgPT0gQXJjVGFuKCgtWD9DKX7OqSAvIFI/Un7OqSksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTMiKTsKCiAgICB9CiAgICAKICAgIEM/QyA6PSAzLjN+zrxGOwogICAgZj9mIDo9IDEyMH5IejsKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzExLCDOqSk7CiAgICAKICAgIAogICAgUj9SIDo9IDE1MH7OqTsKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzQpOwogICAgCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzUsIGRlZyk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 3",subtype="problem",unassign_all="true",globalStateShow="true"
+//μ Ω ∠ ϴ
+ProblemSolution([Z?T, ϴ])
+{
+    Formulas()
+    {
+        f12?11 := Formula(X?C == 1/(2 * Pi * f?f * C?C),
+                         Label: "12.11",
+                         Page: "377");
+                         
+        f13?4 := Formula(Z?T == Sqrt((X?C)^2 + (R?R)^2),
+                         Label: "13.4",
+                         Page: "393");
+                         
+        f13?5 := Formula(ϴ == ArcTan((-X?C) / R?R),
+                         Label: "13.5",
+                         Page: "393");
+    }
+    
+    C?C := 3.3~μF;
+    f?f := 120~Hz;
+    X?C := EvaluateFormula(f12?11, Ω);
+    
+    R?R := 150~Ω;
+    Z?T := EvaluateFormula(f13?4);
+    
+    ϴ := EvaluateFormula(f13?5, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".280",preserve="false"
+      Result: (-69.53335914)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 428.98574799~Ω
+      ϴ: (-69.53335914)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 12.11 ) /                1          \  ( No Transformation )  |
+      |           | X?C == ------------------ |                         |
+      |           \        2 * Pi * f?f * C?C /                         |
+      |                                                                 |
+      | ( 13.4 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?C  + R?R  / /                        |
+      |                                                                 |
+      | ( 13.5 )  /            / -( X?C ) \ \    ( No Transformation )  |
+      |           | ϴ == ArcTan| -------- | |                           |
+      |           \            \   R?R    / /                           |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       2: (13.4) Z?T == Sqrt(X?C^2 + R?R^2)
+       3: (13.5) ϴ == ArcTan(-X?C/R?R)
+       4: C?C := 3.3~μF ==> 3.3~μF
+       5: f?f := 120~Hz ==> 120~Hz
+       6: X?C := EvaluateFormula(f12?11, Ω) ==> 401.9064219~Ω
+       7: R?R := 150~Ω ==> 150~Ω
+       8: Z?T := EvaluateFormula(f13?4) ==> 428.98574799~Ω
+       9: ϴ := EvaluateFormula(f13?5, deg) ==> (-69.53335914)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 3",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTIuMTEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWD9DXyA9PSAoMS8oKCgyKlBpKSpmP2ZfKSpDP0NfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjQpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWj9UXyA9PSBTcXJ0KCgoWD9DX14yKSArIChSP1JfXjIpKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjUpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoz7RfID09IEFyY1RhbigoKC1YP0NfKS9SP1JfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiWj9UIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oWj9ULCA0MjguOTg1NzQ3OTl+zqkpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICLPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KM+0LCAoLTY5LjUzMzM1OTE0KX5kZWcpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+
+%/group
+
+
+
+
+
+
+%group,name="Problem 5",description="p.418."
+========================================================================================================
+
+[Z?T, I?T, V?C, V?R, ϴ]
+
+%mathpiper,name="Problem 5",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QywgVj9SLCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYSggWD9Dfs6pID09IDEvKDIgKiBQaSAqIGY/Zn5IeiAqIEM/Q35GKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYSggWj9Ufs6pID09IFNxcnQoKFg/Q37OqSleMiArIChSP1J+zqkpXjIpLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy40IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTMiKTsKCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdaP1RdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0MsICdSP09MIDwtICdYP0NdLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWMgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiYyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9SLCAnUj9PTCA8LSAnUj9SXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP1IpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NSA6PSBGb3JtdWxhKCDPtCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICB9CiAgICAKICAgIEM/QyA6PSAxfs68RjsKICAgIGY/ZiA6PSAyNTB+SHo7CiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwgzqkpOwogICAgCiAgICBSP1IgOj0gNzUwfs6pOwogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NCk7CiAgICAKICAgIFY/UyA6PSA4flY7CiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCBtQSk7CiAgICAKICAgIFY/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWIsIFYpOwogICAgCiAgICBWP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFjLCBWKTsgICAKICAgIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz81LCBkZWcpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 5",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Z?T, I?T, V?C, V?R, ϴ])
+{
+    Formulas()
+    {
+        f12?11 := Formula(X?C == 1/(2 * Pi * f?f * C?C),
+                         Label: "12.11",
+                         Page: "377");
+                         
+        f13?4 := Formula(Z?T == Sqrt((X?C)^2 + (R?R)^2),
+                         Label: "13.4",
+                         Page: "393");
+                         
+        f13?5 := Formula(ϴ == ArcTan((-X?C) / R?R),
+                         Label: "13.5",
+                         Page: "393");
+                               
+        f3?1 := Formula(I?OL == V?OL / R?OL,
+                         Label: "3.1",
+                         Page: "78");
+                               
+        f3?1a := Formula(f3?1,
+                         Label: "a",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+                         
+        f3?1b := Formula(f3?1,
+                         Label: "b",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C],
+                         Subject : 'V?C);
+                         
+        f3?1c := Formula(f3?1,
+                         Label: "c",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R],
+                         Subject : 'V?R);
+    }
+    
+    C?C := 1 ~μF;
+    f?f := 250 ~Hz;
+    X?C := EvaluateFormula(f12?11, Ω);
+    
+    R?R := 750~Ω;
+    Z?T := EvaluateFormula(f13?4);
+    
+    V?S := 8~V;
+    I?T := EvaluateFormula(f3?1a, mA);
+    
+    V?C := EvaluateFormula(f3?1b, V);
+    
+    V?R := EvaluateFormula(f3?1c, V);
+    
+    ϴ := EvaluateFormula(f13?5, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".280",preserve="false"
+      Result: (-40.32547509)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 983.76050662~Ω
+      I?T: 8.132060543~mA
+      V?C: 5.177030531~V
+      V?R: 6.099045407~V
+      ϴ: (-40.32547509)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 12.11 ) /                1          \  ( No Transformation )  |
+      |           | X?C == ------------------ |                         |
+      |           \        2 * Pi * f?f * C?C /                         |
+      |                                                                 |
+      | ( 13.4 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?C  + R?R  / /                        |
+      |                                                                 |
+      | ( 13.5 )  /            / -( X?C ) \ \    ( No Transformation )  |
+      |           | ϴ == ArcTan| -------- | |                           |
+      |           \            \   R?R    / /                           |
+      |                                                                 |
+      | ( 3.1 )   /         V?OL \               ( No Transformation )  |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1a )  /         V?OL \               /        V?S \         |
+      |           | I?OL == ---- |               | I?T == --- |         |
+      |           \         R?OL /               \        Z?T /         |
+      |                                                                 |
+      | ( 3.1b )  /         V?OL \               ( V?C == I?T * X?C )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1c )  /         V?OL \               ( V?R == I?T * R?R )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       2: (13.4) Z?T == Sqrt(X?C^2 + R?R^2)
+       3: (13.5) ϴ == ArcTan(-X?C/R?R)
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (3.1a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       6: (3.1b) I?OL == V?OL/R?OL ==> V?C == I?T*X?C
+       7: (3.1c) I?OL == V?OL/R?OL ==> V?R == I?T*R?R
+       8: C?C := 1~μF ==> 1~μF
+       9: f?f := 250~Hz ==> 250~Hz
+      10: X?C := EvaluateFormula(f12?11, Ω) ==> 636.6197723~Ω
+      11: R?R := 750~Ω ==> 750~Ω
+      12: Z?T := EvaluateFormula(f13?4) ==> 983.76050662~Ω
+      13: V?S := 8~V ==> 8~V
+      14: I?T := EvaluateFormula(f3?1a, mA) ==> 8.132060543~mA
+      15: V?C := EvaluateFormula(f3?1b, V) ==> 5.177030531~V
+      16: V?R := EvaluateFormula(f3?1c, V) ==> 6.099045407~V
+      17: ϴ := EvaluateFormula(f13?5, deg) ==> (-40.32547509)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 5",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTIuMTEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWD9DXyA9PSAoMS8oKCgyKlBpKSpmP2ZfKSpDP0NfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjQpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWj9UXyA9PSBTcXJ0KCgoWD9DX14yKSArIChSP1JfXjIpKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDMuMSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhJP09MXyA9PSAoVj9PTF8vUj9PTF8pKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgxMy41KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKM+0XyA9PSBBcmNUYW4oKCgtWD9DXykvUj9SXykpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlo/VCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFo/VCwgOTgzLjc2MDUwNjYyfs6pKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiST9UIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oST9ULCA4LjEzMjA2MDU0M35tQSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlY/QyIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/QywgNS4xNzcwMzA1MzF+Vik7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlY/UiIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/UiwgNi4wOTkwNDU0MDd+Vik7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIs+0IiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oz7QsICgtNDAuMzI1NDc1MDkpfmRlZyk7CiAgICB9Cn0KCg==
+
+%/mathpiper_grade
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 7",description="p.418."
+========================================================================================================
+
+[Z?T, I?T, V?C1, V?C2, V?R, ϴ]
+
+%mathpiper,name="Problem 7",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QzEsIFY/QzIsIFY/Uiwgz7RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoIFg/Q37OqSA9PSAxLygyICogUGkgKiBmP2Z+SHogKiBDP0N+RiksCiAgICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi4xMSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM3NyIpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz80IDo9IEZvcm11bGEoIFo/VH7OqSA9PSBTcXJ0KChYP0NUfs6pKV4yICsgKFI/Un7OqSleMiksCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5MyIpOwoKICAgICAgICBmMz8xIDo9IEZvcm11bGEoIEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjEiLAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNzgiKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFhIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImEiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1o/VF0pOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFiIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImIiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QzEsICdSP09MIDwtICdYP0MxXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP0MxKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYyA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJjIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0MyLCAnUj9PTCA8LSAnWD9DMl0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3ViamVjdDonVj9DMik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWQgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiZCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9SLCAnUj9PTCA8LSAnUj9SXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP1IpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NSA6PSBGb3JtdWxhKCDPtCA9PSBBcmNUYW4oKC1YP0NUKX7OqSAvIFI/Un7OqSksCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjUiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5MyIpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGZwMzkwIDo9IEZvcm11bGEoIFg/Q1R+zqkgPT0gWD9DMX7OqSArIFg/QzJ+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImZwMzkwIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTAiKTsKICAgIH0KCiAgICBmP2YgOj0gMzAwfkh6OwogICAgCiAgICBDP0MgOj0gLjQ3fs68RjsKICAgIFg/QzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwgzqkpOwogICAgCiAgICBDP0MgOj0gLjF+zrxGOwogICAgWD9DMiA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzExLCDOqSk7CiAgICAKICAgIFg/Q1QgOj0gRXZhbHVhdGVGb3JtdWxhKGZwMzkwLCDOqSk7CiAgICAKICAgIAogICAgUj9SIDo9IDF+a86pOwogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NCk7CiAgICAKICAgIFY/UyA6PSA2flY7CiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCBtQSk7CiAgICAKICAgIFY/QzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBWKTsKICAgIAogICAgVj9DMiA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWMsIFYpOwogICAgCiAgICBWP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFkLCBWKTsgICAKICAgIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz81LCBkZWcpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 7",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Z?T, I?T, V?C1, V?C2, V?R, ϴ])
+{
+    Formulas()
+    {
+        f12?11 := Formula(X?C == 1/(2 * Pi * f?f * C?C),
+                         Label: "12.11",
+                         Page: "377");
+                         
+        f13?4 := Formula(Z?T == Sqrt((X?CT)^2 + (R?R)^2),
+                         Label: "13.4",
+                         Page: "393");
+                         
+        f13?5 := Formula(ϴ == ArcTan((-X?CT) / R?R),
+                         Label: "13.5",
+                         Page: "393");
+                               
+        f3?1 := Formula(I?OL == V?OL / R?OL,
+                         Label: "3.1",
+                         Page: "78");
+                               
+        f3?1a := Formula(f3?1,
+                         Label: "a",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+                         
+        f3?1b := Formula(f3?1,
+                         Label: "b",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C1, 'R?OL <- 'X?C1],
+                         Subject : 'V?C1);
+                         
+        f3?1c := Formula(f3?1,
+                         Label: "c",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C2, 'R?OL <- 'X?C2],
+                         Subject : 'V?C2);
+                         
+        f3?1d := Formula(f3?1,
+                         Label: "d",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R],
+                         Subject : 'V?R);
+                         
+        fp390 := Formula(X?CT == X?C1 + X?C2,
+                         Label: "fp390",
+                         Page: "390");
+    }
+    
+    C?C := .47 ~μF;
+    f?f := 300 ~Hz;
+    X?C1 := EvaluateFormula(f12?11, Ω);
+
+    
+    C?C := .1 ~μF;
+    X?C2 := EvaluateFormula(f12?11, Ω);
+    
+    X?CT := EvaluateFormula(fp390, Ω);
+    
+    R?R := 1~kΩ;
+    Z?T := EvaluateFormula(f13?4);
+    
+    V?S := 6~V;
+    I?T := EvaluateFormula(f3?1a, mA);
+    
+    V?C1 := EvaluateFormula(f3?1b, V); 
+    V?C2 := EvaluateFormula(f3?1c, V);
+    
+    V?R := EvaluateFormula(f3?1d, V);
+    
+    ϴ := EvaluateFormula(f13?5, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".280",preserve="false"
+      Result: (-81.16542408)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 6511.1725638~Ω
+      I?T: 0.9214930093~mA
+      V?C1: 1.040143032~V
+      V?C2: 4.888672249~V
+      V?R: 0.9214930093~V
+      ϴ: (-81.16542408)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                   \
+      | ( 12.11 ) /                1          \   ( No Transformation )   |
+      |           | X?C == ------------------ |                           |
+      |           \        2 * Pi * f?f * C?C /                           |
+      |                                                                   |
+      | ( 13.4 )  /            /     2      2 \ \ ( No Transformation )   |
+      |           \ Z?T == Sqrt\ X?CT  + R?R  / /                         |
+      |                                                                   |
+      | ( 13.5 )  /            / -( X?CT ) \ \    ( No Transformation )   |
+      |           | ϴ == ArcTan| --------- | |                            |
+      |           \            \    R?R    / /                            |
+      |                                                                   |
+      | ( 3.1 )   /         V?OL \                ( No Transformation )   |
+      |           | I?OL == ---- |                                        |
+      |           \         R?OL /                                        |
+      |                                                                   |
+      | ( 3.1a )  /         V?OL \                /        V?S \          |
+      |           | I?OL == ---- |                | I?T == --- |          |
+      |           \         R?OL /                \        Z?T /          |
+      |                                                                   |
+      | ( 3.1b )  /         V?OL \                ( V?C1 == I?T * X?C1 )  |
+      |           | I?OL == ---- |                                        |
+      |           \         R?OL /                                        |
+      |                                                                   |
+      | ( 3.1c )  /         V?OL \                ( V?C2 == I?T * X?C2 )  |
+      |           | I?OL == ---- |                                        |
+      |           \         R?OL /                                        |
+      |                                                                   |
+      | ( 3.1d )  /         V?OL \                ( V?R == I?T * R?R )    |
+      |           | I?OL == ---- |                                        |
+      |           \         R?OL /                                        |
+      |                                                                   |
+      | ( fp390 ) ( X?CT == X?C1 + X?C2 )         ( No Transformation )   |
+      \                                                                   /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       2: (13.4) Z?T == Sqrt(X?CT^2 + R?R^2)
+       3: (13.5) ϴ == ArcTan(-X?CT/R?R)
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (3.1a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       6: (3.1b) I?OL == V?OL/R?OL ==> V?C1 == I?T*X?C1
+       7: (3.1c) I?OL == V?OL/R?OL ==> V?C2 == I?T*X?C2
+       8: (3.1d) I?OL == V?OL/R?OL ==> V?R == I?T*R?R
+       9: (fp390) X?CT == X?C1 + X?C2
+      10: C?C := .47~μF ==> .47~μF
+      11: f?f := 300~Hz ==> 300~Hz
+      12: X?C1 := EvaluateFormula(f12?11, Ω) ==> 1128.758462~Ω
+      13: C?C := .1~μF ==> .1~μF
+      14: X?C2 := EvaluateFormula(f12?11, Ω) ==> 5305.16477~Ω
+      15: X?CT := EvaluateFormula(fp390, Ω) ==> 6433.923232~Ω
+      16: R?R := 1~kΩ ==> 1~kΩ
+      17: Z?T := EvaluateFormula(f13?4) ==> 6511.1725638~Ω
+      18: V?S := 6~V ==> 6~V
+      19: I?T := EvaluateFormula(f3?1a, mA) ==> 0.9214930093~mA
+      20: V?C1 := EvaluateFormula(f3?1b, V) ==> 1.040143032~V
+      21: V?C2 := EvaluateFormula(f3?1c, V) ==> 4.888672249~V
+      22: V?R := EvaluateFormula(f3?1d, V) ==> 0.9214930093~V
+      23: ϴ := EvaluateFormula(f13?5, deg) ==> (-81.16542408)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 7",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTIuMTEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWD9DXyA9PSAoMS8oKCgyKlBpKSpmP2ZfKSpDP0NfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjQpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWj9UXyA9PSBTcXJ0KCgoWD9DVF9eMikgKyAoUj9SX14yKSkpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgzLjEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoST9PTF8gPT0gKFY/T0xfL1I/T0xfKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTMuNSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyjPtF8gPT0gQXJjVGFuKCgoLVg/Q1RfKS9SP1JfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKGZwMzkwKSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKFg/Q1RfID09IChYP0MxXyArIFg/QzJfKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJaP1QiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICBVbml0c0VxdWFsPyhaP1QsIDY1MTEuMTcyNTYzOH7OqSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIkk/VCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KEk/VCwgMC45MjE0OTMwMDkzfm1BKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiVj9DMSIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/QzEsIDEuMDQwMTQzMDMyflYpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJWP0MyIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oVj9DMiwgNC44ODg2NzIyNDl+Vik7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlY/UiIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/UiwgMC45MjE0OTMwMDkzflYpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICLPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KM+0LCAoLTgxLjE2NTQyNDA4KX5kZWcpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9a",description="p.419."
+========================================================================================================
+
+[Z?T, I?T, V?C, V?R, ϴ]
+
+%mathpiper,name="Problem 9a",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QywgVj9SLCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYSggWD9Dfs6pID09IDEvKDIgKiBQaSAqIGY/Zn5IeiAqIEM/Q35GKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYSggWj9Ufs6pID09IFNxcnQoKFg/Q37OqSleMiArIChSP1J+zqkpXjIpLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy40IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTMiKTsKCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjFhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdaP1RdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjFiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0MsICdSP09MIDwtICdYP0NdLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWMgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xYyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9SLCAnUj9PTCA8LSAnUj9SXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP1IpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NSA6PSBGb3JtdWxhKCDPtCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICB9CiAgICAKICAgIEM/QyA6PSAuMDIyfs68RjsKICAgIGY/ZiA6PSAxMDB+SHo7CiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwgzqkpOwogICAgCiAgICBSP1IgOj0gOTEwfs6pOwogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NCwga86pKTsKICAgIAogICAgVj9TIDo9IDE0flY7CiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCDOvEEpOwogICAgCiAgICBWP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBWKTsKICAgIAogICAgVj9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYywgbVYpOyAgIAogICAgCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzUsIGRlZyk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 9a",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 9a",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Z?T, I?T, V?C, V?R, ϴ])
+{
+    Formulas()
+    {
+        f12?11 := Formula(X?C == 1/(2 * Pi * f?f * C?C),
+                         Label: "12.11",
+                         Page: "377");
+                         
+        f13?4 := Formula(Z?T == Sqrt((X?C)^2 + (R?R)^2),
+                         Label: "13.4",
+                         Page: "393");
+                         
+        f13?5 := Formula(ϴ == ArcTan((-X?C) / R?R),
+                         Label: "13.5",
+                         Page: "393");
+                               
+        f3?1 := Formula(I?OL == V?OL / R?OL,
+                         Label: "3.1",
+                         Page: "78");
+                               
+        f3?1a := Formula(f3?1,
+                         Label: "a",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+                         
+        f3?1b := Formula(f3?1,
+                         Label: "b",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C],
+                         Subject : 'V?C);
+                         
+        f3?1c := Formula(f3?1,
+                         Label: "c",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R],
+                         Subject : 'V?R);
+    }
+    
+    C?C := .022 ~μF;
+    f?f := 100~Hz;
+    X?C := EvaluateFormula(f12?11, Ω);
+
+    R?R := 910~kΩ;
+    Z?T := EvaluateFormula(f13?4, kΩ);
+    
+    V?S := 14~V;
+    I?T := EvaluateFormula(f3?1a, mA);
+    
+    V?C := EvaluateFormula(f3?1b, V); 
+    
+    V?R := EvaluateFormula(f3?1c, mV);
+    
+    ϴ := EvaluateFormula(f13?5, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".280",preserve="false"
+      Result: (-4.545339044)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 912.8710382~kΩ
+      I?T: 0.01533622978~mA
+      V?C: 1.109471262~V
+      V?R: 13955.9691~mV
+      ϴ: (-4.545339044)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 12.11 ) /                1          \  ( No Transformation )  |
+      |           | X?C == ------------------ |                         |
+      |           \        2 * Pi * f?f * C?C /                         |
+      |                                                                 |
+      | ( 13.4 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?C  + R?R  / /                        |
+      |                                                                 |
+      | ( 13.5 )  /            / -( X?C ) \ \    ( No Transformation )  |
+      |           | ϴ == ArcTan| -------- | |                           |
+      |           \            \   R?R    / /                           |
+      |                                                                 |
+      | ( 3.1 )   /         V?OL \               ( No Transformation )  |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1a )  /         V?OL \               /        V?S \         |
+      |           | I?OL == ---- |               | I?T == --- |         |
+      |           \         R?OL /               \        Z?T /         |
+      |                                                                 |
+      | ( 3.1b )  /         V?OL \               ( V?C == I?T * X?C )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1c )  /         V?OL \               ( V?R == I?T * R?R )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       2: (13.4) Z?T == Sqrt(X?C^2 + R?R^2)
+       3: (13.5) ϴ == ArcTan(-X?C/R?R)
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (3.1a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       6: (3.1b) I?OL == V?OL/R?OL ==> V?C == I?T*X?C
+       7: (3.1c) I?OL == V?OL/R?OL ==> V?R == I?T*R?R
+       8: C?C := .022~μF ==> .022~μF
+       9: f?f := 100~Hz ==> 100~Hz
+      10: X?C := EvaluateFormula(f12?11, Ω) ==> 72343.15593~Ω
+      11: R?R := 910~kΩ ==> 910~kΩ
+      12: Z?T := EvaluateFormula(f13?4, kΩ) ==> 912.8710382~kΩ
+      13: V?S := 14~V ==> 14~V
+      14: I?T := EvaluateFormula(f3?1a, mA) ==> 0.01533622978~mA
+      15: V?C := EvaluateFormula(f3?1b, V) ==> 1.109471262~V
+      16: V?R := EvaluateFormula(f3?1c, mV) ==> 13955.9691~mV
+      17: ϴ := EvaluateFormula(f13?5, deg) ==> (-4.545339044)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 9a",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTIuMTEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWD9DXyA9PSAoMS8oKCgyKlBpKSpmP2ZfKSpDP0NfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjQpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWj9UXyA9PSBTcXJ0KCgoWD9DX14yKSArIChSP1JfXjIpKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDMuMSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhJP09MXyA9PSAoVj9PTF8vUj9PTF8pKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgxMy41KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKM+0XyA9PSBBcmNUYW4oKCgtWD9DXykvUj9SXykpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlo/VCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFo/VCwgNzIuMzQ4ODc5MTJ+a86pKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiST9UIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oST9ULCAxOTMuNTA2Nzk4OX7OvEEpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJWP0MiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICBVbml0c0VxdWFsPyhWP0MsIDEzLjk5ODg5MjUzflYpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJWP1IiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICBVbml0c0VxdWFsPyhWP1IsIDE3Ni4wOTExODd+bVYpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICLPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KM+0LCAoLTg5LjI3OTMxODAwKX5kZWcpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9b",description="p.419."
+========================================================================================================
+
+[Z?T, I?T, V?C, V?R, ϴ]
+
+%mathpiper,name="Problem 9b",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QywgVj9SLCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYSggWD9Dfs6pID09IDEvKDIgKiBQaSAqIGY/Zn5IeiAqIEM/Q35GKSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYSggWj9Ufs6pID09IFNxcnQoKFg/Q37OqSleMiArIChSP1J+zqkpXjIpLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy40IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTMiKTsKCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjFhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdaP1RdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjFiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0MsICdSP09MIDwtICdYP0NdLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWMgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xYyIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9SLCAnUj9PTCA8LSAnUj9SXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP1IpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NSA6PSBGb3JtdWxhKCDPtCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICB9CiAgICAKICAgIEM/QyA6PSAuMDIyfs68RjsKICAgIGY/ZiA6PSAxMn5rSHo7CiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwgzqkpOwogICAgCiAgICBSP1IgOj0gOTEwfs6pOwogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NCwga86pKTsKICAgIAogICAgVj9TIDo9IDE0flY7CiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCBtQSk7CiAgICAKICAgIFY/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWIsIFYpOwogICAgCiAgICBWP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFjLCBWKTsgICAKICAgIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz81LCBkZWcpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 9b",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 9b",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Z?T, I?T, V?C, V?R, ϴ])
+{
+    Formulas()
+    {
+        f12?11 := Formula(X?C == 1/(2 * Pi * f?f * C?C),
+                         Label: "12.11",
+                         Page: "377");
+                         
+        f13?4 := Formula(Z?T == Sqrt((X?C)^2 + (R?R)^2),
+                         Label: "13.4",
+                         Page: "393");
+                         
+        f13?5 := Formula(ϴ == ArcTan((-X?C) / R?R),
+                         Label: "13.5",
+                         Page: "393");
+                               
+        f3?1 := Formula(I?OL == V?OL / R?OL,
+                         Label: "3.1",
+                         Page: "78");
+                               
+        f3?1a := Formula(f3?1,
+                         Label: "a",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+                         
+        f3?1b := Formula(f3?1,
+                         Label: "b",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C],
+                         Subject : 'V?C);
+                         
+        f3?1c := Formula(f3?1,
+                         Label: "c",
+                         Page: "78",
+                         Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R],
+                         Subject : 'V?R);
+    }
+    
+    C?C := .022~μF;
+    f?f := 12~kHz;
+    X?C := EvaluateFormula(f12?11, Ω);
+
+    R?R := 910~kΩ;
+    Z?T := EvaluateFormula(f13?4, kΩ);
+    
+    V?S := 14~V;
+    I?T := EvaluateFormula(f3?1a, mA);
+    
+    V?C := EvaluateFormula(f3?1b, V); 
+    
+    V?R := EvaluateFormula(f3?1c, mV);
+    
+    ϴ := EvaluateFormula(f13?5, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 9b",mpversion=".280",preserve="false"
+      Result: (-0.03795748083)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 910.0001998~kΩ
+      I?T: 0.01538461201~mA
+      V?C: 0.00927476155~V
+      V?R: 13999.99693~mV
+      ϴ: (-0.03795748083)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 12.11 ) /                1          \  ( No Transformation )  |
+      |           | X?C == ------------------ |                         |
+      |           \        2 * Pi * f?f * C?C /                         |
+      |                                                                 |
+      | ( 13.4 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?C  + R?R  / /                        |
+      |                                                                 |
+      | ( 13.5 )  /            / -( X?C ) \ \    ( No Transformation )  |
+      |           | ϴ == ArcTan| -------- | |                           |
+      |           \            \   R?R    / /                           |
+      |                                                                 |
+      | ( 3.1 )   /         V?OL \               ( No Transformation )  |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1a )  /         V?OL \               /        V?S \         |
+      |           | I?OL == ---- |               | I?T == --- |         |
+      |           \         R?OL /               \        Z?T /         |
+      |                                                                 |
+      | ( 3.1b )  /         V?OL \               ( V?C == I?T * X?C )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1c )  /         V?OL \               ( V?R == I?T * R?R )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       2: (13.4) Z?T == Sqrt(X?C^2 + R?R^2)
+       3: (13.5) ϴ == ArcTan(-X?C/R?R)
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (3.1a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       6: (3.1b) I?OL == V?OL/R?OL ==> V?C == I?T*X?C
+       7: (3.1c) I?OL == V?OL/R?OL ==> V?R == I?T*R?R
+       8: C?C := .022~μF ==> .022~μF
+       9: f?f := 12~kHz ==> 12~kHz
+      10: X?C := EvaluateFormula(f12?11, Ω) ==> 602.859633~Ω
+      11: R?R := 910~kΩ ==> 910~kΩ
+      12: Z?T := EvaluateFormula(f13?4, kΩ) ==> 910.0001998~kΩ
+      13: V?S := 14~V ==> 14~V
+      14: I?T := EvaluateFormula(f3?1a, mA) ==> 0.01538461201~mA
+      15: V?C := EvaluateFormula(f3?1b, V) ==> 0.00927476155~V
+      16: V?R := EvaluateFormula(f3?1c, mV) ==> 13999.99693~mV
+      17: ϴ := EvaluateFormula(f13?5, deg) ==> (-0.03795748083)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 9b",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTIuMTEpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWD9DXyA9PSAoMS8oKCgyKlBpKSpmP2ZfKSpDP0NfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjQpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoWj9UXyA9PSBTcXJ0KCgoWD9DX14yKSArIChSP1JfXjIpKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDMuMSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhJP09MXyA9PSAoVj9PTF8vUj9PTF8pKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgxMy41KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKM+0XyA9PSBBcmNUYW4oKCgtWD9DXykvUj9SXykpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlo/VCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFo/VCwgMS4wOTE1NzY3MjF+a86pKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiST9UIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oST9ULCAxMi44MjU0ODQyMX5tQSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlY/QyIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/QywgNy43MzE5NjY3MDR+Vik7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlY/UiIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFY/UiwgMTEuNjcxMTkwNjN+Vik7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIs+0IiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oz7QsICgtMzMuNTIzODAwODMpfmRlZyk7CiAgICB9Cn0KCg==
+
+%/mathpiper_grade
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11",description="p.419."
+========================================================================================================
+
+[P?X, P?R]
+
+%mathpiper,name="Problem 11",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9YLCBQP1JdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgPzQwMCA6PSBGb3JtdWxhKFA/WCA9PSBJP0leMiAqIFg/QywgUGFnZToiNDAwIik7CgogICAgICAgIGYzPzUgOj0gRm9ybXVsYShQP1AgPT0gST9JXjIgKiBSP1IsIAogICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgUGFnZToiMzM5LDg1IiwgCiAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnUD9QIDwtICdQP1JdKTsKICAgIH0KCiAgICAvLyBGcm9tIHByb2JsZW0gNS4KICAgIEk/SSA6PSA4LjEzMjA2MDU0M35tQTsKICAgIFg/QyA6PSA2MzYuNjE5NzcyM37OqTsKICAgIFI/UiA6PSA3NTB+zqk7CiAgICAKICAgIFA/WCA6PSBFdmFsdWF0ZUZvcm11bGEoPzQwMCwgbVZBKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 11",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?X, P?R])
+{
+    Formulas()
+    {                     
+        ?400 := Formula(P?X == I?I^2 * X?C, Page: "400");
+                               
+        f3?5 := Formula(P?P == I?I^2 * R?R,
+                         Label: "3.5",
+                         Page: "339, 85",
+                         Substitutions:['P?P <- 'P?R]);
+    }
+    
+    I?I := 8.132060543~mA;
+    X?C := 636.6197723~Ω;
+    R?R := 750~Ω;
+    
+    P?X := EvaluateFormula(?400, mVA);
+    
+    P?R := EvaluateFormula(f3?5, mW);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".280",preserve="false"
+      Result: 49.59780651~mW
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?X: 42.09992572~mVA
+      P?R: 49.59780651~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                       \
+      | ( None ) /           2       \ ( No Transformation )  |
+      |          \ P?X == I?I  * X?C /                        |
+      |                                                       |
+      | ( 3.5 )  /           2       \ /           2       \  |
+      |          \ P?P == I?I  * R?R / \ P?R == I?I  * R?R /  |
+      \                                                       /
+      
+      === STEPS (CODE VIEW) ===
+       1: (None) P?X == I?I^2*X?C
+       2: (3.5) P?P == I?I^2*R?R ==> P?R == I?I^2*R?R
+       3: I?I := 8.132060543~mA ==> 8.132060543~mA
+       4: X?C := 636.6197723~Ω ==> 636.6197723~Ω
+       5: R?R := 750~Ω ==> 750~Ω
+       6: P?X := EvaluateFormula(?400, mVA) ==> 42.09992572~mVA
+       7: P?R := EvaluateFormula(f3?5, mW) ==> 49.59780651~mW
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 11",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoTm9uZSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhQP1hfID09ICgoST9JX14yKSpYP0NfKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMy41KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKFA/UF8gPT0gKChJP0lfXjIpKlI/Ul8pKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlA/WCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFA/WCwgNDIuMDk5OTI1NzJ+bVZBKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiUD9SIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oUD9SLCA0OS41OTc4MDY1MX5tVyk7CiAgICB9Cn0KCg==
+
+%/mathpiper_grade
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 13",description="p.419."
+========================================================================================================
+
+[P?X, P?R, P?APP, ϴ]
+
+%mathpiper,name="Problem 13",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9YLCBQP1IsIFA/QVBQLCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKCiAgICAgICAgZjEzPzcgOj0gRm9ybXVsYShQP0FQUCA9PSBTcXJ0KFA/WF4yICsgUD9SXjIpLCAKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy43IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MDEiKTsKICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz84IDo9IEZvcm11bGEoz7QgPT0gQXJjVGFuKC1QP1ggLyBQP1IpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjgiLCAKICAgICAgICAgICAgICAgICAgUGFnZToiNDAyIik7CiAgICB9CiAgICAKCgogICAgLy8gRnJvbSBwcm9ibGVtIDExLgogICAgUD9YOj0gNDIuMDk5OTI1NzJ+bVZBOwogICAgUD9SOj0gNDkuNTk3ODA2NTF+bVc7CgogICAgUD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz83KTsKCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzgsIGRlZ3JlZSk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 13",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?X, P?R, P?APP, ϴ])
+{
+    Formulas()
+    {                  
+        f13?7 := Formula(P?APP == Sqrt(P?X^2 + P?R^2),
+                         Label: "13.7",
+                         Page: "401");
+                               
+        f13?8 := Formula(ϴ == ArcTan(-P?X / P?R),
+                         Label: "13.8",
+                         Page: "402");
+    }
+    
+    P?X := 42.09992572~mVA;
+    P?R := 49.59780651~mW;
+    
+    P?APP := EvaluateFormula(f13?7);
+    
+    ϴ := EvaluateFormula(f13?8, deg);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".280",preserve="false"
+      Result: (-40.32547509)~deg
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?X: 42.09992572~mVA
+      P?R: 49.59780651~mW
+      P?APP: 65.056484358~mVA
+      ϴ: (-40.32547509)~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( 13.7 ) /              /    2      2 \ \ ( No Transformation )  |
+      |          \ P?APP == Sqrt\ P?X  + P?R  / /                        |
+      |                                                                  |
+      | ( 13.8 ) /            / -( P?X ) \ \      ( No Transformation )  |
+      |          | ϴ == ArcTan| -------- | |                             |
+      |          \            \   P?R    / /                             |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (13.7) P?APP == Sqrt(P?X^2 + P?R^2)
+       2: (13.8) ϴ == ArcTan(-P?X/P?R)
+       3: P?X := 42.09992572~mVA ==> 42.09992572~mVA
+       4: P?R := 49.59780651~mW ==> 49.59780651~mW
+       5: P?APP := EvaluateFormula(f13?7) ==> 65.056484358~mVA
+       6: ϴ := EvaluateFormula(f13?8, deg) ==> (-40.32547509)~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 13",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTMuNykgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhQP0FQUF8gPT0gU3FydCgoKFA/WF9eMikgKyAoUD9SX14yKSkpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgxMy44KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKM+0XyA9PSBBcmNUYW4oKCgtUD9YXykvUD9SXykpKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlA/WCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFA/WCwgNDIuMDk5OTI1NzJ+bVZBKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiUD9SIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oUD9SLCA0OS41OTc4MDY1MX5tVyk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJUaGUgY29ycmVjdCB2YWx1ZSBpcyBhc3NpZ25lZCB0byAiICsgIlA/QVBQIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oUD9BUFAsIDY1LjA1NjQ4NDM1OH5tVkEpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICLPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KM+0LCAoLTQwLjMyNTQ3NTA5KX5kZWdyZWUpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="p.419."
+========================================================================================================
+
+[P?R, P?APP, cosϴ]
+
+%mathpiper,name="Problem 15",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9SLCBQP0FQUCwgY29zz7RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgPzQwMCA6PSBGb3JtdWxhKFA/WCA9PSBJP0leMiAqIFg/QywgUGFnZToiNDAwIik7CgogICAgICAgIGYzPzUgOj0gRm9ybXVsYShQP1AgPT0gST9JXjIgKiBSP1IsIAogICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgUGFnZToiMzM5LDg1IiwgCiAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnUD9QIDwtICdQP1JdKTsKICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz83IDo9IEZvcm11bGEoUD9BUFAgPT0gU3FydChQP1heMiArIFA/Ul4yKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNyIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNDAxIik7CiAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/OCA6PSBGb3JtdWxhKM+0ID09IEFyY1RhbigtUD9YIC8gUD9SKSwgCiAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy44IiwgCiAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMiIpOwogICAgfQogICAgCgogICAgST9JIDo9IDEwMH7OvEE7CiAgICBYP0MgOj0gNDAxLjkwNjQyMTl+zqk7CiAgICBSP1IgOj0gMTUwfs6pOwogICAgCiAgICBQP1ggOj0gRXZhbHVhdGVGb3JtdWxhKD80MDAsIM68VkEpOwogICAgCiAgICBQP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzUsIM68Vyk7CgogICAgUD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz83KTsKCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzgpOwogICAgCiAgICBjb3PPtCA6PSBOTShDb3Moz7QpKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?R, P?APP, cosϴ])
+{
+    Formulas()
+    {           
+        ?400 := Formula(P?X == I?I^2 * X?C, Page: "400");
+                               
+        f3?5 := Formula(P?P == I?I^2 * R?R,
+                         Label: "3.5",
+                         Page: "339, 85",
+                         Substitutions:['P?P <- 'P?R]);
+                         
+        f13?7 := Formula(P?APP == Sqrt(P?X^2 + P?R^2),
+                         Label: "13.7",
+                         Page: "401");
+                               
+        f13?8 := Formula(ϴ == ArcTan(-P?X / P?R),
+                         Label: "13.8",
+                         Page: "402");
+    }
+    
+    I?I := 100 ~μA;
+    X?C := 401.9064219~Ω;
+    R?R := 150~Ω;
+    
+    P?X := EvaluateFormula(?400, μVA);
+    
+    P?R := EvaluateFormula(f3?5, μW);
+    
+    P?APP := EvaluateFormula(f13?7);
+    
+    ϴ := EvaluateFormula(f13?8);
+    
+    cosϴ := NM(Cos(ϴ));
+}
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".280",preserve="false"
+      Result: 0.3496619662
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?R: 1.5~μW
+      P?APP: 4.2898574802~μVA
+      cosϴ: 0.3496619662
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( None ) /           2       \            ( No Transformation )  |
+      |          \ P?X == I?I  * X?C /                                   |
+      |                                                                  |
+      | ( 3.5 )  /           2       \            /           2       \  |
+      |          \ P?P == I?I  * R?R /            \ P?R == I?I  * R?R /  |
+      |                                                                  |
+      | ( 13.7 ) /              /    2      2 \ \ ( No Transformation )  |
+      |          \ P?APP == Sqrt\ P?X  + P?R  / /                        |
+      |                                                                  |
+      | ( 13.8 ) /            / -( P?X ) \ \      ( No Transformation )  |
+      |          | ϴ == ArcTan| -------- | |                             |
+      |          \            \   P?R    / /                             |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (None) P?X == I?I^2*X?C
+       2: (3.5) P?P == I?I^2*R?R ==> P?R == I?I^2*R?R
+       3: (13.7) P?APP == Sqrt(P?X^2 + P?R^2)
+       4: (13.8) ϴ == ArcTan(-P?X/P?R)
+       5: I?I := 100~μA ==> 100~μA
+       6: X?C := 401.9064219~Ω ==> 401.9064219~Ω
+       7: R?R := 150~Ω ==> 150~Ω
+       8: P?X := EvaluateFormula(?400, μVA) ==> 4.019064219~μVA
+       9: P?R := EvaluateFormula(f3?5, μW) ==> 1.5~μW
+      10: P?APP := EvaluateFormula(f13?7) ==> 4.2898574802~μVA
+      11: ϴ := EvaluateFormula(f13?8) ==> (-1.213586057)~rad
+      12: cosϴ := NM(Cos(ϴ)) ==> 0.3496619662
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 15",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoTm9uZSkgaXMgdXNlZCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIChQb3NpdGlvbnNQYXR0ZXJuMihVbml0c1N0cmlwKD9mb2xkQ29kZSksICggJyhQP1hfID09ICgoST9JX14yKSpYP0NfKSkpKSAhPT8gW10pOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMy41KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKFA/UF8gPT0gKChJP0lfXjIpKlI/Ul8pKSkpICE9PyBbXSk7CiAgICB9CgogICAgRm9sZEdyYWRlKCJGb3JtdWxhICgxMy43KSBpcyB1c2VkIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgKFBvc2l0aW9uc1BhdHRlcm4yKFVuaXRzU3RyaXAoP2ZvbGRDb2RlKSwgKCAnKFA/QVBQXyA9PSBTcXJ0KCgoUD9YX14yKSArIChQP1JfXjIpKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIkZvcm11bGEgKDEzLjgpIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoz7RfID09IEFyY1RhbigoKC1QP1hfKS9QP1JfKSkpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiUD9SIiwgMSwgRmFsc2UpCiAgICB7CiAgICAgICAgVW5pdHNFcXVhbD8oUD9SLCAxLjV+zrxXKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiUD9BUFAiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICBVbml0c0VxdWFsPyhQP0FQUCwgNC4yODk4NTc0ODAyfs68VkEpOwogICAgfQoKICAgIEZvbGRHcmFkZSgiVGhlIGNvcnJlY3QgdmFsdWUgaXMgYXNzaWduZWQgdG8gIiArICJjb3PPtCIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KGNvc8+0LCAwLjM0OTY2MTk2NjIpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 17",description="p.419."
+========================================================================================================
+
+[P?Reactive]
+
+%mathpiper,name="Problem 17",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9SZWFjdGl2ZV0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTM/MTAgOj0gRm9ybXVsYShQP1AgPT0gST9JXjIgKiBSP1IsIAogICAgICAgICAgICAgICAgTGFiZWw6IjEzLjEwIiwgCiAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKCiAgICB9CgogICAgUD9BUFAgOj0gNC4yODk4NTc0ODAyfs68VkE7CiAgICBjb3PPtCA6PSAwLjM0OTY2MTk2NjI7CiAgICAKICAgIFA/UmVhY3RpdmUgOj0gUD9BUFAgKiBjb3PPtDsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".280",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?Reactive])
+{
+    Formulas()
+    {                       
+        f13?10 := Formula(P?P == I?I^2 * R?R,
+                         Label: "13.10",
+                         Page: "402");
+    }
+    
+    
+    P?APP := 4.2898574798~μVA;
+    
+    cosϴ := 0.3496619662;
+    
+    P?Reactive := P?APP * cosϴ;
+}
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".280",preserve="false"
+      Result: 1.500000001~μVA
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?Reactive: 1.500000001~μVA
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                        \
+      | ( 13.10 ) /           2       \ ( No Transformation )  |
+      |           \ P?P == I?I  * R?R /                        |
+      \                                                        /
+      
+      === STEPS (CODE VIEW) ===
+       1: (13.10) P?P == I?I^2*R?R
+       2: P?APP := 4.2898574798~μVA ==> 4.2898574798~μVA
+       3: cosϴ := 0.3496619662 ==> 0.3496619662
+       4: P?Reactive := P?APP*cosϴ ==> 1.500000001~μVA
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 17",base_six_four="true"
+
+CnsKICAgIEZvbGRHcmFkZSgiTWF0aFBpcGVyIHZlcnNpb24gPj0gLjI4MCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgU3RyaW5nVG9OdW1iZXIoVmVyc2lvbigpKSA+PT8gLjI4MDsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goIFBpcGVUb1N0cmluZygpIEV2YWwoP2ZvbGRDb2RlWzFdKSwgIiIsICdFeGNlcHRpb24pICE9PyAnRXhjZXB0aW9uOwogICAgfQoKICAgIEZvbGRHcmFkZSgiRm9ybXVsYSAoMTMuMTApIGlzIHVzZWQiLCAxLCBGYWxzZSkKICAgIHsKICAgICAgICAoUG9zaXRpb25zUGF0dGVybjIoVW5pdHNTdHJpcCg/Zm9sZENvZGUpLCAoICcoUD9QXyA9PSAoKEk/SV9eMikqUj9SXykpKSkgIT0/IFtdKTsKICAgIH0KCiAgICBGb2xkR3JhZGUoIlRoZSBjb3JyZWN0IHZhbHVlIGlzIGFzc2lnbmVkIHRvICIgKyAiUD9SZWFjdGl2ZSIsIDEsIEZhbHNlKQogICAgewogICAgICAgIFVuaXRzRXF1YWw/KFA/UmVhY3RpdmUsIDEuNTAwMDAwMDAxfs68VkEpOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+%/group
+
+
+

@@ -1,0 +1,1140 @@
+v.01
+
+chapter_12_odd_practice_problems.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get ϴ.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+- How to obtain the right side of an equation.
+In> exp := 8 == 9
+Result: 8 == 9
+
+In> exp
+Result: 8 == 9
+
+In> In> exp[2]
+Result: 9
+
+- The results of "Arc" procedures need to be
+specified as being in radians: ArcTan(V?L/V?R)~rad
+
+
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".277",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0",base_six_four="true"
+
+CkxvY2FsU3ltYm9scyhmb2xkUmVzdWx0KQp7CiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgCiAgICBGb2xkR3JhZGUoIlRoZSBjb2RlIGRvZXMgbm90IHRocm93IGFuIGV4Y2VwdGlvbiB3aGVuIGV2YWx1YXRlZCIsIDEsIFRydWUpCiAgICB7CiAgICAgICAgRXhjZXB0aW9uQ2F0Y2goZm9sZFJlc3VsdCA6PSBFdmFsKD9mb2xkQ29kZVsxXSksICIiLCAnRXhjZXB0aW9uKSAhPT8gJ0V4Y2VwdGlvbjsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIAogICAgRm9sZEdyYWRlKCJNYXRoUGlwZXIgdmVyc2lvbiA+PSAuMjc3IiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmdUb051bWJlcihWZXJzaW9uKCkpID49PyAuMjc3OwogICAgfQogICAgCiAgICAvLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tICAgIAogICAgCgogICAgRm9sZEdyYWRlKCJUaGUgY29kZSBkb2VzIG5vdCBwcm9kdWNlIHNpZGUgZWZmZWN0IG91dHB1dCIsIDEsIEZhbHNlKQogICAgTG9jYWxTeW1ib2xzKHByb2NlZHVyZU5hbWVzKQogICAgewogICAgICAgIHByb2NlZHVyZU5hbWVzIDo9IFByb2NlZHVyZUxpc3QoP2ZvbGRDb2RlKTsKICAgICAgICAKICAgICAgICAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIkVjaG8iKSAmPyAhPyBDb250YWlucz8ocHJvY2VkdXJlTmFtZXMsIldyaXRlIikgJj8gIT8gQ29udGFpbnM/KHByb2NlZHVyZU5hbWVzLCJVbnBhcnNlTWF0aDJEIik7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdmaXJzdE5hbWUnIGEgc3RyaW5nIHRoYXQgaXMgbm90ICd4eHgnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBTdHJpbmc/KGZvbGRSZXN1bHRbImZpcnN0TmFtZSJdKSAmPyBmb2xkUmVzdWx0WyJmaXJzdE5hbWUiXSAhPT8gInh4eCI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdsYXN0TmFtZScgaXMgYSBzdHJpbmcgdGhhdCBpcyBub3QgJ3l5eSciLCAxLCBUcnVlKQogICAgewogICAgICAgIFN0cmluZz8oZm9sZFJlc3VsdFsibGFzdE5hbWUiXSkgJj8gZm9sZFJlc3VsdFsibGFzdE5hbWUiXSAhPT8gInl5eSI7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICAKICAgIEZvbGRHcmFkZSgiVGhlIHZhcmlhYmxlICdzc3VJRE51bWJlcicgaXMgbm90ICcwMDAwMDAnIiwgMSwgVHJ1ZSkKICAgIHsKICAgICAgICBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAiMDAwMDAwIiAmPyBmb2xkUmVzdWx0WyJzc3VJRE51bWJlciJdICE9PyAwOwogICAgfQp9Cgo=
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".277",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .277. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="Practice problem 1 p.383."
+========================================================================================================
+
+
+%mathpiper,name="Problem 1",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbRj9GXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8zIDo9IEZvcm11bGEoRj9GfkYgPT0gQz9DfkMgLyBWP1Z+ViwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMyIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzY3IiwKICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiAiQSBzaW1wbGUgcHJvcG9ydGlvbmFsIHJlbGF0aW9uc2hpcC4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDIwMH5tQzsKICAgIAogICAgVj9WIDo9IDI1flY7CiAgICAKICAgIEY/RiA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzMsIM68Rik7CiAgICAKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 1",subtype="problem",unassign_all="true"
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([F?F])
+{
+    Formulas()
+    {
+        f12?3 := Formula(F?F~F == C?C~C / V?V~V,
+                         Label: "12.3",
+                         PageNumber: "367",
+                         Description: "A simple proportional relationship.");
+    }
+
+    C?C := 200~mC;
+    
+    V?V := 25~V;
+    
+    F?F := EvaluateFormula(f12?3, μF);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".277",preserve="false"
+      Result: 8000~μF
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      F?F: 8000~μF
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                \
+      | ( 12.3 ) /        C?C \ ( No Transformation )  |
+      |          | F?F == --- |                        |
+      |          \        V?V /                        |
+      \                                                /
+      
+      === STEPS (CODE VIEW) ===
+      12.3 F?F == C?C/V?V
+      C?C := 200~mC ==> 200~mC
+      V?V := 25~V ==> 25~V
+      F?F := EvaluateFormula(f12?3,μF) ==> 8000~μF
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="Practice problem 3 p.383."
+========================================================================================================
+
+
+%mathpiper,name="Problem 3",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8zIDo9IEZvcm11bGEoRj9GfkYgPT0gQz9DfkMgLyBWP1Z+ViwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMyIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjogIjM2NyIsCiAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIkEgc2ltcGxlIHByb3BvcnRpb25hbCByZWxhdGlvbnNoaXAuIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J0M/Qyk7CiAgICB9CiAgICAKICAgIEY/RiA6PSAyMn7OvEY7CiAgICAKICAgIFY/ViA6PSAxOH5WOwogICAgCiAgICBDP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8zLCDOvEMpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 3",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([C?C])
+{
+    Formulas()
+    {
+        f12?3 := Formula(F?F~F == C?C~C / V?V~V,
+                         Label: "12.3",
+                         PageNumber: "367",
+                         Description: "A simple proportional relationship.",
+                         Subject:'C?C);
+    }
+    
+    F?F := 22~μF;
+    
+    V?V := 18~V;
+    
+    C?C := EvaluateFormula(f12?3, μC);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".277",preserve="false"
+      Result: 396~μC
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      C?C: 396~μC
+      
+      === FORMULAS (2D VIEW) ===
+      /                                               \
+      | ( 12.3 ) /        C?C \ ( C?C == F?F * V?V )  |
+      |          | F?F == --- |                       |
+      |          \        V?V /                       |
+      \                                               /
+      
+      === STEPS (CODE VIEW) ===
+      12.3 F?F == C?C/V?V ==> C?C == F?F*V?V
+      F?F := 22~μF ==> 22~μF
+      V?V := 18~V ==> 18~V
+      C?C := EvaluateFormula(f12?3,μC) ==> 396~μC
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 5",description="Practice problem 5 p.383."
+========================================================================================================
+
+
+%mathpiper,name="Problem 5",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj81IDo9IEZvcm11bGEoQz9UfkYgPT0gMS8oMS9DPzF+RiArIDEvQz8yfkYgKyAxL0M/M35GKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzY5IiwKICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJUb3RhbCBjYXBhY2l0YW5jZSBvZiBjYXBhY2l0b3JzIGNvbm5lY3RlZCBpbiBzZXJpZXMuIik7CiAgICB9CiAgICAKICAgIEM/MSA6PSAxMH7OvEY7CiAgICBDPzIgOj0gMjIwfs68RjsKICAgIEM/MyA6PSAzMzB+zrxGOwogICAgQz9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/NSwgzrxGKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 5",subtype="problem",unassign_all="true"
+
+ProblemSolution([C?T])
+{
+    Formulas()
+    {
+        f12?5 := Formula(C?T~F == 1/(1/C?1~F + 1/C?2~F + 1/C?3~F),
+                         Label: "12.5",
+                         PageNumber: "369",
+                         Description: "Total capacitance of capacitors connected in series.");
+    }
+    C?1 := 10 ~μF;
+    C?2 := 220 ~μF;
+    C?3 := 330 ~μF;
+    C?T := EvaluateFormula(f12?5, μF);
+
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".277",preserve="false"
+      Result: 9.295774654~μF
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      C?T: 9.295774654~μF
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                            \
+      | ( 12.5 ) /               1        \ ( No Transformation )  |
+      |          | C?T == --------------- |                        |
+      |          |         1     1     1  |                        |
+      |          |        --- + --- + --- |                        |
+      |          \        C?1   C?2   C?3 /                        |
+      \                                                            /
+      
+      === STEPS (CODE VIEW) ===
+      12.5 C?T == 1/(1/C?1 + 1/C?2 + 1/C?3)
+      C?1 := 10~μF ==> 10~μF
+      C?2 := 220~μF ==> 220~μF
+      C?3 := 330~μF ==> 330~μF
+      C?T := EvaluateFormula(f12?5,μF) ==> 9.295774654~μF
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 7",description="Practice problem 7 p.384."
+========================================================================================================
+
+
+%mathpiper,name="Problem 7",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj81IDo9IEZvcm11bGEoQz9UfkYgPT0gMS8oMS9DPzF+RiArIDEvQz8yfkYpLCAKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi41IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlTnVtYmVyOiIzNjkiLAogICAgICAgICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlRvdGFsIGNhcGFjaXRhbmNlIG9mIGNhcGFjaXRvcnMgY29ubmVjdGVkIGluIHNlcmllcy4iKTsKICAgIH0KICAgIAogICAgQz8xIDo9IDEwMH5uRjsKICAgIAogICAgQz8yIDo9IDMzMH5wRjsKCiAgICBDP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj81LCBwRik7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 7",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([C?T])
+{
+    Formulas()
+    {
+        f12?5 := Formula(C?T~F == 1/(1/C?1~F + 1/C?2~F),
+                         Label: "12.5",
+                         PageNumber: "369",
+                         Description: "Total capacitance of capacitors connected in series.");
+    }
+    C?1 := 100 ~nF;
+    C?2 := 330 ~pF;
+    C?T := EvaluateFormula(f12?5, pF);
+
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".277",preserve="false"
+      Result: 328.9145819~pF
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      C?T: 328.9145819~pF
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                      \
+      | ( 12.5 ) /            1     \ ( No Transformation )  |
+      |          | C?T == --------- |                        |
+      |          |         1     1  |                        |
+      |          |        --- + --- |                        |
+      |          \        C?1   C?2 /                        |
+      \                                                      /
+      
+      === STEPS (CODE VIEW) ===
+      12.5 C?T == 1/(1/C?1 + 1/C?2)
+      C?1 := 100~nF ==> 100~nF
+      C?2 := 330~pF ==> 330~pF
+      C?T := EvaluateFormula(f12?5,pF) ==> 328.9145819~pF
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9",description="Practice problem 9 p.384."
+========================================================================================================
+
+
+%mathpiper,name="Problem 9",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj84IDo9IEZvcm11bGEoQz9UfkYgPT0gQz8xfkYgKyBDPzJ+RiwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDogIjEyLjgiLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6IjM3MCIsCiAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIlRvdGFsIGNhcGFjaXRhbmNlIG9mIGNhcGFjaXRvcnMgY29ubmVjdGVkIGluIHBhcmFsbGVsLiIpOwogICAgfQogICAgCiAgICBDPzEgOj0gMjJ+zrxGOwogICAgCiAgICBDPzIgOj0gMzN+zrxGOwoKICAgIEM/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzgsIM68Rik7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 9",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([C?T])
+{
+    Formulas()
+    {
+        f12?8 := Formula(C?T~F == C?1~F + C?2~F,
+                         Label: "12.8",
+                         PageNumber: "370",
+                         Description: "Total capacitance of capacitors connected in parallel.");
+    }
+    C?1 := 22 ~μF;
+    
+    C?2 := 33 ~μF;
+    
+    C?T := EvaluateFormula(f12?8, μF);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".277",preserve="false"
+      Result: 55~μF
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      C?T: 55~μF
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                      \
+      | ( 12.8 ) ( C?T == C?1 + C?2 ) ( No Transformation )  |
+      \                                                      /
+      
+      === STEPS (CODE VIEW) ===
+      12.8 C?T == C?1 + C?2
+      C?1 := 22~μF ==> 22~μF
+      C?2 := 33~μF ==> 33~μF
+      C?T := EvaluateFormula(f12?8,μF) ==> 55~μF
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11",description="Practice problem 11 p.384."
+========================================================================================================
+
+
+%mathpiper,name="Problem 11",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSBWP3Jtc35WIC8gST9ybXN+QSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIlJlYWN0YW5jZSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgVj9ybXMgOj0gOH5WOwogICAgCiAgICBJP3JtcyA6PSAxMDB+zrxBOwoKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzEwLCBrzqkpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 11",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([X?C])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C~Ω == V?rms~C / I?rms~A,
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+    }
+    
+    V?rms := 8~V;
+    
+    I?rms := 100~μA;
+    
+    X?C := EvaluateFormula(f12?10, kΩ);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".277",preserve="false"
+      Result: 80~kΩ
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?C: 80~kΩ
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                   \
+      | ( 12.10 ) /        V?rms \ ( No Transformation )  |
+      |           | X?C == ----- |                        |
+      |           \        I?rms /                        |
+      \                                                   /
+      
+      === STEPS (CODE VIEW) ===
+      12.10 X?C == V?rms/I?rms
+      V?rms := 8~V ==> 8~V
+      I?rms := 100~μA ==> 100~μA
+      X?C := EvaluateFormula(f12?10,kΩ) ==> 80~kΩ
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 13",description="Practice problem 13 p.384."
+========================================================================================================
+
+
+%mathpiper,name="Problem 13",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSAxLygyKlBpKmY/Zn5IeipDP0N+RiksIAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi4xMCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJSZWFjdGFuY2Ugb2YgYSBjYXBhY2l0b3IuIik7CiAgICB9CiAgICAKICAgIGY/ZiA6PSAxNTB+SHo7CiAgICAKICAgIEM/QyA6PSAuMX7OvEY7CgogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTAsIGvOqSk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 13",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([X?C])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C~Ω == 1 / (2 * Pi * f?f~Hz * C?C~F),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+    }
+    
+    f?f := 150~Hz;
+    
+    C?C := .1~μF;
+    
+    X?C := EvaluateFormula(f12?10, kΩ);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".277",preserve="false"
+      Result: 10.61032954~kΩ
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?C: 10.61032954~kΩ
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 12.10 ) /                1          \ ( No Transformation )  |
+      |           | X?C == ------------------ |                        |
+      |           \        2 * Pi * f?f * C?C /                        |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+      12.10 X?C == 1/(2*Pi*f?f*C?C)
+      f?f := 150~Hz ==> 150~Hz
+      C?C := .1~μF ==> .1~μF
+      X?C := EvaluateFormula(f12?10,kΩ) ==> 10.61032954~kΩ
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="Practice problem 15 p.385."
+========================================================================================================
+
+
+%mathpiper,name="Problem 15",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DLCBJP0NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IigzLjEpIiwgCiAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6Ijc4IiwgCiAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJPaG0ncyBsYXciLAogICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9DLCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWD9DXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTAiLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlTnVtYmVyOiAiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgfQogICAgICAgCiAgICBmP2YgOj0gMX5rSHo7CiAgICAKICAgIEM/QyA6PSAuMDF+zrxGOwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwga86pKTsKICAgIAogICAgVj9TIDo9IDEwflY7CiAgICAKICAgIEk/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MSwgzrxBKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([X?C, I?C])
+{
+    Formulas()
+    {
+        f3?1 := Formula(I?OL~A == V?OL~V / R?OL~Ω,
+                         Label: "3.1",
+                         PageNumber: "78",
+                         Description: "Ohm's law",
+                         Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);
+                         
+        f12?10 := Formula(X?C~Ω == 1 / (2 * Pi * f?f~Hz * C?C~F),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+    }
+
+    f?f := 1~kHz;
+    
+    C?C := .01~μF;
+    
+    X?C := EvaluateFormula(f12?10,kΩ);
+    
+    V?S := 10~V;
+    
+    I?C := EvaluateFormula(f3?1, μA);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".277",preserve="false"
+      Result: 628.3185307~μA
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?C: 15.91549431~kΩ
+      I?C: 628.3185307~μA
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 3.1 )   /         V?OL \              /        V?S \         |
+      |           | I?OL == ---- |              | I?C == --- |         |
+      |           \         R?OL /              \        X?C /         |
+      |                                                                |
+      | ( 12.10 ) /                1          \ ( No Transformation )  |
+      |           | X?C == ------------------ |                        |
+      |           \        2 * Pi * f?f * C?C /                        |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+      3.1 I?OL == V?OL/R?OL ==> I?C == V?S/X?C
+      12.10 X?C == 1/(2*Pi*f?f*C?C)
+      f?f := 1~kHz ==> 1~kHz
+      C?C := .01~μF ==> .01~μF
+      X?C := EvaluateFormula(f12?10,kΩ) ==> 15.91549431~kΩ
+      V?S := 10~V ==> 10~V
+      I?C := EvaluateFormula(f3?1,μA) ==> 628.3185307~μA
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 17",description="Practice problem 17 p.385."
+========================================================================================================
+
+
+%mathpiper,name="Problem 17",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DVF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICB0b3RhbFBhcmFsbGVsUmVhY3RhbmNlIDo9IEZvcm11bGEoWD9DVH7OqSA9PSAoWD9DMX7OqSAqIFg/QzJ+zqkpIC8gKFg/QzF+zqkgKyBYP0Myfs6pKSwgCiAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6IjM3OCIsIAogICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUGFyYWxsZWwgY2FwYWNpdGF0aXZlIHJlYWN0YW5jZS4iKTsKICAgIH0KICAgICAgIAogICAgWD9DMSA6PSAxNzB+zqk7CiAgICAKICAgIFg/QzIgOj0gMjgwfs6pOwogICAgCiAgICBYP0NUIDo9IEV2YWx1YXRlRm9ybXVsYSh0b3RhbFBhcmFsbGVsUmVhY3RhbmNlLCDOqSk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ~ϴ
+*/
+ProblemSolution([X?CT])
+{
+    Formulas()
+    {
+        totalParallelReactance := Formula(X?CT~Ω == (X?C1~Ω * X?C2~Ω) / (X?C1~Ω + X?C2~Ω),
+                         PageNumber: "378",
+                         Description: "Parallel capacitor reactance.");
+    }
+    X?C1 := 170~Ω;
+    
+    X?C2 := 280~Ω;
+    
+    X?CT := EvaluateFormula(totalParallelReactance, Ω);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".277",preserve="false"
+      Result: 105.7777778~Ω
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?CT: 105.7777778~Ω
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                             \
+      | ( Page 378 ) /         X?C1 * X?C2 \ ( No Transformation )  |
+      |              | X?CT == ----------- |                        |
+      |              \         X?C1 + X?C2 /                        |
+      \                                                             /
+      
+      === STEPS (CODE VIEW) ===
+      X?C1 := 170~Ω ==> 170~Ω
+      X?C2 := 280~Ω ==> 280~Ω
+      X?CT := EvaluateFormula(totalParallelReactance,Ω) ==> 105.7777778~Ω
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 21",description="Practice problem 21 p.385."
+========================================================================================================
+
+
+%mathpiper,name="Problem 17",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUT9RXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSAxLygyKlBpKmY/Zn5IeipDP0N+RiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTAiLCAKICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjogIjM3NyIsCiAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJSZWFjdGFuY2Ugb2YgYSBjYXBhY2l0b3IuIik7CiAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMj8xMyA6PSBGb3JtdWxhKFE/USA6PSBSP0QvWD9DLAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTMiLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUXVhbGl0eSBRIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgfQogICAgCiAgICBmP2YgOj0gNjB+SHo7CiAgICAKICAgIEM/QyA6PSAuMDF+zrxGOwogICAgCiAgICBSP0QgOj0gNTAwfk3OqTsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTAsIM6pKTsKICAgIAogICAgUT9RIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTMpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([Q?Q])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C~Ω == 1 / (2 * Pi * f?f~Hz * C?C~F),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+        f12?13 := Formula(Q?Q == R?D/ X?C,
+                         Label: "12.13",
+                         Description: "Quality Q of a capacitor.");
+    }
+    
+    f?f := 60~Hz;
+    
+    C?C := .01~μF;
+    
+    R?D := 500~MΩ;
+    
+    X?C := EvaluateFormula(f12?10, Ω);
+    
+    Q?Q := EvaluateFormula(f12?13);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".277",preserve="false"
+      Result: 1884.955593
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Q?Q: 1884.955593
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 12.10 ) /                1          \ ( No Transformation )  |
+      |           | X?C == ------------------ |                        |
+      |           \        2 * Pi * f?f * C?C /                        |
+      |                                                                |
+      | ( 12.13 ) /        R?D \                ( No Transformation )  |
+      |           | Q?Q == --- |                                       |
+      |           \        X?C /                                       |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+      12.10 X?C == 1/(2*Pi*f?f*C?C)
+      12.13 Q?Q == R?D/X?C
+      f?f := 60~Hz ==> 60~Hz
+      C?C := .01~μF ==> .01~μF
+      R?D := 500~MΩ ==> 500~MΩ
+      X?C := EvaluateFormula(f12?10,Ω) ==> 265258.2384~Ω
+      Q?Q := EvaluateFormula(f12?13) ==> 1884.955593
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 23",description="Practice problem 23 p.386."
+========================================================================================================
+
+
+%mathpiper,name="Problem 23",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUT8xLFE/Ml0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTMgOj0gRm9ybXVsYShRP1EgOj0gUj9EL1g/QywKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEzIiwKICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlF1YWxpdHkgUSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDEwMH5wRjsKICAgIAogICAgUj9EIDo9IDEwMDB+Tc6pOwogICAgCiAgICAvLyBGcmVxdWVuY3kgMS4KICAgIAogICAgZj9mIDo9IDN+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7CiAgICAKICAgIC8vIEZyZXF1ZW5jeSAyLgogICAgCiAgICBmP2YgOj0gMzB+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion=".277",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 23",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+μ Ω ∠ ϴ
+*/
+ProblemSolution([Q?1, Q?2])
+{
+    Formulas()
+    {
+        f12?10 := Formula(X?C~Ω == 1 / (2 * Pi * f?f~Hz * C?C~F),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor.");
+        f12?13 := Formula(Q?Q == R?D/ X?C,
+                         Label: "12.13",
+                         Description: "Quality Q of a capacitor.");
+                         
+//-------------------Formulas ending with a are used for the second frequency-------------------
+
+        f12?10a := Formula(X?C~Ω == 1 / (2 * Pi * f?f~Hz * C?C~F),
+                         Label: "12.10",
+                         PageNumber: "377",
+                         Description: "Reactance of a capacitor with second frequency.",
+                         Substitutions:['f?f <- 'f?f2, 'X?C <- 'X?C2]);
+        f12?13a := Formula(Q?Q == R?D/ X?C,
+                         Label: "12.13",
+                         Description: "Quality Q of a capacitor with new reactance.",
+                         Substitutions:['Q?Q <- 'Q?2, 'X?C <- 'X?C2]);
+    }
+    C?C := 100~pF;
+    
+    R?D := 1000~MΩ;
+    
+    f?f := 3~kHz;
+    
+    X?C := EvaluateFormula(f12?10, Ω);
+    
+    Q?1 := EvaluateFormula(f12?13);
+    
+    f?f2 := 30~kHz;
+    
+    X?C2 := EvaluateFormula(f12?10a, Ω);
+    
+    Q?2 := EvaluateFormula(f12?13a);
+}
+/*
+Answer:
+1. 8000 μF
+3. 396 μC
+5. 9.3 μF
+7. 329 pF
+9. 55 μF
+11. 80 kΩ
+13. 10.6 kΩ
+15. 15.9 kΩ
+17. 106 Ω
+19. It cannot be used.
+21. 1887
+23. 1.88 kΩ - 18.8 kΩ
+*/
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion=".277",preserve="false"
+      Result: 18849.55592
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Q?1: 1884.955592
+      Q?2: 18849.55592
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                          \
+      | ( 12.10 ) /                1          \ ( No Transformation )            |
+      |           | X?C == ------------------ |                                  |
+      |           \        2 * Pi * f?f * C?C /                                  |
+      |                                                                          |
+      | ( 12.13 ) /        R?D \                ( No Transformation )            |
+      |           | Q?Q == --- |                                                 |
+      |           \        X?C /                                                 |
+      |                                                                          |
+      | ( 12.10 ) /                1          \ /                  1          \  |
+      |           | X?C == ------------------ | | X?C2 == ------------------- |  |
+      |           \        2 * Pi * f?f * C?C / \         2 * Pi * f?f2 * C?C /  |
+      |                                                                          |
+      | ( 12.13 ) /        R?D \                /        R?D  \                  |
+      |           | Q?Q == --- |                | Q?2 == ---- |                  |
+      |           \        X?C /                \        X?C2 /                  |
+      \                                                                          /
+      
+      === STEPS (CODE VIEW) ===
+      12.10 X?C == 1/(2*Pi*f?f*C?C)
+      12.13 Q?Q == R?D/X?C
+      12.10 X?C == 1/(2*Pi*f?f*C?C) ==> X?C2 == 1/(2*Pi*f?f2*C?C)
+      12.13 Q?Q == R?D/X?C ==> Q?2 == R?D/X?C2
+      C?C := 100~pF ==> 100~pF
+      R?D := 1000~MΩ ==> 1000~MΩ
+      f?f := 3~kHz ==> 3~kHz
+      X?C := EvaluateFormula(f12?10,Ω) ==> 530516.477~Ω
+      Q?1 := EvaluateFormula(f12?13) ==> 1884.955592
+      f?f2 := 30~kHz ==> 30~kHz
+      X?C2 := EvaluateFormula(f12?10a,Ω) ==> 53051.6477~Ω
+      Q?2 := EvaluateFormula(f12?13a) ==> 18849.55592
+      
+      
+.   %/output
+
+
+%/group

@@ -1,0 +1,965 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="1",timestamp="2019-02-12 03:19:12.155",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="2",timestamp="2019-02-12 03:19:16.264",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:05:27.609",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[1] :=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:05:28.188",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[1] :=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:05:28.739",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[1] :=
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="3",timestamp="2019-02-14 04:08:35.586",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="4",timestamp="2019-02-14 04:12:11.034",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:14:33.974",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?V
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:17:39.296",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:03.392",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+//Equation 10.2¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L,¶¶steps[3] :=¶¶steps[4] :=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:14.468",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+'(V?L == L?L * (di/dt));
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:20.697",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Substitute('L?L,
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:27.844",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+'(V?L == L?L * (di/dt));
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="5",timestamp="2019-02-14 04:18:30.533",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:35.083",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Substitute('L?L,
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:36.705",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Substitute('L?L,
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:18:43.451",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+'(V?L == L?L * (di/dt));
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="6",timestamp="2019-02-14 04:19:01.621",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:48.862",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:50.422",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:51.109",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:51.741",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:52.423",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:53.153",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:19:53.786",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[2] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:20:06.626",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps[9] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:20:20.082",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:20:31.453",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:20:44.655",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:20:58.201",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:06.179",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:11.077",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:16.58",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:24.082",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:31.514",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:35.704",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:41.182",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:21:51.752",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 2.)¶¶¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶steps[1] := ;¶¶steps[2] := ; ¶¶steps[3] := ; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:22:55.688",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:25:06.612",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:37:20.572",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:37:20.921",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+*/
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:37:38.339",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+range of Q values for the inductor.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:38:17.194",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:38:53.092",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:38:56.787",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:38:59.918",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:03.017",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:07.442",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:13.57",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:18.382",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:24.536",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:29.368",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:35.498",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:38.962",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:43.311",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:39:46.508",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Answer:¶¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:41:23.21",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?V
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:41:37.273",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+mV
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:41:54.232",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?H
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:42:08.381",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?H
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:42:23.19",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+mH
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:43:07.117",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?H
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:44:10.898",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+%sql,title="",input=""¶¶%/sql¶¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:48:24.104",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+Substitute('L?L, 300~?H) steps[1];
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:48:49.524",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+500 mA/s
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:50:49.274",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+?V
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="7",timestamp="2019-02-14 04:51:02.164",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:51:02.613",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 241 starting at index 0.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:51:26.514",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps := ZeroVector(10);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="8",timestamp="2019-02-14 04:51:29.021",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:51:29.43",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 242 starting at index 0.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="9",timestamp="2019-02-14 04:52:35.217",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶¶steps := [0,0,0,0,0,0];¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:52:35.625",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 242 starting at index 0.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:52:58.082",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+                  
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:52:59.415",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 242 starting at index 0.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:01.754",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+ZeroVector(10)
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:06.166",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+steps := ZeroVector(10);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="10",timestamp="2019-02-14 04:53:18.101",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:18.515",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Expected a ***( ) )*** close parentheses token for sub-expression but found ***( steps )*** instead.  Error on or before line 240 starting at index 44.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:22.145",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 242 starting at index 0.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:22.319",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------¶¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:23.03",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+¶¶//Equation 10.2
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:23.296",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="11",timestamp="2019-02-14 04:53:26.942",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+¶/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,subtype="paste",timestamp="2019-02-14 04:53:27.345",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion=".269"
+    %error,parent="Problem 1",mpversion=".269",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( steps )***. Error on or before line 242 starting at index 0.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="12",timestamp="2019-02-14 04:53:30.473",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".269"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="1",timestamp="2019-02-14 05:04:22.832",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶¶*/-------------------------------------------------------------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="2",timestamp="2019-02-14 05:04:44.579",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="3",timestamp="2019-02-14 05:07:42.827",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="4",timestamp="2019-02-14 05:08:02.092",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s) steps[2]);¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="5",timestamp="2019-02-14 05:08:08.047",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶*/-------------------------------------------------------------------------------------
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="6",timestamp="2019-02-14 05:08:56.62",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="7",timestamp="2019-02-14 05:17:33.719",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="8",timestamp="2019-02-14 05:17:43.857",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="9",timestamp="2019-02-14 05:19:56.426",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="10",timestamp="2019-02-14 05:20:06.516",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="11",timestamp="2019-02-14 05:20:08.891",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="12",timestamp="2019-02-14 05:20:30.717",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="13",timestamp="2019-02-14 05:20:55.258",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 100~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="14",timestamp="2019-02-14 05:22:35.446",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDQqUGkqMTBeLTYpfihXYi8oQSptKSkpKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0E/QSwgJygoUGkgKiBkXjIpLzQpKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ2QsIC4yfmNtKSBzdGVwc1szXTsKCnN0ZXBzWzVdIDo9IFN1YnN0aXR1dGUoJ04/dCwgMTIwKSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ2w/bCwgMi41fmNtKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSAjIM68SCk7CgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="15",timestamp="2019-02-14 21:56:43.523",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l);¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute() steps[]; ¶¶steps[5] := Substitute() steps[]; ¶¶steps[6] := Substitute() steps[]; ¶¶steps[7] := Substitute() steps[]; ¶¶steps[8] := Substitute() steps[]; ¶¶steps[9] := Substitute() steps[]; ¶¶steps[10] := Substitute() steps[]; ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="16",timestamp="2019-02-14 21:59:10.877",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l));¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute() steps[]; ¶¶steps[5] := Substitute() steps[]; ¶¶steps[6] := Substitute() steps[]; ¶¶steps[7] := Substitute() steps[]; ¶¶steps[8] := Substitute() steps[]; ¶¶steps[9] := Substitute() steps[]; ¶¶steps[10] := Substitute() steps[]; ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="17",timestamp="2019-02-14 21:59:35.026",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l));¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶/*¶steps[4] := Substitute() steps[]; ¶¶steps[5] := Substitute() steps[]; ¶¶steps[6] := Substitute() steps[]; ¶¶steps[7] := Substitute() steps[]; ¶¶steps[8] := Substitute() steps[]; ¶¶steps[9] := Substitute() steps[]; ¶¶steps[10] := Substitute() steps[]; ¶*/¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="18",timestamp="2019-02-14 22:03:03.769",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l));¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="19",timestamp="2019-02-14 22:06:54.65",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l));¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="20",timestamp="2019-02-14 22:07:01.8",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ (l?l));¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="21",timestamp="2019-02-14 22:07:31.962",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDQqUGkqMTBeLTYpfihXYi8oQSptKSkpKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0E/QSwgJygoUGkgKiBkXjIpLzQpKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ2QsIC4yfmNtKSBzdGVwc1szXTsKCnN0ZXBzWzVdIDo9IFN1YnN0aXR1dGUoJ04/dCwgMTIwKSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ2w/bCwgMi41fmNtKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSAjIM68SCk7CgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="22",timestamp="2019-02-14 22:08:38.356",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi*d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="23",timestamp="2019-02-14 22:10:09.93",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶steps[2] := Substitute('?m, '((4*Pi*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="24",timestamp="2019-02-14 22:14:07.164",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((4*Pi*10^-7)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="25",timestamp="2019-02-14 22:14:46.991",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 100~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="26",timestamp="2019-02-14 22:14:54.465",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="27",timestamp="2019-02-14 22:14:58.685",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 100~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 4",sequence="28",timestamp="2019-02-14 22:15:44.286",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDI1MCoxMF4tNil+KFdiLyhBKm0pKSkpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnQT9BLCAnKChQaSAqIGReMikvNCkpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gU3Vic3RpdHV0ZSgnZCwgLjJ+Y20pIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gU3Vic3RpdHV0ZSgnTj90LCAxMjApIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnbD9sLCAyLjV+Y20pIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNl0pICMgzrxIKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="29",timestamp="2019-02-14 22:17:19.401",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 4.)¶Calculate the value of the iron-core inductor shown in Figure 10.43a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((4*Pi*10^-7)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .3~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 80) steps[4]; ¶¶steps[6] := Substitute('l?l, 4.8~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶452?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 4",sequence="30",timestamp="2019-02-14 22:17:50.991",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDI1MCoxMF4tNil+KFdiLyhBKm0pKSkpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnQT9BLCAnKChQaSAqIGReMikvNCkpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gU3Vic3RpdHV0ZSgnZCwgLjJ+Y20pIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gU3Vic3RpdHV0ZSgnTj90LCAxMjApIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnbD9sLCAyLjV+Y20pIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNl0pICMgzrxIKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="31",timestamp="2019-02-14 22:20:16.806",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 4.)¶Calculate the value of the iron-core inductor shown in Figure 10.43a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((250**10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶452?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="32",timestamp="2019-02-14 22:20:22.3",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 4.)¶Calculate the value of the iron-core inductor shown in Figure 10.43a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((250*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶452?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 5",sequence="33",timestamp="2019-02-14 22:21:02.879",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gTD8xICsgTD8yICsgTD8zKTsgLy8gKDEwLjUpCgpzdGVwc1syXSA6PSBTdWJzdGl0dXRlKCdMPzEsICcxMDB+bUgpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnTD8yLCAnMy4zfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ0w/MywgNDcwfs68SCkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBOTShFdmFsKFN1YnN0aXR1dGUoJyg9PSksICcoOj0pKSBzdGVwc1s0XSkgIyBtSCk7CgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="34",timestamp="2019-02-14 22:26:20.343",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 5.)¶The coils shown in Figure 10.44a have a value of k = 0. Calculate the total inductance¶in the circuit. p. 320¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.5¶¶steps[1] := '(L?T == L?1 + L?2 + L?3);¶¶steps[2] := Substitute('L?1, '100~mH); ¶¶steps[3] := Substitute('L?2, '3.3~mH); ¶¶steps[4] := Substitute('L?3, '470~?H); ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mH); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶104mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="35",timestamp="2019-02-14 22:26:53.583",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 5.)¶The coils shown in Figure 10.44a have a value of k = 0. Calculate the total inductance¶in the circuit. p. 320¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.5¶¶steps[1] := '(L?T == L?1 + L?2 + L?3);¶¶steps[2] := Substitute('L?1, '100~mH) steps[1]; ¶¶steps[3] := Substitute('L?2, '3.3~mH) steps[2]; ¶¶steps[4] := Substitute('L?3, '470~?H) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mH); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶104mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 6",sequence="36",timestamp="2019-02-14 22:28:38.509",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gTD8xICsgTD8yICsgMiAqIEw/bSk7IC8vICgxMC4xMWEpCgpzdGVwc1syXSA6PSAnKEw/bSA9PSBrKlNxcnQoTD8xKkw/MikpOyAvLyAoMTAuOSkKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0w/bSwgc3RlcHNbMl1bMl0pIHN0ZXBzWzFdOwoKc3RlcHNbNF0gOj0gU3Vic3RpdHV0ZSgnaywgLjI1KSBzdGVwc1szXTsKCnN0ZXBzWzVdIDo9IFN1YnN0aXR1dGUoJ0w/MSwgMTB+bUgpIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnTD8yLCA0NzB+zrxIKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSAjIG1IKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="37",timestamp="2019-02-14 22:38:46.182",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 6.)¶The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming¶that the coefficient of coupling between the two is 0.25, calculate the total ¶inductance in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.11a¶¶steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);¶¶//Equation 10.9¶¶steps[2] := '(L?m == k*Sqrt(L?1*L?2)); ¶¶steps[3] := Substitute('L?m, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('k, .25) steps[3]; ¶¶steps[5] := Substitute('L?1, 10~mH) steps[4]; ¶¶steps[6] := Substitute('L?2, 470~?H) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶11.6mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 7",sequence="38",timestamp="2019-02-14 22:41:58.65",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP00gPT0gaypTcXJ0KEw/MSpMPzIpKTsgLy8gKDEwLjkpCgpzdGVwc1syXSA6PSAnKEw/VCA9PSBMPzEgKyBMPzIgKyAyICogTD9NKTsgLy8gMTAuMTEuCgpzdGVwc1szXSA6PSBTb2x2ZShzdGVwc1syXSwgJ0w/TSlbMV07CgpzdGVwc1s0XSA6PSBTdWJzdGl0dXRlKCdMP00sIHN0ZXBzWzNdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzVdIDo9IFNvbHZlKHN0ZXBzWzRdLCAnaylbMV07CgpzdGVwc1s2XSA6PSBTdWJzdGl0dXRlKCdMP1QsIDM1LjR+bUgpIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gU3Vic3RpdHV0ZSgnTD8xLCAyMi44fm1IKSBzdGVwc1s2XTsKCnN0ZXBzWzhdIDo9IFN1YnN0aXR1dGUoJ0w/MiwgMTF+bUgpIHN0ZXBzWzddOwoKc3RlcHNbOV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbOF0pKTsKCi8vICovCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 7",sequence="39",timestamp="2019-02-14 22:46:43.016",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP00gPT0gaypTcXJ0KEw/MSpMPzIpKTsgLy8gKDEwLjkpCgpzdGVwc1syXSA6PSAnKEw/VCA9PSBMPzEgKyBMPzIgKyAyICogTD9NKTsgLy8gMTAuMTEuCgpzdGVwc1szXSA6PSBTb2x2ZShzdGVwc1syXSwgJ0w/TSlbMV07CgpzdGVwc1s0XSA6PSBTdWJzdGl0dXRlKCdMP00sIHN0ZXBzWzNdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzVdIDo9IFNvbHZlKHN0ZXBzWzRdLCAnaylbMV07CgpzdGVwc1s2XSA6PSBTdWJzdGl0dXRlKCdMP1QsIDM1LjR+bUgpIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gU3Vic3RpdHV0ZSgnTD8xLCAyMi44fm1IKSBzdGVwc1s2XTsKCnN0ZXBzWzhdIDo9IFN1YnN0aXR1dGUoJ0w/MiwgMTF+bUgpIHN0ZXBzWzddOwoKc3RlcHNbOV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbOF0pKTsKCi8vICovCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="40",timestamp="2019-02-14 22:49:49.468",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 7.)¶Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(9);¶¶//Equation 10.9¶¶steps[1] := '(L?M == k*Sqrt(L?l*L?2));¶¶//Equation 10.11¶¶steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); ¶¶steps[3] := Solve(steps[2], 'L?M)[1]; ¶¶steps[4] := Substitute('L?M, steps[3][2]) steps[1]; ¶¶steps[5] := Solve(steps[4], 'k)[1]; ¶¶steps[6] := Substitute('L?T, 35.4~mH) steps[5]; ¶¶steps[7] := Substitute('L?1, 22.8~mH) steps[6]; ¶¶steps[8] := Substitute('L?2, 11~mH) steps[7]; ¶¶steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));; ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶0.051¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="41",timestamp="2019-02-14 22:50:18.675",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 7.)¶Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(9);¶¶//Equation 10.9¶¶steps[1] := '(L?M == k*Sqrt(L?1*L?2));¶¶//Equation 10.11¶¶steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); ¶¶steps[3] := Solve(steps[2], 'L?M)[1]; ¶¶steps[4] := Substitute('L?M, steps[3][2]) steps[1]; ¶¶steps[5] := Solve(steps[4], 'k)[1]; ¶¶steps[6] := Substitute('L?T, 35.4~mH) steps[5]; ¶¶steps[7] := Substitute('L?1, 22.8~mH) steps[6]; ¶¶steps[8] := Substitute('L?2, 11~mH) steps[7]; ¶¶steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));; ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶0.051¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="42",timestamp="2019-02-14 22:50:21.724",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 7.)¶Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(9);¶¶//Equation 10.9¶¶steps[1] := '(L?M == k*Sqrt(L?1*L?2));¶¶//Equation 10.11¶¶steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); ¶¶steps[3] := Solve(steps[2], 'L?M)[1]; ¶¶steps[4] := Substitute('L?M, steps[3][2]) steps[1]; ¶¶steps[5] := Solve(steps[4], 'k)[1]; ¶¶steps[6] := Substitute('L?T, 35.4~mH) steps[5]; ¶¶steps[7] := Substitute('L?1, 22.8~mH) steps[6]; ¶¶steps[8] := Substitute('L?2, 11~mH) steps[7]; ¶¶steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶0.051¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 8",sequence="43",timestamp="2019-02-14 22:51:19.924",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gMS8oIDEvKEw/MSkgKyAxLyhMPzIpICsgIDEvKEw/MykgKSApOyAvLyAoMTAuNykKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ0w/MSwgMX5tSCkgc3RlcHNbMV07CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdMPzIsIDIuMn5tSCkgc3RlcHNbMl07CgpzdGVwc1s0XSA6PSBTdWJzdGl0dXRlKCdMPzMsIDEwMH7OvEgpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMgzrxIKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="44",timestamp="2019-02-14 22:56:33.278",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 8.)¶The circuit shown in Figure 10.47a has a value of k = 0. Calculate the total inductance¶in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.7¶//inductance in parallel is solved similarly to resistance¶¶steps[1] := '(L?T == 1/((1/ (L?1)) + (1/ (L?2)) + (1/ (L?3)));¶¶steps[2] := Substitute('L?1, 1~mH) steps[1]; ¶¶steps[3] := Substitute('L?2, 2.2~mH) steps[2]; ¶¶steps[4] := Substitute('L?3, 100~?H) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # ?H ); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶87.3?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="45",timestamp="2019-02-14 22:57:00.257",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 8.)¶The circuit shown in Figure 10.47a has a value of k = 0. Calculate the total inductance¶in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.7¶//inductance in parallel is solved similarly to resistance¶¶steps[1] := '(L?T == 1/((1/ (L?1)) + (1/ (L?2)) + (1/ (L?3))));¶¶steps[2] := Substitute('L?1, 1~mH) steps[1]; ¶¶steps[3] := Substitute('L?2, 2.2~mH) steps[2]; ¶¶steps[4] := Substitute('L?3, 100~?H) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # ?H ); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶87.3?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 9",sequence="46",timestamp="2019-02-14 22:59:47.159",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gMiAqIFBpICogZj9mICogTD9MICk7IC8vICgxMC4xNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ2Y/ZiwgMTgwfkh6KSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0w/TCwgNDgwfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzNdKSAjIM6pKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="47",timestamp="2019-02-14 23:09:42.686",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 9.)¶Calculate the value of X?L for the circuit shown in Figure 10.48a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.14¶steps[1] := '(X?L == 2 * Pi * f?f * L?L);¶¶steps[2] := Substitute('f?f, 180~Hz) steps[1]; ¶¶steps[3] := Substitute(', 180~Hz) steps[1]; ¶¶steps[4] := ; ¶¶steps[5] := ; ¶¶steps[6] := ; ¶¶steps[7] := ; ¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶532?¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="48",timestamp="2019-02-14 23:12:09.852",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 9.)¶Calculate the value of X?L for the circuit shown in Figure 10.48a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.14¶steps[1] := '(X?L == 2 * Pi * f?f * L?L);¶¶steps[2] := Substitute('f?f, 180~Hz) steps[1]; ¶¶steps[3] := Substitute('L?L, 480~mH) steps[2]; ¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps[3]) # ?); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶532?¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 10",sequence="49",timestamp="2019-02-14 23:29:57.961",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gVj9ybXMgLyBJP3JtcyApOyAvLyAoMTAuMTMpCgpzdGVwc1syXSA6PSBTb2x2ZShzdGVwc1sxXSwgJ0k/cm1zKVsxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ1Y/cm1zLCAxMn5WKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1g/TCwgMn5rzqkpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMgbUEpOwoKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 10",sequence="50",timestamp="2019-02-14 23:43:38.742",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 10.)¶The following table lists values for an inductive circuit.¶Complete the table.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.13¶steps[1] := '(X?L == V?rms / I?rms);¶¶steps[2] := Solve(steps[1], 'I?rms)[1]; ¶¶steps[3] := Substitute('V?rms, 12~V) steps[2]; ¶¶steps[4] := Substitute('X?L, 2~k?) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mA); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶6mA just part A.¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 11",sequence="51",timestamp="2019-02-14 23:46:05.116",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gKDIgKiBQaSAqIGY/ZiAqIEw/TCkpOyAvLyAoMTAuMTQpCgpzdGVwc1syXSA6PSBTb2x2ZShzdGVwc1sxXSwgJ2Y/ZilbMV07CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdMP0wsIDEwfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1g/TCwgMX5rzqkpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMga0h6KTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="52",timestamp="2019-02-14 23:49:41.42",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 11.)¶Determine the operating frequency of the circuit shown in Figure 10.49a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.14¶¶steps[1] := '(X?L == (2 * Pi * f?f * L?L));¶¶steps[2] := Solve(steps[1], 'f?f)[1]; ¶¶steps[3] := Substitute('L?L, 10~mH) steps[2]; ¶¶steps[4] := Substitute('X?L, 1~k?) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # kHz); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶15.9kHz¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 12",sequence="53",timestamp="2019-02-14 23:50:26.864",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09IFY/UyAvIEk/SSk7CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgOH7OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdWP1MsIDEyflYpIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnST9JLCAxMH5tQSkgc3RlcHNbNV07CgpzdGVwc1s3XSA6PSBOTShFdmFsKFN1YnN0aXR1dGUoJyg9PSksICcoOj0pKSBzdGVwc1s2XSkpOwoKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="54",timestamp="2019-02-14 23:50:48.711",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 11.)¶Determine the operating frequency of the circuit shown in Figure 10.49a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.14¶¶steps[1] := '(X?L == (2 * Pi * f?f * L?L));¶¶steps[2] := Solve(steps[1], 'f?f)[1]; ¶¶steps[3] := Substitute('L?L, 10~mH) steps[2]; ¶¶steps[4] := Substitute('X?L, 1~k?) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # kHz); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶15.9kHz¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 12",sequence="55",timestamp="2019-02-14 23:56:03.716",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 12.)¶Calculate the Q of the inductor shown in Figure 10.50a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶steps[2] := '(X?L == V?S / I?I); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 8~?) steps[3]; ¶¶steps[5] := Substitute('V?S, 12~V) steps[4]; ¶¶steps[6] := Substitute('I?I, 10~mA) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 12",sequence="56",timestamp="2019-02-14 23:56:39.602",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 12.)¶Calculate the Q of the inductor shown in Figure 10.50a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶steps[2] := '(X?L == V?S / I?I); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 8~?) steps[3]; ¶¶steps[5] := Substitute('V?S, 12~V) steps[4]; ¶¶steps[6] := Substitute('I?I, 10~mA) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 13",sequence="57",timestamp="2019-02-14 23:57:42.239",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09ICgyICogUGkgKiBmP2YgKiBMP0wgIyDOqSkpOyAvLyAoMTAuMTQpCgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgNH7OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdmP2YsIDF+a0h6KSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ0w/TCwgMzMwfm1IKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSk7CgoKVGFibGVGb3JtKHN0ZXBzKTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="58",timestamp="2019-02-15 00:20:06.048",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 13.)¶Calculate the Q of the inductor shown in Figure 10.51a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L == (2 * Pi * f?f * L?L # ?); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[3]; ¶¶steps[4] := Substitute('R?W, 4~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 1~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 330~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶518¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 12",sequence="59",timestamp="2019-02-15 00:20:58.358",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 12.)¶Calculate the Q of the inductor shown in Figure 10.50a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶steps[2] := '(X?L == V?S / I?I); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 8~?) steps[3]; ¶¶steps[5] := Substitute('V?S, 12~V) steps[4]; ¶¶steps[6] := Substitute('I?I, 10~mA) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="60",timestamp="2019-02-15 00:21:41.222",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 13.)¶Calculate the Q of the inductor shown in Figure 10.51a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L == (2 * Pi * f?f * L?L # ?); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[3]; ¶¶steps[4] := Substitute('R?W, 4~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 1~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 330~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶518¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="61",timestamp="2019-02-15 00:22:10.337",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 13.)¶Calculate the Q of the inductor shown in Figure 10.51a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L == (2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[3]; ¶¶steps[4] := Substitute('R?W, 4~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 1~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 330~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶518¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 13",sequence="62",timestamp="2019-02-15 00:22:30.432",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09ICgyICogUGkgKiBmP2YgKiBMP0wgIyDOqSkpOyAvLyAoMTAuMTQpCgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgNH7OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdmP2YsIDF+a0h6KSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ0w/TCwgMzMwfm1IKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSk7CgoKVGFibGVGb3JtKHN0ZXBzKTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="63",timestamp="2019-02-15 00:22:45.007",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 13.)¶Calculate the Q of the inductor shown in Figure 10.51a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L == (2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 4~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 1~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 330~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶518¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="64",timestamp="2019-02-15 00:24:09.591",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 13.)¶Calculate the Q of the inductor shown in Figure 10.51a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L == (2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 4~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 1~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 330~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶518¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="65",timestamp="2019-02-15 00:24:35.701",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 1.)¶¶Calculate the value of V?L developed across a 300 ?H coil when the instantaneous ¶rate of change in the component current equals 500 mA/s.¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 300~?H) steps[1];¶¶steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # ?V);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150?V¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="66",timestamp="2019-02-15 00:24:44.526",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 2.)¶Calculate the value of V?L developed across a 100 mH coil when the instantaneous ¶rate of change in the component current equals 25 mA/s.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.2¶¶steps[1] := '(V?L == L?L * (di/dt));¶¶steps[2] := Substitute('L?L, 100~mH) steps[1];¶¶steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.5mV¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="67",timestamp="2019-02-15 00:24:53.186",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 3.)¶Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.4¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((4*Pi*10^-7)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶2.27?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="68",timestamp="2019-02-15 00:25:22.713",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 4.)¶Calculate the value of the iron-core inductor shown in Figure 10.43a on p. 320.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶steps[1] := '(L?L == (?m * N?t^2 * A?A)/ l?l);¶¶//There seems to be an error in the book. ¶//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the¶//only issue I could find in the problem to fix the answer from 22.74?H to 2.27?H¶¶steps[2] := Substitute('?m, '((250*10^-6)~(Wb/(A*m)))) steps[1]; ¶¶steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; ¶¶steps[4] := Substitute('d, .2~cm) steps[3]; ¶¶steps[5] := Substitute('N?t, 120) steps[4]; ¶¶steps[6] := Substitute('l?l, 2.5~cm) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # ?H);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶452?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="69",timestamp="2019-02-15 00:25:34.185",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 5.)¶The coils shown in Figure 10.44a have a value of k = 0. Calculate the total inductance¶in the circuit. p. 320¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.5¶¶steps[1] := '(L?T == L?1 + L?2 + L?3);¶¶steps[2] := Substitute('L?1, '100~mH) steps[1]; ¶¶steps[3] := Substitute('L?2, '3.3~mH) steps[2]; ¶¶steps[4] := Substitute('L?3, '470~?H) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mH); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶104mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="70",timestamp="2019-02-15 00:25:45.509",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 6.)¶The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming¶that the coefficient of coupling between the two is 0.25, calculate the total ¶inductance in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.11a¶¶steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);¶¶//Equation 10.9¶¶steps[2] := '(L?m == k*Sqrt(L?1*L?2)); ¶¶steps[3] := Substitute('L?m, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('k, .25) steps[3]; ¶¶steps[5] := Substitute('L?1, 10~mH) steps[4]; ¶¶steps[6] := Substitute('L?2, 470~?H) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶11.6mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="71",timestamp="2019-02-15 00:26:04.241",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 6.)¶The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming¶that the coefficient of coupling between the two is 0.25, calculate the total ¶inductance in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.11a¶¶steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);¶¶//Equation 10.9¶¶steps[2] := '(L?m == k*Sqrt(L?1*L?2)); ¶¶steps[3] := Substitute('L?m, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('k, .25) steps[3]; ¶¶steps[5] := Substitute('L?1, 10~mH) steps[4]; ¶¶steps[6] := Substitute('L?2, 470~?H) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶11.6mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="72",timestamp="2019-02-15 00:26:25.758",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 6.)¶The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming¶that the coefficient of coupling between the two is 0.25, calculate the total ¶inductance in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.11a¶¶steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);¶¶//Equation 10.9¶¶steps[2] := '(L?m == k*Sqrt(L?1*L?2)); ¶¶steps[3] := Substitute('L?m, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('k, .25) steps[3]; ¶¶steps[5] := Substitute('L?1, 10~mH) steps[4]; ¶¶steps[6] := Substitute('L?2, 470~?H) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶11.6mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="73",timestamp="2019-02-15 00:26:45.003",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 6.)¶The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming¶that the coefficient of coupling between the two is 0.25, calculate the total ¶inductance in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.11a¶¶steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);¶¶//Equation 10.9¶¶steps[2] := '(L?m == k*Sqrt(L?1*L?2)); ¶¶steps[3] := Substitute('L?m, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('k, .25) steps[3]; ¶¶steps[5] := Substitute('L?1, 10~mH) steps[4]; ¶¶steps[6] := Substitute('L?2, 470~?H) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶11.6mH¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="74",timestamp="2019-02-15 00:26:53.857",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 7.)¶Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(9);¶¶//Equation 10.9¶¶steps[1] := '(L?M == k*Sqrt(L?1*L?2));¶¶//Equation 10.11¶¶steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); ¶¶steps[3] := Solve(steps[2], 'L?M)[1]; ¶¶steps[4] := Substitute('L?M, steps[3][2]) steps[1]; ¶¶steps[5] := Solve(steps[4], 'k)[1]; ¶¶steps[6] := Substitute('L?T, 35.4~mH) steps[5]; ¶¶steps[7] := Substitute('L?1, 22.8~mH) steps[6]; ¶¶steps[8] := Substitute('L?2, 11~mH) steps[7]; ¶¶steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶0.051¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="75",timestamp="2019-02-15 00:27:01.342",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 7.)¶Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(9);¶¶//Equation 10.9¶¶steps[1] := '(L?M == k*Sqrt(L?1*L?2));¶¶//Equation 10.11¶¶steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); ¶¶steps[3] := Solve(steps[2], 'L?M)[1]; ¶¶steps[4] := Substitute('L?M, steps[3][2]) steps[1]; ¶¶steps[5] := Solve(steps[4], 'k)[1]; ¶¶steps[6] := Substitute('L?T, 35.4~mH) steps[5]; ¶¶steps[7] := Substitute('L?1, 22.8~mH) steps[6]; ¶¶steps[8] := Substitute('L?2, 11~mH) steps[7]; ¶¶steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));¶¶TableForm(steps);¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶0.051¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="76",timestamp="2019-02-15 00:27:08.285",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 8.)¶The circuit shown in Figure 10.47a has a value of k = 0. Calculate the total inductance¶in the circuit.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.7¶//inductance in parallel is solved similarly to resistance¶¶steps[1] := '(L?T == 1/((1/ (L?1)) + (1/ (L?2)) + (1/ (L?3))));¶¶steps[2] := Substitute('L?1, 1~mH) steps[1]; ¶¶steps[3] := Substitute('L?2, 2.2~mH) steps[2]; ¶¶steps[4] := Substitute('L?3, 100~?H) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # ?H ); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶87.3?H¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="77",timestamp="2019-02-15 00:27:45.26",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 9.)¶Calculate the value of X?L for the circuit shown in Figure 10.48a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(4);¶¶//Equation 10.14¶¶steps[1] := '(X?L == 2 * Pi * f?f * L?L);¶¶steps[2] := Substitute('f?f, 180~Hz) steps[1]; ¶¶steps[3] := Substitute('L?L, 480~mH) steps[2]; ¶¶steps[4] := NM(Eval(Substitute('(==), '(:=)) steps[3]) # ?); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶532?¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 10",sequence="78",timestamp="2019-02-15 00:27:52.875",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 10.)¶The following table lists values for an inductive circuit.¶Complete the table.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.13¶¶steps[1] := '(X?L == V?rms / I?rms);¶¶steps[2] := Solve(steps[1], 'I?rms)[1]; ¶¶steps[3] := Substitute('V?rms, 12~V) steps[2]; ¶¶steps[4] := Substitute('X?L, 2~k?) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mA); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶6mA just part A.¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="79",timestamp="2019-02-15 00:28:40.642",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 11.)¶Determine the operating frequency of the circuit shown in Figure 10.49a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(5);¶¶//Equation 10.14¶¶steps[1] := '(X?L == (2 * Pi * f?f * L?L));¶¶steps[2] := Solve(steps[1], 'f?f)[1]; ¶¶steps[3] := Substitute('L?L, 10~mH) steps[2]; ¶¶steps[4] := Substitute('X?L, 1~k?) steps[3]; ¶¶steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # kHz); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶15.9kHz¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 12",sequence="80",timestamp="2019-02-15 00:28:51.801",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 12.)¶Calculate the Q of the inductor shown in Figure 10.50a.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(7);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶steps[2] := '(X?L == V?S / I?I); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 8~?) steps[3]; ¶¶steps[5] := Substitute('V?S, 12~V) steps[4]; ¶¶steps[6] := Substitute('I?I, 10~mA) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶150¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 15",sequence="81",timestamp="2019-02-15 00:29:56.533",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09ICgyICogUGkgKiBmP2YgKiBMP0wgIyDOqSkpOyAvLyAoMTAuMTQpCgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgM37OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdmP2YsIDEwfmtIeikgc3RlcHNbNF07CgpzdGVwc1s2XSA6PSBTdWJzdGl0dXRlKCdMP0wsIDEwfm1IKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSk7CgoKVGFibGVGb3JtKHN0ZXBzKTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="82",timestamp="2019-02-15 00:34:05.719",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := ; ¶¶steps[9] := ; ¶¶steps[10] := ; ¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="83",timestamp="2019-02-15 00:34:21.724",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="84",timestamp="2019-02-15 00:35:57.9",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶Echo("The Lower range is:");¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="85",timestamp="2019-02-15 00:36:42.77",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is:"NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="86",timestamp="2019-02-15 00:37:07.275",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is:" NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="87",timestamp="2019-02-15 00:38:02.294",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is:" + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="88",timestamp="2019-02-15 00:38:24.357",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="89",timestamp="2019-02-15 00:39:16.435",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 50~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="90",timestamp="2019-02-15 00:39:22.221",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="91",timestamp="2019-02-15 00:43:40.691",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶steps[8] := Substitute('f?f, 50~kHz) steps[4]; ¶¶steps[9] := Echo("The Upper range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="92",timestamp="2019-02-15 00:44:32.805",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶steps[8] := Substitute('10~kHz, 50~kHz) steps[4]; ¶¶steps[9] := Echo("The Upper range is: " + NM(Eval(Substitute('(==), '(:=)) steps[8])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="93",timestamp="2019-02-15 00:44:39.783",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶steps[8] := Substitute('f?f, 50~kHz) steps[4]; ¶¶steps[9] := Echo("The Upper range is: " + NM(Eval(Substitute('(==), '(:=)) steps[8])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="94",timestamp="2019-02-15 00:45:08.226",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 50~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Upper range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="95",timestamp="2019-02-15 00:46:17.384",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := Echo("The Lower range is: " + NM(Eval(Substitute('(==), '(:=)) steps[6])));¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps[8] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[9] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[10] := Substitute('X?L, steps[9][2]) steps[8]; ¶¶steps[11] := Substitute('R?W, 3~?) steps[10]; ¶¶steps[12] := Substitute('f?f, 50~kHz) steps[11]; ¶¶steps[13] := Substitute('L?L, 10~mH) steps[12]; ¶¶steps[14] := Echo("The Upper range is: " + NM(Eval(Substitute('(==), '(:=)) steps[13])));¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="96",timestamp="2019-02-15 00:47:54.978",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="97",timestamp="2019-02-15 00:48:16.879",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶//steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="98",timestamp="2019-02-15 00:48:51.746",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="99",timestamp="2019-02-15 00:49:08.731",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Write("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="100",timestamp="2019-02-15 00:49:26.272",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(14);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="101",timestamp="2019-02-15 00:51:27.388",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(16);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps[9] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[10] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[11] := Substitute('X?L, steps[10][2]) steps[10]; ¶¶steps[12] := Substitute('R?W, 3~?) steps[11]; ¶¶steps[13] := Substitute('f?f, 50~kHz) steps[12]; ¶¶steps[14] := Substitute('L?L, 10~mH) steps[13]; ¶¶steps[15] := NM(Eval(Substitute('(==), '(:=)) steps[14]));¶¶steps[16] := Echo("The Upper range is: " + steps[15]);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="102",timestamp="2019-02-15 00:52:51.536",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(16);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps[9] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[10] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[11] := Substitute('X?L, steps[10][2]) steps[10]; ¶¶steps[12] := Substitute('R?W, 3~?) steps[11]; ¶¶steps[13] := Substitute('f?f, 50~kHz) steps[12]; ¶¶steps[14] := Substitute('L?L, 10~mH) steps[13]; ¶¶steps[15] := NM(Eval(Substitute('(==), '(:=)) steps[14]));¶¶steps[16] := Echo("The Upper range is: " + steps[15]);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="103",timestamp="2019-02-15 00:53:18.713",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(16);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps[9] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[10] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[11] := Substitute('X?L, steps[10][2]) steps[10]; ¶¶steps[12] := Substitute('R?W, 3~?) steps[11]; ¶¶steps[13] := Substitute('f?f, 50~kHz) steps[12]; ¶¶steps[14] := Substitute('L?L, 10~mH) steps[13]; ¶¶steps[15] := NM(Eval(Substitute('(==), '(:=)) steps[14]));¶¶steps[16] := Echo("The Upper range is: " + steps[15]);¶¶UnparseMath2D(TableForm(steps));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="104",timestamp="2019-02-15 00:54:07.769",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(16);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps2[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps2[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps2[3] := Substitute('X?L, steps[2][2]) steps2[1]; ¶¶steps2[4] := Substitute('R?W, 3~?) steps2[3]; ¶¶steps2[5] := Substitute('f?f, 50~kHz) steps2[4]; ¶¶steps2[6] := Substitute('L?L, 10~mH) steps2[5]; ¶¶steps2[7] := NM(Eval(Substitute('(==), '(:=)) steps2[6]));¶¶steps2[8] := Echo("The Upper range is: " + steps2[7]);¶¶UnparseMath2D(TableForm(steps));¶UnparseMath2D(TableForm(steps2));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="105",timestamp="2019-02-15 00:54:29.883",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(10);¶steps2 := ZeroVector(10);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps2[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps2[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps2[3] := Substitute('X?L, steps[2][2]) steps2[1]; ¶¶steps2[4] := Substitute('R?W, 3~?) steps2[3]; ¶¶steps2[5] := Substitute('f?f, 50~kHz) steps2[4]; ¶¶steps2[6] := Substitute('L?L, 10~mH) steps2[5]; ¶¶steps2[7] := NM(Eval(Substitute('(==), '(:=)) steps2[6]));¶¶steps2[8] := Echo("The Upper range is: " + steps2[7]);¶¶UnparseMath2D(TableForm(steps));¶¶UnparseMath2D(TableForm(steps2));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="106",timestamp="2019-02-15 00:55:21.873",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".271"
+¶/*¶-------------------------------------------------------------------------------------¶Problem 15.)¶The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.¶Calculate the range of Q values for the inductor.¶¶-------------------------------------------------------------------------------------¶*/¶¶//----------------------------Solving for Lower Range--------------------------------¶¶steps := ZeroVector(8);¶¶steps2 := ZeroVector(8);¶¶//Equation 10.24¶¶steps[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps[3] := Substitute('X?L, steps[2][2]) steps[1]; ¶¶steps[4] := Substitute('R?W, 3~?) steps[3]; ¶¶steps[5] := Substitute('f?f, 10~kHz) steps[4]; ¶¶steps[6] := Substitute('L?L, 10~mH) steps[5]; ¶¶steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));¶¶steps[8] := Echo("The Lower range is: " + steps[7]);¶¶//----------------------------Now Solving for Upper Range----------------------------¶¶//Equation 10.24¶¶steps2[1] := '(Q?Q == X?L / R?W);¶¶//Equation 10.14¶¶steps2[2] := '(X?L ==(2 * Pi * f?f * L?L # ?)); ¶¶steps2[3] := Substitute('X?L, steps[2][2]) steps2[1]; ¶¶steps2[4] := Substitute('R?W, 3~?) steps2[3]; ¶¶steps2[5] := Substitute('f?f, 50~kHz) steps2[4]; ¶¶steps2[6] := Substitute('L?L, 10~mH) steps2[5]; ¶¶steps2[7] := NM(Eval(Substitute('(==), '(:=)) steps2[6]));¶¶steps2[8] := Echo("The Upper range is: " + steps2[7]);¶¶UnparseMath2D(TableForm(steps));¶¶UnparseMath2D(TableForm(steps2));¶¶/*¶-------------------------------------------------------------------------------------¶Answer:¶209 to 1047¶¶-------------------------------------------------------------------------------------¶*/
+
+%/info
+

@@ -1,0 +1,420 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="11",timestamp="2019-04-22 13:47:42.422",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="12",timestamp="2019-04-22 13:47:56.963",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="13",timestamp="2019-04-22 13:50:46.636",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQlc/Qlc/YSwgZj8wP2EsIEJXP0JXP2IsIGY/MD9iLCBCVz9CVz9jLCBmPzA/Y10pCnsKICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gNX5rSHo7CiAgICAgICAgZj9DMiA6PSA4OH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YSA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2EgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Mik7CiAgICAKLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBVbmFzc2lnbihmPzAsIGY/QzEsIGY/QzIsIEJXP0JXKTsKICAgIAogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDY0MH5IejsKICAgICAgICBmP0MyIDo9IDEuOH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YiA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2IgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Miwga0h6KTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gMjgwfmtIejsKICAgICAgICBmP0MyIDo9IDEuNH5NSHo7ICAgIAogICAgfQoKICAgIEJXP0JXP2MgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIGY/MD9jIDo9IGY/MCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="14",timestamp="2019-04-22 14:03:27.44",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQlc/Qlc/YSwgZj8wP2EsIEJXP0JXP2IsIGY/MD9iLCBCVz9CVz9jLCBmPzA/Y10pCnsKICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gNX5rSHo7CiAgICAgICAgZj9DMiA6PSA4OH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YSA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2EgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Mik7CiAgICAKLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBVbmFzc2lnbihmPzAsIGY/QzEsIGY/QzIsIEJXP0JXKTsKICAgIAogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDY0MH5IejsKICAgICAgICBmP0MyIDo9IDEuOH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YiA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2IgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Miwga0h6KTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gMjgwfmtIejsKICAgICAgICBmP0MyIDo9IDEuNH5NSHo7ICAgIAogICAgfQoKICAgIEJXP0JXP2MgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIGY/MD9jIDo9IGY/MCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="15",timestamp="2019-04-22 14:04:36.828",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+ProblemSolution([BW?BW?a, BW?BW?b, f???b, BW?BW?c, f???c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    }¶    ¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 88~kHz;¶    }¶    ¶    BW?BW?a := BW?BW := EvaluateFormula(f15?1);¶    f???a := f?? := EvaluateFormula(f15?2);¶//------------------------------------------------------------------¶    Unassign(f??, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 640~Hz;¶        f?C2 := 1.8~kHz;¶    }  ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);   ¶    f???b := f?? := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f??,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 280~kHz;¶        f?C2 := 1.4~MHz;¶    }¶    ¶    BW?BW?c := BW?BW := EvaluateFormula(f15?1);¶    f???c := f?? := EvaluateFormula(f15?2);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="16",timestamp="2019-04-22 14:05:37.965",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+ProblemSolution([BW?BW?a, BW?BW?b, f???b, BW?BW?c, f???c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    }¶    ¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 88~kHz;¶    }¶    ¶    BW?BW?a := BW?BW := EvaluateFormula(f15?1);¶    f???a := f?0 := EvaluateFormula(f15?2);¶//------------------------------------------------------------------¶    Unassign(f??, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 640~Hz;¶        f?C2 := 1.8~kHz;¶    }  ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);   ¶    f???b := f?? := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f??,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 280~kHz;¶        f?C2 := 1.4~MHz;¶    }¶    ¶    BW?BW?c := BW?BW := EvaluateFormula(f15?1);¶    f???c := f?? := EvaluateFormula(f15?2);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="17",timestamp="2019-04-22 14:06:02.508",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+ProblemSolution([BW?BW?a, BW?BW?b, f???b, BW?BW?c, f???c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶¶    f15?2 := Formula(f??~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    }¶    ¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 88~kHz;¶    }¶    ¶    BW?BW?a := BW?BW := EvaluateFormula(f15?1);¶    f???a := f?? := EvaluateFormula(f15?2);¶//------------------------------------------------------------------¶    Unassign(f??, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 640~Hz;¶        f?C2 := 1.8~kHz;¶    }  ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);   ¶    f???b := f?? := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f??,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 280~kHz;¶        f?C2 := 1.4~MHz;¶    }¶    ¶    BW?BW?c := BW?BW := EvaluateFormula(f15?1);¶    f???c := f?? := EvaluateFormula(f15?2);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="18",timestamp="2019-04-22 14:06:18.899",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="19",timestamp="2019-04-22 14:07:02.847",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+ProblemSolution([BW?BW?a, BW?BW?b, f?0?b, BW?BW?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    }¶    ¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 88~kHz;¶    }¶    ¶    BW?BW?a := BW?BW := EvaluateFormula(f15?1);¶    f?0?a := f?0 := EvaluateFormula(f15?2);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 640~Hz;¶        f?C2 := 1.8~kHz;¶    }  ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);   ¶    f?0?b := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 280~kHz;¶        f?C2 := 1.4~MHz;¶    }¶    ¶    BW?BW?c := BW?BW := EvaluateFormula(f15?1);¶    f?0?c := f?0 := EvaluateFormula(f15?2);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="20",timestamp="2019-04-22 14:07:11.282",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="21",timestamp="2019-04-22 14:08:01.648",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="22",timestamp="2019-04-22 14:17:57.89",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="23",timestamp="2019-04-22 14:18:13.552",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="24",timestamp="2019-04-22 14:19:41.275",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="25",timestamp="2019-04-22 14:20:25.528",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="26",timestamp="2019-04-22 14:20:38.546",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="27",timestamp="2019-04-22 14:21:48.448",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="28",timestamp="2019-04-22 14:41:13.661",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="29",timestamp="2019-04-22 14:41:27.689",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2b, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="30",timestamp="2019-04-22 14:41:44.866",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?C2 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="31",timestamp="2019-04-22 14:42:13.867",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])¶{¶    Formulas()¶    {¶    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");¶    ¶    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);¶    ¶    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);¶    ¶    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");¶    ¶    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);¶    ¶    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);¶    }¶    ¶    Givens()¶    {¶        f?C1 := 800~Hz;¶        BW?BW := 12~kHz;¶    }¶    ¶    f?C2?a := f?C2 := EvaluateFormula(f15?1a);¶    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);¶//------------------------------------------------------------------¶    Unassign(f?0, f?C1, f?C2, BW?BW);¶    Givens()¶    {¶        f?C1 := 5~kHz;¶        f?0 := 10~kHz;¶    }  ¶    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   ¶    BW?BW?b := BW?BW := EvaluateFormula(f15?1);¶//------------------------------------------------------------------¶    Unassign(f?0,f?C1,f?C2, BW?BW);¶    Givens()¶    {¶        BW?BW := 198~kHz;¶        f?C2 := 200~kHz;¶    }¶    ¶    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);¶    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 3",sequence="32",timestamp="2019-04-22 14:42:25.587",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 5",sequence="33",timestamp="2019-04-22 14:42:41.514",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT9RXSkKewogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBCVz9CVyA6PSAxOH5rSHo7CiAgICAgICAgZj8wIDo9IDEyMH5rSHo7ICAgIAogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzYgOj0gRm9ybXVsYShRP1F+MSA9PSBmPzB+SHovQlc/QlcsIExhYmVsOiIxNS4zIiwgUGFnZToiNDY1Iik7CiAgICB9CiAgICAKICAgIFE/USA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzYpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="34",timestamp="2019-04-22 14:52:42.843",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+¶ProblemSolution([Q?Q])¶{¶    Givens()¶    {¶        BW?BW := 18~kHz;¶        f?0 := 120~kHz;¶    }¶    ¶    Formulas()¶    {¶        f15?6 := Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465");¶    }¶    ¶    Q?Q := EvaluateFormula(f15?6);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 5",sequence="35",timestamp="2019-04-22 14:52:47.777",username="Brumo",hostname="DESKTOP-UQTPVC7",hostaddresses="146.85.212.23;192.168.56.1",mpversion="283"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="1",timestamp="2019-04-25 18:39:46.905",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="2",timestamp="2019-04-25 18:42:58.881",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 3",sequence="3",timestamp="2019-04-25 18:43:07.737",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 5",sequence="4",timestamp="2019-04-25 18:43:13.142",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 7",sequence="5",timestamp="2019-04-25 18:43:32.638",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQlc/QlddKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA1Mn5rSHo7CiAgICAgICAgUT9RIDo9IDYuOH4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT82IDo9IEZvcm11bGEoUT9RfjEgPT0gZj8wfkh6L0JXP0JXLCBMYWJlbDoiMTUuMyIsIFBhZ2U6IjQ2NSIsIFN1YmplY3Q6J0JXP0JXKTsKICAgIH0KICAgIAogICAgQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT82KTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="6",timestamp="2019-04-25 18:50:57.734",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([BW?BW])¶{¶    Givens()¶    {¶        f?0 := 52~kHz;¶        Q?Q := 6.8~1;¶    }¶    ¶    Formulas()¶    {¶        f15?6 :=Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465");¶    }¶    ¶    BW?BW := EvaluateFormula(f15?6);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="7",timestamp="2019-04-25 18:51:50.033",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([BW?BW])¶{¶    Givens()¶    {¶        f?0 := 52~kHz;¶        Q?Q := 6.8~1;¶    }¶    ¶    Formulas()¶    {¶        f15?6 :=Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465", Subject: 'BW?BW);¶    }¶    ¶    BW?BW := EvaluateFormula(f15?6);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 7",sequence="8",timestamp="2019-04-25 18:51:52.979",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 9",sequence="9",timestamp="2019-04-25 18:52:03.667",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA4OH5rSHo7CiAgICAgICAgUT9RIDo9IDEuMn4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1EpKV4yKSwgTGFiZWw6IjE1LjExIiwgUGFnZToiNDY4Iik7CiAgICB9CiAgICAKICAgIGY/YXZlIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTEpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="10",timestamp="2019-04-25 18:55:26.092",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶        ¶¶ProblemSolution([f?ave])¶{¶    Givens()¶    {¶        f?0 := 88~kHz;¶        Q?Q := 1.2~1;¶    }¶    ¶    Formulas()¶    {¶        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468")¶    }¶    ¶    f?ave := EvaluateFormula(f15?11);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="11",timestamp="2019-04-25 18:55:41.888",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶        ¶¶ProblemSolution([f?ave])¶{¶    Givens()¶    {¶        f?0 := 88~kHz;¶        Q?Q := 1.2~1;¶    }¶    ¶    Formulas()¶    {¶        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");¶    }¶    ¶    f?ave := EvaluateFormula(f15?11);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 9",sequence="12",timestamp="2019-04-25 18:55:46.57",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 11",sequence="13",timestamp="2019-04-25 18:58:42.129",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA1Mn5rSHo7CiAgICAgICAgUT9RIDo9IDYuOH4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1EpKV4yKSwgTGFiZWw6IjE1LjExIiwgUGFnZToiNDY4Iik7CiAgICB9CgogICAgZj9hdmUgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xMSk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="14",timestamp="2019-04-25 19:00:57.357",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?ave])¶{¶    Givens()¶    {¶        f?0 := 52~kHz;¶        Q?Q := 6.8~;¶    }¶    ¶    Formulas()¶    {¶        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");¶    }¶    ¶    f?ave := EvaluateFormula(f15?11);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="15",timestamp="2019-04-25 19:01:11.297",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?ave])¶{¶    Givens()¶    {¶        f?0 := 52~kHz;¶        Q?Q := 6.8~1;¶    }¶    ¶    Formulas()¶    {¶        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");¶    }¶    ¶    f?ave := EvaluateFormula(f15?11);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 11",sequence="16",timestamp="2019-04-25 19:01:36.616",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 13",sequence="17",timestamp="2019-04-25 19:01:49.905",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSAzMzB+a0h6OwogICAgICAgIEJXP0JXIDo9IDgwfmtIejsKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT82IDo9IEZvcm11bGEoUT9RfjEgPT0gZj8wfkh6L0JXP0JXfkh6LCBMYWJlbDoiMTUuNiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1F+MSkpXjIpLCBMYWJlbDoiMTUuMTEiLCBQYWdlOiI0NjgiKTsKICAgIH0KICAgIAogICAgUT9RIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Nik7CiAgICBmP2F2ZSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzExKTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="18",timestamp="2019-04-25 19:03:55.407",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?ave])¶{¶    Givens()¶    {¶        f?0 := 330~kHz;¶        BW?BW := 80~kHz;¶    }¶    ¶    Formulas()¶    {¶        f15?6 := Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465");¶        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");¶    }¶    Q?Q := EvaluateFormula(f15?6);¶    ¶    f?ave := EvaluateFormula(f15?11);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 13",sequence="19",timestamp="2019-04-25 19:03:58.362",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 15",sequence="20",timestamp="2019-04-25 19:04:18.905",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMSwgZj9DMl0pCnsKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgZj8wIDo9IDMzMH5rSHo7CiAgICAgICAgQlc/QlcgOj0gODB+a0h6OwogICAgICAgIAogICAgICAgIGY/YXZlIDo9IDMzMi40MTU0MDI3fmtIejsgLy8gRnJvbSBwcm9ibGVtIDEzLgogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzkgOj0gRm9ybXVsYShmP0Mxfkh6ID09IGY/YXZlfkh6IC0gQlc/Qld+SHovMiwgTGFiZWw6IjE1LjkiLCBQYWdlOiI0NjgiKTsKICAgICAgICBmMTU/MTAgOj0gRm9ybXVsYShmP0Myfkh6ID09IGY/YXZlfkh6ICsgQlc/Qld+SHovMiwgTGFiZWw6IjE1LjEwIiwgUGFnZToiNDY4Iik7CiAgICB9CiAgICAKICAgIGY/QzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT85KTsKICAgIGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xMCk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="21",timestamp="2019-04-25 19:06:33.307",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?C1, f?C2])¶{¶    Givens()¶    {¶        f?0 := 330~kHz;¶        BW?BW := 80~kHz;¶        ¶        f?ave := 332.4154027¶    }¶    ¶    Formulas()¶    {¶        f15?9 := Formula(f?C1~Hz == f?ave~Hz - (BW?BW~Hz/ 2), Label:"15.9", Page:"468");¶¶        f15?10 := Formula(f?C2~Hz == f?ave~Hz + (BW?BW~Hz/ 2), Label:"15.10", Page:"468");¶    }¶    ¶    f?C1 := EvaluateFormula(f15?9);¶    f?C2 := EvaluateFormula(f15?10);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="22",timestamp="2019-04-25 19:07:14.328",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?C1, f?C2])¶{¶    Givens()¶    {¶        f?0 := 330~kHz;¶        BW?BW := 80~kHz;¶        ¶        f?ave := 332.4154027;¶    }¶    ¶    Formulas()¶    {¶        f15?9 := Formula(f?C1~Hz == f?ave~Hz - (BW?BW~Hz/ 2), Label:"15.9", Page:"468");¶¶        f15?10 := Formula(f?C2~Hz == f?ave~Hz + (BW?BW~Hz/ 2), Label:"15.10", Page:"468");¶    }¶    ¶    f?C1 := EvaluateFormula(f15?9);¶    f?C2 := EvaluateFormula(f15?10);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="23",timestamp="2019-04-25 19:07:24.148",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([f?C1, f?C2])¶{¶    Givens()¶    {¶        f?0 := 330~kHz;¶        BW?BW := 80~kHz;¶        ¶        f?ave := 332.4154027~kHz;¶    }¶    ¶    Formulas()¶    {¶        f15?9 := Formula(f?C1~Hz == f?ave~Hz - (BW?BW~Hz/ 2), Label:"15.9", Page:"468");¶¶        f15?10 := Formula(f?C2~Hz == f?ave~Hz + (BW?BW~Hz/ 2), Label:"15.10", Page:"468");¶    }¶    ¶    f?C1 := EvaluateFormula(f15?9);¶    f?C2 := EvaluateFormula(f15?10);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 15",sequence="24",timestamp="2019-04-25 19:07:51.518",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 17",sequence="25",timestamp="2019-04-25 19:08:10.675",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQT9wP2EsIEE/cGRCP2EsIEE/cD9iLCBBP3BkQj9iLCBBP3A/YywgQT9wZEI/Y10pCnsKICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGZwNDcxIDo9IEZvcm11bGEoQT9wfjEgPT0gUD9vdXR+Vy9QP2luflcsIExhYmVsOiJwNDcxIiwgUGFnZToiNDcxIik7CiAgICAgICAgCiAgICAgICAgZjE1PzE1IDo9IEZvcm11bGEoQT9wZEJ+ZEIgPT0gTG9nUDEwKFA/b3V0flcvUD9pbn5XKSwgTGFiZWw6IjE1LjE1IiwgUGFnZToiNDcxIik7CiAgICB9CiAgICAKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSAyfm1XOwogICAgICAgIFA/b3V0IDo9IDgwfm1XOyAgIAogICAgfQoKICAgIEE/cD9hIDo9IEE/cCA6PSBFdmFsdWF0ZUZvcm11bGEoZnA0NzEpOwogICAgCiAgICBBP3BkQj9hIDo9IEE/cGRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTUpOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSA0OH5tVzsKICAgICAgICBQP291dCA6PSAzMDB+bVc7ICAgCiAgICB9CgogICAgQT9wP2IgOj0gQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmcDQ3MSk7CiAgICAKICAgIEE/cGRCP2IgOj0gQT9wZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xNSk7CgogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSAyNDB+bVc7CiAgICAgICAgUD9vdXQgOj0gNjB+bVc7ICAgCiAgICB9CgogICAgQT9wP2MgOj0gQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmcDQ3MSk7CiAgICAKICAgIEE/cGRCP2MgOj0gQT9wZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xNSk7Cgp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 17",sequence="28",timestamp="2019-04-25 19:14:26.599",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([A?p?a, A?pdB?a, A?p?b, A?pdB?b, A?p?c, A?pdB?c])¶{¶    Givens()¶    {¶        P?in := 2~mW;¶        P?out := 80~mW;¶    }¶    ¶    Formulas()¶    {¶        fp?471 := Formula(A?p~1 == P?out~W/P?in~W, Label:"p.471", Page:"471");¶        f15?15 := Formula(A?pdB~dB == LogP10(P?out~W/P?in~W), Label:"15.15", Page:"471");¶    }¶    ¶    A?p?a := A?p := EvaluateFormula(fp471);¶    ¶    A?pdB?a := A?pdB := EvaluateFormula(f15?15);¶    ¶//--------------------New values------------------------¶¶    Givens()¶    {¶        P?in := 48~mW;¶        P?out := 300~mW;¶    }¶    ¶    A?p?b := A?p := EvaluateFormula(fp471);¶    ¶    A?pdB?b := A?pdB := EvaluateFormula(f15?15);¶    ¶//--------------------New values------------------------¶¶    Givens()¶    {¶        P?in := 240~mW;¶        P?out := 60~mW;¶    }¶    ¶    A?p?c := A?p := EvaluateFormula(fp471);¶    ¶    A?pdB?c := A?pdB := EvaluateFormula(f15?15);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 17",sequence="29",timestamp="2019-04-25 19:14:41.62",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([A?p?a, A?pdB?a, A?p?b, A?pdB?b, A?p?c, A?pdB?c])¶{¶    Givens()¶    {¶        P?in := 2~mW;¶        P?out := 80~mW;¶    }¶    ¶    Formulas()¶    {¶        fp?471 := Formula(A?p~1 == P?out~W/P?in~W, Label:"p.471", Page:"471");¶        f15?15 := Formula(A?pdB~dB == LogP10(P?out~W/P?in~W), Label:"15.15", Page:"471");¶    }¶    ¶    A?p?a := A?p := EvaluateFormula(fp?471);¶    ¶    A?pdB?a := A?pdB := EvaluateFormula(f15?15);¶    ¶//--------------------New values------------------------¶¶    Givens()¶    {¶        P?in := 48~mW;¶        P?out := 300~mW;¶    }¶    ¶    A?p?b := A?p := EvaluateFormula(fp?471);¶    ¶    A?pdB?b := A?pdB := EvaluateFormula(f15?15);¶    ¶//--------------------New values------------------------¶¶    Givens()¶    {¶        P?in := 240~mW;¶        P?out := 60~mW;¶    }¶    ¶    A?p?c := A?p := EvaluateFormula(fp?471);¶    ¶    A?pdB?c := A?pdB := EvaluateFormula(f15?15);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 17",sequence="30",timestamp="2019-04-25 19:15:02.307",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 19",sequence="31",timestamp="2019-04-25 19:15:06.674",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCIDo9IC0uOH5kQjsKICAgICAgICBQP2luIDo9IDgwMH5tVzsKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xNyA6PSBGb3JtdWxhKEE/cH4xID09IEFudGlsb2dQMTAoQT9wZEJ+ZEIpLCBMYWJlbDoiMTUuMTciLCBQYWdlOiI0NzMiKTsKICAgICAgICBmMTU/MTggOj0gRm9ybXVsYShQP291dH5XID09IEE/cH4xKlA/aW5+VywgTGFiZWw6IjE1LjE4IiwgUGFnZToiNDczIik7CiAgICB9CiAgICAKICAgIEE/cCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzE3KTsKICAgIAogICAgUD9vdXQgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xOCk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="33",timestamp="2019-04-25 19:17:19.797",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdb := -.8~dB;¶        P?in := 800~mW;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?P := EvaluateFormula(f15?17);¶    ¶    P?out := EvaluateFormula(f15?18);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="34",timestamp="2019-04-25 19:17:43.931",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdb := -.8~dB;¶        P?in := 800~mW;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?p := EvaluateFormula(f15?17);¶    ¶    P?out := EvaluateFormula(f15?18);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="35",timestamp="2019-04-25 19:17:59.072",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdB := -.8~dB;¶        P?in := 800~mW;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?p := EvaluateFormula(f15?17);¶    ¶    P?out := EvaluateFormula(f15?18);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 19",sequence="36",timestamp="2019-04-25 19:18:02.417",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 21",sequence="37",timestamp="2019-04-25 19:18:21.785",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCIDo9IC0uNH5kQjsKICAgICAgICBQP2luIDo9IDEuNH5XOwogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzE3IDo9IEZvcm11bGEoQT9wfjEgPT0gQW50aWxvZ1AxMChBP3BkQn5kQiksIExhYmVsOiIxNS4xNyIsIFBhZ2U6IjQ3MyIpOwogICAgICAgIGYxNT8xOCA6PSBGb3JtdWxhKFA/b3V0flcgPT0gQT9wfjEqUD9pbn5XLCBMYWJlbDoiMTUuMTgiLCBQYWdlOiI0NzMiKTsKICAgIH0KICAgIAogICAgQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTcpOwogICAgCiAgICBQP291dCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzE4KTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 21",sequence="38",timestamp="2019-04-25 19:19:33.672",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdB := -.4~dB;¶        P?in := 1.4~W;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?p := EvaluateFormula(f15?17);¶    ¶    P?out := EvaluateFormula(f15?18);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 21",sequence="39",timestamp="2019-04-25 19:19:52.395",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="40",timestamp="2019-04-25 19:19:55.78",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCMSA6PSAtLjN+ZEI7CiAgICAgICAgQT9wZEIyIDo9IC0yLjV+ZEI7CiAgICAgICAgQT9wZEIzIDo9IC0uOH5kQjsKICAgICAgICBQP2luIDo9IDEuNX5XOwogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzE3IDo9IEZvcm11bGEoQT9wfjEgPT0gQW50aWxvZ1AxMChBP3BkQn5kQiksIExhYmVsOiIxNS4xNyIsIFBhZ2U6IjQ3MyIpOwogICAgICAgIGYxNT8xN2EgOj0gRm9ybXVsYShmMTU/MTcsIExhYmVsOiJhIiwgU3Vic3RpdHV0aW9uczpbJ0E/cGRCIDwtICdBP3BUZEJdKTsKICAgICAgICAKICAgICAgICBmMTU/MTggOj0gRm9ybXVsYShQP291dH5XID09IEE/cH4xKlA/aW5+VywgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjE1LjE4IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNDczIik7CiAgICB9CgogICAgQT9wVGRCIDo9IEE/cGRCMSArIEE/cGRCMiArIEE/cGRCMzsKICAgIAogICAgQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTdhKTsKICAgIAogICAgUD9vdXQgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xOCwgbVcpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="41",timestamp="2019-04-25 19:25:14.132",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdB1 := -.3~dB;¶        A?pdB2 := -2.5~dB;¶        A?pdB3 := -.8~dB;¶        P?in := 1.5~W;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?17a := Formula(f15?17, Label: "a", Substitutions:['A?pdb <- 'A?pTdB]);¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?pTdb := A?pdB1 + A?pdB2 + A?pdB3;¶    ¶    A?p := EvaluateFormula(f15?17a);¶    ¶    P?out := EvaluateFormula(f15?18, mW);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="42",timestamp="2019-04-25 19:26:28.7",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdB1 := -.3~dB;¶        A?pdB2 := -2.5~dB;¶        A?pdB3 := -.8~dB;¶        P?in := 1.5~W;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?17a := Formula(f15?17, Label: "a", Substitutions:['A?pdb <- 'A?pTdB]);¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?pTdB := A?pdB1 + A?pdB2 + A?pdB3;¶    ¶    A?p := EvaluateFormula(f15?17a);¶    ¶    P?out := EvaluateFormula(f15?18, mW);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="43",timestamp="2019-04-25 19:28:10.145",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?out])¶{¶    Givens()¶    {¶        A?pdB1 := -.3~dB;¶        A?pdB2 := -2.5~dB;¶        A?pdB3 := -.8~dB;¶        P?in := 1.5~W;¶    }¶    ¶    Formulas()¶    {¶        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");¶        f15?17a := Formula(f15?17, Label: "a", Substitutions:['A?pdb <- 'A?pTdB]);¶        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");¶    }¶    ¶    A?pTdB := A?pdB1 + A?pdB2 + A?pdB3;¶    ¶    A?pdB := A?pTdB;¶    ¶    A?p := EvaluateFormula(f15?17a);¶    ¶    P?out := EvaluateFormula(f15?18, mW);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 23",sequence="44",timestamp="2019-04-25 19:28:13.63",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 25",sequence="45",timestamp="2019-04-25 19:29:32.355",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9kQm1hLCBQP2RCbWIsIFA/ZEJtYywgUD9kQm1kXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yMCA6PSBGb3JtdWxhKFA/ZEJtfmRCbSA9PSAxMCpMb2cxMEQoUD9QflcvMX5tVyksIExhYmVsOiIxNS4yMCIsIFBhZ2U6IjQ3NSIpOwogICAgfQogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMTJ+VzsKICAgIH0gICAgCgogICAgUD9kQm1hIDo9IFA/ZEJtIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjAsIGRCbSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/UCA6PSAxODB+bVc7CiAgICB9ICAgIAoKICAgIFA/ZEJtYiA6PSBQP2RCbSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIwLCBkQm0pOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMi41flc7CiAgICB9ICAgIAoKICAgIFA/ZEJtYyA6PSBQP2RCbSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIwLCBkQm0pOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMzAwfs68VzsKICAgIH0gICAgCgogICAgUD9kQm1kIDo9IFA/ZEJtIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjAsIGRCbSk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="47",timestamp="2019-04-25 19:34:58.337",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?dBma, P?dBmb, P?dBmc, P?dBmd])¶{¶    Givens()¶    {¶        P?P := 12~W;¶    }¶    ¶    Formulas()¶    {¶        f15?20 := Formula(P?dBm~dBm == 10*Log10D(P?P~W/1~mW), Label:"15.20", Page:"475");¶    }¶    ¶    P?dBma := P?dBm := EvaluateFormula(f15?20, dBm);¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 180~W;¶    }¶    ¶    P?dBmb := P?dBm := EvaluateFormula(f15?20, dBm);¶    ¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 2.5~W;¶    }¶    ¶    P?dBmc := P?dBm := EvaluateFormula(f15?20, dBm);¶    ¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 300~?W;¶    }¶    ¶    P?dBmd := P?dBm := EvaluateFormula(f15?20, dBm);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="48",timestamp="2019-04-25 19:35:01.835",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="49",timestamp="2019-04-25 19:37:33.187",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?dBma, P?dBmb, P?dBmc, P?dBmd])¶{¶    Givens()¶    {¶        P?P := 12~W;¶    }¶    ¶    Formulas()¶    {¶        f15?20 := Formula(P?dBm~dBm == 10*Log10D(P?P~W/1~mW), Label:"15.20", Page:"475");¶    }¶    ¶    P?dBma := P?dBm := EvaluateFormula(f15?20, dBm);¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 180~mW;¶    }¶    ¶    P?dBmb := P?dBm := EvaluateFormula(f15?20, dBm);¶    ¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 2.5~W;¶    }¶    ¶    P?dBmc := P?dBm := EvaluateFormula(f15?20, dBm);¶    ¶//------------------New values------------------------¶¶    Givens()¶    {¶        P?P := 300~?W;¶    }¶    ¶    P?dBmd := P?dBm := EvaluateFormula(f15?20, dBm);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="50",timestamp="2019-04-25 19:37:35.965",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 27",sequence="51",timestamp="2019-04-25 19:37:41.51",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9QYSwgUD9QYiwgUD9QYywgUD9QZF0pCnsgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yMSA6PSBGb3JtdWxhKFA/UH5XID09IDF+bVcqQW50aWxvZ1AxMChQP2RCbX5kQm0pLCBMYWJlbDoiMTUuMjEiLCBQYWdlOiI0NzYiKTsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9kQm0gOj0gMy41fmRCbTsKICAgIH0gCgogICAgUD9QYSA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/ZEJtIDo9IDEyfmRCbTsKICAgIH0gCgogICAgUD9QYiA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/ZEJtIDo9IC0xLjJ+ZEJtOwogICAgfSAKCiAgICBQP1BjIDo9IFA/UCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIxLCDOvFcpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP2RCbSA6PSAtMy41fmRCbTsKICAgIH0gCgogICAgUD9QZCA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSwgIM68Vyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="52",timestamp="2019-04-25 19:50:16.796",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?Pa, P?Pb, P?Pc, P?Pd])¶{¶    Givens()¶    {¶        p?dBm := 3.5~dBm;¶    }¶    ¶    Formulas()¶    {¶        f15?21 := Formula(P?P~W == 1~mW*AntilogP10(P?dBm~dBm), Label:"15.21", Page:"476");¶    }¶    ¶    P?Pa := P?P := EvaluateFormula(f15?21);¶    ¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := 12~dBm;¶    }¶    ¶    P?Pb := P?P := EvaluateFormula(f15?21);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -1.2~dBm;¶    }¶    ¶    P?Pc := P?P := EvaluateFormula(f15?21);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -3.5~dBm;¶    }¶    ¶    P?Pd := P?P := EvaluateFormula(f15?21);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="53",timestamp="2019-04-25 19:55:50.398",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?Pa, P?Pb, P?Pc, P?Pd])¶{¶    Givens()¶    {¶        p?dBm := 3.5~dBm;¶    }¶    ¶    Formulas()¶    {¶        f15?21 := Formula(P?P~W == 1~mW*AntilogP10(P?dBm~dBm), Label:"15.21", Page:"476");¶    }¶    ¶    P?Pa := P?P := EvaluateFormula(f15?21);¶    ¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := 12~dBm;¶    }¶    ¶    P?Pb := P?P := EvaluateFormula(f15?21);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -1.2~dBm;¶    }¶    ¶    P?Pc := P?P := EvaluateFormula(f15?21, ?W);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -3.5~dBm;¶    }¶    ¶    P?Pd := P?P := EvaluateFormula(f15?21);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="54",timestamp="2019-04-25 19:56:01.096",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?Pa, P?Pb, P?Pc, P?Pd])¶{¶    Givens()¶    {¶        P?dBm := 3.5~dBm;¶    }¶    ¶    Formulas()¶    {¶        f15?21 := Formula(P?P~W == 1~mW*AntilogP10(P?dBm~dBm), Label:"15.21", Page:"476");¶    }¶    ¶    P?Pa := P?P := EvaluateFormula(f15?21);¶    ¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := 12~dBm;¶    }¶    ¶    P?Pb := P?P := EvaluateFormula(f15?21);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -1.2~dBm;¶    }¶    ¶    P?Pc := P?P := EvaluateFormula(f15?21, ?W);¶//------------------------New Values---------------------¶    Givens()¶    {¶        p?dBm := -3.5~dBm;¶    }¶    ¶    P?Pd := P?P := EvaluateFormula(f15?21);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="55",timestamp="2019-04-25 19:56:09.9",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([P?Pa, P?Pb, P?Pc, P?Pd])¶{¶    Givens()¶    {¶        P?dBm := 3.5~dBm;¶    }¶    ¶    Formulas()¶    {¶        f15?21 := Formula(P?P~W == 1~mW*AntilogP10(P?dBm~dBm), Label:"15.21", Page:"476");¶    }¶    ¶    P?Pa := P?P := EvaluateFormula(f15?21);¶    ¶//------------------------New Values---------------------¶    Givens()¶    {¶        P?dBm := 12~dBm;¶    }¶    ¶    P?Pb := P?P := EvaluateFormula(f15?21);¶//------------------------New Values---------------------¶    Givens()¶    {¶        P?dBm := -1.2~dBm;¶    }¶    ¶    P?Pc := P?P := EvaluateFormula(f15?21, ?W);¶//------------------------New Values---------------------¶    Givens()¶    {¶        P?dBm := -3.5~dBm;¶    }¶    ¶    P?Pd := P?P := EvaluateFormula(f15?21);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 27",sequence="56",timestamp="2019-04-25 19:56:13.128",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 29",sequence="57",timestamp="2019-04-25 19:58:14.367",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQT92ZEJhLCBBP3ZkQmIsIEE/dmRCYywgQT92ZEJkXSkKeyAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzI0IDo9IEZvcm11bGEoQT92ZEJ+ZEIgPT0gTG9nVjEwKEE/dn4xKSwgTGFiZWw6IjE1LjI0IiwgUGFnZToiNDc3Iik7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/diA6PSAxMjB+MTsKICAgIH0gCgogICAgQT92ZEJhIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3YgOj0gNDB+MTsKICAgIH0gCgogICAgQT92ZEJiIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3YgOj0gLjk5NX4xOwogICAgfSAKCiAgICBBP3ZkQmMgOj0gQT92ZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yNCk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/diA6PSAuOTc4fjE7CiAgICB9CgogICAgQT92ZEJkIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 29",sequence="59",timestamp="2019-04-25 20:34:12.655",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([A?vdBa, A?vdBb, A?vdBc, A?vdBd])¶{¶    Formulas()¶    {¶        f15?24 := Formula(A?vdB~dB == LogV10(A?v~1), Label:"15.24", Page:"477");¶    }¶    ¶    Givens()¶    {¶        A?v := 120~1;¶    }¶    ¶    A?vdBa := A?vdb := EvaluateFormula(f15?24);¶ ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 40~1;¶    }¶    ¶    A?vdBb := A?vdb := EvaluateFormula(f15?24);¶    ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 0.995~1;¶    }¶    ¶    A?vdBc := A?vdb := EvaluateFormula(f15?24);¶    ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 0.978~1;¶    }¶    ¶    A?vdBd := A?vdb := EvaluateFormula(f15?24);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 29",sequence="60",timestamp="2019-04-25 20:34:57.029",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([A?vdBa, A?vdBb, A?vdBc, A?vdBd])¶{¶    Formulas()¶    {¶        f15?24 := Formula(A?vdB~dB == LogV10(A?v~1), Label:"15.24", Page:"477");¶    }¶    ¶    Givens()¶    {¶        A?v := 120~1;¶    }¶    ¶    A?vdBa := A?vdB := EvaluateFormula(f15?24);¶ ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 40~1;¶    }¶    ¶    A?vdBb := A?vdB := EvaluateFormula(f15?24);¶    ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 0.995~1;¶    }¶    ¶    A?vdBc := A?vdB := EvaluateFormula(f15?24);¶    ¶//--------------------New Values------------------------¶¶    Givens()¶    {¶        A?v := 0.978~1;¶    }¶    ¶    A?vdBd := A?vdB := EvaluateFormula(f15?24);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 29",sequence="61",timestamp="2019-04-25 20:34:59.861",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 31",sequence="62",timestamp="2019-04-25 20:36:00.745",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQT92YSwgQT92YiwgQT92YywgQT92ZF0pCnsgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yNSA6PSBGb3JtdWxhKEE/dn4xID09IEFudGlsb2dWMTAoQT92P2RCbX5kQm0pLCBMYWJlbDoiMTUuMjUiLCBQYWdlOiI0NzgiKTsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgQT92P2RCbSA6PSAxLjJ+ZEI7CiAgICB9IAoKICAgIEE/dmEgOj0gQT92IDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjUpOwoKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/dj9kQm0gOj0gNH5kQjsKICAgIH0gCgogICAgQT92YiA6PSBBP3YgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yNSk7CgogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgQT92P2RCbSA6PSAtMy42fmRCOwogICAgfSAKCiAgICBBP3ZjIDo9IEE/diA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzI1KTsKCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3Y/ZEJtIDo9IC0yLjV+ZEI7CiAgICB9IAoKICAgIEE/dmQgOj0gQT92IDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjUpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 31",sequence="64",timestamp="2019-04-25 20:43:06.899",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+¶ProblemSolution([A?va, A?vb, A?vc, A?vd])¶{¶    Formulas()¶    {¶        f15?25 := Formula(A?v~1 == AntilogV10(A?v?dBm~dBm), Label:"15.25", Page:"478");¶    }¶//------------------New Values------------------------¶    Givens()¶    {¶        A?v?dBm := 1.2~dB;¶    }¶    ¶    A?va := A?v := EvaluateFormula(f15?25);¶    ¶//------------------New Values------------------------¶    Givens()¶    {¶        A?v?dBm := 4~dB;¶    }¶    ¶    A?vb := A?v := EvaluateFormula(f15?25);¶    ¶//------------------New Values------------------------¶    Givens()¶    {¶        A?v?dBm := -3.6~dB;¶    }¶    ¶    A?vc := A?v := EvaluateFormula(f15?25);¶    ¶//------------------New Values------------------------¶    Givens()¶    {¶        A?v?dBm := -2.5~dB;¶    }¶    ¶    A?vd := A?v := EvaluateFormula(f15?25);¶    ¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 31",sequence="65",timestamp="2019-04-25 20:43:09.696",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="286"
+Not logged.
+
+%/info
+

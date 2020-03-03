@@ -1,0 +1,1220 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="2",timestamp="2019-03-27 17:48:32.428",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="3",timestamp="2019-03-27 17:49:01.717",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 19",sequence="4",timestamp="2019-03-27 18:08:16.62",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QywgVj9SLCDPtD9WLCBQP1IsIFA/WCwgUD9BUFAsIM+0P1A/QVBQXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxMj8xMSA6PSBGb3JtdWxhKCBYP0N+zqkgPT0gMS8oMiAqIFBpICogZj9mfkh6ICogQz9DfkYpLAogICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTEiLAogICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzNzciKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NCA6PSBGb3JtdWxhKCBaP1R+zqkgPT0gU3FydCgoWD9Dfs6pKV4yICsgKFI/Un7OqSleMiksCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5MyIpOwoKICAgICAgICBmMz8xIDo9IEZvcm11bGEoIEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjEiLAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNzgiKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFhIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImEiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1o/VF0pOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFiIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImIiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QywgJ1I/T0wgPC0gJ1g/Q10sCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3ViamVjdDonVj9DKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYyA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJjIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1IsICdSP09MIDwtICdSP1JdLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Uik7CiAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnz7QgPC0gJ8+0P1ZdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICA/NDAwIDo9IEZvcm11bGEoUD9YID09IEk/SV4yICogWD9DLCBQYWdlOiI0MDAiLCBTdWJzdGl0dXRpb25zOlsnST9JIDwtICdJP1RdKTsKCiAgICAgICAgZjM/NSA6PSBGb3JtdWxhKFA/UCA9PSBJP0leMiAqIFI/UiwgCiAgICAgICAgICAgICAgICBMYWJlbDoiMy41IiwgCiAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydQP1AgPC0gJ1A/UiwgJ0k/SSA8LSAnST9UXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzcgOj0gRm9ybXVsYShQP0FQUCA9PSBTcXJ0KFA/WF4yICsgUD9SXjIpLCAKICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNyIsIAogICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDUxfm5GOwogICAgZj9mIDo9IDUwMH5IejsKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzExLCDOqSk7CiAgICAKICAgIFI/UiA6PSAxMn5rzqk7CiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz80LCBrzqkpOwogICAgCiAgICBWP1MgOj0gMTB+VjsKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEsIM68QSk7CiAgICAKICAgIFY/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWIsIFYpOwogICAgCiAgICBWP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFjLCBWKTsKICAgIAogICAgz7Q/ViA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzUsIGRlZyk7CiAgICAKICAgIFA/WCA6PSBFdmFsdWF0ZUZvcm11bGEoPzQwMCwgbVZBKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7CiAgICAKICAgIFA/QVBQIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/Nyk7CgogICAgz7Q/UD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz84LCBkZWdyZWUpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 19",sequence="5",timestamp="2019-03-27 20:32:10.448",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCBJP1QsIFY/QywgVj9SLCDPtD9WLCBQP1IsIFA/WCwgUD9BUFAsIM+0P1A/QVBQXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxMj8xMSA6PSBGb3JtdWxhKCBYP0N+zqkgPT0gMS8oMiAqIFBpICogZj9mfkh6ICogQz9DfkYpLAogICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTEiLAogICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzNzciKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NCA6PSBGb3JtdWxhKCBaP1R+zqkgPT0gU3FydCgoWD9Dfs6pKV4yICsgKFI/Un7OqSleMiksCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5MyIpOwoKICAgICAgICBmMz8xIDo9IEZvcm11bGEoIEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIzLjEiLAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNzgiKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFhIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImEiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1o/VF0pOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFiIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImIiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QywgJ1I/T0wgPC0gJ1g/Q10sCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3ViamVjdDonVj9DKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYyA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJjIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzOTQiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1IsICdSP09MIDwtICdSP1JdLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Uik7CiAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnz7QgPC0gJ8+0P1ZdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICA/NDAwIDo9IEZvcm11bGEoUD9YID09IEk/SV4yICogWD9DLCBQYWdlOiI0MDAiLCBTdWJzdGl0dXRpb25zOlsnST9JIDwtICdJP1RdKTsKCiAgICAgICAgZjM/NSA6PSBGb3JtdWxhKFA/UCA9PSBJP0leMiAqIFI/UiwgCiAgICAgICAgICAgICAgICBMYWJlbDoiMy41IiwgCiAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydQP1AgPC0gJ1A/UiwgJ0k/SSA8LSAnST9UXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzcgOj0gRm9ybXVsYShQP0FQUCA9PSBTcXJ0KFA/WF4yICsgUD9SXjIpLCAKICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNyIsIAogICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDUxfm5GOwogICAgZj9mIDo9IDUwMH5IejsKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzExLCDOqSk7CiAgICAKICAgIFI/UiA6PSAxMn5rzqk7CiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz80LCBrzqkpOwogICAgCiAgICBWP1MgOj0gMTB+VjsKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEsIM68QSk7CiAgICAKICAgIFY/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWIsIFYpOwogICAgCiAgICBWP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFjLCBWKTsKICAgIAogICAgz7Q/ViA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzUsIGRlZyk7CiAgICAKICAgIFA/WCA6PSBFdmFsdWF0ZUZvcm11bGEoPzQwMCwgbVZBKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7CiAgICAKICAgIFA/QVBQIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/Nyk7CgogICAgz7Q/UD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz84LCBkZWdyZWUpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="6",timestamp="2019-03-27 20:44:34.065",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393");¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions: ['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85");¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="7",timestamp="2019-03-27 20:45:13.019",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393");¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions: ['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85");¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    I?I := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 19",sequence="8",timestamp="2019-03-27 20:45:25.548",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="1",timestamp="2019-03-27 20:48:34.972",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393");¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions: ['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85");¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    I?I := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:48:37.899",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 19",mpversion="280",preserve="false"¶      Result:  Error: The variable (I?I) does not match the subject (I?T) of the formula. Error on or before line 191 starting at index 8.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="2",timestamp="2019-03-27 20:48:46.75",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393");¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions: ['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85");¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:48:49.97",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 19",mpversion="280",preserve="false"¶      Result:  Error: The variable (??V) does not match the subject (?) of the formula. Error on or before line 196 starting at index 8.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:52:49.631",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="3",timestamp="2019-03-27 20:53:30.13",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Substitutions:['? <- '??V]);¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions: ['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85");¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:53:34.478",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 19",mpversion="280",preserve="false"¶      Result:  Error: The variable (P?R) does not match the subject (P?P) of the formula. Error on or before line 200 starting at index 8.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:54:14.577",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions: ['I?I <- 'I?T]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="4",timestamp="2019-03-27 20:54:24.37",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Substitutions:['? <- '??V]);¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions: ['P?P <- 'P?R]);¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:54:28.654",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 19",mpversion="280",preserve="false"¶      Result:  Error:  Error: Exception during evaluation:  Error: The variable <I?I> does not have a value assigned to it.   Error on or before line 200 starting at index 8.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="5",timestamp="2019-03-27 20:55:05.353",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Substitutions:['? <- '??V]);¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions: ['P?P <- 'P?R, 'I?I <- 'I?T]);¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:55:10.645",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 19",mpversion="280",preserve="false"¶      Result:  Error: The variable (??P?APP) does not match the subject (?) of the formula. Error on or before line 204 starting at index 12.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 20:55:28.471",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions: ['P?P <- 'P?R, 'I?I <- 'I?T]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="6",timestamp="2019-03-27 20:56:00.797",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Substitutions:['? <- '??V]);¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions: ['P?P <- 'P?R, 'I?I <- 'I?T]);¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions: ['? <- '??P?APP]);¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, deg);¶    ¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 19",sequence="7",timestamp="2019-03-27 20:56:22.317",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 19",sequence="8",timestamp="2019-03-27 20:57:34.916",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, I?T, V?C, V?R, ??V, P?R, P?X, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393");¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Substitutions:['? <- '??V]);¶        ?400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?T]);¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions: ['P?P <- 'P?R, 'I?I <- 'I?T]);¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions: ['? <- '??P?APP]);¶    }¶    C?C := 51~nF;¶    f?f := 500~Hz;¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 12~k?;¶    Z?T := EvaluateFormula(f13?4, k?);¶    ¶    V?S := 10~V;¶    I?T := EvaluateFormula(f3?1a, ?A);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?R := EvaluateFormula(f3?1c, V);¶    ¶    ??V := EvaluateFormula(f13?5, deg);¶    ¶    P?X := EvaluateFormula(?400, mVA);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶    ¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 19",sequence="9",timestamp="2019-03-27 20:57:45.859",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 21",sequence="10",timestamp="2019-03-27 20:59:38.534",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbST9ULCDPtD9JP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjEzPzExIDo9IEZvcm11bGEoIEk/VH5BID09IFNxcnQoST9DfkFeMiArIEk/Un5BXjIpLCBMYWJlbDoiMTMuMTEiLCBQYWdlOiI0MDUiKTsKICAgICAgICAKICAgICAgICBmMTM/MTIgOj0gRm9ybXVsYSggz7Q/VH5kZWcgPT0gQXJjVGFuKEk/Q35BL0k/Un5BKSwgTGFiZWw6IjEzLjEyIiwgUGFnZToiNDA1IiwgU3Vic3RpdHV0aW9uczpbJ8+0P1QgPC0gJ8+0P0k/VF0pOwogICAgfQogICAgCiAgICBJP0MgOj0gMjV+bUE7CiAgICBJP1IgOj0gNjB+bUE7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzExKTsKICAgIAogICAgz7Q/ST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/MTIsIGRlZyk7Cn0KCg==");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:31.457",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[I?T, ??I?T]
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:36.869",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:38.743",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:39.656",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:46.026",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:47.248",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:49.103",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:00:58.937",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:25.138",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:25.778",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:27.674",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(??T~rad == ArcTan(I?C~A/I?R~A), Label:"13.12", Page:"405")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:44.864",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:45.826",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:52.181",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:57.924",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:01:58.399",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:02:11.641",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:02:11.962",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:02:24.265",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula(f13?11);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 21",sequence="11",timestamp="2019-03-27 21:02:30.761",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([I?T, ??I?T])¶{¶    Formulas()¶    {¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f13?12 := Formula(??T~rad == ArcTan(I?C~A/I?R~A), Label:"13.12", Page:"405");¶    }¶    ¶    I?C := 25~mA;¶    I?R := 60~mA;¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    ??I?T := EvaluateFormula(f13?12, deg);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:02:31.128",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 21",mpversion="280",preserve="false"¶      Result:  Error: The variable (??I?T) does not match the subject (??T) of the formula. Error on or before line 478 starting at index 10.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 21",sequence="12",timestamp="2019-03-27 21:03:25.927",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([I?T, ??I?T])¶{¶    Formulas()¶    {¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f13?12 := Formula(??T~rad == ArcTan(I?C~A/I?R~A), Label:"13.12", Page:"405", Substitutions:['??T <- '??I?T]);¶    }¶    ¶    I?C := 25~mA;¶    I?R := 60~mA;¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    ??I?T := EvaluateFormula(f13?12, deg);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 21",sequence="13",timestamp="2019-03-27 21:03:32.725",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="14",timestamp="2019-03-27 21:03:50.432",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9UXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIC8vZjEzPzE1IDo9IEZvcm11bGEoIFo/VH7OqSA9PSAxLyhTcXJ0KDEvWD9Dfs6pXjIgKyAxL1I/Un7OqV4yKSksIExhYmVsOiIxMy4xNSIsIFBhZ2U6IjQwNyIpOwogICAgICAgIAogICAgICAgIGYxMz8xNiA6PSBGb3JtdWxhKFo/VCA9PSAoWD9Dfs6pKlI/Un7OqSkvU3FydChYP0N+zqleMiArIFI/Un7OqV4yKSwgIExhYmVsOiIxMy4xNSIsIFBhZ2U6IjQwNyIpOwogICAgfQogICAgCiAgICBYP0MgOj0gMzEwfs6pOwogICAgUj9SIDo9IDIyMH7OqTsKICAgIAogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/MTYsIM6pKTsKfQoK");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:17.956",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:21.455",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:23.079",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:24.011",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:28.571",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:32.511",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:35.674",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:41.466",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:51.405",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:59.619",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:04:59.809",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:05:25.285",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:05:31.633",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[Z?T]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="15",timestamp="2019-03-27 21:05:33.601",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolutions([Z?T])¶{¶    Formulas()¶    {¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶    }¶    ¶    X?C := 310~?;¶    R?R := 220~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:05:34.003",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 23",mpversion="280",preserve="false"¶      Result: Error encountered during parsing: Error parsing expression near token ***( { )***. Error on or before line 600 starting at index 0.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="16",timestamp="2019-03-27 21:06:14.679",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T])¶{¶    Formulas()¶    {¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶    }¶    ¶    X?C := 310~?;¶    R?R := 220~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 23",sequence="17",timestamp="2019-03-27 21:06:21.551",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:06:38.905",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+ProblemSolution([Z?T])¶{¶    Formulas()¶    {¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶    }¶    ¶    X?C := 310~?;¶    R?R := 220~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 25",sequence="18",timestamp="2019-03-27 21:07:00.116",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CiAgICAgICAgCiAgICAgICAgZjEzPzUgOj0gRm9ybXVsYSgoKM+0fnJhZCkgPT0gQXJjVGFuKCgoKC1YP0Mpfs6pKS8oUj9Sfs6pKSkpKSwgKExhYmVsOiIxMy41IiksIChQYWdlOiIzOTMiKSk7CiAgICB9CgogICAgZj9mIDo9IDF+a0h6OwogICAgCiAgICBDP0MgOj0gLjQ3fs68RjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKICAgIAogICAgUj9SIDo9IDMzMH7OqTsKICAgIAogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/MTYsIM6pKTsKICAgIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz81LCBkZWcpOwp9Cgo=");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:13.493",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:13.893",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:15.377",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:16.149",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:27.981",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:33.384",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:07:34.582",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:08:06.306",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:08:31.244",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:08:42.932",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:08:43.889",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:08:58.393",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:09:23.756",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula(
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:09:32.587",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:09:39.835",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:09:40.15",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:09:49.107",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula(f13?16, ?);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="19",timestamp="2019-03-27 21:09:54.123",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="20",timestamp="2019-03-27 21:10:08.838",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="21",timestamp="2019-03-27 21:10:23.656",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="22",timestamp="2019-03-27 21:10:36.111",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="23",timestamp="2019-03-27 21:11:08.68",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="24",timestamp="2019-03-27 21:11:24.086",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="25",timestamp="2019-03-27 21:11:31.896",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="26",timestamp="2019-03-27 21:12:24.2",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := (-1) EvaluateFormula(f13?5, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:12:24.595",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 25",mpversion="280",preserve="false"¶      Result: Error encountered during parsing: Expected a ***( ; )*** end of statement token in program block but found ***( EvaluateFormula )*** instead. Error on or before line 735 starting at index 14.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="27",timestamp="2019-03-27 21:12:30.797",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := (-1)*EvaluateFormula(f13?5, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="28",timestamp="2019-03-27 21:12:38.281",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 25",sequence="29",timestamp="2019-03-27 21:12:56.511",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    C?C := -.47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 330~?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := (-1)*EvaluateFormula(f13?5, deg);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 25",sequence="30",timestamp="2019-03-27 21:13:14.414",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:44.921",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:47.37",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:48.208",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:49.0",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:49.831",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:16:56.517",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 27",sequence="31",timestamp="2019-03-27 21:17:16.359",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9DLCBJP1IsIEk/VCwgUD9YLCBQP1IsIFA/QVBQLCDPtD9QP0FQUF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CgogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1IsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdSP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/MTEgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/Q35BXjIgKyBJP1J+QV4yKSwgTGFiZWw6IjEzLjExIiwgUGFnZToiNDA1Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmP3A0MDAgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0MsIFBhZ2U6IjQwMCIsIFN1YnN0aXR1dGlvbnM6WydJP0kgPC0gJ0k/Q10pOwoKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ1A/UCA8LSAnUD9SLCAnST9JIDwtICdJP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NyA6PSBGb3JtdWxhKFA/QVBQID09IFNxcnQoUD9YXjIgKyBQP1JeMiksIAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjciLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKfQoKICAgIGY/ZiA6PSAxOH5rSHo7CiAgICAKICAgIEM/QyA6PSAxMH5uRjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKICAgIAogICAgUj9SIDo9IDEuNX5rzqk7CiAgICAKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCDOqSk7CiAgICAKICAgIM+0IDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgZGVnKTsKICAgIAogICAgVj9TIDo9IDJ+VjsKICAgIAogICAgST9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwogICAgCiAgICBJP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBtQSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzExKTsKICAgIAogICAgUD9YIDo9IEV2YWx1YXRlRm9ybXVsYShmP3A0MDAsIG1XKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7CiAgICAKICAgIFA/QVBQIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NywgbVcpOwogICAgCiAgICDPtD9QP0FQUCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzgsIGRlZ3JlZSk7Cn0KCg==");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:17:52.814",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:17:56.602",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:17:57.38",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:00.717",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:01.073",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:09.591",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:= 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:11.091",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:12.379",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:15.521",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:= 
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:17.241",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:18:20.544",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:19:11.567",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:20:23.731",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:20:32.015",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:06.721",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:12.159",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:18.128",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:19.136",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:29.149",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:29.57",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:31.279",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:33.434",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:33.855",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:36.608",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:39.64",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:40.465",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:40.831",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:21:45.452",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+:=
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:22:22.967",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:22:33.625",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:22:42.542",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:22:50.444",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:23:07.394",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:24:02.774",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:24:13.373",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:24:19.428",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:25:22.295",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions:['
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:25:48.266",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:25:48.767",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 27",sequence="32",timestamp="2019-03-27 21:26:05.435",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9DLCBJP1IsIEk/VCwgUD9YLCBQP1IsIFA/QVBQLCDPtD9QP0FQUF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CgogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1IsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdSP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/MTEgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/Q35BXjIgKyBJP1J+QV4yKSwgTGFiZWw6IjEzLjExIiwgUGFnZToiNDA1Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmP3A0MDAgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0MsIFBhZ2U6IjQwMCIsIFN1YnN0aXR1dGlvbnM6WydJP0kgPC0gJ0k/Q10pOwoKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ1A/UCA8LSAnUD9SLCAnST9JIDwtICdJP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NyA6PSBGb3JtdWxhKFA/QVBQID09IFNxcnQoUD9YXjIgKyBQP1JeMiksIAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjciLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKfQoKICAgIGY/ZiA6PSAxOH5rSHo7CiAgICAKICAgIEM/QyA6PSAxMH5uRjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKICAgIAogICAgUj9SIDo9IDEuNX5rzqk7CiAgICAKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCDOqSk7CiAgICAKICAgIM+0IDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgZGVnKTsKICAgIAogICAgVj9TIDo9IDJ+VjsKICAgIAogICAgST9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwogICAgCiAgICBJP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBtQSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzExKTsKICAgIAogICAgUD9YIDo9IEV2YWx1YXRlRm9ybXVsYShmP3A0MDAsIG1XKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7CiAgICAKICAgIFA/QVBQIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NywgbVcpOwogICAgCiAgICDPtD9QP0FQUCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzgsIGRlZ3JlZSk7Cn0KCg==");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:25.316",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:26.008",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:30.88",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:31.046",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:43.47",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:44.556",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:52.03",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+k?
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:54.746",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:26:55.642",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:27:33.828",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:27:35.847",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:27:43.913",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula(f13?16, ?);
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:27:58.264",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:27:58.67",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:04.029",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:05.09",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:08.262",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:32.6",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:32.771",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:36.078",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:47.349",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:47.485",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:50.181",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:56.946",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:28:57.112",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:29:01.773",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:05.584",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:05.939",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:08.906",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:18.068",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:18.519",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:23.05",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:33.158",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:33.74",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:36.751",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+EvaluateFormula();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="33",timestamp="2019-03-27 21:33:51.429",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402");¶    }¶    ¶    f?f := 18~kHz;¶    ¶    C?C := 10~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 1.5~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 2~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:33:57.718",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 27",mpversion="280",preserve="false"¶      Result:  Error: The variable (??P?APP) does not match the subject (?) of the formula. Error on or before line 925 starting at index 12.¶.   %/error
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:34:28.663",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions:['P?P <- 'P?R
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="34",timestamp="2019-03-27 21:34:45.836",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402"), Substitutions:['? <- '??P?APP];¶    }¶    ¶    f?f := 18~kHz;¶    ¶    C?C := 10~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 1.5~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 2~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:34:46.21",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 27",mpversion="280",preserve="false"¶      Result: Error encountered during parsing: Expected a ***( ; )*** end of statement token in program block but found ***( , )*** instead. Error on or before line 896 starting at index 83.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 27",sequence="35",timestamp="2019-03-27 21:35:01.692",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 18~kHz;¶    ¶    C?C := 10~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 1.5~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 2~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 27",sequence="36",timestamp="2019-03-27 21:35:22.222",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:35:51.915",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 18~kHz;¶    ¶    C?C := 10~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 1.5~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 2~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:36:03.91",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 29a",sequence="37",timestamp="2019-03-27 21:36:06.193",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9DLCBJP1IsIEk/VCwgUD9YLCBQP1IsIFA/QVBQLCDPtD9QP0FQUF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CgogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1IsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdSP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/MTEgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/Q35BXjIgKyBJP1J+QV4yKSwgTGFiZWw6IjEzLjExIiwgUGFnZToiNDA1Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmP3A0MDAgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0MsIFBhZ2U6IjQwMCIsIFN1YnN0aXR1dGlvbnM6WydJP0kgPC0gJ0k/Q10pOwoKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ1A/UCA8LSAnUD9SLCAnST9JIDwtICdJP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NyA6PSBGb3JtdWxhKFA/QVBQID09IFNxcnQoUD9YXjIgKyBQP1JeMiksIAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjciLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKfQoKICAgIGY/ZiA6PSA2MH5IejsKICAgIAogICAgQz9DIDo9IDEwMH5uRjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKICAgIAogICAgUj9SIDo9IDIuMn5rzqk7CiAgICAKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCDOqSk7CiAgICAKICAgIM+0IDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgZGVnKTsKICAgIAogICAgVj9TIDo9IDMwflY7CiAgICAKICAgIEk/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEsIG1BKTsKICAgIAogICAgST9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYiwgbUEpOwogICAgCiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz8xMSk7CiAgICAKICAgIFA/WCA6PSBFdmFsdWF0ZUZvcm11bGEoZj9wNDAwLCBtVyk7CiAgICAKICAgIFA/UiA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/NSwgbVcpOwogICAgCiAgICBQP0FQUCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzcsIG1XKTsKICAgIAogICAgz7Q/UD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz84LCBkZWdyZWUpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 29a",sequence="38",timestamp="2019-03-27 21:36:17.285",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9DLCBJP1IsIEk/VCwgUD9YLCBQP1IsIFA/QVBQLCDPtD9QP0FQUF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CgogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1IsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdSP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/MTEgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/Q35BXjIgKyBJP1J+QV4yKSwgTGFiZWw6IjEzLjExIiwgUGFnZToiNDA1Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmP3A0MDAgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0MsIFBhZ2U6IjQwMCIsIFN1YnN0aXR1dGlvbnM6WydJP0kgPC0gJ0k/Q10pOwoKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ1A/UCA8LSAnUD9SLCAnST9JIDwtICdJP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NyA6PSBGb3JtdWxhKFA/QVBQID09IFNxcnQoUD9YXjIgKyBQP1JeMiksIAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjciLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKfQoKICAgIGY/ZiA6PSA2MH5IejsKICAgIAogICAgQz9DIDo9IDEwMH5uRjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKICAgIAogICAgUj9SIDo9IDIuMn5rzqk7CiAgICAKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCDOqSk7CiAgICAKICAgIM+0IDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgZGVnKTsKICAgIAogICAgVj9TIDo9IDMwflY7CiAgICAKICAgIEk/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEsIG1BKTsKICAgIAogICAgST9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYiwgbUEpOwogICAgCiAgICBJP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz8xMSk7CiAgICAKICAgIFA/WCA6PSBFdmFsdWF0ZUZvcm11bGEoZj9wNDAwLCBtVyk7CiAgICAKICAgIFA/UiA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/NSwgbVcpOwogICAgCiAgICBQP0FQUCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzcsIG1XKTsKICAgIAogICAgz7Q/UD9BUFAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz84LCBkZWdyZWUpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 29a",sequence="39",timestamp="2019-03-27 21:37:15.564",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 60~Hz;¶    ¶    C?C := 100~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 2.2~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 30~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 29a",sequence="40",timestamp="2019-03-27 21:37:30.139",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:37:59.844",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 60~Hz;¶    ¶    C?C := 100~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 2.2~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 30~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 21:38:08.592",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 29b",sequence="41",timestamp="2019-03-27 21:38:12.16",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9DLCBJP1IsIEk/VCwgUD9YLCBQP1IsIFA/QVBQLCDPtD9QP0FQUF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsgICAKICAgICAgICBmMTI/MTEgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCBMYWJlbDoiMTIuMTEiLCBQYWdlOiIzNzciKTsKICAgICAgICAKICAgICAgICAvL2YxMz8xNSA6PSBGb3JtdWxhKFo/VH7OqSA9PSAxL1NxcnQoMS9YP0N+zqleMiArIDEvUj9Sfs6pXjIpLCBMYWJlbDoiMTMuMTUiLCBQYWdlOiI0MDciKTsgLy90b2RvOnRrOmRvZXMgbm90IHdvcmsuCiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAgTGFiZWw6IjEzLjE1IiwgUGFnZToiNDA3Iik7CgogICAgICAgIGYxMz81IDo9IEZvcm11bGEoIM+0fnJhZCA9PSBBcmNUYW4oKC1YP0Mpfs6pIC8gUj9Sfs6pKSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKCBJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMy4xIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6Ijc4Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKCBmMz8xLAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MTAiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1IsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdSP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/MTEgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/Q35BXjIgKyBJP1J+QV4yKSwgTGFiZWw6IjEzLjExIiwgUGFnZToiNDA1Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmP3A0MDAgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0MsIFBhZ2U6IjQwMCIsIFN1YnN0aXR1dGlvbnM6WydJP0kgPC0gJ0k/Q10pOwoKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiIzMzksODUiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ1A/UCA8LSAnUD9SLCAnST9JIDwtICdJP1JdKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTM/NyA6PSBGb3JtdWxhKFA/QVBQID09IFNxcnQoUD9YXjIgKyBQP1JeMiksIAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEzLjciLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjQwMSIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzggOj0gRm9ybXVsYSjPtD9QP0FQUCA9PSBBcmNUYW4oLVA/WCAvIFA/UiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuOCIsIAogICAgICAgICAgICAgICAgICBQYWdlOiI0MDIiKTsKfQoKICAgIGY/ZiA6PSAxLjV+a0h6OwogICAgCiAgICBDP0MgOj0gMTAwfm5GOwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwgzqkpOwogICAgCiAgICBSP1IgOj0gMi4yfmvOqTsKICAgIAogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/MTYsIM6pKTsKICAgIAogICAgz7QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz81LCBkZWcpOwogICAgCiAgICBWP1MgOj0gMzB+VjsKICAgIAogICAgST9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwogICAgCiAgICBJP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBtQSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzExKTsKICAgIAogICAgUD9YIDo9IEV2YWx1YXRlRm9ybXVsYShmP3A0MDAsIG1XKTsKICAgIAogICAgUD9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz81LCBtVyk7CiAgICAKICAgIFA/QVBQIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NywgbVcpOwogICAgCiAgICDPtD9QP0FQUCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzgsIGRlZ3JlZSk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 29b",sequence="42",timestamp="2019-03-27 21:38:53.774",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 1.5~kHz;¶    ¶    C?C := 100~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 2.2~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 30~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 29b",sequence="43",timestamp="2019-03-27 21:39:07.634",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 31",sequence="44",timestamp="2019-03-27 22:02:26.999",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("Ci8vUG9sYXIgdG8gUmVjdGFuZ3VsYXIuClBUb1IobWFnbml0dWRlLCBhbmdsZURlZykgOj0KewogICAgTG9jYWwoYW5nbGVSYWQsIHJlYWwsIGltYWdpbmFyeSk7CiAgICAKICAgIGFuZ2xlUmFkIDo9IFBpLzE4MCAqIGFuZ2xlRGVnOwogICAgCiAgICByZWFsIDo9IG1hZ25pdHVkZSAqIENvcyhhbmdsZVJhZCk7CiAgICAKICAgIGltYWdpbmFyeSA6PSBtYWduaXR1ZGUgKiBTaW4oYW5nbGVSYWQpOwogICAgCiAgICBDb21wbGV4KHJlYWwsIGltYWdpbmFyeSk7Cn0KCgpQcm9ibGVtU29sdXRpb24oW1JlY3Q/Rm9ybV0pCnsKICAgIAogICAgUmVjdD9Gb3JtIDo9IE5NKFBUb1IoMjM2LCAtNDQuMil+MSk7Cn0KCg==");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:02:46.005",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+//Polar to Rectangular.¶PToR(magnitude, angleDeg) :=¶{¶    Local(angleRad, real, imaginary);¶    ¶    angleRad := Pi/180 * angleDeg;¶    ¶    real := magnitude * Cos(angleRad);¶    ¶    imaginary := magnitude * Sin(angleRad);¶    ¶    Complex(real, imaginary);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:03:19.37",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:03:43.972",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 31",sequence="45",timestamp="2019-03-27 22:04:03.575",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶//Polar to Rectangular.¶PToR(magnitude, angleDeg) :=¶{¶    Local(angleRad, real, imaginary);¶    ¶    angleRad := Pi/180 * angleDeg;¶    ¶    real := magnitude * Cos(angleRad);¶    ¶    imaginary := magnitude * Sin(angleRad);¶    ¶    Complex(real, imaginary);¶}¶¶ProblemSolution([Rect?Form)]¶{¶    Rect?Form := NM(PToR( 236, -44.2)~1);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:04:04.005",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    %error,parent="Problem 31",mpversion="280",preserve="false"¶      Result: Error encountered during parsing: Expected a ***( ] )*** close bracket token for a list but found ***( ) )*** instead. Error on or before line 1853 starting at index 26.¶.   %/error
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 31",sequence="46",timestamp="2019-03-27 22:04:35.362",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶//Polar to Rectangular.¶PToR(magnitude, angleDeg) :=¶{¶    Local(angleRad, real, imaginary);¶    ¶    angleRad := Pi/180 * angleDeg;¶    ¶    real := magnitude * Cos(angleRad);¶    ¶    imaginary := magnitude * Sin(angleRad);¶    ¶    Complex(real, imaginary);¶}¶¶ProblemSolution([Rect?Form])¶{¶    Rect?Form := NM(PToR( 236, -44.2)~1);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 31",sequence="47",timestamp="2019-03-27 22:04:39.027",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:05:13.273",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+ProblemSolution([Z?T, ?, I?C, I?R, I?T, P?X, P?R, P?APP, ??P?APP])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407");¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶        ¶        f13?11 := Formula(I?T~A == Sqrt(I?C~A^2 + I?R~A^2), Label:"13.11", Page:"405");¶        ¶        f?p400 := Formula(P?X == I?I^2 * X?C, Page:"400", Substitutions:['I?I <- 'I?C]);¶        ¶        f3?5 := Formula(P?P~W == I?I~A^2*R?R~?, Label:"3.5", Page:"339,85", Substitutions:['P?P <- 'P?R, 'I?I <- 'I?R]);¶        ¶        f13?7 := Formula(P?APP~VA == Sqrt(P?X~W^2 + P?R~W^2), Label:"13.7", Page:"401");¶        ¶        f13?8 := Formula(?~rad == ArcTan((-P?X)~W/P?R~W), Label:"13.8", Page:"402", Substitutions:['? <- '??P?APP]);¶    }¶    ¶    f?f := 1.5~kHz;¶    ¶    C?C := 100~nF;¶    ¶    X?C := EvaluateFormula(f12?11, ?);¶    ¶    R?R := 2.2~k?;¶    ¶    Z?T := EvaluateFormula(f13?16, ?);¶    ¶    ? := EvaluateFormula(f13?5, deg);¶    ¶    V?S := 30~V;¶    ¶    I?C := EvaluateFormula(f3?1a, mA);¶    ¶    I?R := EvaluateFormula(f3?1b, mA);¶    ¶    I?T := EvaluateFormula(f13?11);¶    ¶    P?X := EvaluateFormula(f?p400, mW);¶    ¶    P?R := EvaluateFormula(f3?5, mW);¶    ¶    P?APP := EvaluateFormula(f13?7, mW);¶    ¶    ??P?APP := EvaluateFormula(f13?8, degree);¶}
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:05:21.276",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+[X?C, Z?P, ?, R?S, X?CS, R?T, ??2, Z?T, I?T]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 33",sequence="48",timestamp="2019-03-27 22:05:36.908",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DLCBaP1AsIM+0LCBSP1MsIFg/Q1MsIFI/VCwgz7Q/MiwgWj9ULCBJP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIqUGkqZj9mfkh6KkM/Q35GKSwgTGFiZWw6IjEyLjExIiwgUGFnZToiMzc3Iik7CiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuMTYiLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MDciLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydaP1QgPC0gJ1o/UCwgJ1I/UiA8LSAnUj8yXSk7CiAgICAgICAgCiAgICAgICAgZjEzPzIwIDo9IEZvcm11bGEoz7R+cmFkID09IEFyY1RhbihSP1J+zqkvIC1YP0N+zqkpLCAKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy4yMCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNDA5IiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydSP1IgPC0gJ1I/Ml0pOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydChYP0N+zqleMiArIFI/Un7OqV4yKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydSP1IgPC0gJ1I/VCwgJ1g/QyA8LSAnWD9DU10pOwogICAgICAgIAogICAgICAgIGYxMz81IDo9IEZvcm11bGEoz7R+cmFkID09IEFyY1RhbigtKFg/Qyl+zqkvUj9Sfs6pKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WyfPtCA8LSAnz7Q/MiwgJ1g/QyA8LSAnWD9DUywgJ1I/UiA8LSAnUj9ULCBdKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzEgOj0gRm9ybXVsYSggST9PTH5BID09IFY/T0x+Vi9SP09Mfs6pLAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuMSIsCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI3OCIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWEgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiYSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWj9UXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWIgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiYiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9DLCAnUj9PTCA8LSAnWD9DXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP0MpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFjIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImMiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UiwgJ1I/T0wgPC0gJ1I/Ul0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3ViamVjdDonVj9SKTsKICAgIH0KICAgIAogICAgVj9TIDo9IDEyflY7IC8vMTh+VjsKICAgIAogICAgZj9mIDo9IDI1MH5IejsKICAgIAogICAgUj8xIDo9IDMzMH7OqTsgLy8xNTB+zqk7CiAgICAKICAgIFI/MiA6PSAxLjh+a86pOyAvLzF+a86pOwogICAgCiAgICBDP0MgOj0gLjQ3fs68RjsgLy8xfs68RjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIGvOqSk7CiAgICAKICAgIFo/UCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCBrzqkpOwogICAgCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzIwLCByYWQpOwogICAgCiAgICBSP1MgOj0gTk0oWj9QICogQ29zKM+0KSk7CiAgICAKICAgIFg/Q1MgOj0gTk0oWj9QICogU2luKM+0KSk7CiAgICAKICAgIFI/VCA6PSBOTShSPzEgKyBSP1MpOwogICAgCiAgICDPtD8yIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgcmFkKTsgLy9Ob3RlOnRoZSByZXN1bHQgc2hvdWxkIGJlIG5lZ2F0aXZlLgogICAgCiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz80KTsKICAgIAogICAgST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwp9Cgo=");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:08.117",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:11.492",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:14.751",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(?~rad == ArcTan(R?R~?/ -X?C~?), Label:"13.20", Page:"409", Description:"Parallel.")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:36.867",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:41.132",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:06:50.398",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393")
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:07:27.265",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+, Substitutions:[' <- ']
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:07:34.377",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+, Substitutions:[' <- ']
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:08:27.18",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+'R?R <- 'R?2
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:09:02.683",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+' <- '
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:09:58.995",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:09:59.401",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);¶
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:10:56.695",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+Substitutions:['R?R <- 'R?T, 'X?C <- 'X?CS]
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 33",sequence="49",timestamp="2019-03-27 22:12:19.194",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DLCBaP1AsIM+0LCBSP1MsIFg/Q1MsIFI/VCwgz7Q/MiwgWj9ULCBJP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIqUGkqZj9mfkh6KkM/Q35GKSwgTGFiZWw6IjEyLjExIiwgUGFnZToiMzc3Iik7CiAgICAgICAgCiAgICAgICAgZjEzPzE2IDo9IEZvcm11bGEoWj9UID09IChYP0N+zqkqUj9Sfs6pKS9TcXJ0KFg/Q37OqV4yICsgUj9Sfs6pXjIpLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuMTYiLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI0MDciLAogICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydaP1QgPC0gJ1o/UCwgJ1I/UiA8LSAnUj8yXSk7CiAgICAgICAgCiAgICAgICAgZjEzPzIwIDo9IEZvcm11bGEoz7R+cmFkID09IEFyY1RhbihSP1J+zqkvIC1YP0N+zqkpLCAKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMy4yMCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNDA5IiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydSP1IgPC0gJ1I/Ml0pOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEzPzQgOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydChYP0N+zqleMiArIFI/Un7OqV4yKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydSP1IgPC0gJ1I/VCwgJ1g/QyA8LSAnWD9DU10pOwogICAgICAgIAogICAgICAgIGYxMz81IDo9IEZvcm11bGEoz7R+cmFkID09IEFyY1RhbigtKFg/Qyl+zqkvUj9Sfs6pKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTMuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzkzIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WyfPtCA8LSAnz7Q/MiwgJ1g/QyA8LSAnWD9DUywgJ1I/UiA8LSAnUj9ULCBdKTsKICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzEgOj0gRm9ybXVsYSggST9PTH5BID09IFY/T0x+Vi9SP09Mfs6pLAogICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjMuMSIsCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlOiI3OCIpOwogICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWEgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiYSIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWj9UXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjM/MWIgOj0gRm9ybXVsYSggZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiYiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzk0IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9DLCAnUj9PTCA8LSAnWD9DXSwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP0MpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFjIDo9IEZvcm11bGEoIGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImMiLAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM5NCIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UiwgJ1I/T0wgPC0gJ1I/Ul0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3ViamVjdDonVj9SKTsKICAgIH0KICAgIAogICAgVj9TIDo9IDEyflY7IC8vMTh+VjsKICAgIAogICAgZj9mIDo9IDI1MH5IejsKICAgIAogICAgUj8xIDo9IDMzMH7OqTsgLy8xNTB+zqk7CiAgICAKICAgIFI/MiA6PSAxLjh+a86pOyAvLzF+a86pOwogICAgCiAgICBDP0MgOj0gLjQ3fs68RjsgLy8xfs68RjsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIGvOqSk7CiAgICAKICAgIFo/UCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzE2LCBrzqkpOwogICAgCiAgICDPtCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEzPzIwLCByYWQpOwogICAgCiAgICBSP1MgOj0gTk0oWj9QICogQ29zKM+0KSk7CiAgICAKICAgIFg/Q1MgOj0gTk0oWj9QICogU2luKM+0KSk7CiAgICAKICAgIFI/VCA6PSBOTShSPzEgKyBSP1MpOwogICAgCiAgICDPtD8yIDo9IEV2YWx1YXRlRm9ybXVsYShmMTM/NSwgcmFkKTsgLy9Ob3RlOnRoZSByZXN1bHQgc2hvdWxkIGJlIG5lZ2F0aXZlLgogICAgCiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMz80KTsKICAgIAogICAgST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwp9Cgo=");
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:12.317",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    ¶    V?S := 30~V;
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:13.887",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:28.981",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:29.408",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:41.686",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:41.821",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:14:42.017",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+R?1 := 330~?;
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:15:51.419",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:15:57.368",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:16:26.737",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:16:26.993",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:03.378",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:03.794",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:35.604",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:36.009",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:37.592",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,subtype="paste",timestamp="2019-03-27 22:17:38.651",username="Brumo",hostname="DESKTOP-2HHTJAH",mpversion="280"
+    
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 33",sequence="50",timestamp="2019-03-27 22:18:28.159",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([X?C, Z?P, ?, R?S, X?CS, R?T, ??2, Z?T, I?T])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407", Substitutions:['Z?T <- 'Z?P, 'R?R <- 'R?2]);¶        ¶        f13?20 := Formula(?~rad == ArcTan(R?R~?/ -X?C~?), Label:"13.20", Page:"409", Description:"Parallel.", Substitutions:['R?R <- 'R?2]);¶        ¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393", Substitutions:['R?R <- 'R?T, 'X?C <- 'X?CS]);¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.", Substitutions:['? <- '??2, 'X?C <- 'X?CS, 'R?R <- 'R?T]);¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C]);¶       ¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R]);¶    }¶        ¶    V?S := 12~V;¶    ¶    f?f := 250~Hz;¶    ¶    R?1 := 330~?;¶    ¶    R?2 := 1.8~k?;¶    ¶    C?C := .47~?F;¶    ¶    X?C := EvaluateFormula(f12?11, k?);¶    ¶    Z?P := EvaluateFormula(f13?16, k?);¶    ¶    ? := EvaluateFormula(f13?20, rad);¶    ¶    R?S := NM(Z?P * Cos(?));¶    ¶    X?CS := NM(Z?P * Sin(?));¶    ¶    R?T := NM(R?1 + R?S);¶    ¶    ??2 := EvaluateFormula(f13?5, rad);¶    ¶    Z?T := EvaluateFormula(f13?4);¶    ¶    I?T := EvaluateFormula(f3?1a, mA);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 33",sequence="51",timestamp="2019-03-27 22:18:50.616",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 33",sequence="54",timestamp="2019-03-27 22:30:05.313",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+¶ProblemSolution([X?C, Z?P, ?, R?S, X?CS, R?T, ??2, Z?T, I?T])¶{¶    Formulas()¶    {¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f13?16 := Formula(Z?T == (X?C~?*R?R~?)/Sqrt(X?C~?^2 + R?R~?^2),  Label:"13.16", Page:"407", Substitutions:['Z?T <- 'Z?P, 'R?R <- 'R?2]);¶        ¶        f13?20 := Formula(?~rad == ArcTan(R?R~?/ -X?C~?), Label:"13.20", Page:"409", Description:"Parallel.", Substitutions:['R?R <- 'R?2]);¶        ¶        f13?4 := Formula(Z?T~? == Sqrt(X?C~?^2 + R?R~?^2), Label:"13.4", Page:"393", Substitutions:['R?R <- 'R?T, 'X?C <- 'X?CS]);¶        ¶        f13?5 := Formula(?~rad == ArcTan((-X?C)~?/R?R~?), Label:"13.5", Page:"393", Description:"Series.", Substitutions:['? <- '??2, 'X?C <- 'X?CS, 'R?R <- 'R?T]);¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C]);¶       ¶        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R]);¶    }¶        ¶    V?S := 18~V;¶    ¶    f?f := 250~Hz;¶    ¶    R?1 := 150~?;¶    ¶    R?2 := 1~k?;¶    ¶    C?C := 1~?F;¶    ¶    X?C := EvaluateFormula(f12?11, k?);¶    ¶    Z?P := EvaluateFormula(f13?16, k?);¶    ¶    ? := EvaluateFormula(f13?20, rad);¶    ¶    R?S := NM(Z?P * Cos(?));¶    ¶    X?CS := NM(Z?P * Sin(?));¶    ¶    R?T := NM(R?1 + R?S);¶    ¶    ??2 := EvaluateFormula(f13?5, rad);¶    ¶    Z?T := EvaluateFormula(f13?4);¶    ¶    I?T := EvaluateFormula(f3?1a, mA);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 33",sequence="55",timestamp="2019-03-27 22:30:18.277",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="280"
+Not logged.
+
+%/info
+

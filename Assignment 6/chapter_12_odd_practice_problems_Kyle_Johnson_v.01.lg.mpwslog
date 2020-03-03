@@ -1,0 +1,190 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="1",timestamp="2019-03-02 15:58:39.708",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="2",timestamp="2019-03-02 15:58:44.783",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="3",timestamp="2019-03-02 15:58:59.406",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbRj9GXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8zIDo9IEZvcm11bGEoRj9GfkYgPT0gQz9DfkMgLyBWP1Z+ViwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMyIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzY3IiwKICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiAiQSBzaW1wbGUgcHJvcG9ydGlvbmFsIHJlbGF0aW9uc2hpcC4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDIwMH5tQzsKICAgIAogICAgVj9WIDo9IDI1flY7CiAgICAKICAgIEY/RiA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzMsIM68Rik7CiAgICAKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="4",timestamp="2019-03-02 16:09:42.951",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([F?F])¶{¶    Formulas()¶    {¶        f12?3 := Formula(F?F~F == C?C~C / V?V~V,¶                         Label: "12.3",¶                         PageNumber: "367",¶                         Description: "A simple proportional relationship.");¶    }¶¶    C?C := 200~mC;¶    ¶    V?V := 25~V;¶    ¶    F?F := EvaluateFormula(f12?3, ?F);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="5",timestamp="2019-03-02 16:12:06.58",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8zIDo9IEZvcm11bGEoRj9GfkYgPT0gQz9DfkMgLyBWP1Z+ViwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMyIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjogIjM2NyIsCiAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIkEgc2ltcGxlIHByb3BvcnRpb25hbCByZWxhdGlvbnNoaXAuIiwKICAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J0M/Qyk7CiAgICB9CiAgICAKICAgIEY/RiA6PSAyMn7OvEY7CiAgICAKICAgIFY/ViA6PSAxOH5WOwogICAgCiAgICBDP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8zLCDOvEMpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="6",timestamp="2019-03-02 16:13:44.233",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?C])¶{¶    Formulas()¶    {¶        f12?3 := Formula(F?F~F == C?C~C / V?V~V,¶                         Label: "12.3",¶                         PageNumber: "367",¶                         Description: "A simple proportional relationship.");¶    }¶    ¶    F?F := 22~?F;¶    ¶    V?V := 18~V;¶    ¶    C?C := EvaluateFormula(12?3, ?C);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="7",timestamp="2019-03-02 16:14:28.333",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?C])¶{¶    Formulas()¶    {¶        f12?3 := Formula(F?F~F == C?C~C / V?V~V,¶                         Label: "12.3",¶                         PageNumber: "367",¶                         Description: "A simple proportional relationship.",¶                         Subject:'C?C);¶    }¶    ¶    F?F := 22~?F;¶    ¶    V?V := 18~V;¶    ¶    C?C := EvaluateFormula(12?3, ?C);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="8",timestamp="2019-03-02 16:15:21.353",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?C])¶{¶    Formulas()¶    {¶        f12?3 := Formula(F?F~F == C?C~C / V?V~V,¶                         Label: "12.3",¶                         PageNumber: "367",¶                         Description: "A simple proportional relationship.",¶                         Subject:'C?C);¶    }¶    ¶    F?F := 22~?F;¶    ¶    V?V := 18~V;¶    ¶    C?C := EvaluateFormula(f12?3, ?C);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 5",sequence="9",timestamp="2019-03-02 16:15:57.167",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj81IDo9IEZvcm11bGEoQz9UfkYgPT0gMS8oMS9DPzF+RiArIDEvQz8yfkYgKyAxL0M/M35GKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuNSIsIAogICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzY5IiwKICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJUb3RhbCBjYXBhY2l0YW5jZSBvZiBjYXBhY2l0b3JzIGNvbm5lY3RlZCBpbiBzZXJpZXMuIik7CiAgICB9CiAgICAKICAgIEM/MSA6PSAxMH7OvEY7CiAgICBDPzIgOj0gMjIwfs68RjsKICAgIEM/MyA6PSAzMzB+zrxGOwogICAgQz9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/NSwgzrxGKTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="10",timestamp="2019-03-02 16:18:59.888",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶ProblemSolution([C?T])¶{¶    Formulas()¶    {¶        f12?5 := Formula(C?T~F == 1/(1/C?1~F + 1/C?2~F + 1/C?3~F),¶                         Label: "12.5",¶                         PageNumber: "369",¶                         Description: "Total capacitance of capacitors connected in series.");¶    }¶    C?1 := 10 ~?F;¶    C?2 := 220 ~?F;¶    C?3 := 330 ~?F;¶    C?T := EvaluateFormula(f12?5, ?F);¶¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 7",sequence="11",timestamp="2019-03-02 16:21:16.926",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj81IDo9IEZvcm11bGEoQz9UfkYgPT0gMS8oMS9DPzF+RiArIDEvQz8yfkYpLCAKICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi41IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlTnVtYmVyOiIzNjkiLAogICAgICAgICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlRvdGFsIGNhcGFjaXRhbmNlIG9mIGNhcGFjaXRvcnMgY29ubmVjdGVkIGluIHNlcmllcy4iKTsKICAgIH0KICAgIAogICAgQz8xIDo9IDEwMH5uRjsKICAgIAogICAgQz8yIDo9IDMzMH5wRjsKCiAgICBDP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj81LCBwRik7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="12",timestamp="2019-03-02 16:22:13.606",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?T])¶{¶    Formulas()¶    {¶        f12?5 := Formula(C?T~F == 1/(1/C?1~F + 1/C?2~F),¶                         Label: "12.5",¶                         PageNumber: "369",¶                         Description: "Total capacitance of capacitors connected in series.");¶    }¶    C?1 := 100 ~nF;¶    C?2 := 330 ~pF;¶    C?T := EvaluateFormula(f12?5, pF);¶¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 9",sequence="13",timestamp="2019-03-02 16:22:30.358",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbQz9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj84IDo9IEZvcm11bGEoQz9UfkYgPT0gQz8xfkYgKyBDPzJ+RiwgCiAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDogIjEyLjgiLCAKICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6IjM3MCIsCiAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIlRvdGFsIGNhcGFjaXRhbmNlIG9mIGNhcGFjaXRvcnMgY29ubmVjdGVkIGluIHBhcmFsbGVsLiIpOwogICAgfQogICAgCiAgICBDPzEgOj0gMjJ+zrxGOwogICAgCiAgICBDPzIgOj0gMzN+zrxGOwoKICAgIEM/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzgsIM68Rik7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="14",timestamp="2019-03-02 16:25:25.327",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?T])¶{¶    Formulas()¶    {¶        f12?8 := Formula(C?T~F == C?1~F + C?2~F,¶                         Label: "12.8",¶                         PageNumber: "370",¶                         Description: "Total capacitance of capacitors connected in parallel.");¶    }¶    C?1 := 22 ~?F;¶    ¶    C?2 := 33 ~?F;¶    ¶    C?T := EvaluateFormula(f12?5, ?F);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="15",timestamp="2019-03-02 16:25:31.887",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([C?T])¶{¶    Formulas()¶    {¶        f12?8 := Formula(C?T~F == C?1~F + C?2~F,¶                         Label: "12.8",¶                         PageNumber: "370",¶                         Description: "Total capacitance of capacitors connected in parallel.");¶    }¶    C?1 := 22 ~?F;¶    ¶    C?2 := 33 ~?F;¶    ¶    C?T := EvaluateFormula(f12?8, ?F);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 11",sequence="16",timestamp="2019-03-02 16:25:43.438",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSBWP3Jtc35WIC8gST9ybXN+QSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIlJlYWN0YW5jZSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgVj9ybXMgOj0gOH5WOwogICAgCiAgICBJP3JtcyA6PSAxMDB+zrxBOwoKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzEwLCBrzqkpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="17",timestamp="2019-03-02 16:27:54.012",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([X?C])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == V?rms~C / I?rms~A,¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶    }¶    ¶    V?rms := 8~V;¶    ¶    I?rms := 100~?A;¶    ¶    X?C := EvaluateFormula(f12?10, k?);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 13",sequence="18",timestamp="2019-03-02 16:28:03.378",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSAxLygyKlBpKmY/Zn5IeipDP0N+RiksIAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi4xMCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJSZWFjdGFuY2Ugb2YgYSBjYXBhY2l0b3IuIik7CiAgICB9CiAgICAKICAgIGY/ZiA6PSAxNTB+SHo7CiAgICAKICAgIEM/QyA6PSAuMX7OvEY7CgogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTAsIGvOqSk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 11",sequence="19",timestamp="2019-03-02 16:28:22.181",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSBWP3Jtc35WIC8gST9ybXN+QSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjoiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjogIlJlYWN0YW5jZSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgVj9ybXMgOj0gOH5WOwogICAgCiAgICBJP3JtcyA6PSAxMDB+zrxBOwoKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzEwLCBrzqkpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="20",timestamp="2019-03-02 16:30:56.224",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([X?C])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶    }¶    ¶    f?f := 150~Hz;¶    ¶    C?C := .1~?F;¶    ¶    X?C := EvaluateFormula(f12?10, k?);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 15",sequence="21",timestamp="2019-03-02 16:31:09.693",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DLCBJP0NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IigzLjEpIiwgCiAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6Ijc4IiwgCiAgICAgICAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJPaG0ncyBsYXciLAogICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9DLCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWD9DXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTAiLCAKICAgICAgICAgICAgICAgICAgICAgICAgICBQYWdlTnVtYmVyOiAiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgfQogICAgICAgCiAgICBmP2YgOj0gMX5rSHo7CiAgICAKICAgIEM/QyA6PSAuMDF+zrxGOwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwga86pKTsKICAgIAogICAgVj9TIDo9IDEwflY7CiAgICAKICAgIEk/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MSwgzrxBKTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="22",timestamp="2019-03-02 16:35:35.13",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([])¶{¶    Formulas()¶    {¶        f3?1 := Formula(I?OL~A == V?OL~V / R?OL~?,¶                         Label: "3.1",¶                         PageNumber: "78",¶                         Description: "Ohm's law",¶                         Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶                         ¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶    }¶¶    f?f := 1~kHz;¶    ¶    C?C := .01~?F;¶    ¶    X?C := EvaluateFormula(f12?10,k?);¶    ¶    V?S := 10~V;¶    ¶    I?C := EvaluateFormula(f3?1, ?A);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 15",sequence="23",timestamp="2019-03-02 16:35:52.958",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([X?C, I?C])¶{¶    Formulas()¶    {¶        f3?1 := Formula(I?OL~A == V?OL~V / R?OL~?,¶                         Label: "3.1",¶                         PageNumber: "78",¶                         Description: "Ohm's law",¶                         Substitutions:['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);¶                         ¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶    }¶¶    f?f := 1~kHz;¶    ¶    C?C := .01~?F;¶    ¶    X?C := EvaluateFormula(f12?10,k?);¶    ¶    V?S := 10~V;¶    ¶    I?C := EvaluateFormula(f3?1, ?A);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 17",sequence="24",timestamp="2019-03-02 16:37:03.308",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9DVF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICB0b3RhbFBhcmFsbGVsUmVhY3RhbmNlIDo9IEZvcm11bGEoWD9DVH7OqSA9PSAoWD9DMX7OqSAqIFg/QzJ+zqkpIC8gKFg/QzF+zqkgKyBYP0Myfs6pKSwgCiAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6IjM3OCIsIAogICAgICAgICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUGFyYWxsZWwgY2FwYWNpdGF0aXZlIHJlYWN0YW5jZS4iKTsKICAgIH0KICAgICAgIAogICAgWD9DMSA6PSAxNzB+zqk7CiAgICAKICAgIFg/QzIgOj0gMjgwfs6pOwogICAgCiAgICBYP0NUIDo9IEV2YWx1YXRlRm9ybXVsYSh0b3RhbFBhcmFsbGVsUmVhY3RhbmNlLCDOqSk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 17",sequence="25",timestamp="2019-03-02 16:41:17.585",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ~?¶*/¶ProblemSolution([X?CT])¶{¶    Formulas()¶    {¶        totalParallelReactance := Formula(X?CT~? == (X?C1~? * X?C2~?) / (X?C1~? + X?C2~?),¶                         PageNumber: "378",¶                         Description: "Parallel capacitor reactance.");¶    }¶    X?C1 := 170~?;¶    ¶    X?C2 := 280~?;¶    ¶    X?CT := EvaluateFormula(totalParallelReactance, ?)¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 17",sequence="26",timestamp="2019-03-02 16:41:23.878",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ~?¶*/¶ProblemSolution([X?CT])¶{¶    Formulas()¶    {¶        totalParallelReactance := Formula(X?CT~? == (X?C1~? * X?C2~?) / (X?C1~? + X?C2~?),¶                         PageNumber: "378",¶                         Description: "Parallel capacitor reactance.");¶    }¶    X?C1 := 170~?;¶    ¶    X?C2 := 280~?;¶    ¶    X?CT := EvaluateFormula(totalParallelReactance, ?);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 17",sequence="27",timestamp="2019-03-02 16:42:04.916",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT9RXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMj8xMCA6PSBGb3JtdWxhKFg/Q37OqSA9PSAxLygyKlBpKmY/Zn5IeipDP0N+RiksIAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTAiLCAKICAgICAgICAgICAgICAgICAgUGFnZU51bWJlcjogIjM3NyIsCiAgICAgICAgICAgICAgICAgIERlc2NyaXB0aW9uOiJSZWFjdGFuY2Ugb2YgYSBjYXBhY2l0b3IuIik7CiAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMj8xMyA6PSBGb3JtdWxhKFE/USA6PSBSP0QvWD9DLAogICAgICAgICAgICAgICAgICBMYWJlbDoiMTIuMTMiLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUXVhbGl0eSBRIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgfQogICAgCiAgICBmP2YgOj0gNjB+SHo7CiAgICAKICAgIEM/QyA6PSAuMDF+zrxGOwogICAgCiAgICBSP0QgOj0gNTAwfk3OqTsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTAsIM6pKTsKICAgIAogICAgUT9RIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTMpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 17",sequence="28",timestamp="2019-03-02 16:45:52.865",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?Q])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶    }¶    ¶    f?f := 60~Hz;¶    ¶    C?C := .01~?F;¶    ¶    R?D := 500~M?;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?Q := EvaluateFormula(f12?13);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="29",timestamp="2019-03-02 16:46:20.886",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT8xLFE/Ml0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTMgOj0gRm9ybXVsYShRP1EgOj0gUj9EL1g/QywKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEzIiwKICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlF1YWxpdHkgUSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDEwMH5wRjsKICAgIAogICAgUj9EIDo9IDEwMDB+Tc6pOwogICAgCiAgICAvLyBGcmVxdWVuY3kgMS4KICAgIAogICAgZj9mIDo9IDN+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7CiAgICAKICAgIC8vIEZyZXF1ZW5jeSAyLgogICAgCiAgICBmP2YgOj0gMzB+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="30",timestamp="2019-03-02 16:48:35.013",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT8xLFE/Ml0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTMgOj0gRm9ybXVsYShRP1EgOj0gUj9EL1g/QywKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEzIiwKICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlF1YWxpdHkgUSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDEwMH5wRjsKICAgIAogICAgUj9EIDo9IDEwMDB+Tc6pOwogICAgCiAgICAvLyBGcmVxdWVuY3kgMS4KICAgIAogICAgZj9mIDo9IDN+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7CiAgICAKICAgIC8vIEZyZXF1ZW5jeSAyLgogICAgCiAgICBmP2YgOj0gMzB+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="31",timestamp="2019-03-02 16:48:57.677",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT8xLFE/Ml0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTMgOj0gRm9ybXVsYShRP1EgOj0gUj9EL1g/QywKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEzIiwKICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlF1YWxpdHkgUSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDEwMH5wRjsKICAgIAogICAgUj9EIDo9IDEwMDB+Tc6pOwogICAgCiAgICAvLyBGcmVxdWVuY3kgMS4KICAgIAogICAgZj9mIDo9IDN+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7CiAgICAKICAgIC8vIEZyZXF1ZW5jeSAyLgogICAgCiAgICBmP2YgOj0gMzB+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="32",timestamp="2019-03-02 16:49:50.589",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f := 30~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 23",sequence="33",timestamp="2019-03-02 16:50:20.917",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbUT8xLFE/Ml0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTI/MTAgOj0gRm9ybXVsYShYP0N+zqkgPT0gMS8oMipQaSpmP2Z+SHoqQz9DfkYpLCAKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEwIiwgCiAgICAgICAgICAgICAgICAgIFBhZ2VOdW1iZXI6ICIzNzciLAogICAgICAgICAgICAgICAgICBEZXNjcmlwdGlvbjoiUmVhY3RhbmNlIG9mIGEgY2FwYWNpdG9yLiIpOwogICAgICAgICAgICAgICAgICAKICAgICAgICBmMTI/MTMgOj0gRm9ybXVsYShRP1EgOj0gUj9EL1g/QywKICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjEzIiwKICAgICAgICAgICAgICAgICAgRGVzY3JpcHRpb246IlF1YWxpdHkgUSBvZiBhIGNhcGFjaXRvci4iKTsKICAgIH0KICAgIAogICAgQz9DIDo9IDEwMH5wRjsKICAgIAogICAgUj9EIDo9IDEwMDB+Tc6pOwogICAgCiAgICAvLyBGcmVxdWVuY3kgMS4KICAgIAogICAgZj9mIDo9IDN+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7CiAgICAKICAgIC8vIEZyZXF1ZW5jeSAyLgogICAgCiAgICBmP2YgOj0gMzB+a0h6OwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMCwgzqkpOwogICAgCiAgICBRPzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="34",timestamp="2019-03-02 16:52:18.939",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 30~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="35",timestamp="2019-03-02 16:57:20.422",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶        f12?10a := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶                         Substitutions:['f?f <- 'f?f2, 'X?C <- 'X?C2]);¶        f12?13a := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶                         Substitutions:['Q?Q <- 'Q?Q2, 'X?C <- 'X?C2]);¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f2 := 30~kHz;¶    ¶    X?C2 := EvaluateFormula(f12?10a, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13a);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="36",timestamp="2019-03-02 16:57:47.289",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶        f12?10a := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.")¶                         Substitutions:['f?f <- 'f?f2, 'X?C <- 'X?C2]);¶        f12?13a := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.")¶                         Substitutions:['Q?Q <- 'Q?2, 'X?C <- 'X?C2]);¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f2 := 30~kHz;¶    ¶    X?C2 := EvaluateFormula(f12?10a, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13a);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="37",timestamp="2019-03-02 16:57:57.308",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶        f12?10a := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor."¶                         Substitutions:['f?f <- 'f?f2, 'X?C <- 'X?C2]);¶        f12?13a := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor."¶                         Substitutions:['Q?Q <- 'Q?2, 'X?C <- 'X?C2]);¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f2 := 30~kHz;¶    ¶    X?C2 := EvaluateFormula(f12?10a, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13a);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 23",sequence="38",timestamp="2019-03-02 16:58:03.349",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".277"
+¶/*¶Symbols:¶? ? ? ?¶*/¶ProblemSolution([Q?1, Q?2])¶{¶    Formulas()¶    {¶        f12?10 := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.");¶        f12?13 := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.");¶        f12?10a := Formula(X?C~? == 1 / (2 * Pi * f?f~Hz * C?C~F),¶                         Label: "12.10",¶                         PageNumber: "377",¶                         Description: "Reactance of a capacitor.",¶                         Substitutions:['f?f <- 'f?f2, 'X?C <- 'X?C2]);¶        f12?13a := Formula(Q?Q == R?D/ X?C,¶                         Label: "12.13",¶                         Description: "Quality Q of a capacitor.",¶                         Substitutions:['Q?Q <- 'Q?2, 'X?C <- 'X?C2]);¶    }¶    C?C := 100~pF;¶    ¶    R?D := 1000~M?;¶    ¶    f?f := 3~kHz;¶    ¶    X?C := EvaluateFormula(f12?10, ?);¶    ¶    Q?1 := EvaluateFormula(f12?13);¶    ¶    f?f2 := 30~kHz;¶    ¶    X?C2 := EvaluateFormula(f12?10a, ?);¶    ¶    Q?2 := EvaluateFormula(f12?13a);¶}¶/*¶Answer:¶1. 8000 ?F¶3. 396 ?C¶5. 9.3 ?F¶7. 329 pF¶9. 55 ?F¶11. 80 k?¶13. 10.6 k?¶15. 15.9 k?¶17. 106 ?¶19. It cannot be used.¶21. 1887¶23. 1.88 k? - 18.8 k?¶*/
+
+%/info
+

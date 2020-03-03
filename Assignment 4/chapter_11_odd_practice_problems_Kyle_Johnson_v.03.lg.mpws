@@ -1,0 +1,1435 @@
+v.03
+
+chapter_11_odd_practice_problems.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get theta.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+°∠Ωμ
+- How to obtain the right side of an equation.
+In> exp := 8 == 9
+Result: 8 == 9
+
+In> exp
+Result: 8 == 9
+
+In> In> exp[2]
+Result: 9
+
+- The results of "Arc" procedures need to be
+specified as being in radians: ArcTan(V?L/V?R)~rad
+
+
+
+------------------------------
+
+
+------------------------------
+
+
+-------------------------------
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".271",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"UnparseMath2D");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .271. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="Practice problem 1 p.357."
+========================================================================================================
+
+
+%mathpiper,name="Problem 1",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9TLCB0aGV0YV0pCnsKICAgIGVsZXZlblBvaW50T25lIDo9IEZvcm11bGEoVj9TID09IFNxcnQoVj9MXjIgKyBWP1JeMiksICIoMTEuMSkiLCAiMzMwIik7CiAgICAKICAgIFY/TCA6PSAxflY7CiAgICAKICAgIFY/UiA6PSA0flY7CiAgICAKICAgIEV2YWx1YXRlKGVsZXZlblBvaW50T25lKTsKICAgIAogICAgZWxldmVuUG9pbnRUd28gOj0gRm9ybXVsYSh0aGV0YSA9PSBBcmNUYW4oVj9ML1Y/UikgfiByYWQsICIoMTEuMikiLCAiMzMwIik7CiAgICAKICAgIEV2YWx1YXRlKGVsZXZlblBvaW50VHdvLCBkZWdyZWUpOwp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 1",subtype="problem",unassign_all="true"
+/*
+Problem 1.1)
+
+The component voltages shown in Figure 11.34a were taken using an ac voltmeter.
+Determine the magnitude and phase angle of V?S for the circuit.
+*/
+
+ProblemSolution([V?S, theta])
+{
+    elevenPointOne := Formula(V?S == Sqrt(V?L^2 + V?R^2),"(11.1)","330");
+    
+    V?L := 1~V;
+    
+    V?R := 4~V;
+    
+    Evaluate(elevenPointOne);
+    
+    elevenPointTwo := Formula(theta == ArcTan(V?L/V?R) ~rad, "(11.2)", "330");
+    
+    Evaluate(elevenPointTwo, degree);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+4.12 V ∠ 14°
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".271",preserve="false"
+      Result: 14.03624347~degree
+      
+      Side Effects:
+      === VARIABLES ===
+      V?S: 4.123105626~V
+      theta: 14.03624347~degree
+      
+      === STEPS (CODE VIEW) ===
+      elevenPointOne := '(V?S == Sqrt(V?L^2 + V?R^2))
+      V?L := 1~V
+      V?R := 4~V
+      Evaluate(elevenPointOne) ==> 4.123105626~V
+      elevenPointTwo := '(theta == ArcTan(V?L/V?R)~rad)
+      Evaluate(elevenPointTwo,degree) ==> 14.03624347~degree
+      
+      === STEPS (MATH VIEW) ===
+      /                                                                    \
+      |                    /            /    2      2 \ \                  |
+      | elevenPointOne := '\ V?S == Sqrt\ V?L  + V?R  / /                  |
+      |                                                                    |
+      | V?L := 1 ~ V                                                       |
+      |                                                                    |
+      | V?R := 4 ~ V                                                       |
+      |                                                                    |
+      | ( Evaluate(elevenPointOne) ==>  )        ( 4.123105626 ~ V )       |
+      |                                                                    |
+      |                    /                / V?L \       \                |
+      | elevenPointTwo := '| theta == ArcTan| --- | ~ rad |                |
+      |                    \                \ V?R /       /                |
+      |                                                                    |
+      | ( Evaluate(elevenPointTwo,degree) ==>  ) ( 14.03624347 ~ degree )  |
+      \                                                                    /
+      
+      
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 1"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.1) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(V?S_ == Sqrt(V?L_^2 + V?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(V?L_/V?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      V?S =? 4.123105626~V;
+    
+      theta =? 14.03624347~degree;
+    }
+*/
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 1",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        ProblemSolution([V?S,theta])
+        {
+          elevenPointOne := Formula(V?S == Sqrt(V?L^2 + V?R^2),"(11.1)","330");
+      
+          V?L := 1~V;
+      
+          V?R := 4~V;
+      
+          Evaluate(elevenPointOne);
+      
+          elevenPointTwo := Formula(theta == ArcTan(V?L/V?R)~rad,"(11.2)","330");
+      
+          Evaluate(elevenPointTwo,degree);
+        }
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= .271. (1/1)
+        PASS: Formula (11.1) is used. (1/1)
+        PASS: Formula (11.2) is used. (1/1)
+      
+        8/8 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 2",description="Practice problem 3 p.357."
+========================================================================================================
+
+
+%mathpiper,name="Problem 2",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCB0aGV0YV0pCnsKICAgIHRlblBvaW50T25lRm91ciA6PSBGb3JtdWxhKCBYP0wgPT0gMipQaSpmP2YqTD9MLCAiKDEwLjE0KSIsICIzMDIiKTsKICAgIAogICAgZj9mIDo9IDh+a0h6OwogICAgCiAgICBMP0wgOj0gMjJ+bUg7CiAgICAKICAgIEV2YWx1YXRlKHRlblBvaW50T25lRm91cik7CiAgICAKICAgIGVsZXZlblBvaW50Rm91ciA6PSBGb3JtdWxhKCBaP1QgPT0gU3FydChYP0xeMiArIFI/Ul4yKSwgIigxMS40KSIsICIzMzIiKTsKICAgIAogICAgUj9SIDo9IDQuN35rzqk7CiAgICAKICAgIEV2YWx1YXRlKGVsZXZlblBvaW50Rm91ciwga86pKTsKICAgIAogICAgZWxldmVuUG9pbnRUd28gOj0gRm9ybXVsYSggdGhldGEgPT0gQXJjVGFuKFg/TC9SP1IpIH4gcmFkLCAiKDExLjUpIiwgIjMzMCIpOwogICAgCiAgICBFdmFsdWF0ZShlbGV2ZW5Qb2ludFR3bywgZGVncmVlKTsKfQoK");
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 2",subtype="problem",unassign_all="true"
+/*
+Problem 2.3)
+
+Calculate the magnitude and phase angle of the circuit impedance for Figure 11.35a.
+*/
+
+ProblemSolution([Z?T, theta])
+{
+    tenPointOneFour := Formula(X?L == 2 * Pi * f?f * L?L,"(10.14)","302");
+    
+    f?f := 8~kHz;
+    
+    L?L := 22~mH;
+    
+    Evaluate(tenPointOneFour);
+    
+    elevenPointFour := Formula(Z?T == Sqrt(X?L^2 + R?R^2), "(11.4)", "332");
+    
+    R?R := 4.7~kΩ;
+    
+    Evaluate(elevenPointFour, kΩ);
+    
+    elevenPointTwo := Formula(theta == ArcTan(X?L/R?R) ~ rad, "(11.5)", "330");
+    
+    Evaluate(elevenPointTwo, degree);
+}
+/*
+-------------------------------------------------------------------------------------
+Answer:
+4.83kΩ ∠ 13.3°
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".271",preserve="false"
+      Result: 13.24003778~degree
+      
+      Side Effects:
+      === VARIABLES ===
+      Z?T: 4.828341688~kΩ
+      theta: 13.24003778~degree
+      
+      === STEPS (CODE VIEW) ===
+      tenPointOneFour := '(X?L == 2*Pi*f?f*L?L)
+      f?f := 8~kHz
+      L?L := 22~mH
+      Evaluate(tenPointOneFour) ==> 1105.840614~Ω
+      elevenPointFour := '(Z?T == Sqrt(X?L^2 + R?R^2))
+      R?R := 4.7~kΩ
+      Evaluate(elevenPointFour,kΩ) ==> 4.828341688~kΩ
+      elevenPointTwo := '(theta == ArcTan(X?L/R?R)~rad)
+      Evaluate(elevenPointTwo,degree) ==> 13.24003778~degree
+      
+      === STEPS (MATH VIEW) ===
+      /                                                                    \
+      | tenPointOneFour := '( X?L == 2 * Pi * f?f * L?L )                  |
+      |                                                                    |
+      | f?f := 8 ~ kHz                                                     |
+      |                                                                    |
+      | L?L := 22 ~ mH                                                     |
+      |                                                                    |
+      | ( Evaluate(tenPointOneFour) ==>  )       ( 1105.840614 ~ Ω )       |
+      |                                                                    |
+      |                     /            /    2      2 \ \                 |
+      | elevenPointFour := '\ Z?T == Sqrt\ X?L  + R?R  / /                 |
+      |                                                                    |
+      | R?R := 4.7 ~ kΩ                                                    |
+      |                                                                    |
+      | ( Evaluate(elevenPointFour,kΩ) ==>  )    ( 4.828341688 ~ kΩ )      |
+      |                                                                    |
+      |                    /                / X?L \       \                |
+      | elevenPointTwo := '| theta == ArcTan| --- | ~ rad |                |
+      |                    \                \ R?R /       /                |
+      |                                                                    |
+      | ( Evaluate(elevenPointTwo,degree) ==>  ) ( 13.24003778 ~ degree )  |
+      \                                                                    /
+      
+      
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 2"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (10.14) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(X?L_ == 2*Pi*f?f_*L?L_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.4) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(Z?T_ == Sqrt(X?L_^2 + R?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(X?L_/R?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      Z?T =? 4.828341688~kΩ;
+    
+      theta =? 13.24003778~degree;
+    }
+*/
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 2",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        ProblemSolution([Z?T,theta])
+        {
+          tenPointOneFour := Formula(X?L == 2*Pi*f?f*L?L,"(10.14)","302");
+      
+          f?f := 8~kHz;
+      
+          L?L := 22~mH;
+      
+          Evaluate(tenPointOneFour);
+      
+          elevenPointFour := Formula(Z?T == Sqrt(X?L^2 + R?R^2),"(11.4)","332");
+      
+          R?R := 4.7~kÎ©;
+      
+          Evaluate(elevenPointFour,kÎ©);
+      
+          elevenPointTwo := Formula(theta == ArcTan(X?L/R?R)~rad,"(11.5)","330");
+      
+          Evaluate(elevenPointTwo,degree);
+        }
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= .271. (1/1)
+        PASS: Formula (10.14) is used. (1/1)
+        PASS: Formula (11.4) is used. (1/1)
+        PASS: Formula (11.2) is used. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="Practice problem 5 p.357."
+========================================================================================================
+
+
+%mathpiper,name="Problem 3",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCB0aGV0YSwgST9ULCBWP0wsIFY/Ul0pCnsKICAgIC8vIFg/TC4KICAgIHRlblBvaW50T25lRm91ciA6PSBGb3JtdWxhKCBYP0wgPT0gMipQaSAqIGY/ZiAqIEw/TCwgIigxMC4xNCkiLCAiMzAyIik7CiAgICBmP2YgOj0gOX5rSHo7CiAgICBMP0wgOj0gNTF+bUg7CiAgICBFdmFsdWF0ZSh0ZW5Qb2ludE9uZUZvdXIpOwogICAgCiAgICAvLyBpbXBlZGFuY2UuCiAgICBlbGV2ZW5Qb2ludEZvdXIgOj0gRm9ybXVsYSggWj9UID09IFNxcnQoWD9MXjIgKyBSP1JeMiksICIoMTEuNCkiLCAiMzMyIik7CiAgICBSP1IgOj0gMi43fmvOqTsKICAgIGVsZXZlblBvaW50VHdvIDo9IEZvcm11bGEoIHRoZXRhID09IEFyY1RhbihYP0wvUj9SKSB+IHJhZCwgIigxMS4yKSIsICIzMzAiKTsKICAgIGltcGVkYW5jZSA6PSBFdmFsdWF0ZShlbGV2ZW5Qb2ludEZvdXIsIGvOqSkg4oigIEV2YWx1YXRlKGVsZXZlblBvaW50VHdvLCBkZWdyZWUpOwogICAgCiAgICAvLyBJP1QuCiAgICBvaG1zTGF3IDo9IEZvcm11bGEoIEk/T0wgPT0gVj9PTC9SP09MICwgIigzLjEpIiwgIjc4Iik7CiAgICBjaXJjdWl0Q3VycmVudCA6PSBTdWJzdGl0dXRlMihvaG1zTGF3LCBbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gaW1wZWRhbmNlXSk7CiAgICBWP1MgOj0gM35WIOKIoCAwfmRlZ3JlZTsKICAgIEV2YWx1YXRlKGNpcmN1aXRDdXJyZW50LCDOvEEpOwogICAgCiAgICAvLyBWP0wuCiAgICBlbGV2ZW5Qb2ludFNpeCA6PSBGb3JtdWxhKCBWP24gPT0gVj9TICogKFo/biAvIFo/VCksICIoMTEuNikiLCAiMzM0Iik7CiAgICBpbmR1Y3RvclZvbHRhZ2UgOj0gU3Vic3RpdHV0ZTIoZWxldmVuUG9pbnRTaXgsIFsnVj9uIDwtICdWP0wsICdaP24gPC0gWD9MIOKIoCA5MH5kZWdyZWUsICdaP1QgPC0gaW1wZWRhbmNlXSk7CiAgICBFdmFsdWF0ZShpbmR1Y3RvclZvbHRhZ2UpOwogICAgCiAgICAvLyBWP1IuCiAgICBpbmR1Y3RvclZvbHRhZ2UgOj0gU3Vic3RpdHV0ZTIoZWxldmVuUG9pbnRTaXgsIFsnVj9uIDwtICdWP1IsICdaP24gPC0gUj9SIOKIoCAwfmRlZ3JlZSwgJ1o/VCA8LSBpbXBlZGFuY2VdKTsKICAgIEV2YWx1YXRlKGluZHVjdG9yVm9sdGFnZSk7Cn0KCg==");
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 3",subtype="problem",unassign_all="true"
+/*
+Problem 3.5)
+
+Calculate the values of Z?T, I?T, V?L, V?R, and ϴ for the circuit shown in Figure 11.36a.
+*/
+
+ProblemSolution([Z?T, theta, I?T, V?L, V?R])
+{
+    // X?L
+    tenPointOneFour := Formula( X?L == 2*Pi * f?f * L?L,"(10.14)","302");    
+    f?f := 9~kHz;    
+    L?L := 51~mH;    
+    Evaluate(tenPointOneFour);
+    
+    //impedance
+    elevenPointFour := Formula( Z?T == Sqrt(X?L^2 + R?R^2),"(11.4)","332");    
+    R?R := 2.7~kΩ;    
+    elevenPointTwo := Formula( theta == ArcTan(X?L/R?R) ~ rad,"(11.2)","330");    
+    impedance := Evaluate(elevenPointFour, kΩ) ∠ Evaluate(elevenPointTwo, degree);
+    
+    //I?T
+    ohmsLaw := Formula( I?OL == V?OL/R?OL,"(3.1)", "78");    
+    circuitCurrent := Substitute2(ohmsLaw, ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]);   
+    V?S := 3~V ∠ 0~degree;    
+    Evaluate(circuitCurrent, μA);
+    
+    //V?L
+    elevenPointSix := Formula( V?n == V?S * (Z?n / Z?T),"(11.6)","334");   
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]);   
+    Evaluate(inductorVoltage);
+    
+    //V?R
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]);   
+    Evaluate(inductorVoltage);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+Z?T = 3.95kΩ, ϴ = 46.8°, I?T = 760μA, V?L = 2.19V, V?R = 2.05V 
+
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".271",preserve="false"
+      Result: 2.050314104~V ∠ (-46.88710908)~degree
+      
+      Side Effects:
+      === VARIABLES ===
+      Z?T: 3.950614193~kΩ
+      theta: 46.88710908~degree
+      I?T: 759.3755941~μA ∠ (-46.88710908)~degree
+      V?L: 2.190025587~V ∠ 43.11289092~degree
+      V?R: 2.050314104~V ∠ (-46.88710908)~degree
+      
+      === STEPS (CODE VIEW) ===
+      tenPointOneFour := '(X?L == 2*Pi*f?f*L?L)
+      f?f := 9~kHz
+      L?L := 51~mH
+      Evaluate(tenPointOneFour) ==> 2883.982056~Ω
+      elevenPointFour := '(Z?T == Sqrt(X?L^2 + R?R^2))
+      R?R := 2.7~kΩ
+      elevenPointTwo := '(theta == ArcTan(X?L/R?R)~rad)
+      impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==> 3.950614193~kΩ ∠ 46.88710908~degree
+      ohmsLaw := '(I?OL == V?OL/R?OL)
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==> I?T == V?S/3.950614193~kΩ ∠ 46.88710908~degree
+      V?S := 3~V ∠ 0~degree
+      Evaluate(circuitCurrent,μA) ==> 759.3755941~μA ∠ (-46.88710908)~degree
+      elevenPointSix := '(V?n == V?S*Z?n/Z?T)
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==> V?L == V?S*2883.982056~Ω ∠ 90~degree/3.950614193~kΩ ∠ 46.88710908~degree
+      Evaluate(inductorVoltage) ==> 2.190025587~V ∠ 43.11289092~degree
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==> V?R == V?S*2.7~kΩ ∠ 0~degree/3.950614193~kΩ ∠ 46.88710908~degree
+      Evaluate(inductorVoltage) ==> 2.050314104~V ∠ (-46.88710908)~degree
+      
+      === STEPS (MATH VIEW) ===
+      /                                                                                                                                                                          \
+      | tenPointOneFour := '( X?L == 2 * Pi * f?f * L?L )                                                                                                                        |
+      |                                                                                                                                                                          |
+      | f?f := 9 ~ kHz                                                                                                                                                           |
+      |                                                                                                                                                                          |
+      | L?L := 51 ~ mH                                                                                                                                                           |
+      |                                                                                                                                                                          |
+      | ( Evaluate(tenPointOneFour) ==>  )                                                                                  ( 2883.982056 ~ Ω )                                  |
+      |                                                                                                                                                                          |
+      |                     /            /    2      2 \ \                                                                                                                       |
+      | elevenPointFour := '\ Z?T == Sqrt\ X?L  + R?R  / /                                                                                                                       |
+      |                                                                                                                                                                          |
+      | R?R := 2.7 ~ kΩ                                                                                                                                                          |
+      |                                                                                                                                                                          |
+      |                    /                / X?L \       \                                                                                                                      |
+      | elevenPointTwo := '| theta == ArcTan| --- | ~ rad |                                                                                                                      |
+      |                    \                \ R?R /       /                                                                                                                      |
+      |                                                                                                                                                                          |
+      | ( impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==>  )                                ( 3.950614193 ~ kΩ ∠ 46.88710908 ~ degree )          |
+      |                                                                                                                                                                          |
+      |             /         V?OL \                                                                                                                                             |
+      | ohmsLaw := '| I?OL == ---- |                                                                                                                                             |
+      |             \         R?OL /                                                                                                                                             |
+      |                                                                                                                                                                          |
+      | ( circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==>  )                 ( I?T == 759.3755941 ~ μA ∠ -46.88710908 ~ degree )  |
+      |                                                                                                                                                                          |
+      | V?S := 3 ~ V ∠ 0 ~ degree                                                                                                                                                |
+      |                                                                                                                                                                          |
+      | ( Evaluate(circuitCurrent,μA) ==>  )                                                                                ( 759.3755941 ~ μA ∠ -46.88710908 ~ degree )         |
+      |                                                                                                                                                                          |
+      |                    /        V?S * Z?n \                                                                                                                                  |
+      | elevenPointSix := '| V?n == --------- |                                                                                                                                  |
+      |                    \           Z?T    /                                                                                                                                  |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==>  ) ( V?L == 2.190025587 ~ V ∠ 43.11289092 ~ degree )    |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 2.190025587 ~ V ∠ 43.11289092 ~ degree )           |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==>  )  ( V?R == 2.050314104 ~ V ∠ -46.88710908 ~ degree )   |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 2.050314104 ~ V ∠ -46.88710908 ~ degree )          |
+      \                                                                                                                                                                          /
+      
+      
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 3"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (10.14) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(X?L_ == 2*Pi*f?f_*L?L_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.4) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(Z?T_ == Sqrt(X?L_^2 + R?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(X?L_/R?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (3.1) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(I?OL_ == V?OL_/R?OL_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.6) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(V?n_ == V?S_*Z?n_/Z?T_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      Z?T =? 3.950614193~kΩ;
+    
+      theta =? 46.88710908~degree;
+    
+      I?T =? 759.3755941~μA ∠ (-46.88710908)~degree;
+    
+      V?L =? 2.190025587~V ∠ 43.11289092~degree;
+    
+      V?R =? 2.050314104~V ∠ (-46.88710908)~degree;
+    }*/
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 3",mpversion=".271",preserve="false"
+      Result: False
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+      
+      
+      FAIL:(CRITICAL, TESTING HALTED, 0 FOR THE PROBLEM. ERROR MESSAGE: Error encountered during parsing: Expected a ***( ; )*** end of statement token in program block but found ***( âˆ )*** instead.): The code does not throw an exception when parsed. (0/1)
+        SKIPPED: The fold is not empty. (0/1)
+        SKIPPED: The ':' operator is not used. (0/1)
+        SKIPPED: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (0/1)
+        SKIPPED: The version of "Append" that does not end with a '!' is not used. (0/1)
+        ------------------------------------------
+        SKIPPED: MathPiper version >= .271. (0/1)
+        SKIPPED: Formula (10.14) is used. (0/1)
+        SKIPPED: Formula (11.4) is used. (0/1)
+        SKIPPED: Formula (11.2) is used. (0/1)
+        SKIPPED: Formula (3.1) is used. (0/1)
+        SKIPPED: Formula (11.6) is used. (0/1)
+      
+        0/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 4",description="Practice problem 7 p.357."
+========================================================================================================
+
+
+%mathpiper,name="Problem 4",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCB0aGV0YSwgST9ULCBWP0wxLCBWP0wyXSkKewoKICAgIHRlblBvaW50T25lRm91ciA6PSBGb3JtdWxhKCBYP0wgPT0gMipQaSAqIGY/ZiAqIEw/TCwgIigxMC4xNCkiLCAiMzAyIik7CiAgICAKICAgIC8vIFg/TDEuCiAgICBpbmR1Y3Rvcj8xIDo9IFN1YnN0aXR1dGUyKHRlblBvaW50T25lRm91ciwgWydYP0wgPC0gJ1g/TDEsICdMP0wgPC0gJ0w/MV0pOwogICAgZj9mIDo9IDE1fmtIejsKICAgIEw/MSA6PSAxNX5tSDsKICAgIEV2YWx1YXRlKGluZHVjdG9yPzEpOwogICAgCiAgICAvLyBYP0wyLgogICAgaW5kdWN0b3I/MiA6PSBTdWJzdGl0dXRlMih0ZW5Qb2ludE9uZUZvdXIsIFsnWD9MIDwtICdYP0wyLCAnTD9MIDwtICdMPzJdKTsKICAgIEw/MiA6PSAzLjN+bUg7CiAgICBFdmFsdWF0ZShpbmR1Y3Rvcj8yKTsKICAgIAogICAgLy8gWD9MLgogICAgWD9MVCA6PSBYP0wxICsgWD9MMjsKICAgIAogICAgLy8gaW1wZWRhbmNlLgogICAgZWxldmVuUG9pbnRGb3VyIDo9IEZvcm11bGEoIFo/VCA9PSBTcXJ0KFg/TFReMiArIFI/Ul4yKSwgIigxMS40KSIsICIzMzIiKTsKICAgIFI/UiA6PSA1MTB+zqk7CiAgICBlbGV2ZW5Qb2ludFR3byA6PSBGb3JtdWxhKCB0aGV0YSA9PSBBcmNUYW4oWD9MVC9SP1IpIH4gcmFkLCAiKDExLjIpIiwgIjMzMCIpOwogICAgaW1wZWRhbmNlIDo9IEV2YWx1YXRlKGVsZXZlblBvaW50Rm91ciwga86pKSDiiKAgRXZhbHVhdGUoZWxldmVuUG9pbnRUd28sIGRlZ3JlZSk7CiAgICAKICAgIC8vIEk/VC4KICAgIG9obXNMYXcgOj0gRm9ybXVsYSggST9PTCA9PSBWP09ML1I/T0wgLCAiKDMuMSkiLCAiNzgiKTsKICAgIGNpcmN1aXRDdXJyZW50IDo9IFN1YnN0aXR1dGUyKG9obXNMYXcsIFsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSBpbXBlZGFuY2VdKTsKICAgIFY/UyA6PSA4flYg4oigIDB+ZGVncmVlOwogICAgRXZhbHVhdGUoY2lyY3VpdEN1cnJlbnQsIG1BKTsKCiAgICAvLyBWP0wxLgogICAgb2htc0xhd1ZvbHRhZ2UgOj0gUmVhcnJhbmdlKG9obXNMYXcsICdWP09MKTsKICAgIGluZHVjdG9yMVZvbHRhZ2UgOj0gU3Vic3RpdHV0ZTIob2htc0xhd1ZvbHRhZ2UsIFsnVj9PTCA8LSAnVj9MMSwgJ1I/T0wgPC0gWD9MMSDiiKAgOTB+ZGVncmVlLCAnST9PTCA8LSBJP1RdKTsKICAgIEV2YWx1YXRlKGluZHVjdG9yMVZvbHRhZ2UsIFYpOwoKICAgIC8vIFY/TDIuCiAgICBvaG1zTGF3Vm9sdGFnZSA6PSBSZWFycmFuZ2Uob2htc0xhdywgJ1Y/T0wpOwogICAgaW5kdWN0b3IxVm9sdGFnZSA6PSBTdWJzdGl0dXRlMihvaG1zTGF3Vm9sdGFnZSwgWydWP09MIDwtICdWP0wyLCAnUj9PTCA8LSBYP0wyIOKIoCA5MH5kZWdyZWUsICdJP09MIDwtIEk/VF0pOyAvLyBTdWJzdGl0dXRlKCdWP09MLCAnVj9MMSkgU3Vic3RpdHV0ZSgnUj9PTCwgWD9MMSDiiKAgOTB+ZGVncmVlKSBTdWJzdGl0dXRlKCdJP09MLCBJP1QpIG9obXNMYXdWb2x0YWdlOwogICAgRXZhbHVhdGUoaW5kdWN0b3IxVm9sdGFnZSwgVik7Cn0KCg==");
+%/mathpiper
+
+    %output,parent="Problem 4",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 4",subtype="problem",unassign_all="true"
+/*
+Problem 4.7)
+
+Calculate the values of Z?T, I?T, V?L1, V?L2, V?R, and ϴ for the circuit shown in Figure 11.37a.
+*/
+
+ProblemSolution([Z?T, theta, I?T, V?L, V?L2])
+{
+    tenPointOneFour := Formula( X?L == 2 * Pi * f?f * L?L,"(10.14)","302");  
+    
+    // X?L1
+    inductor?1 := Substitute2(tenPointOneFour, ['X?L <- X?L1, 'L?L <- 'L?1]);
+    f?f := 15~kHz;    
+    L?1 := 15~mH;    
+    Evaluate(inductor?1);
+    
+    // X?L2
+    inductor?2 := Substitute2(tenPointOneFour, ['X?L <- X?L2, 'L?L <- 'L?2]);
+    L?2 := 3.3~mH;    
+    Evaluate(inductor?2);
+    
+    // X?L (Total)
+    X?LT := X?L1 + X?L2;
+    
+    //impedance
+    elevenPointFour := Formula( Z?T == Sqrt(X?LT^2 + R?R^2),"(11.4)","332");    
+    R?R := 510~Ω;    
+    elevenPointTwo := Formula( theta == ArcTan(X?LT/R?R) ~ rad,"(11.2)","330");    
+    impedance := Evaluate(elevenPointFour, kΩ) ∠ Evaluate(elevenPointTwo, degree);
+    
+    //I?T
+    ohmsLaw := Formula( I?OL == V?OL/R?OL,"(3.1)", "78");    
+    circuitCurrent := Substitute2(ohmsLaw, ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]);   
+    V?S := 8~V ∠ 0~degree;    
+    Evaluate(circuitCurrent, mA);
+    
+    //V?L1
+    ohmsLawVoltage := Rearrange(ohmsLaw, 'V?OL);   
+    inductor1Voltage := Substitute2(ohmsLawVoltage, ['V?OL <- 'V?L1, 'R?OL <- X?L1 ∠ 90~degree, 'I?OL <- I?T]);   
+    Evaluate(inductor1Voltage, V);
+    
+    //V?L1
+    ohmsLawVoltage := Rearrange(ohmsLaw, 'V?OL);   
+    inductor1Voltage := Substitute2(ohmsLawVoltage, ['V?OL <- 'V?L2, 'R?OL <- X?L2 ∠ 90~degree, 'I?OL <- I?T]);   
+    Evaluate(inductor1Voltage, V);
+}
+/*
+-------------------------------------------------------------------------------------
+Answer:
+Z?T = 1.79kΩ, ϴ = 73.5°, I?T = 4.47mA, V?L1 = 6.30V, V?L2 = 1.39V, V?R = 2.27V 
+
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %error,parent="Problem 4",mpversion=".271",preserve="false"
+      Result: The variable <X?L1> does not have a value assigned to it.  Error on or before line 828 starting at index 56.
+.   %/error
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 4"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (10.14) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(X?L_ == 2*Pi*f?f_*L?L_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.4) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(Z?T_ == Sqrt(X?LT_^2 + R?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(X?LT_/R?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (3.1) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(I?OL_ == V?OL_/R?OL_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      Z?T =? 1.798557377~kΩ;
+    
+      theta =? 73.52717240~degree;
+    
+      I?T =? 4.448009334~mA ∠ (-73.52717240)~degree;
+    
+      V?L1 =? 6.288225051~V ∠ 16.47282760~degree;
+    
+      V?L2 =? 1.383409511~V ∠ 16.47282760~degree;
+    }
+*/
+}
+
+%/mathpiper_grade
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 5a",description="Practice problem 9a p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 5a",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCB0aGV0YSwgVj9MLCBWP1JdKQp7CiAgICAvLyBYP0wuCiAgICB0ZW5Qb2ludE9uZUZvdXIgOj0gRm9ybXVsYSggWD9MID09IDIqUGkgKiBmP2YgKiBMP0wsICIoMTAuMTQpIiwgIjMwMiIpOwogICAgZj9mIDo9IDV+a0h6OwogICAgTD9MIDo9IDEwMH5tSDsKICAgIEV2YWx1YXRlKHRlblBvaW50T25lRm91cik7CiAgICAKICAgIC8vIGltcGVkYW5jZS4KICAgIGVsZXZlblBvaW50Rm91ciA6PSBGb3JtdWxhKCBaP1QgPT0gU3FydChYP0xeMiArIFI/Ul4yKSwgIigxMS40KSIsICIzMzIiKTsKICAgIFI/UiA6PSAyfmvOqTsKICAgIGVsZXZlblBvaW50VHdvIDo9IEZvcm11bGEoIHRoZXRhID09IEFyY1RhbihYP0wvUj9SKSB+IHJhZCwgIigxMS4yKSIsICIzMzAiKTsKICAgIGltcGVkYW5jZSA6PSBFdmFsdWF0ZShlbGV2ZW5Qb2ludEZvdXIsIGvOqSkg4oigIEV2YWx1YXRlKGVsZXZlblBvaW50VHdvLCBkZWdyZWUpOwogICAgCiAgICAvLyBJP1QuCiAgICBvaG1zTGF3IDo9IEZvcm11bGEoIEk/T0wgPT0gVj9PTC9SP09MICwgIigzLjEpIiwgIjc4Iik7CiAgICBjaXJjdWl0Q3VycmVudCA6PSBTdWJzdGl0dXRlMihvaG1zTGF3LCBbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gaW1wZWRhbmNlXSk7CiAgICBWP1MgOj0gMTJ+ViDiiKAgMH5kZWdyZWU7CiAgICBFdmFsdWF0ZShjaXJjdWl0Q3VycmVudCwgzrxBKTsKICAgIAogICAgLy8gVj9MLgogICAgZWxldmVuUG9pbnRTaXggOj0gRm9ybXVsYSggVj9uID09IFY/UyAqIChaP24gLyBaP1QpLCAiKDExLjYpIiwgIjMzNCIpOwogICAgaW5kdWN0b3JWb2x0YWdlIDo9IFN1YnN0aXR1dGUyKGVsZXZlblBvaW50U2l4LCBbJ1Y/biA8LSAnVj9MLCAnWj9uIDwtIFg/TCDiiKAgOTB+ZGVncmVlLCAnWj9UIDwtIGltcGVkYW5jZV0pOwogICAgRXZhbHVhdGUoaW5kdWN0b3JWb2x0YWdlKTsKICAgIAogICAgLy8gVj9SLgogICAgaW5kdWN0b3JWb2x0YWdlIDo9IFN1YnN0aXR1dGUyKGVsZXZlblBvaW50U2l4LCBbJ1Y/biA8LSAnVj9SLCAnWj9uIDwtIFI/UiDiiKAgMH5kZWdyZWUsICdaP1QgPC0gaW1wZWRhbmNlXSk7CiAgICBFdmFsdWF0ZShpbmR1Y3RvclZvbHRhZ2UpOwp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 5a",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 5a",subtype="problem",unassign_all="true"
+/*
+Problem 5a.9a)
+LOWER RANGE
+The voltage source shown in Figure 11.38a has the frequency limits shown.
+Calculate the range of Z?T, V?L, V?R, and ϴ values for the circuit.
+*/
+
+ProblemSolution([Z?T, theta, V?L, V?R])
+{
+    // X?L
+    tenPointOneFour := Formula( X?L == 2 * Pi * f?f * L?L,"(10.14)","302");  
+    f?f := 5~kHz;    
+    L?L := 100~mH;    
+    Evaluate(tenPointOneFour);
+    
+    //impedance
+    elevenPointFour := Formula( Z?T == Sqrt(X?L^2 + R?R^2),"(11.4)","332");    
+    R?R := 2~kΩ;    
+    elevenPointTwo := Formula( theta == ArcTan(X?L/R?R) ~ rad,"(11.2)","330");    
+    impedance := Evaluate(elevenPointFour, kΩ) ∠ Evaluate(elevenPointTwo, degree);
+    
+    //I?T
+    ohmsLaw := Formula( I?OL == V?OL/R?OL,"(3.1)", "78");    
+    circuitCurrent := Substitute2(ohmsLaw, ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]);   
+    V?S := 12~V ∠ 0~degree;    
+    Evaluate(circuitCurrent, μA);
+    
+    //V?L
+    elevenPointSix := Formula( V?n == V?S * (Z?n / Z?T), "(11.6)", "334");   
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]);   
+    Evaluate(inductorVoltage);
+    
+    //V?R 
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]);
+    Evaluate(inductorVoltage);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+Z?T = 3.72kΩ, ϴ = 57.5°, V?L = 10.1V, V?R = 6.46V 
+
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 5a",mpversion=".271",preserve="false"
+      Result: 6.444351266~V ∠ (-57.51836342)~degree
+      
+      Side Effects:
+      === VARIABLES ===
+      Z?T: 3.724191778~kΩ
+      theta: 57.51836342~degree
+      V?L: 10.12276330~V ∠ 32.48163658~degree
+      V?R: 6.444351266~V ∠ (-57.51836342)~degree
+      
+      === STEPS (CODE VIEW) ===
+      tenPointOneFour := '(X?L == 2*Pi*f?f*L?L)
+      f?f := 5~kHz
+      L?L := 100~mH
+      Evaluate(tenPointOneFour) ==> 3141.592654~Ω
+      elevenPointFour := '(Z?T == Sqrt(X?L^2 + R?R^2))
+      R?R := 2~kΩ
+      elevenPointTwo := '(theta == ArcTan(X?L/R?R)~rad)
+      impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==> 3.724191778~kΩ ∠ 57.51836342~degree
+      ohmsLaw := '(I?OL == V?OL/R?OL)
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==> I?T == V?S/3.724191778~kΩ ∠ 57.51836342~degree
+      V?S := 12~V ∠ 0~degree
+      Evaluate(circuitCurrent,μA) ==> 3222.175633~μA ∠ (-57.51836342)~degree
+      elevenPointSix := '(V?n == V?S*Z?n/Z?T)
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==> V?L == V?S*3141.592654~Ω ∠ 90~degree/3.724191778~kΩ ∠ 57.51836342~degree
+      Evaluate(inductorVoltage) ==> 10.12276330~V ∠ 32.48163658~degree
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==> V?R == V?S*2~kΩ ∠ 0~degree/3.724191778~kΩ ∠ 57.51836342~degree
+      Evaluate(inductorVoltage) ==> 6.444351266~V ∠ (-57.51836342)~degree
+      
+      === STEPS (MATH VIEW) ===
+      /                                                                                                                                                                          \
+      | tenPointOneFour := '( X?L == 2 * Pi * f?f * L?L )                                                                                                                        |
+      |                                                                                                                                                                          |
+      | f?f := 5 ~ kHz                                                                                                                                                           |
+      |                                                                                                                                                                          |
+      | L?L := 100 ~ mH                                                                                                                                                          |
+      |                                                                                                                                                                          |
+      | ( Evaluate(tenPointOneFour) ==>  )                                                                                  ( 3141.592654 ~ Ω )                                  |
+      |                                                                                                                                                                          |
+      |                     /            /    2      2 \ \                                                                                                                       |
+      | elevenPointFour := '\ Z?T == Sqrt\ X?L  + R?R  / /                                                                                                                       |
+      |                                                                                                                                                                          |
+      | R?R := 2 ~ kΩ                                                                                                                                                            |
+      |                                                                                                                                                                          |
+      |                    /                / X?L \       \                                                                                                                      |
+      | elevenPointTwo := '| theta == ArcTan| --- | ~ rad |                                                                                                                      |
+      |                    \                \ R?R /       /                                                                                                                      |
+      |                                                                                                                                                                          |
+      | ( impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==>  )                                ( 3.724191778 ~ kΩ ∠ 57.51836342 ~ degree )          |
+      |                                                                                                                                                                          |
+      |             /         V?OL \                                                                                                                                             |
+      | ohmsLaw := '| I?OL == ---- |                                                                                                                                             |
+      |             \         R?OL /                                                                                                                                             |
+      |                                                                                                                                                                          |
+      | ( circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==>  )                 ( I?T == 3222.175633 ~ μA ∠ -57.51836342 ~ degree )  |
+      |                                                                                                                                                                          |
+      | V?S := 12 ~ V ∠ 0 ~ degree                                                                                                                                               |
+      |                                                                                                                                                                          |
+      | ( Evaluate(circuitCurrent,μA) ==>  )                                                                                ( 3222.175633 ~ μA ∠ -57.51836342 ~ degree )         |
+      |                                                                                                                                                                          |
+      |                    /        V?S * Z?n \                                                                                                                                  |
+      | elevenPointSix := '| V?n == --------- |                                                                                                                                  |
+      |                    \           Z?T    /                                                                                                                                  |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==>  ) ( V?L == 10.12276330 ~ V ∠ 32.48163658 ~ degree )    |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 10.12276330 ~ V ∠ 32.48163658 ~ degree )           |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==>  )  ( V?R == 6.444351266 ~ V ∠ -57.51836342 ~ degree )   |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 6.444351266 ~ V ∠ -57.51836342 ~ degree )          |
+      \                                                                                                                                                                          /
+      
+      
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 5a"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (10.14) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(X?L_ == 2*Pi*f?f_*L?L_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.4) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(Z?T_ == Sqrt(X?L_^2 + R?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(X?L_/R?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (3.1) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(I?OL_ == V?OL_/R?OL_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.6) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(V?n_ == V?S_*Z?n_/Z?T_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      Z?T =? 3.724191778~kΩ;
+    
+      theta =? 57.51836342~degree;
+    
+      V?L =? 10.12276330~V ∠ 32.48163658~degree;
+    
+      V?R =? 6.444351266~V ∠ (-57.51836342)~degree;
+    } */   
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 5a",mpversion=".271",preserve="false"
+      Result: False
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+      
+      
+      FAIL:(CRITICAL, TESTING HALTED, 0 FOR THE PROBLEM. ERROR MESSAGE: Error encountered during parsing: Expected a ***( ; )*** end of statement token in program block but found ***( âˆ )*** instead.): The code does not throw an exception when parsed. (0/1)
+        SKIPPED: The fold is not empty. (0/1)
+        SKIPPED: The ':' operator is not used. (0/1)
+        SKIPPED: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (0/1)
+        SKIPPED: The version of "Append" that does not end with a '!' is not used. (0/1)
+        ------------------------------------------
+        SKIPPED: MathPiper version >= .271. (0/1)
+        SKIPPED: Formula (10.14) is used. (0/1)
+        SKIPPED: Formula (11.4) is used. (0/1)
+        SKIPPED: Formula (11.2) is used. (0/1)
+        SKIPPED: Formula (3.1) is used. (0/1)
+        SKIPPED: Formula (11.6) is used. (0/1)
+      
+        0/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 5b",description="Practice problem 9a p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 5b",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCB0aGV0YSwgVj9MLCBWP1JdKQp7CiAgICAvLyBYP0wuCiAgICB0ZW5Qb2ludE9uZUZvdXIgOj0gRm9ybXVsYSggWD9MID09IDIqUGkgKiBmP2YgKiBMP0wsICIoMTAuMTQpIiwgIjMwMiIpOwogICAgZj9mIDo9IDEyfmtIejsKICAgIEw/TCA6PSAxMDB+bUg7CiAgICBFdmFsdWF0ZSh0ZW5Qb2ludE9uZUZvdXIpOwogICAgCiAgICAvLyBpbXBlZGFuY2UuCiAgICBlbGV2ZW5Qb2ludEZvdXIgOj0gRm9ybXVsYSggWj9UID09IFNxcnQoWD9MXjIgKyBSP1JeMiksICIoMTEuNCkiLCAiMzMyIik7CiAgICBSP1IgOj0gMn5rzqk7CiAgICBlbGV2ZW5Qb2ludFR3byA6PSBGb3JtdWxhKCB0aGV0YSA9PSBBcmNUYW4oWD9ML1I/UikgfiByYWQsICIoMTEuMikiLCAiMzMwIik7CiAgICBpbXBlZGFuY2UgOj0gRXZhbHVhdGUoZWxldmVuUG9pbnRGb3VyLCBrzqkpIOKIoCBFdmFsdWF0ZShlbGV2ZW5Qb2ludFR3bywgZGVncmVlKTsKICAgIAogICAgLy8gST9ULgogICAgb2htc0xhdyA6PSBGb3JtdWxhKCBJP09MID09IFY/T0wvUj9PTCAsICIoMy4xKSIsICI3OCIpOwogICAgY2lyY3VpdEN1cnJlbnQgOj0gU3Vic3RpdHV0ZTIob2htc0xhdywgWydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1MsICdSP09MIDwtIGltcGVkYW5jZV0pOwogICAgVj9TIDo9IDEyflYg4oigIDB+ZGVncmVlOwogICAgRXZhbHVhdGUoY2lyY3VpdEN1cnJlbnQsIM68QSk7CiAgICAKICAgIC8vIFY/TC4KICAgIGVsZXZlblBvaW50U2l4IDo9IEZvcm11bGEoIFY/biA9PSBWP1MgKiAoWj9uIC8gWj9UKSwgIigxMS42KSIsICIzMzQiKTsKICAgIGluZHVjdG9yVm9sdGFnZSA6PSBTdWJzdGl0dXRlMihlbGV2ZW5Qb2ludFNpeCwgWydWP24gPC0gJ1Y/TCwgJ1o/biA8LSBYP0wg4oigIDkwfmRlZ3JlZSwgJ1o/VCA8LSBpbXBlZGFuY2VdKTsKICAgIEV2YWx1YXRlKGluZHVjdG9yVm9sdGFnZSk7CiAgICAKICAgIC8vIFY/Ui4KICAgIGluZHVjdG9yVm9sdGFnZSA6PSBTdWJzdGl0dXRlMihlbGV2ZW5Qb2ludFNpeCwgWydWP24gPC0gJ1Y/UiwgJ1o/biA8LSBSP1Ig4oigIDB+ZGVncmVlLCAnWj9UIDwtIGltcGVkYW5jZV0pOwogICAgRXZhbHVhdGUoaW5kdWN0b3JWb2x0YWdlKTsKfQoK");
+%/mathpiper
+
+    %output,parent="Problem 5b",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 5b",subtype="problem",unassign_all="true"
+/*
+Problem 5b.9b)
+UPPER RANGE
+The voltage source shown in Figure 11.38b has the frequency limits shown.
+Calculate the range of Z?T, V?L, V?R, and ϴ values for the circuit.
+*/
+
+ProblemSolution([Z?T, theta, V?L, V?R])
+{
+    // X?L
+    tenPointOneFour := Formula( X?L == 2 * Pi * f?f * L?L,"(10.14)","302");  
+    f?f := 12~kHz;    
+    L?L := 100~mH;    
+    Evaluate(tenPointOneFour);
+    
+    //impedance
+    elevenPointFour := Formula( Z?T == Sqrt(X?L^2 + R?R^2),"(11.4)","332");    
+    R?R := 2~kΩ;    
+    elevenPointTwo := Formula( theta == ArcTan(X?L/R?R) ~ rad,"(11.2)","330");    
+    impedance := Evaluate(elevenPointFour, kΩ) ∠ Evaluate(elevenPointTwo, degree);
+    
+    //I?T
+    ohmsLaw := Formula( I?OL == V?OL/R?OL,"(3.1)", "78");    
+    circuitCurrent := Substitute2(ohmsLaw, ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]);   
+    V?S := 12~V ∠ 0~degree;    
+    Evaluate(circuitCurrent, μA);
+    
+    //V?L
+    elevenPointSix := Formula( V?n == V?S * (Z?n / Z?T), "(11.6)", "334");   
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]);   
+    Evaluate(inductorVoltage);
+    
+    //V?R 
+    inductorVoltage := Substitute2(elevenPointSix, ['V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]);
+    Evaluate(inductorVoltage);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+Z?T = 7.8kΩ, ϴ = 75.1°, V?L = 11.6V, V?R = 3.08V 
+
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 5b",mpversion=".271",preserve="false"
+      Result: 3.076697507~V ∠ (-75.14394871)~degree
+      
+      Side Effects:
+      === VARIABLES ===
+      Z?T: 7.800571862~kΩ
+      theta: 75.14394871~degree
+      V?L: 11.59887634~V ∠ 14.85605129~degree
+      V?R: 3.076697507~V ∠ (-75.14394871)~degree
+      
+      === STEPS (CODE VIEW) ===
+      tenPointOneFour := '(X?L == 2*Pi*f?f*L?L)
+      f?f := 12~kHz
+      L?L := 100~mH
+      Evaluate(tenPointOneFour) ==> 7539.822370~Ω
+      elevenPointFour := '(Z?T == Sqrt(X?L^2 + R?R^2))
+      R?R := 2~kΩ
+      elevenPointTwo := '(theta == ArcTan(X?L/R?R)~rad)
+      impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==> 7.800571862~kΩ ∠ 75.14394871~degree
+      ohmsLaw := '(I?OL == V?OL/R?OL)
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==> I?T == V?S/7.800571862~kΩ ∠ 75.14394871~degree
+      V?S := 12~V ∠ 0~degree
+      Evaluate(circuitCurrent,μA) ==> 1538.348753~μA ∠ (-75.14394871)~degree
+      elevenPointSix := '(V?n == V?S*Z?n/Z?T)
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==> V?L == V?S*7539.822370~Ω ∠ 90~degree/7.800571862~kΩ ∠ 75.14394871~degree
+      Evaluate(inductorVoltage) ==> 11.59887634~V ∠ 14.85605129~degree
+      inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==> V?R == V?S*2~kΩ ∠ 0~degree/7.800571862~kΩ ∠ 75.14394871~degree
+      Evaluate(inductorVoltage) ==> 3.076697507~V ∠ (-75.14394871)~degree
+      
+      === STEPS (MATH VIEW) ===
+      /                                                                                                                                                                          \
+      | tenPointOneFour := '( X?L == 2 * Pi * f?f * L?L )                                                                                                                        |
+      |                                                                                                                                                                          |
+      | f?f := 12 ~ kHz                                                                                                                                                          |
+      |                                                                                                                                                                          |
+      | L?L := 100 ~ mH                                                                                                                                                          |
+      |                                                                                                                                                                          |
+      | ( Evaluate(tenPointOneFour) ==>  )                                                                                  ( 7539.822370 ~ Ω )                                  |
+      |                                                                                                                                                                          |
+      |                     /            /    2      2 \ \                                                                                                                       |
+      | elevenPointFour := '\ Z?T == Sqrt\ X?L  + R?R  / /                                                                                                                       |
+      |                                                                                                                                                                          |
+      | R?R := 2 ~ kΩ                                                                                                                                                            |
+      |                                                                                                                                                                          |
+      |                    /                / X?L \       \                                                                                                                      |
+      | elevenPointTwo := '| theta == ArcTan| --- | ~ rad |                                                                                                                      |
+      |                    \                \ R?R /       /                                                                                                                      |
+      |                                                                                                                                                                          |
+      | ( impedance := Evaluate(elevenPointFour,kΩ) ∠ Evaluate(elevenPointTwo,degree) ==>  )                                ( 7.800571862 ~ kΩ ∠ 75.14394871 ~ degree )          |
+      |                                                                                                                                                                          |
+      |             /         V?OL \                                                                                                                                             |
+      | ohmsLaw := '| I?OL == ---- |                                                                                                                                             |
+      |             \         R?OL /                                                                                                                                             |
+      |                                                                                                                                                                          |
+      | ( circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==>  )                 ( I?T == 1538.348753 ~ μA ∠ -75.14394871 ~ degree )  |
+      |                                                                                                                                                                          |
+      | V?S := 12 ~ V ∠ 0 ~ degree                                                                                                                                               |
+      |                                                                                                                                                                          |
+      | ( Evaluate(circuitCurrent,μA) ==>  )                                                                                ( 1538.348753 ~ μA ∠ -75.14394871 ~ degree )         |
+      |                                                                                                                                                                          |
+      |                    /        V?S * Z?n \                                                                                                                                  |
+      | elevenPointSix := '| V?n == --------- |                                                                                                                                  |
+      |                    \           Z?T    /                                                                                                                                  |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==>  ) ( V?L == 11.59887634 ~ V ∠ 14.85605129 ~ degree )    |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 11.59887634 ~ V ∠ 14.85605129 ~ degree )           |
+      |                                                                                                                                                                          |
+      | ( inductorVoltage := Substitute2(elevenPointSix,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==>  )  ( V?R == 3.076697507 ~ V ∠ -75.14394871 ~ degree )   |
+      |                                                                                                                                                                          |
+      | ( Evaluate(inductorVoltage) ==>  )                                                                                  ( 3.076697507 ~ V ∠ -75.14394871 ~ degree )          |
+      \                                                                                                                                                                          /
+      
+      
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 5b"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .271", 1, True)
+    {
+        StringToNumber(Version()) >=? .271;
+    }
+    
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (10.14) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(X?L_ == 2*Pi*f?f_*L?L_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.4) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(Z?T_ == Sqrt(X?L_^2 + R?R_^2))) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.2) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(theta_ == ArcTan(X?L_/R?R_)~rad)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (3.1) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(I?OL_ == V?OL_/R?OL_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("Formula (11.6) is used",1,False)
+    {
+      PositionsPattern2(?foldCode, '(V?n_ == V?S_*Z?n_/Z?T_)) !=? [];
+    }
+
+    //-----------------------------------------------------------------------------------------
+/*
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+
+    //-----------------------------------------------------------------------------------------
+
+    FoldGrade("A correct result is returned",1,False)
+    {
+      Z?T =? 7.800571862~kΩ;
+    
+      theta =? 75.14394871~degree;
+    
+      V?L =? 11.59887634~V ∠ 14.85605129~degree;
+    
+      V?R =? 3.076697507~V ∠ (-75.14394871)~degree;
+    } */
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 5b",mpversion=".271",preserve="false"
+      Result: False
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+      
+      
+      FAIL:(CRITICAL, TESTING HALTED, 0 FOR THE PROBLEM. ERROR MESSAGE: Error encountered during parsing: Expected a ***( ; )*** end of statement token in program block but found ***( âˆ )*** instead.): The code does not throw an exception when parsed. (0/1)
+        SKIPPED: The fold is not empty. (0/1)
+        SKIPPED: The ':' operator is not used. (0/1)
+        SKIPPED: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (0/1)
+        SKIPPED: The version of "Append" that does not end with a '!' is not used. (0/1)
+        ------------------------------------------
+        SKIPPED: MathPiper version >= .271. (0/1)
+        SKIPPED: Formula (10.14) is used. (0/1)
+        SKIPPED: Formula (11.4) is used. (0/1)
+        SKIPPED: Formula (11.2) is used. (0/1)
+        SKIPPED: Formula (3.1) is used. (0/1)
+        SKIPPED: Formula (11.6) is used. (0/1)
+      
+        0/11 passes
+.   %/output
+
+%/group

@@ -1,0 +1,1986 @@
+v.01
+
+chapter_11_b_odd_practice_problems.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get ϴ.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+- How to obtain the right side of an equation.
+In> exp := 8 == 9
+Result: 8 == 9
+
+In> exp
+Result: 8 == 9
+
+In> In> exp[2]
+Result: 9
+
+- The results of "Arc" procedures need to be
+specified as being in radians: ArcTan(V?L/V?R)~rad
+
+
+1. 4.12V ∠ 14 degree
+3. 4.83 kΩ ∠ 13.3 degree
+...
+11. P?R = 1.56mW, P?X = 1.66mVAR
+13. 4.77mW.
+15. 2.28mVA ∠ 46.8 degree
+17. X?L = 377 Ω, Z = 406 Ω, ϴ = 68.3 degree, I = 296 mA, V?L = 111 V, V?R = 44.3V
+19. 58.3mA  ∠ -31 degree
+21. 1.6kΩ ∠ 36.9 degree
+23.
+25.
+27.
+29.
+31.
+33.
+
+
+------------------------------
+
+
+------------------------------
+
+
+-------------------------------
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".273",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .272", 1, True)
+    {
+        StringToNumber(Version()) >=? .272;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"UnparseMath2D");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".273",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .272. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11",description="Practice problem 11 p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 11",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9YLCBQP1JdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgdGhyZWVUaHJlZU5pbmVBIDo9IEZvcm11bGEoUD9YID09IEk/SV4yICogWD9MLCAiIiwgIjMzOSwzMTQiKTsKICAgICAgICBmMz81IDo9IEZvcm11bGEoUD9QID09IEk/SV4yICogUj9SLCAiMy41IiwgIjMzOSw4NSIpOwogICAgfQogICAgCiAgICBmMz81QSA6PSBTdWJzdGl0dXRlMihmMz81LCBbJ1A/UCA8LSAnUD9SXSk7CgogICAgLy8gRnJvbSBwcm9ibGVtIDUuCiAgICBJP0kgOj0gNzU5LjM3NTU5NDF+zrxBOwogICAgWD9MIDo9IDI4ODMuOTgyMDU2fs6pOwogICAgUj9SIDo9IDIuN35rzqk7CiAgICAKICAgIEV2YWx1YXRlKHRocmVlVGhyZWVOaW5lQSwgbVZBKTsKICAgIAogICAgRXZhbHVhdGUoZjM/NUEsIG1XKTsKfQoK");
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 11",subtype="problem",unassign_all="true"
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 11.)
+
+Refer to figure 11.36a. Assuming that the inductor is an ideal component, calculate
+the values of resistive and reactivepower for the circuit.
+*/
+
+ProblemSolution([P?X, P?R])
+{
+    Formulas()
+    {
+        threeThreeNineA := Formula(P?X == I?I^2 * X?L, "", "339, 314");
+        f3?5 := Formula(P?P == I?I^2 * R?R, "3.5", "339, 85");
+    }
+
+    f3?5A := Substitute2(f3?5,['P?P <- 'P?R]);
+    
+    I?I := 759.3755941~μA;
+    X?L := 2883.982056~Ω;
+    R?R := 2.7~kΩ;
+    
+    Evaluate(threeThreeNineA, mVA);
+    
+    Evaluate(f3?5A, mW);
+
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+P?R = 1.56 mW & P?X = mVAR
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".273",preserve="false"
+      Result: 1.55695849086977~mW
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?X: 1.66305198133528~mVA
+      P?R: 1.55695849086977~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                   \
+      |           2       |
+      | P?X == I?I  * X?L |
+      |                   |
+      |           2       |
+      | P?P == I?I  * R?R |
+      \                   /
+      
+      === STEPS (CODE VIEW) ===
+      P?X == I?I^2*X?L
+      P?P == I?I^2*R?R
+      f3?5A := Substitute2(f3?5,[ 'P?P <- 'P?R]) ==> P?R == I?I^2*R?R
+      I?I := 759.3755941~μA ==> 759.3755941~μA
+      X?L := 2883.982056~Ω ==> 2883.982056~Ω
+      R?R := 2.7~kΩ ==> 2.7~kΩ
+      Evaluate(threeThreeNineA,mVA) ==> 1.66305198133528~mVA
+      Evaluate(f3?5A,mW) ==> 1.55695849086977~mW
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 13",description="Practice problem 13 p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 13",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9QXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYzPzUgOj0gRm9ybXVsYShQP1AgPT0gST9JXjIgKiBSP1IsICIzLjUiLCAiMzM5LDg1Iik7CiAgICB9CiAgICAKICAgIGYzPzVBIDo9IFN1YnN0aXR1dGUyKGYzPzUsIFsnUj9SIDwtICdSP1RdKTsKICAgIAogICAgST9JIDo9IDE1MzguMzQ4NzUzfs68QTsgLy8gST9UIGZyb20gcHJvYmxlbSA5LgoKICAgIFI/TCA6PSAxMH7OqTsKICAgIAogICAgUj9SIDo9IDJ+a86pOwogICAgCiAgICBSP1QgOj0gUj9MICsgUj9SOwogICAgCiAgICBFdmFsdWF0ZShmMz81QSwgbVcpOwp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 13",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 13.)
+
+Refer to Figure 11.38a. Assuming that the inductor has a winding resistance of 10Ω,
+calculate the value of resistive power for the circuit when it is operating at its 
+maximum source frequency.
+*/
+
+ProblemSolution([P?P])
+{
+    Formulas()
+    {
+        f3?5 := Formula(P?P == I?I^2 * R?R, "3.5", "339, 85");
+    }
+
+    f3?5A := Substitute2(f3?5,['R?R <- 'R?T]);
+    
+    I?I := 1538.3487531~μA; //I?T Problem 9
+    R?L := 10~Ω;
+    R?R := 2~kΩ;
+    R?T := R?L + R?R;
+       
+    Evaluate(f3?5A, mW);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+4.77 mW
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".273",preserve="false"
+      Result: 4.75669894119028~mW
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?P: 4.75669894119028~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                   \
+      |           2       |
+      | P?P == I?I  * R?R |
+      \                   /
+      
+      === STEPS (CODE VIEW) ===
+      P?P == I?I^2*R?R
+      f3?5A := Substitute2(f3?5,[ 'R?R <- 'R?T]) ==> P?P == I?I^2*R?T
+      I?I := 1538.3487531~μA ==> 1538.3487531~μA
+      R?L := 10~Ω ==> 10~Ω
+      R?R := 2~kΩ ==> 2~kΩ
+      R?T := R?L + R?R ==> 2010~Ω
+      Evaluate(f3?5A,mW) ==> 4.75669894119028~mW
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="Practice problem 15 p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 15",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9BUFAsIM+0XSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMT84IDo9IEZvcm11bGEoUD9BUFAgPT0gU3FydChQP1heMiArIFA/Ul4yKSwgIjExLjgiLCAiMzQwIik7CiAgICAgICAgZjExPzkgOj0gRm9ybXVsYSjPtCA9PSBBcmNUYW4oUD9YIC8gUD9SKX5yYWQsICIxMS45IiwgIjM0MCIpOwogICAgfQogICAgCiAgICAvLyBGcm9tIHByb2JsZW0gMTEuCiAgICBQP1ggOj0gMS42NjMwNTE5ODEzMzUyOH5tVkE7CiAgICBQP1IgOj0gMS41NTY5NTg0OTA4Njk3N35tVzsKICAgIAogICAgLy8gUD9BUFAKICAgIEV2YWx1YXRlKGYxMT84KTsKICAgIAogICAgLy8gz7QKICAgIEV2YWx1YXRlKGYxMT85LCBkZWdyZWUpOwp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 15.)
+
+Calculate the magnitude and phase angle of apparent power for the circuit described
+in Problem 11.
+*/
+
+ProblemSolution([P?APP, ϴ])
+{
+    Formulas()
+    {
+        f11?8 := Formula(P?APP == Sqrt(P?X^2 + P?R^2), "11.8", "340");
+        f11?9 := Formula(ϴ == ArcTan(P?X/P?R)~rad, "11.9", "340");
+    }
+    
+    P?X := 1.66305198133528~mVA;
+    P?R := 1.55695849086977~mW;
+    
+    //P?APP
+    Evaluate(f11?8);
+    
+    //ϴ
+    Evaluate(f11?9, degree);
+    
+    P?APP := Evaluate(f11?8) ∠ Evaluate(f11?9, degree);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+2.28 mVA ∠ 46.8 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".273",preserve="false"
+      Result: 2.27812678201076~mVA ∠ 46.8871090868810~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      P?APP: 2.27812678201076~mVA ∠ 46.8871090868810~degree
+      ϴ: 46.8871090868810~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                              \
+      |              /    2      2 \ |
+      | P?APP == Sqrt\ P?X  + P?R  / |
+      |                              |
+      |            / P?X \           |
+      | ϴ == ArcTan| --- | ~ rad     |
+      |            \ P?R /           |
+      \                              /
+      
+      === STEPS (CODE VIEW) ===
+      P?APP == Sqrt(P?X^2 + P?R^2)
+      ϴ == ArcTan(P?X/P?R)~rad
+      P?X := 1.66305198133528~mVA ==> 1.66305198133528~mVA
+      P?R := 1.55695849086977~mW ==> 1.55695849086977~mW
+      Evaluate(f11?8) ==> 2.27812678201076~mVA
+      Evaluate(f11?9,degree) ==> 46.8871090868810~degree
+      P?APP := Evaluate(f11?8) ∠ Evaluate(f11?9,degree) ==> 2.27812678201076~mVA ∠ 46.8871090868810~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 17",description="Practice problem 5 p.357."
+========================================================================================================
+
+
+%mathpiper,name="Problem 17",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtCwgST9ULCBWP0wsIFY/UiwgWD9MLCBQP1gsIFA/UiwgUD9BUFAsIM+0P0FQUF0pCnsKCiAgICBGb3JtdWxhcygpCiAgICB7CiAgICAgICAgZjEwPzE0IDo9IEZvcm11bGEoIFg/TCA9PSAyKlBpICogZj9mICogTD9MLCAiKDEwLjE0KSIsICIzMDIiKTsKICAgICAgICBmMTE/NCA6PSBGb3JtdWxhKCBaP1QgPT0gU3FydChYP0xeMiArIFI/Ul4yKSwgIigxMS40KSIsICIzMzIiKTsKICAgICAgICBmMTE/MiA6PSBGb3JtdWxhKCDPtCA9PSBBcmNUYW4oWD9ML1I/UikgfiByYWQsICIoMTEuMikiLCAiMzMwIik7CiAgICAgICAgb2htc0xhdyA6PSBGb3JtdWxhKCBJP09MID09IFY/T0wvUj9PTCAsICIoMy4xKSIsICI3OCIpOwogICAgICAgIGYxMT82IDo9IEZvcm11bGEoIFY/biA9PSBWP1MgKiAoWj9uIC8gWj9UKSwgIigxMS42KSIsICIzMzQiKTsKICAgICAgICB0aHJlZVRocmVlTmluZUEgOj0gRm9ybXVsYShQP1ggPT0gST9JXjIgKiBYP0wsICIiLCAiMzM5LDMxNCIpOwogICAgICAgIGYzPzUgOj0gRm9ybXVsYShQP1AgPT0gST9JXjIgKiBSP1IsICIzLjUiLCAiMzM5LDg1Iik7CiAgICAgICAgZjExPzggOj0gRm9ybXVsYShQP0FQUCA9PSBTcXJ0KFA/WF4yICsgUD9SXjIpLCAiMTEuOCIsICIzNDAiKTsKICAgICAgICBmMTE/OSA6PSBGb3JtdWxhKM+0P0FQUCA9PSBBcmNUYW4oUD9YIC8gUD9SKX5yYWQsICIxMS45IiwgIjM0MCIpOwogICAgfQogICAgCiAgICAvLyBYP0wuCiAgICBmP2YgOj0gNjB+SHo7CiAgICBMP0wgOj0gMX5IOwogICAgRXZhbHVhdGUoZjEwPzE0LCBrzqkpOwogICAgCiAgICAvLyBpbXBlZGFuY2UuCiAgICBSP1IgOj0gMTUwfs6pOwogICAgaW1wZWRhbmNlIDo9IEV2YWx1YXRlKGYxMT80LCDOqSkg4oigIEV2YWx1YXRlKGYxMT8yLCBkZWdyZWUpOwogICAgCiAgICAvLyBJP1QuCiAgICBjaXJjdWl0Q3VycmVudCA6PSBTdWJzdGl0dXRlMihvaG1zTGF3LCBbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gaW1wZWRhbmNlXSk7CiAgICBWP1MgOj0gMTIwflYg4oigIDB+ZGVncmVlOwogICAgRXZhbHVhdGUoY2lyY3VpdEN1cnJlbnQsIG1BKTsKICAgIAogICAgLy8gVj9MLgogICAgaW5kdWN0b3JWb2x0YWdlIDo9IFN1YnN0aXR1dGUyKGYxMT82LCBbJ1Y/biA8LSAnVj9MLCAnWj9uIDwtIFg/TCDiiKAgOTB+ZGVncmVlLCAnWj9UIDwtIGltcGVkYW5jZV0pOwogICAgRXZhbHVhdGUoaW5kdWN0b3JWb2x0YWdlKTsKICAgIAogICAgLy8gVj9SLgogICAgaW5kdWN0b3JWb2x0YWdlIDo9IFN1YnN0aXR1dGUyKGYxMT82LCBbJ1Y/biA8LSAnVj9SLCAnWj9uIDwtIFI/UiDiiKAgMH5kZWdyZWUsICdaP1QgPC0gaW1wZWRhbmNlXSk7CiAgICBFdmFsdWF0ZShpbmR1Y3RvclZvbHRhZ2UpOwogICAgCiAgICBJP0kgOj0gST9UWzFdOwogICAgZjM/NUIgOj0gU3Vic3RpdHV0ZTIoZjM/NSwgWydQP1AgPC0gJ1A/Ul0pOwogICAgCiAgICAvLyBQP1guCiAgICBFdmFsdWF0ZSh0aHJlZVRocmVlTmluZUEsIFZBKTsKICAgIAogICAgLy8gUD9SLgogICAgRXZhbHVhdGUoZjM/NUIsIFcpOwogICAgCiAgICAvLyBQP0FQUC4KICAgIEV2YWx1YXRlKGYxMT84KTsKICAgIAogICAgLy8gz7Q/QVBQLgogICAgRXZhbHVhdGUoZjExPzksIGRlZ3JlZSk7Cn0KCg==");
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 17.)
+
+Calculate the magnitude and phase angle of apparent power for the circuit described
+in Problem 12.
+*/
+
+ProblemSolution([Z?T, ϴ, I?T, V?L, V?R, X?L, P?X, P?R, P?APP, ϴ?APP])
+{
+    Formulas()
+    {
+        f10?14 := Formula( X?L == 2 * Pi *f?f * L?L, "(10.14)", "302");
+        f11?4 := Formula( Z?T == Sqrt(X?L^2 + R?R^2), "(11.4)", "332");
+        f11?5 := Formula( ϴ == ArcTan(X?L/R?R) ~ rad, "(11.5)", "332");
+        ohmsLaw := Formula( I?OL == V?OL/R?OL, "(3.1)", "78");
+        f11?6 := Formula( V?n == V?S *(Z?n/Z?T), "(11.6)", "334");
+        threeThreeNineA := Formula(P?X == I?I^2 * X?L, "", "339, 314");
+        f3?5 := Formula(P?P == I?I^2 * R?R, "3.5", "339, 85");
+        f11?8 := Formula(P?APP == Sqrt(P?X^2 + P?R^2), "11.8", "340");
+        f11?9 := Formula(ϴ == ArcTan(P?X/P?R)~rad, "11.9", "340");
+    }
+    
+    //X?L
+    f?f := 60~Hz;
+    L?L := 1~H;
+    Evaluate(f10?14, Ω);
+    
+    //impedance
+    R?R := 150~Ω;
+    impedance := Evaluate(f11?4, Ω) ∠ Evaluate(f11?5, degree);
+    
+    //I?T
+    circuitCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]);
+    V?S := 120~V ∠ 0~degree;
+    Evaluate(circuitCurrent, mA);
+    
+    //V?L
+    inductorVoltage := Substitute2(f11?6,['V?n <-'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]);
+    Evaluate(inductorVoltage);
+
+    //V?R
+    inductorVoltage := Substitute2(f11?6,['V?n <-'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]);
+    Evaluate(inductorVoltage);
+    
+    I?I := I?T[1];
+    f3?5B := Substitute2(f3?5,['P?P <- 'P?R]);
+    
+    //P?X
+    Evaluate(threeThreeNineA, VA);
+    
+    //P?R
+    Evaluate(f3?5B, W);
+    
+    //P?APP
+    Evaluate(f11?8);
+    //ϴ?APP
+    Evaluate(f11?9, degree);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+X?L = 377Ω, Z = 406Ω, ϴ = 68.3 ~degrees, I = 296 mA, V?L = 111V, & V?R = 44.3V
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion=".273",preserve="false"
+      Result: 68.3030160284601~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 405.736741466295~Ω
+      ϴ: 68.3030160284601~degree
+      I?T: 295.758278055695~mA ∠ (-68.3030160284601)~degree
+      V?L: 111.498244029376~V ∠ 21.6969839715399~degree
+      V?R: 44.3637417083542~V ∠ (-68.3030160284601)~degree
+      X?L: 376.991118430775~Ω
+      P?X: 32.9765286603621~VA
+      P?R: 13.1209438557705~W
+      P?APP: 35.4909933666834~VA
+      
+      === FORMULAS (2D VIEW) ===
+      /                              \
+      | X?L == 2 * Pi * f?f * L?L    |
+      |                              |
+      |            /    2      2 \   |
+      | Z?T == Sqrt\ X?L  + R?R  /   |
+      |                              |
+      |            / X?L \           |
+      | ϴ == ArcTan| --- | ~ rad     |
+      |            \ R?R /           |
+      |                              |
+      |         V?OL                 |
+      | I?OL == ----                 |
+      |         R?OL                 |
+      |                              |
+      |              Z?n             |
+      | V?n == V?S * ---             |
+      |              Z?T             |
+      |                              |
+      |           2                  |
+      | P?X == I?I  * X?L            |
+      |                              |
+      |           2                  |
+      | P?P == I?I  * R?R            |
+      |                              |
+      |              /    2      2 \ |
+      | P?APP == Sqrt\ P?X  + P?R  / |
+      |                              |
+      |            / P?X \           |
+      | ϴ == ArcTan| --- | ~ rad     |
+      |            \ P?R /           |
+      \                              /
+      
+      === STEPS (CODE VIEW) ===
+      X?L == 2*Pi*f?f*L?L
+      Z?T == Sqrt(X?L^2 + R?R^2)
+      ϴ == ArcTan(X?L/R?R)~rad
+      I?OL == V?OL/R?OL
+      V?n == V?S*Z?n/Z?T
+      P?X == I?I^2*X?L
+      P?P == I?I^2*R?R
+      P?APP == Sqrt(P?X^2 + P?R^2)
+      ϴ == ArcTan(P?X/P?R)~rad
+      f?f := 60~Hz ==> 60~Hz
+      L?L := 1~H ==> 1~H
+      Evaluate(f10?14,Ω) ==> 376.991118430775~Ω
+      R?R := 150~Ω ==> 150~Ω
+      impedance := Evaluate(f11?4,Ω) ∠ Evaluate(f11?5,degree) ==> 405.736741466295~Ω ∠ 68.3030160284601~degree
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- impedance]) ==> I?T == V?S/405.736741466295~Ω ∠ 68.3030160284601~degree
+      V?S := 120~V ∠ 0~degree ==> 120~V ∠ 0~degree
+      Evaluate(circuitCurrent,mA) ==> 295.758278055695~mA ∠ (-68.3030160284601)~degree
+      inductorVoltage := Substitute2(f11?6,[ 'V?n <- 'V?L, 'Z?n <- X?L ∠ 90~degree, 'Z?T <- impedance]) ==> V?L == V?S*376.991118430775~Ω ∠ 90~degree/405.736741466295~Ω ∠ 68.3030160284601~degree
+      Evaluate(inductorVoltage) ==> 111.498244029376~V ∠ 21.6969839715399~degree
+      inductorVoltage := Substitute2(f11?6,[ 'V?n <- 'V?R, 'Z?n <- R?R ∠ 0~degree, 'Z?T <- impedance]) ==> V?R == V?S*150~Ω ∠ 0~degree/405.736741466295~Ω ∠ 68.3030160284601~degree
+      Evaluate(inductorVoltage) ==> 44.3637417083542~V ∠ (-68.3030160284601)~degree
+      I?I := I?T[1] ==> 295.758278055695~mA
+      f3?5B := Substitute2(f3?5,[ 'P?P <- 'P?R]) ==> P?R == I?I^2*R?R
+      Evaluate(threeThreeNineA,VA) ==> 32.9765286603621~VA
+      Evaluate(f3?5B,W) ==> 13.1209438557705~W
+      Evaluate(f11?8) ==> 35.4909933666834~VA
+      Evaluate(f11?9,degree) ==> 68.3030160284601~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 19",description="Practice problem 19 p.358."
+========================================================================================================
+
+
+%mathpiper,name="Problem 19",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbST9ULCDPtF0pCnsKICAgIEZvcm11bGFzKCkKICAgIHsKICAgICAgICBmMTE/MTIgOj0gRm9ybXVsYShJP1QgPT0gU3FydChJP0xeMiArIEk/Ul4yKSwgIjExLjIiLCAzNDMpOwogICAgICAgIGYxMT8xMyA6PSBGb3JtdWxhKM+0ID09IEFyY1RhbigoLUk/TCkgLyBJP1IpfnJhZCwgIjExLjMiLCAiMzQ0Iik7CiAgICB9CiAgICAKICAgIEk/TCA6PSAzMH5tQTsKICAgIEk/UiA6PSA1MH5tQTsKICAgIAogICAgLy8gST9UCiAgICBFdmFsdWF0ZShmMTE/MTIpOwogICAgCiAgICAvLyDPtAogICAgRXZhbHVhdGUoZjExPzEzLCBkZWdyZWUpOwp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 19",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 19.)
+
+A parallel RL circuit has values of I?L = 30mA and I?R = 50mA. Calculate the 
+magnitude and phase angle of the circuit current.
+*/
+
+ProblemSolution([I?T, ϴ])
+{
+    Formulas()
+    {
+        f11?12 := Formula(I?T == Sqrt(I?L^2 + I?R^2), "11.12", "343");
+        f11?13 := Formula(ϴ == ArcTan((-I?L)/I?R)~rad, "11.13", "344");
+    }
+    
+    I?L := 30~mA;
+    I?R := 50~mA;
+    
+    //I?T
+    Evaluate(f11?12);
+    
+    //ϴ
+    Evaluate(f11?13, degree);    
+}
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+58.3 mA ∠ -31 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion=".273",preserve="false"
+      Result: (-30.9637565320735)~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      I?T: 58.3095189484530~mA
+      ϴ: (-30.9637565320735)~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                               \
+      |            /    2      2 \    |
+      | I?T == Sqrt\ I?L  + I?R  /    |
+      |                               |
+      |            / -( I?L ) \       |
+      | ϴ == ArcTan| -------- | ~ rad |
+      |            \   I?R    /       |
+      \                               /
+      
+      === STEPS (CODE VIEW) ===
+      I?T == Sqrt(I?L^2 + I?R^2)
+      ϴ == ArcTan(-I?L/I?R)~rad
+      I?L := 30~mA ==> 30~mA
+      I?R := 50~mA ==> 50~mA
+      Evaluate(f11?12) ==> 58.3095189484530~mA
+      Evaluate(f11?13,degree) ==> (-30.9637565320735)~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 21",description="Practice problem 21 p.359."
+========================================================================================================
+
+
+%mathpiper,name="Problem 21",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMT8xMiA6PSBGb3JtdWxhKEk/VCA9PSBTcXJ0KEk/TF4yICsgST9SXjIpLCAiMTEuMiIsIDM0Myk7CiAgICAgICAgZjExPzE1IDo9IEZvcm11bGEoWj9UID09IFY/Uy9JP1QsICIxMS4xNSIsICIzNDUiKTsKICAgICAgICBmMTE/MTMgOj0gRm9ybXVsYSjPtCA9PSBBcmNUYW4oKC1JP0wpIC8gST9SKX5yYWQsICIxMS4zIiwgIjM0NCIpOwogICAgfQogICAgCiAgICBWP1MgOj0gOH5WIOKIoCAwfmRlZ3JlZTsKICAgIEk/TCA6PSAzfm1BOwogICAgST9SIDo9IDR+bUE7CiAgICAKICAgIC8vIEk/VC4KICAgIEk/VD9kZWdyZWVzIDo9IEV2YWx1YXRlKGYxMT8xMikg4oigIEV2YWx1YXRlKGYxMT8xMywgZGVncmVlKTsKICAgIGYxMT8xNUIgOj0gU3Vic3RpdHV0ZTIoZjExPzE1LCBbJ0k/VCA8LSBJP1Q/ZGVncmVlc10pOwogICAgCiAgICAvLyBaP1QuCiAgICBFdmFsdWF0ZShmMTE/MTVCLCBrzqkpOwogIAp9Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 21",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 21.)
+
+Calculate the total impedance for the circuit shown in Figure 11.40a.
+*/
+
+ProblemSolution([Z?T])
+{
+    Formulas()
+    {
+        f11?12 := Formula(I?T == Sqrt(I?L^2 + I?R^2), "11.12", "343");
+        f11?13 := Formula(ϴ == ArcTan((-I?L)/I?R)~rad, "11.13", "344");
+        f11?15 := Formula(Z?T == V?S/I?T, "11.15", "345");
+    }
+    
+    V?S := 8~V ∠ 0~degree;
+    I?L := 3~mA;
+    I?R := 4~mA;
+    
+    //I?T
+    I?T?degrees := Evaluate(f11?12) ∠ Evaluate(f11?13, degree);
+    f11?15B := Substitute2(f11?15,['I?T <- I?T?degrees]);
+    
+    //Z?T 
+    Evaluate(f11?15B, kΩ);
+}
+    
+    
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+1.6kΩ ∠ 36.9 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion=".273",preserve="false"
+      Result: 1.6~kΩ ∠ 36.8698976458440~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 1.6~kΩ ∠ 36.8698976458440~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                               \
+      |            /    2      2 \    |
+      | I?T == Sqrt\ I?L  + I?R  /    |
+      |                               |
+      |            / -( I?L ) \       |
+      | ϴ == ArcTan| -------- | ~ rad |
+      |            \   I?R    /       |
+      |                               |
+      |        V?S                    |
+      | Z?T == ---                    |
+      |        I?T                    |
+      \                               /
+      
+      === STEPS (CODE VIEW) ===
+      I?T == Sqrt(I?L^2 + I?R^2)
+      ϴ == ArcTan(-I?L/I?R)~rad
+      Z?T == V?S/I?T
+      V?S := 8~V ∠ 0~degree ==> 8~V ∠ 0~degree
+      I?L := 3~mA ==> 3~mA
+      I?R := 4~mA ==> 4~mA
+      I?T?degrees := Evaluate(f11?12) ∠ Evaluate(f11?13,degree) ==> 5~mA ∠ (-36.8698976458440)~degree
+      f11?15B := Substitute2(f11?15,[ 'I?T <- I?T?degrees]) ==> Z?T == V?S/5~mA ∠ (-36.8698976458440)~degree
+      Evaluate(f11?15B,kΩ) ==> 1.6~kΩ ∠ 36.8698976458440~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 23",description="Practice problem 23 p.359."
+========================================================================================================
+
+
+%mathpiper,name="Problem 23",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 23",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 23.)
+
+Calculate the magnitude and phase angle of the circuit impedance shown in 
+Figure 11.41a.
+*/
+
+ProblemSolution([Z?T, ϴ])
+{
+    Formulas()
+    {
+        //f11?16 := Formula(Z?T == (1/(Sqrt( (1/(X?L^2)) + (1/(R?R^2)) ) )), "11.16", "346");
+        f11?22 := Formula(ϴ == ArcTan(R?R/X?L)~rad, "11.22", "348");
+        f11?17 := Formula(Z?P == ((X?L*R?R)/(Sqrt(X?L^2+R?R^2)) ), "11.17", "346");
+        //f11?22a := Formula(ϴ?unitless == ((ArcTan(R?R/X?L)~rad)/(1~rad)), "11.22", "348");//unitless
+    }
+    
+    //V?S := 10~V ∠ 0~degree;
+    X?L := 3~kΩ;
+    R?R := 12000~Ω;
+   
+    //I?T
+    Z?T := Evaluate(f11?17) ∠ Evaluate(f11?22, degree);
+}
+
+
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+2.91kΩ ∠ 76 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion=".273",preserve="false"
+      Result: 2.91042750043599~(kΩ^2/kΩ) ∠ 75.9637565320734~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Z?T: 2.91042750043599~(kΩ^2/kΩ) ∠ 75.9637565320734~degree
+      ϴ: 75.9637565320734~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                            \
+      |            / R?R \         |
+      | ϴ == ArcTan| --- | ~ rad   |
+      |            \ X?L /         |
+      |                            |
+      |             X?L * R?R      |
+      | Z?P == ------------------- |
+      |            /    2      2 \ |
+      |        Sqrt\ X?L  + R?R  / |
+      \                            /
+      
+      === STEPS (CODE VIEW) ===
+      ϴ == ArcTan(R?R/X?L)~rad
+      Z?P == (X?L*R?R)/Sqrt(X?L^2 + R?R^2)
+      X?L := 3~kΩ ==> 3~kΩ
+      R?R := 12000~Ω ==> 12000~Ω
+      Z?T := Evaluate(f11?17) ∠ Evaluate(f11?22,degree) ==> 2.91042750043599~(kΩ^2/kΩ) ∠ 75.9637565320734~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 25",description="Practice problem 25 p.359."
+========================================================================================================
+
+
+%mathpiper,name="Problem 25",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 25",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 25.)
+
+Calculate the component current and power values for the circuit in Figure 11.42a.
+Then, calculate the values of I?T and P?APP.
+*/
+
+ProblemSolution([X?L, I?L, I?R, I?T, ϴ, P?APP])
+{
+    Formulas()
+    {
+        ohmsLaw := Formula( I?OL == V?OL/R?OL, "(3.1)", "78"); //Z?T can be subbed
+        f4?1 := Formula(R?T == R?1 + R?R + R?S, "4.1", "99"); //In series resistance total
+        f10?14 := Formula( X?L == 2 * Pi *f?f * L?L, "(10.14)", "302");
+        f11?4 := Formula( Z?T == Sqrt((X?S^2) + (R?T^2)), "(11.4)", "332");
+        f11?5 := Formula( ϴ == ArcTan(X?L/R?T) ~ rad, "(11.5)", "332");
+        f11?7 := Formula(P?APP == (V?S)*(I?T), "11.7", "339");
+        f11?17 := Formula(Z?P == ((X?L*R?R)/(Sqrt(X?L^2+R?R^2)) ), "11.17", "346");
+        f11?22 := Formula(ϴ == ArcTan(R?R/X?L)~rad, "11.22", "348");
+        
+//I had to make the formula 11?22 in degrees to a unitless number
+//I tried a lot of different ways to cancel and I could only get
+//it to cancel in radians and then convert it to a degree
+//value but without a unit. Cos() won't accept a degree unit.
+
+        f11?22a := Formula(ϴ?unitless == ((ArcTan(R?R/X?L)~rad)/(1~rad)) * 57.2958, "11.22", "348");//unitless
+        elevenTwentyThreeA := Formula(R?S == Z?P * Cos(ϴ?unitless), "11.23a", "354");
+        elevenTwentyFourA := Formula(X?S == Z?P * Sin(ϴ?unitless), "11.24a", "354");
+        ohmsLawA := Formula( V?P == I?T * Z?P, "(3.1)", "78,"); 
+    }
+    //X?L
+    V?S := 120~V ∠ 0~degree;
+    f?f := 60~Hz;
+    L?L := 470~mH;
+    X?L := Evaluate(f10?14, Ω);
+    
+    //impedance
+    R?R := 750~Ω;
+    R?1 := 0~Ω;     
+    Z?P := Evaluate(f11?17, Ω);
+    
+//-----------------Gets weird------------------
+    ϴ := Evaluate(f11?22);
+    ϴ?unitless := Evaluate(f11?22a);
+    R?S := Evaluate(elevenTwentyThreeA);
+    X?S := Evaluate(elevenTwentyFourA);  //
+    
+    R?R := 0~Ω;//All resistors are now in series and combin|ed into one
+    R?T := Evaluate(f4?1, Ω);
+    
+    ϴ := Evaluate(f11?5); 
+    Z?T := Evaluate(f11?4, Ω) ∠ Evaluate(f11?5, degree);
+    
+    circuitCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- Z?T]);
+    I?T := Evaluate(circuitCurrent, mA);
+   
+    I?T[2] := I?T[2]+(90~degree);// Changing Phase angles manually
+    V?P := V?S[1] ∠ Z?T[2];//Not used in this problem
+    
+    X?L := Evaluate(f10?14, Ω) ∠ 90~degree;
+    lCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?L, 'V?OL <- 'V?P, 'R?OL <- X?L]);
+    I?L := Evaluate(lCurrent, mA);
+    
+    R?R := 750~Ω ∠ 0~degree;
+    rCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?R, 'V?OL <- 'V?P, 'R?OL <- R?R]);
+    I?R := Evaluate(rCurrent, mA);
+    
+    P?APP := Evaluate(f11?7, VA);
+    
+    ϴ := (Evaluate(f11?22, degree) * -1);
+    
+
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+X?L = 177Ω, I?L = 678mA, I?R = 160mA, I?T = 697mA, ϴ = -76.7 ~degrees, & P?APP = 83.6 VA.
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion=".273",preserve="false"
+      Result: (-76.70771736)~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?L: 177.185825662464~Ω ∠ 90~degree
+      I?L: 677.25507698679~mA ∠ (-14.1113088463487)~degree
+      I?R: 160~mA ∠ 75.8886911536513~degree
+      I?T: 695.898296667254~mA ∠ 14.11130885~degree
+      ϴ: (-76.70771736)~degree
+      P?APP: 83.5077956000705~VA ∠ 14.11130885~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                             \
+      |         V?OL                                |
+      | I?OL == ----                                |
+      |         R?OL                                |
+      |                                             |
+      | R?T == R?1 + R?R + R?S                      |
+      |                                             |
+      | X?L == 2 * Pi * f?f * L?L                   |
+      |                                             |
+      |            /    2      2 \                  |
+      | Z?T == Sqrt\ X?S  + R?T  /                  |
+      |                                             |
+      |            / X?L \                          |
+      | ϴ == ArcTan| --- | ~ rad                    |
+      |            \ R?T /                          |
+      |                                             |
+      | P?APP == V?S * I?T                          |
+      |                                             |
+      |             X?L * R?R                       |
+      | Z?P == -------------------                  |
+      |            /    2      2 \                  |
+      |        Sqrt\ X?L  + R?R  /                  |
+      |                                             |
+      |            / R?R \                          |
+      | ϴ == ArcTan| --- | ~ rad                    |
+      |            \ X?L /                          |
+      |                                             |
+      |                     / R?R \                 |
+      |               ArcTan| --- | ~ rad           |
+      |                     \ X?L /                 |
+      | ϴ?unitless == ------------------- * 57.2958 |
+      |                     1 ~ rad                 |
+      |                                             |
+      | R?S == Z?P * Cos( ϴ?unitless )              |
+      |                                             |
+      | X?S == Z?P * Sin( ϴ?unitless )              |
+      |                                             |
+      | V?P == I?T * Z?P                            |
+      \                                             /
+      
+      === STEPS (CODE VIEW) ===
+      I?OL == V?OL/R?OL
+      R?T == R?1 + R?R + R?S
+      X?L == 2*Pi*f?f*L?L
+      Z?T == Sqrt(X?S^2 + R?T^2)
+      ϴ == ArcTan(X?L/R?T)~rad
+      P?APP == V?S*I?T
+      Z?P == (X?L*R?R)/Sqrt(X?L^2 + R?R^2)
+      ϴ == ArcTan(R?R/X?L)~rad
+      ϴ?unitless == ArcTan(R?R/X?L)~rad/1~rad*57.2958
+      R?S == Z?P*Cos(ϴ?unitless)
+      X?S == Z?P*Sin(ϴ?unitless)
+      V?P == I?T*Z?P
+      V?S := 120~V ∠ 0~degree ==> 120~V ∠ 0~degree
+      f?f := 60~Hz ==> 60~Hz
+      L?L := 470~mH ==> 470~mH
+      X?L := Evaluate(f10?14,Ω) ==> 177.185825662464~Ω
+      R?R := 750~Ω ==> 750~Ω
+      R?1 := 0~Ω ==> 0~Ω
+      Z?P := Evaluate(f11?17,Ω) ==> 172.438990833424~Ω
+      ϴ := Evaluate(f11?22) ==> 1.33880222956245~rad
+      ϴ?unitless := Evaluate(f11?22a) ==> 76.70774478
+      R?S := Evaluate(elevenTwentyThreeA) ==> 44.5431838709559~Ω
+      X?S := Evaluate(elevenTwentyFourA) ==> 166.586645113850~Ω
+      R?R := 0~Ω ==> 0~Ω
+      R?T := Evaluate(f4?1,Ω) ==> 44.5431838709559~Ω
+      ϴ := Evaluate(f11?5) ==> 1.32450752566031~rad
+      Z?T := Evaluate(f11?4,Ω) ∠ Evaluate(f11?5,degree) ==> 172.438990833424~Ω ∠ 75.8886911536513~degree
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- Z?T]) ==> I?T == V?S/172.438990833424~Ω ∠ 75.8886911536513~degree
+      I?T := Evaluate(circuitCurrent,mA) ==> 695.898296667254~mA ∠ (-75.8886911536513)~degree
+      I?T[2] := I?T[2] + 90~degree ==> 14.11130885~degree
+      V?P := V?S[1] ∠ Z?T[2] ==> 120~V ∠ 75.8886911536513~degree
+      X?L := Evaluate(f10?14,Ω) ∠ 90~degree ==> 177.185825662464~Ω ∠ 90~degree
+      lCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?L, 'V?OL <- 'V?P, 'R?OL <- X?L]) ==> I?L == V?P/177.185825662464~Ω ∠ 90~degree
+      I?L := Evaluate(lCurrent,mA) ==> 677.25507698679~mA ∠ (-14.1113088463487)~degree
+      R?R := 750~Ω ∠ 0~degree ==> 750~Ω ∠ 0~degree
+      rCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?R, 'V?OL <- 'V?P, 'R?OL <- R?R]) ==> I?R == V?P/750~Ω ∠ 0~degree
+      I?R := Evaluate(rCurrent,mA) ==> 160~mA ∠ 75.8886911536513~degree
+      P?APP := Evaluate(f11?7,VA) ==> 83.5077956000705~VA ∠ 14.11130885~degree
+      ϴ := Evaluate(f11?22,degree)*-1 ==> (-76.70771736)~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 27",description="Practice problem 27 p.359."
+========================================================================================================
+
+
+%mathpiper,name="Problem 27",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+
+
+
+
+%mathpiper,name="Problem 27",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 27.)
+
+Calculate the component and circuit currents for the circuit shown in Figure 11.43a.
+*/
+
+
+ProblemSolution([X?L1, X?L2, I?L1, I?L2, I?LT, I?R, I?T, ϴ])
+{
+    Formulas()
+    {
+        ohmsLaw := Formula( I?OL == V?OL/R?OL, "(3.1)", "78"); //Z?T can be subbed
+        f4?1 := Formula(R?T == R?1 + R?R + R?S, "4.1", "99"); //In series resistance total
+        f10?6 := Formula(L?T ==(1/((1/L?L1)+(1/L?L2))),"10.6", "298");
+        f10?14 := Formula( X?L == 2 * Pi *f?f * L?L, "(10.14)", "302");
+        tenFourteenA := Formula(X?LT ==(1/((1/X?L1)+(1/X?L2))),"10.14a", "304");
+        f11?4 := Formula( Z?T == Sqrt((X?S^2) + (R?T^2)), "(11.4)", "332");
+        f11?5 := Formula( ϴ == ArcTan(X?L/R?T) ~ rad, "(11.5)", "332");
+        f11?7 := Formula(P?APP == (V?S)*(I?T), "11.7", "339");
+        f11?17 := Formula(Z?P == ((X?L*R?R)/(Sqrt(X?L^2+R?R^2)) ), "11.17", "346");
+        f11?22 := Formula(ϴ == ArcTan(R?R/X?L)~rad, "11.22", "348");
+        f11?22a := Formula(ϴ?unitless == ((ArcTan(R?R/X?L)~rad)/(1~rad)), "11.22", "348");//unitless
+        elevenTwentyThreeA := Formula(R?S == Z?P * Cos(ϴ?unitless), "11.23a", "354");
+        elevenTwentyFourA := Formula(X?S == Z?P * Sin(ϴ?unitless), "11.24a", "354");
+        ohmsLawA := Formula( V?P == I?T * Z?P, "(3.1)", "78,"); 
+    }
+    //X?L
+    V?S := 3~V;
+    f?f := 5~kHz;
+    
+    L?L1 := 22~mH;
+    xSubL1 := Substitute2(f10?14,['L?L <- 'L?L1, 'X?L <- 'X?L1]);
+    X?L1 := Evaluate(xSubL1, Ω);
+    
+    L?L2 := 15~mH;
+    xSubL2 := Substitute2(f10?14,['L?L <- 'L?L2, 'X?L <- 'X?L2]);
+    X?L2 := Evaluate(xSubL2, Ω);
+    
+    X?LT := Evaluate(tenFourteenA);
+    L?T := Evaluate(f10?6);
+
+    
+    //impedance
+    R?R := 510~Ω;
+    R?1 := 0~Ω;     
+    zSubP := Substitute2(f11?17,['X?L <- 'X?LT]);
+    Z?P := Evaluate(zSubP, Ω);
+ 
+//-----------------Gets weird------------------
+    phaseSub1 := Substitute2(f11?22,['X?L <- 'X?LT]);
+    ϴ := Evaluate(phaseSub1, degree);
+    
+    phaseSub2 := Substitute2(f11?22a,['X?L <- 'X?LT]);
+    ϴ?radian := Evaluate(phaseSub2);
+    
+    R?S := Evaluate(elevenTwentyThreeA, );
+    X?S := Evaluate(elevenTwentyFourA);
+    
+   
+    R?R := 0~Ω;//All resistors are now in series and combin|ed into one
+    R?T := Evaluate(f4?1, Ω);
+    
+    X?L := X?LT;
+    L?L := L?T;
+    
+    ϴ := Evaluate(f11?5); 
+    
+    Z?T := Evaluate(f11?4, Ω) ∠ Evaluate(f11?5, degree);
+    
+    circuitCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?P]);
+    I?T := Evaluate(circuitCurrent, mA);   
+    V?S := 3~V ∠ 0~degree;
+    
+    V?P := V?S[1] ∠ Z?T[2];
+    
+    X?L := Evaluate(f10?14, Ω) ∠ 90~degree;
+    X?L1 := Evaluate(xSubL1, Ω) ∠ 90~degree;
+    X?L2 := Evaluate(xSubL2, Ω) ∠ 90~degree;
+    
+    lCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?L1, 'V?OL <- 'V?P, 'R?OL <- X?L1]);
+    I?L1 := Evaluate(lCurrent, mA);    
+    
+    l2Current := Substitute2(ohmsLaw,['I?OL <- 'I?L2, 'V?OL <- 'V?P, 'R?OL <- X?L2]);
+    I?L2 := Evaluate(l2Current, mA);
+    
+    I?LT := (I?L1[1] + I?L2[1]) ∠ I?L1[2];
+    
+    R?R := 510~Ω ∠ 0~degree;
+    rCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?R, 'V?OL <- 'V?P, 'R?OL <- R?R]);
+    I?R := Evaluate(rCurrent, mA);
+    
+    ϴ := (-1 * Evaluate(phaseSub1, degree));
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+X?L1 = 691Ω, X?L2 = 471Ω, I?L1 = 4.34 mA, I?L2 = 6.37mA, I?LT = 10.7mA, I?R=5.88mA,
+I?T = 12.2mA, & ϴ = -61.2 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 27",mpversion=".273",preserve="false"
+      Result: (-61.21542504)~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?L1: 691.150383789754~Ω ∠ 90~degree
+      X?L2: 471.238898038469~Ω ∠ 90~degree
+      I?L1: 4.34058935705169~mA ∠ (-22.8807003432430)~degree
+      I?L2: 6.36619772367581~mA ∠ (-22.8807003432430)~degree
+      I?LT: 10.70678708~mA ∠ (-22.8807003432430)~degree
+      I?R: 5.88235294117647~mA ∠ 67.1192996567570~degree
+      I?T: 12.2162746251303~mA
+      ϴ: (-61.21542504)~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                   \
+      |         V?OL                      |
+      | I?OL == ----                      |
+      |         R?OL                      |
+      |                                   |
+      | R?T == R?1 + R?R + R?S            |
+      |                                   |
+      |             1                     |
+      | L?T == -----------                |
+      |         1      1                  |
+      |        ---- + ----                |
+      |        L?L1   L?L2                |
+      |                                   |
+      | X?L == 2 * Pi * f?f * L?L         |
+      |                                   |
+      |              1                    |
+      | X?LT == -----------               |
+      |          1      1                 |
+      |         ---- + ----               |
+      |         X?L1   X?L2               |
+      |                                   |
+      |            /    2      2 \        |
+      | Z?T == Sqrt\ X?S  + R?T  /        |
+      |                                   |
+      |            / X?L \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ R?T /                |
+      |                                   |
+      | P?APP == V?S * I?T                |
+      |                                   |
+      |             X?L * R?R             |
+      | Z?P == -------------------        |
+      |            /    2      2 \        |
+      |        Sqrt\ X?L  + R?R  /        |
+      |                                   |
+      |            / R?R \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ X?L /                |
+      |                                   |
+      |                     / R?R \       |
+      |               ArcTan| --- | ~ rad |
+      |                     \ X?L /       |
+      | ϴ?unitless == ------------------- |
+      |                     1 ~ rad       |
+      |                                   |
+      | R?S == Z?P * Cos( ϴ?unitless )    |
+      |                                   |
+      | X?S == Z?P * Sin( ϴ?unitless )    |
+      |                                   |
+      | V?P == I?T * Z?P                  |
+      \                                   /
+      
+      === STEPS (CODE VIEW) ===
+      I?OL == V?OL/R?OL
+      R?T == R?1 + R?R + R?S
+      L?T == 1/(1/L?L1 + 1/L?L2)
+      X?L == 2*Pi*f?f*L?L
+      X?LT == 1/(1/X?L1 + 1/X?L2)
+      Z?T == Sqrt(X?S^2 + R?T^2)
+      ϴ == ArcTan(X?L/R?T)~rad
+      P?APP == V?S*I?T
+      Z?P == (X?L*R?R)/Sqrt(X?L^2 + R?R^2)
+      ϴ == ArcTan(R?R/X?L)~rad
+      ϴ?unitless == ArcTan(R?R/X?L)~rad/1~rad
+      R?S == Z?P*Cos(ϴ?unitless)
+      X?S == Z?P*Sin(ϴ?unitless)
+      V?P == I?T*Z?P
+      V?S := 3~V ==> 3~V
+      f?f := 5~kHz ==> 5~kHz
+      L?L1 := 22~mH ==> 22~mH
+      xSubL1 := Substitute2(f10?14,[ 'L?L <- 'L?L1, 'X?L <- 'X?L1]) ==> X?L1 == 2*Pi*f?f*L?L1
+      X?L1 := Evaluate(xSubL1,Ω) ==> 691.150383789754~Ω
+      L?L2 := 15~mH ==> 15~mH
+      xSubL2 := Substitute2(f10?14,[ 'L?L <- 'L?L2, 'X?L <- 'X?L2]) ==> X?L2 == 2*Pi*f?f*L?L2
+      X?L2 := Evaluate(xSubL2,Ω) ==> 471.238898038469~Ω
+      X?LT := Evaluate(tenFourteenA) ==> 280.196101536387~Ω
+      L?T := Evaluate(f10?6) ==> 8.91891891891893~mH
+      R?R := 510~Ω ==> 510~Ω
+      R?1 := 0~Ω ==> 0~Ω
+      zSubP := Substitute2(f11?17,[ 'X?L <- 'X?LT]) ==> Z?P == (X?LT*R?R)/Sqrt(X?LT^2 + R?R^2)
+      Z?P := Evaluate(zSubP,Ω) ==> 245.574047085407~Ω
+      phaseSub1 := Substitute2(f11?22,[ 'X?L <- 'X?LT]) ==> ϴ == ArcTan(R?R/X?LT)~rad
+      ϴ := Evaluate(phaseSub1,degree) ==> 61.2154250376015~degree
+      phaseSub2 := Substitute2(f11?22a,[ 'X?L <- 'X?LT]) ==> ϴ?unitless == ArcTan(R?R/X?LT)~rad/1~rad
+      ϴ?radian := Evaluate(phaseSub2) ==> 1.068410720
+      R?S := Evaluate(elevenTwentyThreeA) ==> 118.248259985209~Ω
+      X?S := Evaluate(elevenTwentyFourA) ==> 215.230020239687~Ω
+      R?R := 0~Ω ==> 0~Ω
+      R?T := Evaluate(f4?1,Ω) ==> 118.248259985209~Ω
+      X?L := X?LT ==> 280.196101536387~Ω
+      L?L := L?T ==> 8.91891891891893~mH
+      ϴ := Evaluate(f11?5) ==> 1.17145277064311~rad
+      Z?T := Evaluate(f11?4,Ω) ∠ Evaluate(f11?5,degree) ==> 245.574047085407~Ω ∠ 67.1192996567570~degree
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?P]) ==> I?T == V?S/Z?P
+      I?T := Evaluate(circuitCurrent,mA) ==> 12.2162746251303~mA
+      V?S := 3~V ∠ 0~degree ==> 3~V ∠ 0~degree
+      V?P := V?S[1] ∠ Z?T[2] ==> 3~V ∠ 67.1192996567570~degree
+      X?L := Evaluate(f10?14,Ω) ∠ 90~degree ==> 280.196101536387~Ω ∠ 90~degree
+      X?L1 := Evaluate(xSubL1,Ω) ∠ 90~degree ==> 691.150383789754~Ω ∠ 90~degree
+      X?L2 := Evaluate(xSubL2,Ω) ∠ 90~degree ==> 471.238898038469~Ω ∠ 90~degree
+      lCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?L1, 'V?OL <- 'V?P, 'R?OL <- X?L1]) ==> I?L1 == V?P/691.150383789754~Ω ∠ 90~degree
+      I?L1 := Evaluate(lCurrent,mA) ==> 4.34058935705169~mA ∠ (-22.8807003432430)~degree
+      l2Current := Substitute2(ohmsLaw,[ 'I?OL <- 'I?L2, 'V?OL <- 'V?P, 'R?OL <- X?L2]) ==> I?L2 == V?P/471.238898038469~Ω ∠ 90~degree
+      I?L2 := Evaluate(l2Current,mA) ==> 6.36619772367581~mA ∠ (-22.8807003432430)~degree
+      I?LT := (I?L1[1] + I?L2[1]) ∠ I?L1[2] ==> 10.70678708~mA ∠ (-22.8807003432430)~degree
+      R?R := 510~Ω ∠ 0~degree ==> 510~Ω ∠ 0~degree
+      rCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?R, 'V?OL <- 'V?P, 'R?OL <- R?R]) ==> I?R == V?P/510~Ω ∠ 0~degree
+      I?R := Evaluate(rCurrent,mA) ==> 5.88235294117647~mA ∠ 67.1192996567570~degree
+      ϴ := -1*Evaluate(phaseSub1,degree) ==> (-61.21542504)~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 29",description="Practice problem 29 p.360."
+========================================================================================================
+
+
+%mathpiper,name="Problem 29",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+
+
+
+
+%mathpiper,name="Problem 29",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 29.)
+
+The voltage source in figure 11.44a has the frequency limits shown. Calculate the 
+circuit current and impedance values at the frequency limits of the source
+*/
+ProblemSolution([I?T1, Z?T1, I?T2, Z?T2])
+{
+    Formulas()
+    {
+        ohmsLaw := Formula( I?OL == V?OL/R?OL, "(3.1)", "78"); //Z?T can be subbed
+        f4?1 := Formula(R?T == R?1 + R?R + R?S, "4.1", "99"); //In series resistance total
+        f10?14 := Formula( X?L == 2 * Pi *f?f * L?L, "(10.14)", "302");
+        f11?4 := Formula( Z?T == Sqrt((X?S^2) + (R?T^2)), "(11.4)", "332");
+        f11?5 := Formula( ϴ == ArcTan(X?L/R?T) ~ rad, "(11.5)", "332");
+        f11?7 := Formula(P?APP == (V?S)*(I?T), "11.7", "339");
+        f11?17 := Formula(Z?P == ((X?L*R?R)/(Sqrt(X?L^2+R?R^2)) ), "11.17", "346");
+        f11?22 := Formula(ϴ == ArcTan(R?R/X?L)~rad, "11.22", "348");
+        f11?22a := Formula(ϴ?unitless == ((ArcTan(R?R/X?L)~rad)/(1~rad)), "11.22", "348");//unitless
+        elevenTwentyThreeA := Formula(R?S == Z?P * Cos(ϴ?unitless), "11.23a", "354");
+        elevenTwentyFourA := Formula(X?S == Z?P * Sin(ϴ?unitless), "11.24a", "354");
+        ohmsLawA := Formula( V?P == I?T * Z?P, "(3.1)", "78,"); 
+    }
+    
+    V?S1 := 3~V ∠ 0~degree;
+    f?f1 := 1~kHz;
+    L?L1 := 10~mH;
+    xSubL := Substitute2(f10?14,['X?L <- 'X?L1, 'f?f <- 'f?f1, 'L?L <- 'L?L1]);
+    X?L1 := Evaluate(xSubL, Ω);
+    R?R1 := 180~Ω;
+    zSubPOne := Substitute2(f11?17,['Z?P <- 'Z?P1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]);
+    Z?P1 := Evaluate(zSubPOne, Ω);
+    thetaOne := Substitute2(f11?22,['ϴ <- 'ϴ1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]);
+    ϴ1 := Evaluate(thetaOne);
+    thetaUnitlessOne := Substitute2(f11?22a,['ϴ?unitless <- 'ϴ?unitless1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]);
+    ϴ?unitless1 := Evaluate(thetaUnitlessOne);
+    rSubSOne := Substitute2(elevenTwentyThreeA,['R?S <- 'R?S1, 'Z?P <- 'Z?P1, 'ϴ?unitless <- 'ϴ?unitless1]);
+    R?S1 := Evaluate(rSubSOne);
+    xSubSOne :=Substitute2(elevenTwentyFourA,['X?S <- 'X?S1, 'Z?P <- 'Z?P1, 'ϴ?unitless <- 'ϴ?unitless1]);
+    X?S1 := Evaluate(xSubSOne);
+    //rewrite theta
+    thetaTwo := Substitute2(f11?5,['ϴ <- 'ϴ1, 'R?T <- 'R?S1, 'X?L <- 'X?S1]);
+    ϴ1 := Evaluate(thetaTwo); 
+    //may have to rewrite theta
+    zSubOneOne := Substitute2(f11?4,['Z?T <- 'Z?T1, 'X?S <- 'X?S1, 'R?T <- 'R?S1]);//
+    zSubOneTwo := Substitute2(f11?5,['ϴ <- 'ϴ1, 'X?L <- 'X?L1, 'R?T <- 'R?S1]);
+    Z?T1 := Evaluate(zSubOneOne, Ω) ∠ Evaluate(zSubOneTwo, degree);  
+    currentTotalOne := Substitute2(ohmsLaw,['I?OL <- 'I?T1, 'V?OL <- 'V?S1, 'R?OL <- Z?T1]);
+    I?T1 := Evaluate(currentTotalOne, mA); 
+    
+//============================================================================================  
+    V?S2 := 3~V ∠ 0~degree;
+    f?f2 := 2.5~kHz;
+    L?L2 := 10~mH;
+    xSubLTwo := Substitute2(f10?14,['X?L <- 'X?L2, 'f?f <- 'f?f2, 'L?L <- 'L?L2]);
+    X?L2 := Evaluate(xSubLTwo, Ω);
+    R?R2 := 180~Ω;
+    zSubPTwo := Substitute2(f11?17,['Z?P <- 'Z?P2, 'X?L <- 'X?L2, 'R?R <- 'R?R2]);
+    Z?P2 := Evaluate(zSubPTwo, Ω);
+    thetaThree := Substitute2(f11?22,['ϴ <- 'ϴ3, 'X?L <- 'X?L2, 'R?R <- 'R?R2]);
+    ϴ3 := Evaluate(thetaThree);
+    
+    thetaUnitlessThree := Substitute2(f11?22a,['ϴ?unitless <- 'ϴ?unitless3, 'X?L <- 'X?L2, 'R?R <- 'R?R2]);
+    ϴ?unitless3 := Evaluate(thetaUnitlessThree);
+    rSubSTwo := Substitute2(elevenTwentyThreeA,['R?S <- 'R?S2, 'Z?P <- 'Z?P2, 'ϴ?unitless <- 'ϴ?unitless3]);
+    R?S2 := Evaluate(rSubSTwo);
+    xSubSTwo :=Substitute2(elevenTwentyFourA,['X?S <- 'X?S2, 'Z?P <- 'Z?P2, 'ϴ?unitless <- 'ϴ?unitless3]);
+    X?S2 := Evaluate(xSubSTwo);
+    //rewrite theta
+    thetaThree := Substitute2(f11?5,['ϴ <- 'ϴ2, 'R?T <- 'R?S2, 'X?L <- 'X?S2]);
+    ϴ2 := Evaluate(thetaThree); 
+    //may have to rewrite theta
+    zSubTwoOne := Substitute2(f11?4,['Z?T <- 'Z?T2, 'X?S <- 'X?S2, 'R?T <- 'R?S2]);//
+    zSubTwoTwo := Substitute2(f11?5,['ϴ <- 'ϴ2, 'X?L <- 'X?L2, 'R?T <- 'R?S2]);
+    Z?T2 := Evaluate(zSubTwoOne, Ω) ∠ Evaluate(zSubTwoTwo, degree);  
+    currentTotalTwo := Substitute2(ohmsLaw,['I?OL <- 'I?T2, 'V?OL <- 'V?S2, 'R?OL <- Z?T2]);
+    I?T2 := Evaluate(currentTotalTwo, mA); 
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+When f = 1 kHz: I?T = 50.6 mA ∠ -70.8 ~degrees, Z?T = 59.3Ω ∠ 70.8 ~degrees.
+When f = 2.5 kHz: I?T = 25.4 mA ∠ -48.9 ~degrees, Z?T = 118Ω ∠ 48.9 ~degrees
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 29",mpversion=".273",preserve="false"
+      Result: 25.3482551448851~mA ∠ (-63.6462907408727)~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      I?T1: 50.5717748327107~mA ∠ (-72.7163226645400)~degree
+      Z?T1: 59.3216277246324~Ω ∠ 72.7163226645400~degree
+      I?T2: 25.3482551448851~mA ∠ (-63.6462907408727)~degree
+      Z?T2: 118.351341457337~Ω ∠ 63.6462907408727~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                   \
+      |         V?OL                      |
+      | I?OL == ----                      |
+      |         R?OL                      |
+      |                                   |
+      | R?T == R?1 + R?R + R?S            |
+      |                                   |
+      | X?L == 2 * Pi * f?f * L?L         |
+      |                                   |
+      |            /    2      2 \        |
+      | Z?T == Sqrt\ X?S  + R?T  /        |
+      |                                   |
+      |            / X?L \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ R?T /                |
+      |                                   |
+      | P?APP == V?S * I?T                |
+      |                                   |
+      |             X?L * R?R             |
+      | Z?P == -------------------        |
+      |            /    2      2 \        |
+      |        Sqrt\ X?L  + R?R  /        |
+      |                                   |
+      |            / R?R \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ X?L /                |
+      |                                   |
+      |                     / R?R \       |
+      |               ArcTan| --- | ~ rad |
+      |                     \ X?L /       |
+      | ϴ?unitless == ------------------- |
+      |                     1 ~ rad       |
+      |                                   |
+      | R?S == Z?P * Cos( ϴ?unitless )    |
+      |                                   |
+      | X?S == Z?P * Sin( ϴ?unitless )    |
+      |                                   |
+      | V?P == I?T * Z?P                  |
+      \                                   /
+      
+      === STEPS (CODE VIEW) ===
+      I?OL == V?OL/R?OL
+      R?T == R?1 + R?R + R?S
+      X?L == 2*Pi*f?f*L?L
+      Z?T == Sqrt(X?S^2 + R?T^2)
+      ϴ == ArcTan(X?L/R?T)~rad
+      P?APP == V?S*I?T
+      Z?P == (X?L*R?R)/Sqrt(X?L^2 + R?R^2)
+      ϴ == ArcTan(R?R/X?L)~rad
+      ϴ?unitless == ArcTan(R?R/X?L)~rad/1~rad
+      R?S == Z?P*Cos(ϴ?unitless)
+      X?S == Z?P*Sin(ϴ?unitless)
+      V?P == I?T*Z?P
+      V?S1 := 3~V ∠ 0~degree ==> 3~V ∠ 0~degree
+      f?f1 := 1~kHz ==> 1~kHz
+      L?L1 := 10~mH ==> 10~mH
+      xSubL := Substitute2(f10?14,[ 'X?L <- 'X?L1, 'f?f <- 'f?f1, 'L?L <- 'L?L1]) ==> X?L1 == 2*Pi*f?f1*L?L1
+      X?L1 := Evaluate(xSubL,Ω) ==> 62.8318530717958~Ω
+      R?R1 := 180~Ω ==> 180~Ω
+      zSubPOne := Substitute2(f11?17,[ 'Z?P <- 'Z?P1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]) ==> Z?P1 == (X?L1*R?R1)/Sqrt(X?L1^2 + R?R1^2)
+      Z?P1 := Evaluate(zSubPOne,Ω) ==> 59.3216277246323~Ω
+      thetaOne := Substitute2(f11?22,[ 'ϴ <- 'ϴ1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]) ==> ϴ1 == ArcTan(R?R1/X?L1)~rad
+      ϴ1 := Evaluate(thetaOne) ==> 1.23495395422849~rad
+      thetaUnitlessOne := Substitute2(f11?22a,[ 'ϴ?unitless <- 'ϴ?unitless1, 'X?L <- 'X?L1, 'R?R <- 'R?R1]) ==> ϴ?unitless1 == ArcTan(R?R1/X?L1)~rad/1~rad
+      ϴ?unitless1 := Evaluate(thetaUnitlessOne) ==> 1.234953954
+      rSubSOne := Substitute2(elevenTwentyThreeA,[ 'R?S <- 'R?S1, 'Z?P <- 'Z?P1, 'ϴ?unitless <- 'ϴ?unitless1]) ==> R?S1 == Z?P1*Cos(ϴ?unitless1)
+      R?S1 := Evaluate(rSubSOne) ==> 19.5503084344631~Ω
+      xSubSOne := Substitute2(elevenTwentyFourA,[ 'X?S <- 'X?S1, 'Z?P <- 'Z?P1, 'ϴ?unitless <- 'ϴ?unitless1]) ==> X?S1 == Z?P1*Sin(ϴ?unitless1)
+      X?S1 := Evaluate(xSubSOne) ==> 56.0075080325596~Ω
+      thetaTwo := Substitute2(f11?5,[ 'ϴ <- 'ϴ1, 'R?T <- 'R?S1, 'X?L <- 'X?S1]) ==> ϴ1 == ArcTan(X?S1/R?S1)~rad
+      ϴ1 := Evaluate(thetaTwo) ==> 1.23495395400000~rad
+      zSubOneOne := Substitute2(f11?4,[ 'Z?T <- 'Z?T1, 'X?S <- 'X?S1, 'R?T <- 'R?S1]) ==> Z?T1 == Sqrt(X?S1^2 + R?S1^2)
+      zSubOneTwo := Substitute2(f11?5,[ 'ϴ <- 'ϴ1, 'X?L <- 'X?L1, 'R?T <- 'R?S1]) ==> ϴ1 == ArcTan(X?L1/R?S1)~rad
+      Z?T1 := Evaluate(zSubOneOne,Ω) ∠ Evaluate(zSubOneTwo,degree) ==> 59.3216277246324~Ω ∠ 72.7163226645400~degree
+      currentTotalOne := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T1, 'V?OL <- 'V?S1, 'R?OL <- Z?T1]) ==> I?T1 == V?S1/59.3216277246324~Ω ∠ 72.7163226645400~degree
+      I?T1 := Evaluate(currentTotalOne,mA) ==> 50.5717748327107~mA ∠ (-72.7163226645400)~degree
+      V?S2 := 3~V ∠ 0~degree ==> 3~V ∠ 0~degree
+      f?f2 := 2.5~kHz ==> 2.5~kHz
+      L?L2 := 10~mH ==> 10~mH
+      xSubLTwo := Substitute2(f10?14,[ 'X?L <- 'X?L2, 'f?f <- 'f?f2, 'L?L <- 'L?L2]) ==> X?L2 == 2*Pi*f?f2*L?L2
+      X?L2 := Evaluate(xSubLTwo,Ω) ==> 157.07963267949~Ω
+      R?R2 := 180~Ω ==> 180~Ω
+      zSubPTwo := Substitute2(f11?17,[ 'Z?P <- 'Z?P2, 'X?L <- 'X?L2, 'R?R <- 'R?R2]) ==> Z?P2 == (X?L2*R?R2)/Sqrt(X?L2^2 + R?R2^2)
+      Z?P2 := Evaluate(zSubPTwo,Ω) ==> 118.351341457337~Ω
+      thetaThree := Substitute2(f11?22,[ 'ϴ <- 'ϴ3, 'X?L <- 'X?L2, 'R?R <- 'R?R2]) ==> ϴ3 == ArcTan(R?R2/X?L2)~rad
+      ϴ3 := Evaluate(thetaThree) ==> 0.853290548693246~rad
+      thetaUnitlessThree := Substitute2(f11?22a,[ 'ϴ?unitless <- 'ϴ?unitless3, 'X?L <- 'X?L2, 'R?R <- 'R?R2]) ==> ϴ?unitless3 == ArcTan(R?R2/X?L2)~rad/1~rad
+      ϴ?unitless3 := Evaluate(thetaUnitlessThree) ==> 0.8532905487
+      rSubSTwo := Substitute2(elevenTwentyThreeA,[ 'R?S <- 'R?S2, 'Z?P <- 'Z?P2, 'ϴ?unitless <- 'ϴ?unitless3]) ==> R?S2 == Z?P2*Cos(ϴ?unitless3)
+      R?S2 := Evaluate(rSubSTwo) ==> 77.8168890257935~Ω
+      xSubSTwo := Substitute2(elevenTwentyFourA,[ 'X?S <- 'X?S2, 'Z?P <- 'Z?P2, 'ϴ?unitless <- 'ϴ?unitless3]) ==> X?S2 == Z?P2*Sin(ϴ?unitless3)
+      X?S2 := Evaluate(xSubSTwo) ==> 89.1715863215325~Ω
+      thetaThree := Substitute2(f11?5,[ 'ϴ <- 'ϴ2, 'R?T <- 'R?S2, 'X?L <- 'X?S2]) ==> ϴ2 == ArcTan(X?S2/R?S2)~rad
+      ϴ2 := Evaluate(thetaThree) ==> 0.853290548699998~rad
+      zSubTwoOne := Substitute2(f11?4,[ 'Z?T <- 'Z?T2, 'X?S <- 'X?S2, 'R?T <- 'R?S2]) ==> Z?T2 == Sqrt(X?S2^2 + R?S2^2)
+      zSubTwoTwo := Substitute2(f11?5,[ 'ϴ <- 'ϴ2, 'X?L <- 'X?L2, 'R?T <- 'R?S2]) ==> ϴ2 == ArcTan(X?L2/R?S2)~rad
+      Z?T2 := Evaluate(zSubTwoOne,Ω) ∠ Evaluate(zSubTwoTwo,degree) ==> 118.351341457337~Ω ∠ 63.6462907408727~degree
+      currentTotalTwo := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T2, 'V?OL <- 'V?S2, 'R?OL <- Z?T2]) ==> I?T2 == V?S2/118.351341457337~Ω ∠ 63.6462907408727~degree
+      I?T2 := Evaluate(currentTotalTwo,mA) ==> 25.3482551448851~mA ∠ (-63.6462907408727)~degree
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 31",description="Practice problem 31 p.360."
+========================================================================================================
+
+
+%mathpiper,name="Problem 31",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+
+
+
+
+%mathpiper,name="Problem 31",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 31.)
+
+Refer to Problem 23. Express the circuit impedance in rectangular form.
+*/
+ProblemSolution([R?F])
+{
+    Formulas()
+    {
+        fF?5 := Formula(PF?X == Z * (Cos(ϴ)), "F.5", "984");
+        fF?6 := Formula(PF?Y == Z * (Sin(ϴ)), "F.6", "984");
+        takeOffThetaUnits := Formula((ϴ == (ϴradians / 1~rad)), "unit", "xyz");
+    }
+
+    P?F := 2.91~kΩ ∠ 76~degree;
+    Z := P?F[1];
+    Z;
+    ϴradians := Evaluate(P?F[2], rad);
+    ϴ := Evaluate(takeOffThetaUnits);
+    ϴ;
+    PF?X := Evaluate(fF?5, kΩ);
+    PF?Y := Evaluate(fF?6, kΩ);
+    R?F := Evaluate(fF?5, kΩ) + 'j * (Evaluate(fF?6, kΩ));
+    R?F;
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+(704 + j2.82k)Ω
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 31",mpversion=".273",preserve="false"
+      Result: 0.703992714827555~kΩ + j*2.8235605638041~kΩ
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      R?F: 0.703992714827555~kΩ + j*2.8235605638041~kΩ
+      
+      === FORMULAS (2D VIEW) ===
+      /                      \
+      | PF?X == Z * Cos( ϴ ) |
+      |                      |
+      | PF?Y == Z * Sin( ϴ ) |
+      |                      |
+      |      ϴradians        |
+      | ϴ == --------        |
+      |      1 ~ rad         |
+      \                      /
+      
+      === STEPS (CODE VIEW) ===
+      PF?X == Z*Cos(ϴ)
+      PF?Y == Z*Sin(ϴ)
+      ϴ == ϴradians/1~rad
+      P?F := 2.91~kΩ ∠ 76~degree ==> 2.91~kΩ ∠ 76~degree
+      Z := P?F[1] ==> 2.91~kΩ
+      Z ==> 2.91~kΩ
+      ϴradians := Evaluate(P?F[2],rad) ==> 1.326450232~rad
+      ϴ := Evaluate(takeOffThetaUnits) ==> 1.326450232
+      ϴ ==> 1.326450232
+      PF?X := Evaluate(fF?5,kΩ) ==> 0.703992714827555~kΩ
+      PF?Y := Evaluate(fF?6,kΩ) ==> 2.8235605638041~kΩ
+      R?F := Evaluate(fF?5,kΩ) + 'j*Evaluate(fF?6,kΩ) ==> 0.703992714827555~kΩ + j*2.8235605638041~kΩ
+      R?F ==> 0.703992714827555~kΩ + j*2.8235605638041~kΩ
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 33",description="Practice problem 33 p.360."
+========================================================================================================
+
+
+%mathpiper,name="Problem 33",subtype="hint"
+Hint("ClByb2JsZW1Tb2x1dGlvbihbXSkKewogICAgRm9ybXVsYXMoKQogICAgewoKICAgIH0KfQoK");
+%/mathpiper
+
+    %output,parent="Problem 33",mpversion=".273",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 33",subtype="problem",unassign_all="true"
+
+/*
+Symbols:
+
+μ Ω ∠ ϴ
+*/
+
+/*
+Problem 33.)
+
+Calculate the component current and voltage values for the circuit shown in
+Figure 11.45a.
+*/
+
+ProblemSolution([X?L, Z?P, ϴ, R?S, X?S, R?T, Z?T, I?T, V?S, V?R1, V?P, I?L, I?R2])
+{
+    Formulas()
+    {
+        ohmsLaw := Formula( I?OL == V?OL/R?OL, "(3.1)", "78"); //Z?T can be subbed
+        f4?1 := Formula(R?T == R?1 + R?R + R?S, "4.1", "99"); //In series resistance total
+        f10?14 := Formula( X?L == 2 * Pi *f?f * L?L, "(10.14)", "302");
+        f11?4 := Formula( Z?T == Sqrt((X?S^2) + (R?T^2)), "(11.4)", "332");
+        f11?5 := Formula( ϴ == ArcTan(X?S/R?T) ~ rad, "(11.5)", "332");
+        f11?7 := Formula(P?APP == (V?S)*(I?T), "11.7", "339");
+        f11?17 := Formula(Z?P == ((X?L*R?R)/(Sqrt(X?L^2+R?R^2)) ), "11.17", "346");
+        f11?22 := Formula(ϴ == ArcTan(R?R/X?L)~rad, "11.22", "348");
+        f11?22a := Formula(ϴ?unitless == ((ArcTan(R?R/X?L)~rad)/(1~rad)), "11.22", "348");//unitless
+        elevenTwentyThreeA := Formula(R?S == Z?P * Cos(ϴ?unitless), "11.23a", "354");
+        elevenTwentyFourA := Formula(X?S == Z?P * Sin(ϴ?unitless), "11.24a", "354");
+        ohmsLawA := Formula( V?P == I?T * Z?P, "(3.1)", "78,"); 
+    }
+    V?S := 10~V ∠ 0~degree;
+    f?f := 6~kHz;
+    L?L := 50~mH;
+    X?L := Evaluate(f10?14, Ω);
+ 
+    R?R := 1.8~kΩ;
+    R?1 := 330~Ω;     
+    Z?P := Evaluate(f11?17, Ω);
+    
+    ϴ := Evaluate(f11?22, degree);
+    ϴ?unitless := Evaluate(f11?22a);
+    R?S := Evaluate(elevenTwentyThreeA);
+    X?S := Evaluate(elevenTwentyFourA);
+    
+    Z?P := Z?P ∠ Evaluate(f11?22, degree);
+
+    R?R := 0~Ω;
+    R?T := Evaluate(f4?1, Ω);
+    
+    ϴ := Evaluate(f11?5); 
+    Z?T := Evaluate(f11?4, Ω) ∠ Evaluate(f11?5, degree);
+    
+    circuitCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+    I?T := Evaluate(circuitCurrent, mA);
+   
+    //I?T[2] := I?T[2]+(90~degree);// Changing Phase angles manually
+    V?S := V?S[1] ∠ (I?T[2] * -1);
+    I?T := Evaluate(circuitCurrent, mA);
+    I?T[2] := 0~degree;
+    
+    R?1 := 330~Ω ∠ 0~degree;  
+    voltageParallel := Substitute2(ohmsLawA,['V?P <- 'V?P, 'I?T <- 'I?T, 'Z?P <- 'Z?P]);
+    V?P := Evaluate(voltageParallel, V);
+    
+    voltageResistor := Substitute2(ohmsLawA,['V?P <- 'V?R1, 'I?T <- 'I?T, 'Z?P <- 'R?1]);
+    V?R1 := Evaluate(voltageResistor, V);
+    
+    X?L := Evaluate(f10?14, Ω) ∠ 90~degree;
+    lCurrent := Substitute2(ohmsLaw,['I?OL <- 'I?T, 'V?OL <- 'V?P, 'R?OL <- X?L]);
+    I?L := Evaluate(lCurrent, mA);
+    
+    R?R := 1.8~kΩ ∠ 0~degree;
+    rCurrentTwo := Substitute2(ohmsLaw,['I?OL <- 'I?R2, 'V?OL <- 'V?P, 'R?OL <- R?R]);
+    I?R2 := Evaluate(rCurrentTwo, mA);   
+    I?T := Evaluate(circuitCurrent, mA);
+    ϴ := Evaluate(f11?22, degree);
+}
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+
+X?L = 1.89kΩ, Z?P = 1.3kΩ, ϴ = 43.6 ~degrees, R?S = 941Ω, X?S = 897Ω, R?T = 1271Ω,
+Z?T = 1556Ω ∠ 35.2 ~degrees, I?T = 6.43mA, V?S ∠ 35.2 ~degrees, V?R1 = 2.12V,
+V?P = 8.36V ∠ 43.6 ~degrees, I?L = 4.42mA ∠ -46.4 ~degrees, &
+I?R2 = 4.64mA ∠ 43.6 ~degrees
+-------------------------------------------------------------------------------------
+*/
+%/mathpiper
+
+    %output,parent="Problem 33",mpversion=".273",preserve="false"
+      Result: 43.6792962298526~degree
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?L: 1884.95559215388~Ω ∠ 90~degree
+      Z?P: 1301.79014701654~Ω ∠ 43.6792962298526~degree
+      ϴ: 43.6792962298526~degree
+      R?S: 941.476437118061~Ω
+      X?S: 899.043772694537~Ω
+      R?T: 1271.47643711806~Ω
+      Z?T: 1557.21932795842~Ω ∠ 35.2636134571407~degree
+      I?T: 6.42170298072939~mA ∠ (-35.2636134571407)~degree
+      V?S: 10~V ∠ 35.26361346~degree
+      V?R1: 2.1191619836407~V ∠ 0~degree
+      V?P: 8.35970966738027~V ∠ 43.6792962298526~degree
+      I?L: 4.43496372125557~mA ∠ (-46.3207037701474)~degree
+      I?R2: 4.64428314854459~mA ∠ 43.6792962298526~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                   \
+      |         V?OL                      |
+      | I?OL == ----                      |
+      |         R?OL                      |
+      |                                   |
+      | R?T == R?1 + R?R + R?S            |
+      |                                   |
+      | X?L == 2 * Pi * f?f * L?L         |
+      |                                   |
+      |            /    2      2 \        |
+      | Z?T == Sqrt\ X?S  + R?T  /        |
+      |                                   |
+      |            / X?S \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ R?T /                |
+      |                                   |
+      | P?APP == V?S * I?T                |
+      |                                   |
+      |             X?L * R?R             |
+      | Z?P == -------------------        |
+      |            /    2      2 \        |
+      |        Sqrt\ X?L  + R?R  /        |
+      |                                   |
+      |            / R?R \                |
+      | ϴ == ArcTan| --- | ~ rad          |
+      |            \ X?L /                |
+      |                                   |
+      |                     / R?R \       |
+      |               ArcTan| --- | ~ rad |
+      |                     \ X?L /       |
+      | ϴ?unitless == ------------------- |
+      |                     1 ~ rad       |
+      |                                   |
+      | R?S == Z?P * Cos( ϴ?unitless )    |
+      |                                   |
+      | X?S == Z?P * Sin( ϴ?unitless )    |
+      |                                   |
+      | V?P == I?T * Z?P                  |
+      \                                   /
+      
+      === STEPS (CODE VIEW) ===
+      I?OL == V?OL/R?OL
+      R?T == R?1 + R?R + R?S
+      X?L == 2*Pi*f?f*L?L
+      Z?T == Sqrt(X?S^2 + R?T^2)
+      ϴ == ArcTan(X?S/R?T)~rad
+      P?APP == V?S*I?T
+      Z?P == (X?L*R?R)/Sqrt(X?L^2 + R?R^2)
+      ϴ == ArcTan(R?R/X?L)~rad
+      ϴ?unitless == ArcTan(R?R/X?L)~rad/1~rad
+      R?S == Z?P*Cos(ϴ?unitless)
+      X?S == Z?P*Sin(ϴ?unitless)
+      V?P == I?T*Z?P
+      V?S := 10~V ∠ 0~degree ==> 10~V ∠ 0~degree
+      f?f := 6~kHz ==> 6~kHz
+      L?L := 50~mH ==> 50~mH
+      X?L := Evaluate(f10?14,Ω) ==> 1884.95559215388~Ω
+      R?R := 1.8~kΩ ==> 1.8~kΩ
+      R?1 := 330~Ω ==> 330~Ω
+      Z?P := Evaluate(f11?17,Ω) ==> 1301.79014701654~Ω
+      ϴ := Evaluate(f11?22,degree) ==> 43.6792962298526~degree
+      ϴ?unitless := Evaluate(f11?22a) ==> 0.7623475342
+      R?S := Evaluate(elevenTwentyThreeA) ==> 941.476437118061~Ω
+      X?S := Evaluate(elevenTwentyFourA) ==> 899.043772694537~Ω
+      Z?P := Z?P ∠ Evaluate(f11?22,degree) ==> 1301.79014701654~Ω ∠ 43.6792962298526~degree
+      R?R := 0~Ω ==> 0~Ω
+      R?T := Evaluate(f4?1,Ω) ==> 1271.47643711806~Ω
+      ϴ := Evaluate(f11?5) ==> 0.615466160977685~rad
+      Z?T := Evaluate(f11?4,Ω) ∠ Evaluate(f11?5,degree) ==> 1557.21932795842~Ω ∠ 35.2636134571407~degree
+      circuitCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]) ==> I?T == V?S/Z?T
+      I?T := Evaluate(circuitCurrent,mA) ==> 6.42170298072939~mA ∠ (-35.2636134571407)~degree
+      V?S := V?S[1] ∠ (I?T[2]*-1) ==> 10~V ∠ 35.26361346~degree
+      I?T := Evaluate(circuitCurrent,mA) ==> 6.42170298072939~mA ∠ (-35.2636134571407)~degree
+      I?T[2] := 0~degree ==> 0~degree
+      R?1 := 330~Ω ∠ 0~degree ==> 330~Ω ∠ 0~degree
+      voltageParallel := Substitute2(ohmsLawA,[ 'V?P <- 'V?P, 'I?T <- 'I?T, 'Z?P <- 'Z?P]) ==> V?P == I?T*Z?P
+      V?P := Evaluate(voltageParallel,V) ==> 8.35970966738027~V ∠ 43.6792962298526~degree
+      voltageResistor := Substitute2(ohmsLawA,[ 'V?P <- 'V?R1, 'I?T <- 'I?T, 'Z?P <- 'R?1]) ==> V?R1 == I?T*R?1
+      V?R1 := Evaluate(voltageResistor,V) ==> 2.1191619836407~V ∠ 0~degree
+      X?L := Evaluate(f10?14,Ω) ∠ 90~degree ==> 1884.95559215388~Ω ∠ 90~degree
+      lCurrent := Substitute2(ohmsLaw,[ 'I?OL <- 'I?T, 'V?OL <- 'V?P, 'R?OL <- X?L]) ==> I?T == V?P/1884.95559215388~Ω ∠ 90~degree
+      I?L := Evaluate(lCurrent,mA) ==> 4.43496372125557~mA ∠ (-46.3207037701474)~degree
+      R?R := 1.8~kΩ ∠ 0~degree ==> 1.8~kΩ ∠ 0~degree
+      rCurrentTwo := Substitute2(ohmsLaw,[ 'I?OL <- 'I?R2, 'V?OL <- 'V?P, 'R?OL <- R?R]) ==> I?R2 == V?P/1.8~kΩ ∠ 0~degree
+      I?R2 := Evaluate(rCurrentTwo,mA) ==> 4.64428314854459~mA ∠ 43.6792962298526~degree
+      I?T := Evaluate(circuitCurrent,mA) ==> 6.42170298072939~mA ∠ (-35.2636134571407)~degree
+      ϴ := Evaluate(f11?22,degree) ==> 43.6792962298526~degree
+      
+      
+.   %/output
+
+
+%/group
+
+

@@ -1,0 +1,2428 @@
+v.01
+
+chapter_15_a_odd_practice_problems.mpws
+
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get 0.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+1. a. 83 kHz, 21 kHz, b. 1.16 kHz, 1.07 kHz, c 1.12 MHZ, 626 kHz.
+3. a. 12.8 kHz, 3.2 kHz b. 20 kHz, 15 kHz c. 2 kHz, 20 kHz.
+5. 6.67.
+7. 7.65 kHz.
+9. 95.3 kHz.
+11. 52.1 kHz.
+13. 332 kHz.
+15. 292 kHz, 372 kHz.
+17. a. 40, 16 dB. b. 6.25, 7.96 dB. c. .25, -6.02 dB.
+19. 664 mW
+21. 1.27 W
+23. 656 mW
+25. a 40.8 dBm b. 22.6 dBm c. 34 dBm d. -5.23 dBm
+27. a. 2.24 mW b. 15.8 mW c. 759 μW d. 447 μW
+29. a. 41.6 dB b. 32 dB c. -0.04 dB d. -.19 dB
+31. a. 1.15 b. 1.58 c. 0.66 d. 0.75
+33. 0.963
+35. 0.909
+37. 1.74 kHz
+39. 12.7 kHz
+41. 4?C = 98.8 kHz
+43. 0.984
+45. 0.99
+47. 509 Hz
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion="283",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .280", 1, True)
+    {
+        StringToNumber(Version()) >=? .280;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"UnparseMath2D");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion="283",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .280. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="p.501"
+========================================================================================================
+
+[BW?BW?a, f?0?a, BW?BW?b, f?0?b, BW?BW?c, f?0?c]
+
+
+%mathpiper,name="Problem 1",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQlc/Qlc/YSwgZj8wP2EsIEJXP0JXP2IsIGY/MD9iLCBCVz9CVz9jLCBmPzA/Y10pCnsKICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gNX5rSHo7CiAgICAgICAgZj9DMiA6PSA4OH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YSA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2EgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Mik7CiAgICAKLy8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBVbmFzc2lnbihmPzAsIGY/QzEsIGY/QzIsIEJXP0JXKTsKICAgIAogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDY0MH5IejsKICAgICAgICBmP0MyIDo9IDEuOH5rSHo7ICAgCiAgICB9CgogICAgQlc/Qlc/YiA6PSBCVz9CVyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzEpOwogICAgZj8wP2IgOj0gZj8wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Miwga0h6KTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gMjgwfmtIejsKICAgICAgICBmP0MyIDo9IDEuNH5NSHo7ICAgIAogICAgfQoKICAgIEJXP0JXP2MgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIGY/MD9jIDo9IGY/MCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 1",subtype="problem",unassign_all="true",globalStateShow="true"
+ProblemSolution([BW?BW?a, BW?BW?b, f?0?b, BW?BW?c, f?0?c])
+{
+    Formulas()
+    {
+    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");
+
+    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");
+    }
+    
+    Givens()
+    {
+        f?C1 := 5~kHz;
+        f?C2 := 88~kHz;
+    }
+    
+    BW?BW?a := BW?BW := EvaluateFormula(f15?1);
+    f?0?a := f?0 := EvaluateFormula(f15?2);
+//------------------------------------------------------------------
+    Unassign(f?0, f?C1, f?C2, BW?BW);
+    Givens()
+    {
+        f?C1 := 640~Hz;
+        f?C2 := 1.8~kHz;
+    }  
+    BW?BW?b := BW?BW := EvaluateFormula(f15?1);   
+    f?0?b := f?0 := EvaluateFormula(f15?2, kHz);
+//------------------------------------------------------------------
+    Unassign(f?0,f?C1,f?C2, BW?BW);
+    Givens()
+    {
+        f?C1 := 280~kHz;
+        f?C2 := 1.4~MHz;
+    }
+    
+    BW?BW?c := BW?BW := EvaluateFormula(f15?1);
+    f?0?c := f?0 := EvaluateFormula(f15?2);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion="283",preserve="false"
+      Result: 626.0990337~kHz
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      BW?BW?a: 83~kHz
+      BW?BW?b: 1.16~kHz
+      f?0?b: 1.073312629~kHz
+      BW?BW?c: 1.12~MHz
+      f?0?c: 626.0990337~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 15.1 ) ( BW?BW == f?C2 - f?C1 )       ( No Transformation )  |
+      |                                                                |
+      | ( 15.2 ) ( f?0 == Sqrt( f?C1 * f?C2 ) ) ( No Transformation )  |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (15.1) BW?BW == f?C2 - f?C1
+       2: (15.2) f?0 == Sqrt(f?C1*f?C2)
+       3: BW?BW?a := BW?BW := EvaluateFormula(f15?1) ==> 83~kHz
+       4: f?0?a := f?0 := EvaluateFormula(f15?2) ==> 20.97617696~kHz
+       5: Unassign(f?0, f?C1, f?C2, BW?BW) ==> True
+       6: BW?BW?b := BW?BW := EvaluateFormula(f15?1) ==> 1.16~kHz
+       7: f?0?b := f?0 := EvaluateFormula(f15?2, kHz) ==> 1.073312629~kHz
+       8: Unassign(f?0, f?C1, f?C2, BW?BW) ==> True
+       9: BW?BW?c := BW?BW := EvaluateFormula(f15?1) ==> 1.12~MHz
+      10: f?0?c := f?0 := EvaluateFormula(f15?2) ==> 626.0990337~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 1"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(BW?BW_ == (f?C2_ - f?C1_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?0_ == Sqrt((f?C1_*f?C2_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "BW?BW?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(BW?BW?a, 83~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?0?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?0?a, 20.97617696~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "BW?BW?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(BW?BW?b, 1.16~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?0?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?0?b, 1.073312629~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "BW?BW?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(BW?BW?c, 1.12~MHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?0?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?0?c, 626.0990337~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 1",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.1) is used. (1/1)
+        PASS: Formula (15.2) is used. (1/1)
+        PASS: A correct value is assigned to BW?BW?a. (1/1)
+        PASS: A correct value is assigned to f?0?a. (1/1)
+        PASS: A correct value is assigned to BW?BW?b. (1/1)
+        PASS: A correct value is assigned to f?0?b. (1/1)
+        PASS: A correct value is assigned to BW?BW?c. (1/1)
+        PASS: A correct value is assigned to f?0?c. (1/1)
+      
+        15/15 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="p.502."
+========================================================================================================
+
+[f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c]
+
+
+%mathpiper,name="Problem 3",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMj9hLCBmPzA/YSwgZj9DMj9iLCBCVz9CVz9iLCBmP0MxP2MsIGY/MD9jXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xIDo9IEZvcm11bGEoQlc/Qld+SHogPT0gZj9DMn5IeiAtIGY/QzF+SHosIExhYmVsOiIxNS4xIiwgUGFnZToiNDY0Iik7CiAgICAgICAgCiAgICAgICAgZjE1PzFhIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJhIiwgU3ViamVjdDonZj9DMik7CiAgICAgICAgCiAgICAgICAgZjE1PzFiIDo9IEZvcm11bGEoZjE1PzEsIExhYmVsOiJiIiwgU3ViamVjdDonZj9DMSk7CiAgICAgICAgCiAgICAgICAgZjE1PzIgOj0gRm9ybXVsYShmPzB+SHogPT0gU3FydChmP0Mxfkh6KmY/QzJ+SHopLCBMYWJlbDoiMTUuMiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIAogICAgICAgIGYxNT8yYSA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYSIsIFN1YmplY3Q6J2Y/QzIpOwogICAgICAgIAogICAgICAgIGYxNT8yYiA6PSBGb3JtdWxhKGYxNT8yLCBMYWJlbDoiYiIsIFN1YmplY3Q6J2Y/QzEpOwogICAgfQogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzEgOj0gODAwfkh6OwogICAgICAgIEJXP0JXIDo9IDEyfmtIejsgICAgCiAgICB9CgogICAgZj9DMj9hIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xYSk7CiAgICBmPzA/YSA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgVW5hc3NpZ24oZj8wLCBmP0MxLCBmP0MyLCBCVz9CVyk7CgogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBmP0MxIDo9IDV+a0h6OwogICAgICAgIGY/MCA6PSAxMH5rSHo7IAogICAgfQogICAgZj9DMj9iIDo9IGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yYSwga0h6KTsKICAgIEJXP0JXP2IgOj0gQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xKTsKICAgIAovLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIFVuYXNzaWduKGY/MCwgZj9DMSwgZj9DMiwgQlc/QlcpOwogICAgCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/QzIgOj0gMjAwfmtIejsKICAgICAgICBCVz9CVyA6PSAxOTh+a0h6OyAgICAKICAgIH0KICAgIGY/QzE/YyA6PSBmP0MxIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MWIsIGtIeik7CiAgICBmPzA/YyA6PSBmPzAgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yLCBrSHopOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 3",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([f?C2?a, f?0?a, f?C2?b, BW?BW?b, f?C1?c, f?0?c])
+{
+    Formulas()
+    {
+    f15?1 := Formula(BW?BW~Hz == f?C2~Hz - f?C1~Hz, Label:"15.1", Page:"464");
+    
+    f15?1a := Formula(f15?1, Label: "a", Subject:'f?C2);
+    
+    f15?1b := Formula(f15?1, Label: "b", Subject:'f?C1);
+    
+    f15?2 := Formula(f?0~Hz == Sqrt(f?C1~Hz * f?C2~Hz), Label:"15.2", Page:"465");
+    
+    f15?2a := Formula(f15?2, Label: "a", Subject:'f?C2);
+    
+    f15?2b := Formula(f15?2, Label: "b", Subject:'f?C1);
+    }
+    
+    Givens()
+    {
+        f?C1 := 800~Hz;
+        BW?BW := 12~kHz;
+    }
+    
+    f?C2?a := f?C2 := EvaluateFormula(f15?1a);
+    f?0?a := f?0 := EvaluateFormula(f15?2, kHz);
+//------------------------------------------------------------------
+    Unassign(f?0, f?C1, f?C2, BW?BW);
+    Givens()
+    {
+        f?C1 := 5~kHz;
+        f?0 := 10~kHz;
+    }  
+    f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz);   
+    BW?BW?b := BW?BW := EvaluateFormula(f15?1);
+//------------------------------------------------------------------
+    Unassign(f?0,f?C1,f?C2, BW?BW);
+    Givens()
+    {
+        BW?BW := 198~kHz;
+        f?C2 := 200~kHz;
+    }
+    
+    f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz);
+    f?0?c := f?0 := EvaluateFormula(f15?2, kHz);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion="283",preserve="false"
+      Result: 20~kHz
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      f?C2?a: 12.8~kHz
+      f?0?a: 3.2~kHz
+      f?C2?b: 20~kHz
+      BW?BW?b: 15~kHz
+      f?C1?c: 2~kHz
+      f?0?c: 20~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                         \
+      | ( 15.1 )  ( BW?BW == f?C2 - f?C1 )       ( No Transformation )          |
+      |                                                                         |
+      | ( 15.1a ) ( BW?BW == f?C2 - f?C1 )       ( f?C2 == BW?BW + f?C1 )       |
+      |                                                                         |
+      | ( 15.1b ) ( BW?BW == f?C2 - f?C1 )       ( f?C1 == -( BW?BW ) + f?C2 )  |
+      |                                                                         |
+      | ( 15.2 )  ( f?0 == Sqrt( f?C1 * f?C2 ) ) ( No Transformation )          |
+      |                                                                         |
+      | ( 15.2a ) ( f?0 == Sqrt( f?C1 * f?C2 ) ) /            2 \               |
+      |                                          |         f?0  |               |
+      |                                          | f?C2 == ---- |               |
+      |                                          \         f?C1 /               |
+      |                                                                         |
+      | ( 15.2b ) ( f?0 == Sqrt( f?C1 * f?C2 ) ) /            2 \               |
+      |                                          |         f?0  |               |
+      |                                          | f?C1 == ---- |               |
+      |                                          \         f?C2 /               |
+      \                                                                         /
+      
+      === STEPS (CODE VIEW) ===
+       1: (15.1) BW?BW == f?C2 - f?C1
+       2: (15.1a) BW?BW == f?C2 - f?C1 ==> f?C2 == BW?BW + f?C1
+       3: (15.1b) BW?BW == f?C2 - f?C1 ==> f?C1 ==  -BW?BW + f?C2
+       4: (15.2) f?0 == Sqrt(f?C1*f?C2)
+       5: (15.2a) f?0 == Sqrt(f?C1*f?C2) ==> f?C2 == f?0^2/f?C1
+       6: (15.2b) f?0 == Sqrt(f?C1*f?C2) ==> f?C1 == f?0^2/f?C2
+       7: f?C2?a := f?C2 := EvaluateFormula(f15?1a) ==> 12.8~kHz
+       8: f?0?a := f?0 := EvaluateFormula(f15?2, kHz) ==> 3.2~kHz
+       9: Unassign(f?0, f?C1, f?C2, BW?BW) ==> True
+      10: f?C2?b := f?C2 := EvaluateFormula(f15?2a, kHz) ==> 20~kHz
+      11: BW?BW?b := BW?BW := EvaluateFormula(f15?1) ==> 15~kHz
+      12: Unassign(f?0, f?C1, f?C2, BW?BW) ==> True
+      13: f?C1?c := f?C1 := EvaluateFormula(f15?1b, kHz) ==> 2~kHz
+      14: f?0?c := f?0 := EvaluateFormula(f15?2, kHz) ==> 20~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 3"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(BW?BW_ == (f?C2_ - f?C1_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?0_ == Sqrt((f?C1_*f?C2_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?C2?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?C2?a, 12.8~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?0?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?0?a, 3.2~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?C2?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?C2?b, 20~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "BW?BW?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(BW?BW?b, 15~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?C1?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?C1?c, 2~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?0?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?0?c, 20~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 3",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.1) is used. (1/1)
+        PASS: Formula (15.2) is used. (1/1)
+        PASS: A correct value is assigned to f?C2?a. (1/1)
+        PASS: A correct value is assigned to f?0?a. (1/1)
+        PASS: A correct value is assigned to f?C2?b. (1/1)
+        PASS: A correct value is assigned to BW?BW?b. (1/1)
+        PASS: A correct value is assigned to f?C1?c. (1/1)
+        PASS: A correct value is assigned to f?0?c. (1/1)
+      
+        15/15 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 5",description="p.502."
+========================================================================================================
+
+[Q?Q]
+
+
+%mathpiper,name="Problem 5",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUT9RXSkKewogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBCVz9CVyA6PSAxOH5rSHo7CiAgICAgICAgZj8wIDo9IDEyMH5rSHo7ICAgIAogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzYgOj0gRm9ybXVsYShRP1F+MSA9PSBmPzB+SHovQlc/QlcsIExhYmVsOiIxNS4zIiwgUGFnZToiNDY1Iik7CiAgICB9CiAgICAKICAgIFE/USA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzYpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 5",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Q?Q])
+{
+    Givens()
+    {
+        BW?BW := 18~kHz;
+        f?0 := 120~kHz;
+    }
+    
+    Formulas()
+    {
+        f15?6 := Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465");
+    }
+    
+    Q?Q := EvaluateFormula(f15?6);
+}
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion="283",preserve="false"
+      Result: 6.666666667~1
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      Q?Q: 6.666666667~1
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                  \
+      | ( 15.6 ) /         f?0  \ ( No Transformation )  |
+      |          | Q?Q == ----- |                        |
+      |          \        BW?BW /                        |
+      \                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (15.6) Q?Q == f?0/BW?BW
+       2: Q?Q := EvaluateFormula(f15?6) ==> 6.666666667~1
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 5"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.3) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Q?Q_ == (f?0_/BW?BW_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "Q?Q", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(Q?Q, 6.666666667~1), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 5",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.3) is used. (1/1)
+        PASS: A correct value is assigned to Q?Q. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 7",description="p.502."
+========================================================================================================
+
+[BW?BW]
+
+
+%mathpiper,name="Problem 7",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQlc/QlddKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA1Mn5rSHo7CiAgICAgICAgUT9RIDo9IDYuOH4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT82IDo9IEZvcm11bGEoUT9RfjEgPT0gZj8wfkh6L0JXP0JXLCBMYWJlbDoiMTUuMyIsIFBhZ2U6IjQ2NSIsIFN1YmplY3Q6J0JXP0JXKTsKICAgIH0KICAgIAogICAgQlc/QlcgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT82KTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 7",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([BW?BW])
+{
+    Givens()
+    {
+        f?0 := 52~kHz;
+        Q?Q := 6.8~1;
+    }
+    
+    Formulas()
+    {
+        f15?6 :=Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465", Subject: 'BW?BW);
+    }
+    
+    BW?BW := EvaluateFormula(f15?6);
+}
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion="286",preserve="false"
+      Result: 7.647058824~kHz
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      BW?BW: 7.647058824~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                             \
+      | ( 15.6 ) /         f?0  \ /          f?0 \  |
+      |          | Q?Q == ----- | | BW?BW == --- |  |
+      |          \        BW?BW / \          Q?Q /  |
+      \                                             /
+      
+      === STEPS (CODE VIEW) ===
+       1: f?0 := 52~kHz ==> 52~kHz
+       2: Q?Q := 6.8~1 ==> 6.8~1
+       3: (15.6) Q?Q == f?0/BW?BW ==> BW?BW == f?0/Q?Q
+       4: BW?BW := EvaluateFormula(f15?6) ==> 7.647058824~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 7"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.3) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Q?Q_ == (f?0_/BW?BW_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "BW?BW", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(BW?BW, 7.647058824~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 7",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.3) is used. (1/1)
+        PASS: A correct value is assigned to BW?BW. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9",description="p.502."
+========================================================================================================
+
+[f?ave]
+
+
+%mathpiper,name="Problem 9",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA4OH5rSHo7CiAgICAgICAgUT9RIDo9IDEuMn4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1EpKV4yKSwgTGFiZWw6IjE1LjExIiwgUGFnZToiNDY4Iik7CiAgICB9CiAgICAKICAgIGY/YXZlIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTEpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 9",subtype="problem",unassign_all="true",globalStateShow="true"
+
+        
+
+ProblemSolution([f?ave])
+{
+    Givens()
+    {
+        f?0 := 88~kHz;
+        Q?Q := 1.2~1;
+    }
+    
+    Formulas()
+    {
+        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");
+    }
+    
+    f?ave := EvaluateFormula(f15?11);
+}
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion="286",preserve="false"
+      Result: 95.33333333~kHz
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      f?ave: 95.33333333~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                              \
+      | ( 15.11 ) /                    /                2 \ \ ( No Transformation )  |
+      |           |                    |     /    1    \  | |                        |
+      |           |                    |     | ------- |  | |                        |
+      |           \ f?ave == f?0 * Sqrt\ 1 + \ 2 * Q?Q /  / /                        |
+      \                                                                              /
+      
+      === STEPS (CODE VIEW) ===
+       1: f?0 := 88~kHz ==> 88~kHz
+       2: Q?Q := 1.2~1 ==> 1.2~1
+       3: (15.11) f?ave == f?0*Sqrt(1 + (1/(2*Q?Q))^2)
+       4: f?ave := EvaluateFormula(f15?11) ==> 95.33333333~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 9"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?ave_ == (f?0_*Sqrt((1 + ((1/(2*Q?Q_))^2))))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?ave", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?ave, 95.33333333~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 9",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.11) is used. (1/1)
+        PASS: A correct value is assigned to f?ave. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11",description="p.502."
+========================================================================================================
+
+[f?ave]
+
+
+%mathpiper,name="Problem 11",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSA1Mn5rSHo7CiAgICAgICAgUT9RIDo9IDYuOH4xOyAgICAKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1EpKV4yKSwgTGFiZWw6IjE1LjExIiwgUGFnZToiNDY4Iik7CiAgICB9CgogICAgZj9hdmUgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xMSk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 11",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([f?ave])
+{
+    Givens()
+    {
+        f?0 := 52~kHz;
+        Q?Q := 6.8~1;
+    }
+    
+    Formulas()
+    {
+        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");
+    }
+    
+    f?ave := EvaluateFormula(f15?11);
+}
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion="286",preserve="false"
+      Result: 52.14038144~kHz
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      f?ave: 52.14038144~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                              \
+      | ( 15.11 ) /                    /                2 \ \ ( No Transformation )  |
+      |           |                    |     /    1    \  | |                        |
+      |           |                    |     | ------- |  | |                        |
+      |           \ f?ave == f?0 * Sqrt\ 1 + \ 2 * Q?Q /  / /                        |
+      \                                                                              /
+      
+      === STEPS (CODE VIEW) ===
+       1: f?0 := 52~kHz ==> 52~kHz
+       2: Q?Q := 6.8~1 ==> 6.8~1
+       3: (15.11) f?ave == f?0*Sqrt(1 + (1/(2*Q?Q))^2)
+       4: f?ave := EvaluateFormula(f15?11) ==> 52.14038144~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 11"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?ave_ == (f?0_*Sqrt((1 + ((1/(2*Q?Q_))^2))))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?ave", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?ave, 52.14038144~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 11",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.11) is used. (1/1)
+        PASS: A correct value is assigned to f?ave. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 13",description="p.502."
+========================================================================================================
+
+[f?ave]
+
+
+%mathpiper,name="Problem 13",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9hdmVdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIGY/MCA6PSAzMzB+a0h6OwogICAgICAgIEJXP0JXIDo9IDgwfmtIejsKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT82IDo9IEZvcm11bGEoUT9RfjEgPT0gZj8wfkh6L0JXP0JXfkh6LCBMYWJlbDoiMTUuNiIsIFBhZ2U6IjQ2NSIpOwogICAgICAgIGYxNT8xMSA6PSBGb3JtdWxhKGY/YXZlfkh6ID09IGY/MH5IeipTcXJ0KDEgKyAoMS8oMipRP1F+MSkpXjIpLCBMYWJlbDoiMTUuMTEiLCBQYWdlOiI0NjgiKTsKICAgIH0KICAgIAogICAgUT9RIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/Nik7CiAgICBmP2F2ZSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzExKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 13",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([f?ave])
+{
+    Givens()
+    {
+        f?0 := 330~kHz;
+        BW?BW := 80~kHz;
+    }
+    
+    Formulas()
+    {
+        f15?6 := Formula(Q?Q~1 == f?0~Hz / BW?BW~Hz, Label:"15.6", Page:"465");
+        f15?11 := Formula(f?ave~Hz == f?0~Hz * Sqrt(1 + (1/(2*Q?Q~1))^2), Label:"15.11", Page:"468");
+    }
+    Q?Q := EvaluateFormula(f15?6);
+    
+    f?ave := EvaluateFormula(f15?11);
+}
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion="286",preserve="false"
+      Result: 332.4154027~kHz
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      f?ave: 332.4154027~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                              \
+      | ( 15.6 )  /         f?0  \                            ( No Transformation )  |
+      |           | Q?Q == ----- |                                                   |
+      |           \        BW?BW /                                                   |
+      |                                                                              |
+      | ( 15.11 ) /                    /                2 \ \ ( No Transformation )  |
+      |           |                    |     /    1    \  | |                        |
+      |           |                    |     | ------- |  | |                        |
+      |           \ f?ave == f?0 * Sqrt\ 1 + \ 2 * Q?Q /  / /                        |
+      \                                                                              /
+      
+      === STEPS (CODE VIEW) ===
+       1: f?0 := 330~kHz ==> 330~kHz
+       2: BW?BW := 80~kHz ==> 80~kHz
+       3: (15.6) Q?Q == f?0/BW?BW
+       4: (15.11) f?ave == f?0*Sqrt(1 + (1/(2*Q?Q))^2)
+       5: Q?Q := EvaluateFormula(f15?6) ==> 4.125~1
+       6: f?ave := EvaluateFormula(f15?11) ==> 332.4154027~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 13"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.6) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Q?Q_ == (f?0_/BW?BW_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?ave_ == (f?0_*Sqrt((1 + ((1/(2*Q?Q_))^2))))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?ave", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?ave, 332.4154027~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 13",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.6) is used. (1/1)
+        PASS: Formula (15.11) is used. (1/1)
+        PASS: A correct value is assigned to f?ave. (1/1)
+      
+        10/10 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="p.502."
+========================================================================================================
+
+[f?C1, f?C2]
+
+
+%mathpiper,name="Problem 15",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9DMSwgZj9DMl0pCnsKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgZj8wIDo9IDMzMH5rSHo7CiAgICAgICAgQlc/QlcgOj0gODB+a0h6OwogICAgICAgIAogICAgICAgIGY/YXZlIDo9IDMzMi40MTU0MDI3fmtIejsgLy8gRnJvbSBwcm9ibGVtIDEzLgogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzkgOj0gRm9ybXVsYShmP0Mxfkh6ID09IGY/YXZlfkh6IC0gQlc/Qld+SHovMiwgTGFiZWw6IjE1LjkiLCBQYWdlOiI0NjgiKTsKICAgICAgICBmMTU/MTAgOj0gRm9ybXVsYShmP0Myfkh6ID09IGY/YXZlfkh6ICsgQlc/Qld+SHovMiwgTGFiZWw6IjE1LjEwIiwgUGFnZToiNDY4Iik7CiAgICB9CiAgICAKICAgIGY/QzEgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT85KTsKICAgIGY/QzIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xMCk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([f?C1, f?C2])
+{
+    Givens()
+    {
+        f?0 := 330~kHz;
+        BW?BW := 80~kHz;
+        
+        f?ave := 332.4154027~kHz;
+    }
+    
+    Formulas()
+    {
+        f15?9 := Formula(f?C1~Hz == f?ave~Hz - (BW?BW~Hz/ 2), Label:"15.9", Page:"468");
+
+        f15?10 := Formula(f?C2~Hz == f?ave~Hz + (BW?BW~Hz/ 2), Label:"15.10", Page:"468");
+    }
+    
+    f?C1 := EvaluateFormula(f15?9);
+    f?C2 := EvaluateFormula(f15?10);
+}
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion="286",preserve="false"
+      Result: 372.4154027~kHz
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      f?C1: 292.4154027~kHz
+      f?C2: 372.4154027~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                            \
+      | ( 15.9 )  /                 BW?BW \ ( No Transformation )  |
+      |           | f?C1 == f?ave - ----- |                        |
+      |           \                   2   /                        |
+      |                                                            |
+      | ( 15.10 ) /                 BW?BW \ ( No Transformation )  |
+      |           | f?C2 == f?ave + ----- |                        |
+      |           \                   2   /                        |
+      \                                                            /
+      
+      === STEPS (CODE VIEW) ===
+       1: f?0 := 330~kHz ==> 330~kHz
+       2: BW?BW := 80~kHz ==> 80~kHz
+       3: f?ave := 332.4154027~kHz ==> 332.4154027~kHz
+       4: (15.9) f?C1 == f?ave - BW?BW/2
+       5: (15.10) f?C2 == f?ave + BW?BW/2
+       6: f?C1 := EvaluateFormula(f15?9) ==> 292.4154027~kHz
+       7: f?C2 := EvaluateFormula(f15?10) ==> 372.4154027~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 15"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.9) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?C1_ == (f?ave_ - (BW?BW_/2))))) !=? []);
+    }
+
+    FoldGrade("Formula (15.10) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?C2_ == (f?ave_ + (BW?BW_/2))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?C1", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?C1, 292.4154027~kHz), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?C2", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?C2, 372.4154027~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 15",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.9) is used. (1/1)
+        PASS: Formula (15.10) is used. (1/1)
+        PASS: A correct value is assigned to f?C1. (1/1)
+        PASS: A correct value is assigned to f?C2. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 17",description="p.502"
+========================================================================================================
+
+[A?p?a, A?pdB?a, A?p?b, A?pdB?b, A?p?c, A?pdB?c]
+
+
+%mathpiper,name="Problem 17",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQT9wP2EsIEE/cGRCP2EsIEE/cD9iLCBBP3BkQj9iLCBBP3A/YywgQT9wZEI/Y10pCnsKICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGZwNDcxIDo9IEZvcm11bGEoQT9wfjEgPT0gUD9vdXR+Vy9QP2luflcsIExhYmVsOiJwNDcxIiwgUGFnZToiNDcxIik7CiAgICAgICAgCiAgICAgICAgZjE1PzE1IDo9IEZvcm11bGEoQT9wZEJ+ZEIgPT0gTG9nUDEwKFA/b3V0flcvUD9pbn5XKSwgTGFiZWw6IjE1LjE1IiwgUGFnZToiNDcxIik7CiAgICB9CiAgICAKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSAyfm1XOwogICAgICAgIFA/b3V0IDo9IDgwfm1XOyAgIAogICAgfQoKICAgIEE/cD9hIDo9IEE/cCA6PSBFdmFsdWF0ZUZvcm11bGEoZnA0NzEpOwogICAgCiAgICBBP3BkQj9hIDo9IEE/cGRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTUpOwogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSA0OH5tVzsKICAgICAgICBQP291dCA6PSAzMDB+bVc7ICAgCiAgICB9CgogICAgQT9wP2IgOj0gQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmcDQ3MSk7CiAgICAKICAgIEE/cGRCP2IgOj0gQT9wZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xNSk7CgogICAgCi8vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoKICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9pbiA6PSAyNDB+bVc7CiAgICAgICAgUD9vdXQgOj0gNjB+bVc7ICAgCiAgICB9CgogICAgQT9wP2MgOj0gQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmcDQ3MSk7CiAgICAKICAgIEE/cGRCP2MgOj0gQT9wZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xNSk7Cgp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([A?p?a, A?pdB?a, A?p?b, A?pdB?b, A?p?c, A?pdB?c])
+{
+    Givens()
+    {
+        P?in := 2~mW;
+        P?out := 80~mW;
+    }
+    
+    Formulas()
+    {
+        fp?471 := Formula(A?p~1 == P?out~W/P?in~W, Label:"p.471", Page:"471");
+        f15?15 := Formula(A?pdB~dB == LogP10(P?out~W/P?in~W), Label:"15.15", Page:"471");
+    }
+    
+    A?p?a := A?p := EvaluateFormula(fp?471);
+    
+    A?pdB?a := A?pdB := EvaluateFormula(f15?15);
+    
+//--------------------New values------------------------
+
+    Givens()
+    {
+        P?in := 48~mW;
+        P?out := 300~mW;
+    }
+    
+    A?p?b := A?p := EvaluateFormula(fp?471);
+    
+    A?pdB?b := A?pdB := EvaluateFormula(f15?15);
+    
+//--------------------New values------------------------
+
+    Givens()
+    {
+        P?in := 240~mW;
+        P?out := 60~mW;
+    }
+    
+    A?p?c := A?p := EvaluateFormula(fp?471);
+    
+    A?pdB?c := A?pdB := EvaluateFormula(f15?15);
+}
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion="286",preserve="false"
+      Result: (-6.020599913)~dB
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      A?p?a: 40~1
+      A?pdB?a: 16.02059991~dB
+      A?p?b: 6.25~1
+      A?pdB?b: 7.958800173~dB
+      A?p?c: 0.25~1
+      A?pdB?c: (-6.020599913)~dB
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                               \
+      | ( p.471 ) /        P?out \             ( No Transformation )  |
+      |           | A?p == ----- |                                    |
+      |           \        P?in  /                                    |
+      |                                                               |
+      | ( 15.15 ) /                / P?out \ \ ( No Transformation )  |
+      |           | A?pdB == LogP10| ----- | |                        |
+      |           \                \ P?in  / /                        |
+      \                                                               /
+      
+      === STEPS (CODE VIEW) ===
+       1: P?in := 2~mW ==> 2~mW
+       2: P?out := 80~mW ==> 80~mW
+       3: (p.471) A?p == P?out/P?in
+       4: (15.15) A?pdB == LogP10(P?out/P?in)
+       5: A?p?a := A?p := EvaluateFormula(fp?471) ==> 40~1
+       6: A?pdB?a := A?pdB := EvaluateFormula(f15?15) ==> 16.02059991~dB
+       7: P?in := 48~mW ==> 48~mW
+       8: P?out := 300~mW ==> 300~mW
+       9: A?p?b := A?p := EvaluateFormula(fp?471) ==> 6.25~1
+      10: A?pdB?b := A?pdB := EvaluateFormula(f15?15) ==> 7.958800173~dB
+      11: P?in := 240~mW ==> 240~mW
+      12: P?out := 60~mW ==> 60~mW
+      13: A?p?c := A?p := EvaluateFormula(fp?471) ==> 0.25~1
+      14: A?pdB?c := A?pdB := EvaluateFormula(f15?15) ==> (-6.020599913)~dB
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 17"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (p471) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?p_ == (P?out_/P?in_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.15) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?pdB_ == LogP10((P?out_/P?in_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?p?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?p?a, 40~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?pdB?a", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?pdB?a, 16.02059991~dB), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?p?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?p?b, 6.25~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?pdB?b", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?pdB?b, 7.958800173~dB), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?p?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?p?c, 0.25~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?pdB?c", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?pdB?c, (-6.020599913)~dB), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 17",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (p471) is used. (1/1)
+        PASS: Formula (15.15) is used. (1/1)
+        PASS: A correct value is assigned to A?p?a. (1/1)
+        PASS: A correct value is assigned to A?pdB?a. (1/1)
+        PASS: A correct value is assigned to A?p?b. (1/1)
+        PASS: A correct value is assigned to A?pdB?b. (1/1)
+        PASS: A correct value is assigned to A?p?c. (1/1)
+        PASS: A correct value is assigned to A?pdB?c. (1/1)
+      
+        15/15 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 19",description="p.502."
+========================================================================================================
+
+[P?out]
+
+
+%mathpiper,name="Problem 19",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCIDo9IC0uOH5kQjsKICAgICAgICBQP2luIDo9IDgwMH5tVzsKICAgIH0KICAgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8xNyA6PSBGb3JtdWxhKEE/cH4xID09IEFudGlsb2dQMTAoQT9wZEJ+ZEIpLCBMYWJlbDoiMTUuMTciLCBQYWdlOiI0NzMiKTsKICAgICAgICBmMTU/MTggOj0gRm9ybXVsYShQP291dH5XID09IEE/cH4xKlA/aW5+VywgTGFiZWw6IjE1LjE4IiwgUGFnZToiNDczIik7CiAgICB9CiAgICAKICAgIEE/cCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzE3KTsKICAgIAogICAgUD9vdXQgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xOCk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 19",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?out])
+{
+    Givens()
+    {
+        A?pdB := -.8~dB;
+        P?in := 800~mW;
+    }
+    
+    Formulas()
+    {
+        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");
+        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");
+    }
+    
+    A?p := EvaluateFormula(f15?17);
+    
+    P?out := EvaluateFormula(f15?18);
+}
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: 665.4110178~mW
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      P?out: 665.4110178~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 15.17 ) ( A?p == AntilogP10( A?pdB ) ) ( No Transformation )  |
+      |                                                                 |
+      | ( 15.18 ) ( P?out == A?p * P?in )        ( No Transformation )  |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: A?pdB :=  -.8~dB ==> (-0.8)~dB
+       2: P?in := 800~mW ==> 800~mW
+       3: (15.17) A?p == AntilogP10(A?pdB)
+       4: (15.18) P?out == A?p*P?in
+       5: A?p := EvaluateFormula(f15?17) ==> 0.8317637722~1
+       6: P?out := EvaluateFormula(f15?18) ==> 665.4110178~mW
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 19"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.17) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?p_ == AntilogP10(A?pdB_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.18) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(P?out_ == (A?p_*P?in_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?out", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?out, 665.4110178~mW), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.17) is used. (1/1)
+        PASS: Formula (15.18) is used. (1/1)
+        PASS: A correct value is assigned to P?out. (1/1)
+      
+        10/10 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 21",description="p.502."
+========================================================================================================
+
+[P?out]
+
+
+%mathpiper,name="Problem 21",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCIDo9IC0uNH5kQjsKICAgICAgICBQP2luIDo9IDEuNH5XOwogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzE3IDo9IEZvcm11bGEoQT9wfjEgPT0gQW50aWxvZ1AxMChBP3BkQn5kQiksIExhYmVsOiIxNS4xNyIsIFBhZ2U6IjQ3MyIpOwogICAgICAgIGYxNT8xOCA6PSBGb3JtdWxhKFA/b3V0flcgPT0gQT9wfjEqUD9pbn5XLCBMYWJlbDoiMTUuMTgiLCBQYWdlOiI0NzMiKTsKICAgIH0KICAgIAogICAgQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTcpOwogICAgCiAgICBQP291dCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzE4KTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 21",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?out])
+{
+    Givens()
+    {
+        A?pdB := -.4~dB;
+        P?in := 1.4~W;
+    }
+    
+    Formulas()
+    {
+        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");
+        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");
+    }
+    
+    A?p := EvaluateFormula(f15?17);
+    
+    P?out := EvaluateFormula(f15?18);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: 1.276815176~W
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      P?out: 1.276815176~W
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 15.17 ) ( A?p == AntilogP10( A?pdB ) ) ( No Transformation )  |
+      |                                                                 |
+      | ( 15.18 ) ( P?out == A?p * P?in )        ( No Transformation )  |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: A?pdB :=  -.4~dB ==> (-0.4)~dB
+       2: P?in := 1.4~W ==> 1.4~W
+       3: (15.17) A?p == AntilogP10(A?pdB)
+       4: (15.18) P?out == A?p*P?in
+       5: A?p := EvaluateFormula(f15?17) ==> 0.9120108403~1
+       6: P?out := EvaluateFormula(f15?18) ==> 1.276815176~W
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 21"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.17) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?p_ == AntilogP10(A?pdB_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.18) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(P?out_ == (A?p_*P?in_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?out", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?out, 1.276815176~W), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.17) is used. (1/1)
+        PASS: Formula (15.18) is used. (1/1)
+        PASS: A correct value is assigned to P?out. (1/1)
+      
+        10/10 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 23",description="p.503."
+========================================================================================================
+
+[P?out]
+
+
+%mathpiper,name="Problem 23",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9vdXRdKQp7CiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/cGRCMSA6PSAtLjN+ZEI7CiAgICAgICAgQT9wZEIyIDo9IC0yLjV+ZEI7CiAgICAgICAgQT9wZEIzIDo9IC0uOH5kQjsKICAgICAgICBQP2luIDo9IDEuNX5XOwogICAgfQogICAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzE3IDo9IEZvcm11bGEoQT9wfjEgPT0gQW50aWxvZ1AxMChBP3BkQn5kQiksIExhYmVsOiIxNS4xNyIsIFBhZ2U6IjQ3MyIpOwogICAgICAgIGYxNT8xN2EgOj0gRm9ybXVsYShmMTU/MTcsIExhYmVsOiJhIiwgU3Vic3RpdHV0aW9uczpbJ0E/cGRCIDwtICdBP3BUZEJdKTsKICAgICAgICAKICAgICAgICBmMTU/MTggOj0gRm9ybXVsYShQP291dH5XID09IEE/cH4xKlA/aW5+VywgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjE1LjE4IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiNDczIik7CiAgICB9CgogICAgQT9wVGRCIDo9IEE/cGRCMSArIEE/cGRCMiArIEE/cGRCMzsKICAgIAogICAgQT9wIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MTdhKTsKICAgIAogICAgUD9vdXQgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8xOCwgbVcpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 23",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?out])
+{
+    Givens()
+    {
+        A?pdB1 := -.3~dB;
+        A?pdB2 := -2.5~dB;
+        A?pdB3 := -.8~dB;
+        P?in := 1.5~W;
+    }
+    
+    Formulas()
+    {
+        f15?17 := Formula(A?p~1 == AntilogP10(A?pdB~dB), Label:"15.17", Page:"473");
+        f15?17a := Formula(f15?17, Label: "a", Substitutions:['A?pdb <- 'A?pTdB]);
+        f15?18 := Formula(P?out~W == A?p~1*P?in~W, Label:"15.18", Page:"473");
+    }
+    
+    A?pTdB := A?pdB1 + A?pdB2 + A?pdB3;
+    
+    A?pdB := A?pTdB;
+    
+    A?p := EvaluateFormula(f15?17a);
+    
+    P?out := EvaluateFormula(f15?18, mW);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: 654.7737483~mW
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      P?out: 654.7737483~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                           \
+      | ( 15.17 )  ( A?p == AntilogP10( A?pdB ) ) ( No Transformation )           |
+      |                                                                           |
+      | ( 15.17a ) ( A?p == AntilogP10( A?pdB ) ) ( A?p == AntilogP10( A?pdB ) )  |
+      |                                                                           |
+      | ( 15.18 )  ( P?out == A?p * P?in )        ( No Transformation )           |
+      \                                                                           /
+      
+      === STEPS (CODE VIEW) ===
+       1: A?pdB1 :=  -.3~dB ==> (-0.3)~dB
+       2: A?pdB2 :=  -2.5~dB ==> (-2.5)~dB
+       3: A?pdB3 :=  -.8~dB ==> (-0.8)~dB
+       4: P?in := 1.5~W ==> 1.5~W
+       5: (15.17) A?p == AntilogP10(A?pdB)
+       6: (15.17a) A?p == AntilogP10(A?pdB) ==> A?p == AntilogP10(A?pdB)
+       7: (15.18) P?out == A?p*P?in
+       8: A?pTdB := A?pdB1 + A?pdB2 + A?pdB3 ==> (-3.6)~dB
+       9: A?pdB := A?pTdB ==> (-3.6)~dB
+      10: A?p := EvaluateFormula(f15?17a) ==> 0.4365158322~1
+      11: P?out := EvaluateFormula(f15?18, mW) ==> 654.7737483~mW
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 23"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.17) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?p_ == AntilogP10(A?pdB_)))) !=? []);
+    }
+
+    FoldGrade("Formula (15.18) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(P?out_ == (A?p_*P?in_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?out", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?out, 654.7737483~mW), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.17) is used. (1/1)
+        PASS: Formula (15.18) is used. (1/1)
+        PASS: A correct value is assigned to P?out. (1/1)
+      
+        10/10 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 25",description="p.503."
+========================================================================================================
+
+[P?dBma, P?dBmb, P?dBmc, P?dBmd]
+
+
+%mathpiper,name="Problem 25",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9kQm1hLCBQP2RCbWIsIFA/ZEJtYywgUD9kQm1kXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yMCA6PSBGb3JtdWxhKFA/ZEJtfmRCbSA9PSAxMCpMb2cxMEQoUD9QflcvMX5tVyksIExhYmVsOiIxNS4yMCIsIFBhZ2U6IjQ3NSIpOwogICAgfQogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMTJ+VzsKICAgIH0gICAgCgogICAgUD9kQm1hIDo9IFA/ZEJtIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjAsIGRCbSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/UCA6PSAxODB+bVc7CiAgICB9ICAgIAoKICAgIFA/ZEJtYiA6PSBQP2RCbSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIwLCBkQm0pOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMi41flc7CiAgICB9ICAgIAoKICAgIFA/ZEJtYyA6PSBQP2RCbSA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIwLCBkQm0pOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP1AgOj0gMzAwfs68VzsKICAgIH0gICAgCgogICAgUD9kQm1kIDo9IFA/ZEJtIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjAsIGRCbSk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 25",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?dBma, P?dBmb, P?dBmc, P?dBmd])
+{
+    Givens()
+    {
+        P?P := 12~W;
+    }
+    
+    Formulas()
+    {
+        f15?20 := Formula(P?dBm~dBm == 10*Log10D(P?P~W/1~mW), Label:"15.20", Page:"475");
+    }
+    
+    P?dBma := P?dBm := EvaluateFormula(f15?20, dBm);
+//------------------New values------------------------
+
+    Givens()
+    {
+        P?P := 180~mW;
+    }
+    
+    P?dBmb := P?dBm := EvaluateFormula(f15?20, dBm);
+    
+//------------------New values------------------------
+
+    Givens()
+    {
+        P?P := 2.5~W;
+    }
+    
+    P?dBmc := P?dBm := EvaluateFormula(f15?20, dBm);
+    
+//------------------New values------------------------
+
+    Givens()
+    {
+        P?P := 300~μW;
+    }
+    
+    P?dBmd := P?dBm := EvaluateFormula(f15?20, dBm);
+}
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: (-5.228787453)~dBm
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      P?dBma: 40.79181246~dBm
+      P?dBmb: 22.55272505~dBm
+      P?dBmc: 33.97940009~dBm
+      P?dBmd: (-5.228787453)~dBm
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                     \
+      | ( 15.20 ) /                     /  P?P   \ \ ( No Transformation )  |
+      |           | P?dBm == 10 * Log10D| ------ | |                        |
+      |           \                     \ 1 ~ mW / /                        |
+      \                                                                     /
+      
+      === STEPS (CODE VIEW) ===
+       1: P?P := 12~W ==> 12~W
+       2: (15.20) P?dBm == 10*Log10D(P?P/1~mW)
+       3: P?dBma := P?dBm := EvaluateFormula(f15?20, dBm) ==> 40.79181246~dBm
+       4: P?P := 180~mW ==> 180~mW
+       5: P?dBmb := P?dBm := EvaluateFormula(f15?20, dBm) ==> 22.55272505~dBm
+       6: P?P := 2.5~W ==> 2.5~W
+       7: P?dBmc := P?dBm := EvaluateFormula(f15?20, dBm) ==> 33.97940009~dBm
+       8: P?P := 300~μW ==> 300~μW
+       9: P?dBmd := P?dBm := EvaluateFormula(f15?20, dBm) ==> (-5.228787453)~dBm
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 25"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.20) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(P?dBm_ == (10*Log10D((P?P_/(1~mW))))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?dBma", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?dBma, 40.79181246~dBm), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?dBmb", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?dBmb, 22.55272505~dBm), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?dBmc", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?dBmc, 33.97940009~dBm), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?dBmd", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?dBmd, (-5.228787453)~dBm), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.20) is used. (1/1)
+        PASS: A correct value is assigned to P?dBma. (1/1)
+        PASS: A correct value is assigned to P?dBmb. (1/1)
+        PASS: A correct value is assigned to P?dBmc. (1/1)
+        PASS: A correct value is assigned to P?dBmd. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+%group,name="Problem 27",description="p.503."
+========================================================================================================
+
+[P?Pa, P?Pb, P?Pc, P?Pd]
+
+
+%mathpiper,name="Problem 27",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbUD9QYSwgUD9QYiwgUD9QYywgUD9QZF0pCnsgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yMSA6PSBGb3JtdWxhKFA/UH5XID09IDF+bVcqQW50aWxvZ1AxMChQP2RCbX5kQm0pLCBMYWJlbDoiMTUuMjEiLCBQYWdlOiI0NzYiKTsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgUD9kQm0gOj0gMy41fmRCbTsKICAgIH0gCgogICAgUD9QYSA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/ZEJtIDo9IDEyfmRCbTsKICAgIH0gCgogICAgUD9QYiA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIFA/ZEJtIDo9IC0xLjJ+ZEJtOwogICAgfSAKCiAgICBQP1BjIDo9IFA/UCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzIxLCDOvFcpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBQP2RCbSA6PSAtMy41fmRCbTsKICAgIH0gCgogICAgUD9QZCA6PSBQP1AgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yMSwgIM68Vyk7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 27",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([P?Pa, P?Pb, P?Pc, P?Pd])
+{
+    Givens()
+    {
+        P?dBm := 3.5~dBm;
+    }
+    
+    Formulas()
+    {
+        f15?21 := Formula(P?P~W == 1~mW*AntilogP10(P?dBm~dBm), Label:"15.21", Page:"476");
+    }
+    
+    P?Pa := P?P := EvaluateFormula(f15?21);
+    
+//------------------------New Values---------------------
+    Givens()
+    {
+        P?dBm := 12~dBm;
+    }
+    
+    P?Pb := P?P := EvaluateFormula(f15?21);
+//------------------------New Values---------------------
+    Givens()
+    {
+        P?dBm := -1.2~dBm;
+    }
+    
+    P?Pc := P?P := EvaluateFormula(f15?21, μW);
+//------------------------New Values---------------------
+    Givens()
+    {
+        P?dBm := -3.5~dBm;
+    }
+    
+    P?Pd := P?P := EvaluateFormula(f15?21);
+}
+%/mathpiper
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: 0.4466835923~mW
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      P?Pa: 2.238721138~mW
+      P?Pb: 15.84893196~mW
+      P?Pc: 758.5775753~μW
+      P?Pd: 0.4466835923~mW
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                          \
+      | ( 15.21 ) ( P?P == 1 ~ mW * AntilogP10( P?dBm ) ) ( No Transformation )  |
+      \                                                                          /
+      
+      === STEPS (CODE VIEW) ===
+       1: P?dBm := 3.5~dBm ==> 3.5~dBm
+       2: (15.21) P?P == 1~mW*AntilogP10(P?dBm)
+       3: P?Pa := P?P := EvaluateFormula(f15?21) ==> 2.238721138~mW
+       4: P?dBm := 12~dBm ==> 12~dBm
+       5: P?Pb := P?P := EvaluateFormula(f15?21) ==> 15.84893196~mW
+       6: P?dBm :=  -1.2~dBm ==> (-1.2)~dBm
+       7: P?Pc := P?P := EvaluateFormula(f15?21, μW) ==> 758.5775753~μW
+       8: P?dBm :=  -3.5~dBm ==> (-3.5)~dBm
+       9: P?Pd := P?P := EvaluateFormula(f15?21) ==> 0.4466835923~mW
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 27"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.21) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(P?P_ == ((1~mW)*AntilogP10(P?dBm_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?Pa", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?Pa, 2.238721138~mW), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?Pb", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?Pb, 15.84893196~mW), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?Pc", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?Pc, 758.5775753~μW), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "P?Pd", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(P?Pd, 446.6835923~μW), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.21) is used. (1/1)
+        PASS: A correct value is assigned to P?Pa. (1/1)
+        PASS: A correct value is assigned to P?Pb. (1/1)
+        PASS: A correct value is assigned to P?Pc. (1/1)
+        PASS: A correct value is assigned to P?Pd. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 29",description="p.503."
+========================================================================================================
+
+[A?vdBa, A?vdBb, A?vdBc, A?vdBd]
+
+
+%mathpiper,name="Problem 29",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQT92ZEJhLCBBP3ZkQmIsIEE/dmRCYywgQT92ZEJkXSkKeyAgCiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE1PzI0IDo9IEZvcm11bGEoQT92ZEJ+ZEIgPT0gTG9nVjEwKEE/dn4xKSwgTGFiZWw6IjE1LjI0IiwgUGFnZToiNDc3Iik7CiAgICB9CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/diA6PSAxMjB+MTsKICAgIH0gCgogICAgQT92ZEJhIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3YgOj0gNDB+MTsKICAgIH0gCgogICAgQT92ZEJiIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwogICAgCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3YgOj0gLjk5NX4xOwogICAgfSAKCiAgICBBP3ZkQmMgOj0gQT92ZEIgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yNCk7CiAgICAKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/diA6PSAuOTc4fjE7CiAgICB9CgogICAgQT92ZEJkIDo9IEE/dmRCIDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjQpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 29",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([A?vdBa, A?vdBb, A?vdBc, A?vdBd])
+{
+    Formulas()
+    {
+        f15?24 := Formula(A?vdB~dB == LogV10(A?v~1), Label:"15.24", Page:"477");
+    }
+    
+    Givens()
+    {
+        A?v := 120~1;
+    }
+    
+    A?vdBa := A?vdB := EvaluateFormula(f15?24);
+ 
+//--------------------New Values------------------------
+
+    Givens()
+    {
+        A?v := 40~1;
+    }
+    
+    A?vdBb := A?vdB := EvaluateFormula(f15?24);
+    
+//--------------------New Values------------------------
+
+    Givens()
+    {
+        A?v := 0.995~1;
+    }
+    
+    A?vdBc := A?vdB := EvaluateFormula(f15?24);
+    
+//--------------------New Values------------------------
+
+    Givens()
+    {
+        A?v := 0.978~1;
+    }
+    
+    A?vdBd := A?vdB := EvaluateFormula(f15?24);
+}
+%/mathpiper
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: (-0.1932229042)~dB
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      A?vdBa: 41.58362492~dB
+      A?vdBb: 32.04119982~dB
+      A?vdBc: (-0.04353838508)~dB
+      A?vdBd: (-0.1932229042)~dB
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                             \
+      | ( 15.24 ) ( A?vdB == LogV10( A?v ) ) ( No Transformation )  |
+      \                                                             /
+      
+      === STEPS (CODE VIEW) ===
+       1: (15.24) A?vdB == LogV10(A?v)
+       2: A?v := 120~1 ==> 120~1
+       3: A?vdBa := A?vdB := EvaluateFormula(f15?24) ==> 41.58362492~dB
+       4: A?v := 40~1 ==> 40~1
+       5: A?vdBb := A?vdB := EvaluateFormula(f15?24) ==> 32.04119982~dB
+       6: A?v := 0.995~1 ==> 0.995~1
+       7: A?vdBc := A?vdB := EvaluateFormula(f15?24) ==> (-0.04353838508)~dB
+       8: A?v := 0.978~1 ==> 0.978~1
+       9: A?vdBd := A?vdB := EvaluateFormula(f15?24) ==> (-0.1932229042)~dB
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 29"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.24) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?vdB_ == LogV10(A?v_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vdBa", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vdBa, 41.58362492~dB), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vdBb", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vdBb, 32.04119982~dB), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vdBc", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vdBc, (-0.04353838508)~dB), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vdBd", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vdBd, (-0.1932229042)~dB), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.24) is used. (1/1)
+        PASS: A correct value is assigned to A?vdBa. (1/1)
+        PASS: A correct value is assigned to A?vdBb. (1/1)
+        PASS: A correct value is assigned to A?vdBc. (1/1)
+        PASS: A correct value is assigned to A?vdBd. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 31",description="p.503."
+========================================================================================================
+
+[A?Va, A?Vb, A?Vc, A?Vd]
+
+
+%mathpiper,name="Problem 31",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbQT92YSwgQT92YiwgQT92YywgQT92ZF0pCnsgIAogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxNT8yNSA6PSBGb3JtdWxhKEE/dn4xID09IEFudGlsb2dWMTAoQT92P2RCbX5kQm0pLCBMYWJlbDoiMTUuMjUiLCBQYWdlOiI0NzgiKTsKICAgIH0KICAgIAogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgQT92P2RCbSA6PSAxLjJ+ZEI7CiAgICB9IAoKICAgIEE/dmEgOj0gQT92IDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjUpOwoKICAgIC8vIC0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tCiAgICBHaXZlbnMoKQogICAgewogICAgICAgIEE/dj9kQm0gOj0gNH5kQjsKICAgIH0gCgogICAgQT92YiA6PSBBP3YgOj0gRXZhbHVhdGVGb3JtdWxhKGYxNT8yNSk7CgogICAgLy8gLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KICAgIEdpdmVucygpCiAgICB7CiAgICAgICAgQT92P2RCbSA6PSAtMy42fmRCOwogICAgfSAKCiAgICBBP3ZjIDo9IEE/diA6PSBFdmFsdWF0ZUZvcm11bGEoZjE1PzI1KTsKCiAgICAvLyAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogICAgR2l2ZW5zKCkKICAgIHsKICAgICAgICBBP3Y/ZEJtIDo9IC0yLjV+ZEI7CiAgICB9IAoKICAgIEE/dmQgOj0gQT92IDo9IEV2YWx1YXRlRm9ybXVsYShmMTU/MjUpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 31",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([A?va, A?vb, A?vc, A?vd])
+{
+    Formulas()
+    {
+        f15?25 := Formula(A?v~1 == AntilogV10(A?v?dBm~dBm), Label:"15.25", Page:"478");
+    }
+//------------------New Values------------------------
+    Givens()
+    {
+        A?v?dBm := 1.2~dB;
+    }
+    
+    A?va := A?v := EvaluateFormula(f15?25);
+    
+//------------------New Values------------------------
+    Givens()
+    {
+        A?v?dBm := 4~dB;
+    }
+    
+    A?vb := A?v := EvaluateFormula(f15?25);
+    
+//------------------New Values------------------------
+    Givens()
+    {
+        A?v?dBm := -3.6~dB;
+    }
+    
+    A?vc := A?v := EvaluateFormula(f15?25);
+    
+//------------------New Values------------------------
+    Givens()
+    {
+        A?v?dBm := -2.5~dB;
+    }
+    
+    A?vd := A?v := EvaluateFormula(f15?25);
+    
+}
+%/mathpiper
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: 0.7498942089~1
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      A?va: 1.148153622~1
+      A?vb: 1.584893194~1
+      A?vc: 0.6606934478~1
+      A?vd: 0.7498942089~1
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                   \
+      | ( 15.25 ) ( A?v == AntilogV10( A?v?dBm ) ) ( No Transformation )  |
+      \                                                                   /
+      
+      === STEPS (CODE VIEW) ===
+       1: (15.25) A?v == AntilogV10(A?v?dBm)
+       2: A?v?dBm := 1.2~dB ==> 1.2~dB
+       3: A?va := A?v := EvaluateFormula(f15?25) ==> 1.148153622~1
+       4: A?v?dBm := 4~dB ==> 4~dB
+       5: A?vb := A?v := EvaluateFormula(f15?25) ==> 1.584893194~1
+       6: A?v?dBm :=  -3.6~dB ==> (-3.6)~dB
+       7: A?vc := A?v := EvaluateFormula(f15?25) ==> 0.6606934478~1
+       8: A?v?dBm :=  -2.5~dB ==> (-2.5)~dB
+       9: A?vd := A?v := EvaluateFormula(f15?25) ==> 0.7498942089~1
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 31"
+
+{    FoldGrade("MathPiper version >= 283", 1, True)    {        StringToNumber(Version()) >=? 283;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (15.25) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(A?v_ == AntilogV10(A?v?dBm_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?va", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?va, 1.148153622~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vb", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vb, 1.584893194~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vc", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vc, 0.6606934478~1), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "A?vd", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(A?vd, 0.7498942089~1), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 283. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (15.25) is used. (1/1)
+        PASS: A correct value is assigned to A?va. (1/1)
+        PASS: A correct value is assigned to A?vb. (1/1)
+        PASS: A correct value is assigned to A?vc. (1/1)
+        PASS: A correct value is assigned to A?vd. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+

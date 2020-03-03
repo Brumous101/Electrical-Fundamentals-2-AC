@@ -1,0 +1,1961 @@
+v.01
+
+chapter_14_b_odd_practice_problems.mpws
+
+
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+========================
+- micro <ctrl>+; to get μ.
+
+- ohm <ctrl>+; to get Ω.
+
+- angle <ctrl>+; to get ∠. (p.272, p.980)
+
+- theta <ctrl>+; to get ϴ.
+
+- Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+15. 1.59 kHz
+17. X?L = X?C = 217 Ω
+19. V?L = 120V ∠ -90 degree
+21. 869 ohm ∠ 78 degree
+23. 10.6 V ∠ 41.2 degree
+25. X?L = 236 Ω, 
+    X?C = 9.04 kΩ, 
+    X?S = 8.8 kΩ ∠ -90 degree, 
+    Z?T = 8.83 kΩ ∠ -85.1 degree, 
+    I?I = 453 μA, 
+    V?R = 340 mV, 
+    V?L = 107 mV, 
+    V?C = 4.1 V, 
+27. 38.5 mA ∠ -62.1 degree
+29. X?L = 314 Ω, 
+    X?C = 3.18 kΩ, 
+    I?L 51 mA,
+    I?C := 5.03 mA, 
+    I?LC = 46 mA, 
+    I?R = 10.7 mA, 
+    I?T = 47.2 mA ∠ -76.9 degree,
+    Z?T = 339 ohm ∠ 76.9 degree
+31. I?LC = 3.85 mA ∠ 90 degree,
+    I?R = 6.06 mA, 
+    I?T = 7.18 mA ∠ 32.4 degree,
+    V?L = 1.06 V, 
+    V?C = 3.06 V, 
+    V?R = 2 V, 
+    Z?T = 279 Ω ∠ 32.4 degree
+
+
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion="283",preserve="false"
+            Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= 282", 1, True)
+    {
+        StringToNumber(Version()) >=? 282;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"UnparseMath2D");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion="283",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="p.457."
+========================================================================================================
+
+[f?r]
+
+
+%mathpiper,name="Problem 15",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbZj9yXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxND83IDo9IEZvcm11bGEoZj9yfkh6ID09IDEvKDIqUGkqU3FydChMP0x+SCAqIEM/Q35GKSksIExhYmVsOiIxNC43IiwgUGFnZToiNDMzIik7CiAgICB9CiAgICAKICAgIEw/TCA6PSAxMDB+zrxIOwogICAgCiAgICBDP0MgOj0gMTAwfs68RjsKICAgIAogICAgZj9yIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/Nywga0h6KTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+    %output,parent="Problem 15",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([f?r])
+{
+    Formulas()
+    {
+        f14?7 := Formula(f?r~Hz == 1 / (2 * Pi * Sqrt(L?L~H * C?C~F)), Label:"14.7", Page:"433");
+    }
+    
+    Givens()
+    {
+    L?L := 100~μH;
+    
+    C?C := 100~μF;
+    }
+    
+    f?r := EvaluateFormula(f14?7, kHz);
+    
+}
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion="283",preserve="false"
+      Result: 1.591549431~kHz
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      f?r: 1.591549431~kHz
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                       \
+      | ( 14.7 ) /                    1              \ ( No Transformation )  |
+      |          | f?r == -------------------------- |                        |
+      |          \        2 * Pi * Sqrt( L?L * C?C ) /                        |
+      \                                                                       /
+      
+      === STEPS (CODE VIEW) ===
+       1: (14.7) f?r == 1/(2*Pi*Sqrt(L?L*C?C))
+       2: f?r := EvaluateFormula(f14?7, kHz) ==> 1.591549431~kHz
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 15"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (14.7) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?r_ == (1/((2*Pi)*Sqrt((L?L_*C?C_))))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "f?r", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(f?r, 1.591549431~kHz), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 15",mpversion="283",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (14.7) is used. (1/1)
+        PASS: A correct value is assigned to f?r. (1/1)
+      
+        9/9 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 17",description="p.457."
+========================================================================================================
+
+[X?L, X?C]
+
+
+%mathpiper,name="Problem 17",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9MLCBYP0NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzcgOj0gRm9ybXVsYShmP3J+SHogPT0gMS8oMipQaSpTcXJ0KEw/TH5IICogQz9DfkYpKSwgTGFiZWw6IjE0LjciLCBQYWdlOiI0MzMiKTsKICAgICAgICAKICAgICAgICBmMTA/MTQgOj0gRm9ybXVsYShYP0x+zqkgPT0gMipQaSpmP2Z+SHoqTD9MfkgsIAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMC4xNCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjMwMiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ2Y/ZiA8LSAnZj9yXSk7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIqUGkqZj9mfkh6KkM/Q35GKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3IiwKICAgICAgICAgICAgICAgICAgICAgICAgICBTdWJzdGl0dXRpb25zOlsnZj9mIDwtICdmP3JdKTsKICAgIH0KICAgIAogICAgTD9MIDo9IDQ3fm1IOwogICAgCiAgICBDP0MgOj0gMX7OvEY7CiAgICAKICAgIGY/ciA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzcsIEh6KTsKICAgIAogICAgWD9MIDo9IEV2YWx1YXRlRm9ybXVsYShmMTA/MTQsIM6pKTsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIM6pKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion="283",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 17",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([X?L, X?C])
+{
+    Formulas()
+    {
+        f14?7 := Formula(f?r~Hz == 1 / (2 * Pi * Sqrt(L?L~H * C?C~F)), Label:"14.7", Page:"433");
+        f10?14 := Formula(X?L~Ω == 2*Pi*f?f~Hz*L?L~H, Label:"10.14", Page:"302");
+        f12?11 := Formula(X?C~Ω == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");
+    }
+    
+    Givens()
+    {
+        L?L := 47~mH;
+        C?C := 1~μF;
+    }
+    
+    f?r := EvaluateFormula(f14?7, Hz);
+    
+    f?f := f?r;
+    
+    X?L := EvaluateFormula(f10?14, Ω);
+    
+    X?C := EvaluateFormula(f12?11, Ω);
+}
+%/mathpiper
+
+    %output,parent="Problem 17",mpversion="283",preserve="false"
+      Result: 216.7948339~Ω
+      
+      Side Effects:
+      === SOLUTION VARIABLES ===
+      X?L: 216.7948339~Ω
+      X?C: 216.7948339~Ω
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                        \
+      | ( 14.7 )  /                    1              \ ( No Transformation )  |
+      |           | f?r == -------------------------- |                        |
+      |           \        2 * Pi * Sqrt( L?L * C?C ) /                        |
+      |                                                                        |
+      | ( 10.14 ) ( X?L == 2 * Pi * f?f * L?L )         ( No Transformation )  |
+      |                                                                        |
+      | ( 12.11 ) /                1          \         ( No Transformation )  |
+      |           | X?C == ------------------ |                                |
+      |           \        2 * Pi * f?f * C?C /                                |
+      \                                                                        /
+      
+      === STEPS (CODE VIEW) ===
+       1: (14.7) f?r == 1/(2*Pi*Sqrt(L?L*C?C))
+       2: (10.14) X?L == 2*Pi*f?f*L?L
+       3: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       4: f?r := EvaluateFormula(f14?7, Hz) ==> 734.1270095~Hz
+       5: f?f := f?r ==> 734.1270095~Hz
+       6: X?L := EvaluateFormula(f10?14, Ω) ==> 216.7948339~Ω
+       7: X?C := EvaluateFormula(f12?11, Ω) ==> 216.7948339~Ω
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 17"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (14.7) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(f?r_ == (1/((2*Pi)*Sqrt((L?L_*C?C_))))))) !=? []);
+    }
+
+    FoldGrade("Formula (10.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?L_ == (((2*Pi)*f?f_)*L?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (12.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?C_ == (1/(((2*Pi)*f?f_)*C?C_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?L, 216.7948339~Ω), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?C, 216.7948339~Ω), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 17",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (14.7) is used. (1/1)
+        PASS: Formula (10.14) is used. (1/1)
+        PASS: Formula (12.11) is used. (1/1)
+        PASS: A correct value is assigned to X?L. (1/1)
+        PASS: A correct value is assigned to X?C. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 19",description="p.457."
+========================================================================================================
+
+[V?L, V?C, V?LC]
+
+
+%mathpiper,name="Problem 19",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9MLCBWP0MsIFY/TENdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICAgICAgCiAgICAgICAgZjE0PzggOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydChYP1N+zqleMiArIFI/Un7OqV4yKSwgTGFiZWw6IjE0LjgiLCBQYWdlOiI0MzkiLCBEZXNjcmlwdGlvbjoiU2VyaWVzLiIsIFN1YnN0aXR1dGlvbnM6WydSP1IgPC0gJ1I/U10pOwogICAgICAgIAogICAgICAgIGYxND85IDo9IEZvcm11bGEoz7Q/Wj9UfnJhZCA9PSBBcmNUYW4oWD9Tfs6pL1I/Un7OqSksIExhYmVsOiIxNC45IiwgUGFnZToiNDM5IiwgRGVzY3JpcHRpb246IlNlcmllcy4iLCBTdWJzdGl0dXRpb25zOlsnUj9SIDwtICdSP1NdKTsKICAgICAgICAKICAgICAgICBmMz8xIDo9IEZvcm11bGEoST9PTH5BID09IFY/T0x+Vi9SP09Mfs6pLCBMYWJlbDoiMy4xIiwgUGFnZToiNzgiKTsKICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwgTGFiZWw6ImEiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWj9UXSk7CiAgICAgICAgCiAgICAgICAgZjM/MWIgOj0gRm9ybXVsYShJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksIExhYmVsOiJiIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/TCwgJ1I/T0wgPC0gJ1g/TF0sIFN1YmplY3Q6J1Y/TCk7CiAgICAgICAgCiAgICAgICAgZjM/MWMgOj0gRm9ybXVsYShJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksIExhYmVsOiJjIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QywgJ1I/T0wgPC0gJ1g/Q10sIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgCiAgICAgICAgZjE0PzEwIDo9IEZvcm11bGEoVj9MQ35WID09IFY/TH5WIC0gVj9DflYsIExhYmVsOiIxNC4xMCIsIFBhZ2U6IjQ0MiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICB9CiAgICAKICAgIFY/UyA6PSAxMn5WOwogICAgCiAgICBSP1MgOj0gMTh+zqk7CiAgICAKICAgIFg/TCA6PSAxODB+zqk7CiAgICAKICAgIFg/QyA6PSAxODB+zqk7CiAgICAKICAgIFg/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzIpOwogICAgCiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYxND84KTsKICAgIAogICAgz7Q/Wj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/OSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEpOwogICAgCiAgICBWP0wgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBWKTsKICAgIAogICAgVj9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYywgVik7CiAgICAKICAgIFY/TEMgOj0gRXZhbHVhdGVGb3JtdWxhKGYxND8xMCwgVik7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 19",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([V?L, V?C, V?LC])
+{
+    Formulas()
+    {
+        f14?2 := Formula(X?S~Ω == X?L~Ω - X?C~Ω, Label:"14.2", Page:"426", Description:"Series.");
+        f14?8 := Formula(Z?T~Ω == Sqrt(X?S~Ω^2 + R?R~Ω^2), Label:"14.8", Page:"439", Description:"Series.", Substitutions:['R?R <- 'R?S]);
+        f14?9 := Formula(ϴ?Z?T~rad == ArcTan(X?S~Ω/R?R~Ω), Label:"14.9", Page:"439", Description:"Series.", Substitutions:['R?R <- 'R?S]);
+        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"3.1", Page:"78");
+        f3?1a := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"a", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+        f3?1b := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"b", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);
+        f3?1c := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"c", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);
+        f14?10 := Formula(V?LC~V == V?L~V - V?C~V, Label:"14.10", Page:"442", Description:"Series.");
+    }
+    
+    Givens()
+    {
+        V?S := 12~V;
+        R?S := 18~Ω;
+        X?L := 180~Ω;
+        X?C := 180~Ω;
+    }
+    
+    X?S := EvaluateFormula(f14?2);
+    
+    Z?T := EvaluateFormula(f14?8);
+    
+    ϴ?Z?T := EvaluateFormula(f14?9);
+    
+    I?T := EvaluateFormula(f3?1a);
+    
+    V?L := EvaluateFormula(f3?1b, V);
+    
+    V?C := EvaluateFormula(f3?1c, V);
+    
+    V?LC := EvaluateFormula(f14?10, V);
+}
+%/mathpiper
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: 0~V
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      V?L: 120~V
+      V?C: 120~V
+      V?LC: 0~V
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                          \
+      | ( 14.2 )  ( X?S == X?L - X?C )           ( No Transformation )           |
+      |                                                                          |
+      | ( 14.8 )  /            /    2      2 \ \ /            /    2      2 \ \  |
+      |           \ Z?T == Sqrt\ X?S  + R?R  / / \ Z?T == Sqrt\ X?S  + R?S  / /  |
+      |                                                                          |
+      | ( 14.9 )  /                / X?S \ \     /                / X?S \ \      |
+      |           | ϴ?Z?T == ArcTan| --- | |     | ϴ?Z?T == ArcTan| --- | |      |
+      |           \                \ R?R / /     \                \ R?S / /      |
+      |                                                                          |
+      | ( 3.1 )   /         V?OL \               ( No Transformation )           |
+      |           | I?OL == ---- |                                               |
+      |           \         R?OL /                                               |
+      |                                                                          |
+      | ( a )     /         V?OL \               /        V?S \                  |
+      |           | I?OL == ---- |               | I?T == --- |                  |
+      |           \         R?OL /               \        Z?T /                  |
+      |                                                                          |
+      | ( b )     /         V?OL \               ( V?L == I?T * X?L )            |
+      |           | I?OL == ---- |                                               |
+      |           \         R?OL /                                               |
+      |                                                                          |
+      | ( c )     /         V?OL \               ( V?C == I?T * X?C )            |
+      |           | I?OL == ---- |                                               |
+      |           \         R?OL /                                               |
+      |                                                                          |
+      | ( 14.10 ) ( V?LC == V?L - V?C )          ( No Transformation )           |
+      \                                                                          /
+      
+      === STEPS (CODE VIEW) ===
+       1: (14.2) X?S == X?L - X?C
+       2: (14.8) Z?T == Sqrt(X?S^2 + R?R^2) ==> Z?T == Sqrt(X?S^2 + R?S^2)
+       3: (14.9) ϴ?Z?T == ArcTan(X?S/R?R) ==> ϴ?Z?T == ArcTan(X?S/R?S)
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       6: (b) I?OL == V?OL/R?OL ==> V?L == I?T*X?L
+       7: (c) I?OL == V?OL/R?OL ==> V?C == I?T*X?C
+       8: (14.10) V?LC == V?L - V?C
+       9: V?S := 12~V ==> 12~V
+      10: R?S := 18~Ω ==> 18~Ω
+      11: X?L := 180~Ω ==> 180~Ω
+      12: X?C := 180~Ω ==> 180~Ω
+      13: X?S := EvaluateFormula(f14?2) ==> 0~Ω
+      14: Z?T := EvaluateFormula(f14?8) ==> 18~Ω
+      15: ϴ?Z?T := EvaluateFormula(f14?9) ==> 0.0~rad
+      16: I?T := EvaluateFormula(f3?1a) ==> 0.6666666667~A
+      17: V?L := EvaluateFormula(f3?1b, V) ==> 120~V
+      18: V?C := EvaluateFormula(f3?1c, V) ==> 120~V
+      19: V?LC := EvaluateFormula(f14?10, V) ==> 0~V
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 19"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (14.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?S_ == (X?L_ - X?C_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.8) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Z?T_ == Sqrt(((X?S_^2) + (R?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.9) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?Z?T_ == ArcTan((X?S_/R?R_))))) !=? []);
+    }
+
+    FoldGrade("Formula (3.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (a) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (b) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (c) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.10) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(V?LC_ == (V?L_ - V?C_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?L, 120~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?C, 120~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?LC", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?LC, 0~V), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 19",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (14.2) is used. (1/1)
+        PASS: Formula (14.8) is used. (1/1)
+        PASS: Formula (14.9) is used. (1/1)
+        PASS: Formula (3.1) is used. (1/1)
+        PASS: Formula (a) is used. (1/1)
+        PASS: Formula (b) is used. (1/1)
+        PASS: Formula (c) is used. (1/1)
+        PASS: Formula (14.10) is used. (1/1)
+        PASS: A correct value is assigned to V?L. (1/1)
+        PASS: A correct value is assigned to V?C. (1/1)
+        PASS: A correct value is assigned to V?LC. (1/1)
+      
+        18/18 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 21",description="p.458."
+========================================================================================================
+
+[Z?T, ϴ?Z?T]
+
+
+%mathpiper,name="Problem 21",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWj9ULCDPtD9aP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICAgICAgCiAgICAgICAgZjE0PzggOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydChYP1N+zqleMiArIFI/Un7OqV4yKSwgTGFiZWw6IjE0LjgiLCBQYWdlOiI0MzkiLCBEZXNjcmlwdGlvbjoiU2VyaWVzLiIpOwogICAgICAgIAogICAgICAgIGYxND85IDo9IEZvcm11bGEoz7Q/Wj9UfnJhZCA9PSBBcmNUYW4oWD9Tfs6pL1I/Un7OqSksIExhYmVsOiIxNC45IiwgUGFnZToiNDM5IiwgRGVzY3JpcHRpb246IlNlcmllcy4iKTsKICAgIH0KICAgIAogICAgCiAgICBSP1IgOj0gMTgwfs6pOwogICAgCiAgICBYP0wgOj0gMS4yfmvOqTsKICAgIAogICAgWD9DIDo9IDM1MH7OqTsKICAgIAogICAgWD9TIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/Mik7CiAgICAKICAgIFo/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzgsIM6pKTsKICAgIAogICAgz7Q/Wj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/OSwgZGVncmVlKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 21",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([Z?T, ϴ?Z?T])
+{
+    Formulas()
+    {
+        f14?2 := Formula(X?S~Ω == X?L~Ω - X?C~Ω, Label:"14.2", Page:"426", Description:"Series.");
+        f14?8 := Formula(Z?T~Ω == Sqrt(X?S~Ω^2 + R?R~Ω^2), Label:"14.8", Page:"439", Description:"Series.");
+        f14?9 := Formula(ϴ?Z?T~rad == ArcTan(X?S~Ω/R?R~Ω), Label:"14.9", Page:"439", Description:"Series.");
+    }
+    
+    Givens()
+    {
+        R?R := 180~Ω;
+        X?L := 1.2~kΩ;
+        X?C := 350~Ω;
+    }
+    
+    X?S := EvaluateFormula(f14?2);
+    
+    Z?T := EvaluateFormula(f14?8, Ω);
+    
+    ϴ?Z?T := EvaluateFormula(f14?9, degree);
+}
+%/mathpiper
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: 78.04341573~degree
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      Z?T: 868.8498144~Ω
+      ϴ?Z?T: 78.04341573~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                \
+      | ( 14.2 ) ( X?S == X?L - X?C )           ( No Transformation )  |
+      |                                                                |
+      | ( 14.8 ) /            /    2      2 \ \ ( No Transformation )  |
+      |          \ Z?T == Sqrt\ X?S  + R?R  / /                        |
+      |                                                                |
+      | ( 14.9 ) /                / X?S \ \     ( No Transformation )  |
+      |          | ϴ?Z?T == ArcTan| --- | |                            |
+      |          \                \ R?R / /                            |
+      \                                                                /
+      
+      === STEPS (CODE VIEW) ===
+       1: (14.2) X?S == X?L - X?C
+       2: (14.8) Z?T == Sqrt(X?S^2 + R?R^2)
+       3: (14.9) ϴ?Z?T == ArcTan(X?S/R?R)
+       4: R?R := 180~Ω ==> 180~Ω
+       5: X?L := 1.2~kΩ ==> 1.2~kΩ
+       6: X?C := 350~Ω ==> 350~Ω
+       7: X?S := EvaluateFormula(f14?2) ==> 0.85~kΩ
+       8: Z?T := EvaluateFormula(f14?8, Ω) ==> 868.8498144~Ω
+       9: ϴ?Z?T := EvaluateFormula(f14?9, degree) ==> 78.04341573~degree
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 21"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (14.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?S_ == (X?L_ - X?C_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.8) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Z?T_ == Sqrt(((X?S_^2) + (R?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.9) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?Z?T_ == ArcTan((X?S_/R?R_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(Z?T, 868.8498144~Ω), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?Z?T, 78.04341573~degree), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 21",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (14.2) is used. (1/1)
+        PASS: Formula (14.8) is used. (1/1)
+        PASS: Formula (14.9) is used. (1/1)
+        PASS: A correct value is assigned to Z?T. (1/1)
+        PASS: A correct value is assigned to ϴ?Z?T. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 23",description="p.457."
+========================================================================================================
+
+[V?S, θ?V?S]
+
+
+%mathpiper,name="Problem 23",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9TLCDOuD9WP1NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgICAgICAKICAgICAgICBmMTQ/MTAgOj0gRm9ybXVsYShWP0xDflYgPT0gVj9MflYgLSBWP0N+ViwgTGFiZWw6IjE0LjEwIiwgUGFnZToiNDQyIiwgRGVzY3JpcHRpb246IlNlcmllcy4iKTsKICAgICAgICAKICAgICAgICBmMTQ/MTEgOj0gRm9ybXVsYShWP1N+ViA9PSBTcXJ0KFY/TEN+Vl4yICsgVj9SflZeMiksIExhYmVsOiIxNC4xMSIsIFBhZ2U6IjQ0MiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICAgICAgCiAgICAgICAgZjE0PzEyIDo9IEZvcm11bGEozrg/Vj9TfnJhZCA9PSBBcmNUYW4oVj9MQ35WL1Y/Un5WKSwgTGFiZWw6IjE0LjEyIiwgUGFnZToiNDQyIiwgRGVzY3JpcHRpb246IlNlcmllcy4iKTsKICAgICAgICAKCiAgICB9CiAgICAKICAgIC8qIEV4YW1wbGUgMTQuMTEgcC4gNDQzLgogICAgVj9SIDo9IDIuMjJ+VjsKICAgIFY/TCA6PSAxLjgxflY7CiAgICBWP0MgOj0gNy4zNX5WOwogICAgKi8KICAgIAogICAgVj9SIDo9IDEyflY7CiAgICBWP0wgOj0gMTJ+VjsKICAgIFY/QyA6PSA1flY7CiAgICAKICAgIFY/TEMgOj0gRXZhbHVhdGVGb3JtdWxhKGYxND8xMCwgVik7CiAgICAKICAgIFY/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzExLCBWKTsKCiAgICDOuD9WP1MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxND8xMiwgZGVnKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 23",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([V?S, θ?V?S])
+{
+    Formulas()
+    {
+          f14?10 := Formula(V?LC~V == V?L~V - V?C~V, Label:"14.10", Page:"442", Description:"Series.");
+          f14?11 := Formula(V?S~V == Sqrt(V?LC~V^2 + V?R~V^2), Label:"14.11", Page:"442", Description:"Series.");
+          f14?12 := Formula(θ?V?S~rad == ArcTan(V?LC~V/V?R~V), Label:"14.12", Page:"442", Description:"Series.");
+    }
+    
+    Givens()
+    {
+        V?R := 12~V;
+        V?L := 12~V;
+        V?C := 5~V;
+    }
+    
+    V?LC := EvaluateFormula(f14?10, V);
+    
+    V?S := EvaluateFormula(f14?11, V);
+    
+    θ?V?S := EvaluateFormula(f14?12, degree);
+    
+}
+
+%/mathpiper
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: 30.25643716~degree
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      V?S: 13.89244399~V
+      θ?V?S: 30.25643716~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( 14.10 ) ( V?LC == V?L - V?C )           ( No Transformation )  |
+      |                                                                  |
+      | ( 14.11 ) /            /     2      2 \ \ ( No Transformation )  |
+      |           \ V?S == Sqrt\ V?LC  + V?R  / /                        |
+      |                                                                  |
+      | ( 14.12 ) /                / V?LC \ \     ( No Transformation )  |
+      |           | θ?V?S == ArcTan| ---- | |                            |
+      |           \                \ V?R  / /                            |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (14.10) V?LC == V?L - V?C
+       2: (14.11) V?S == Sqrt(V?LC^2 + V?R^2)
+       3: (14.12) θ?V?S == ArcTan(V?LC/V?R)
+       4: V?R := 12~V ==> 12~V
+       5: V?L := 12~V ==> 12~V
+       6: V?C := 5~V ==> 5~V
+       7: V?LC := EvaluateFormula(f14?10, V) ==> 7~V
+       8: V?S := EvaluateFormula(f14?11, V) ==> 13.89244399~V
+       9: θ?V?S := EvaluateFormula(f14?12, degree) ==> 30.25643716~degree
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 23"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (14.10) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(V?LC_ == (V?L_ - V?C_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(V?S_ == Sqrt(((V?LC_^2) + (V?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.12) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(θ?V?S_ == ArcTan((V?LC_/V?R_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?S", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?S, 13.89244399~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "θ?V?S", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(θ?V?S, 30.25643716~deg), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 23",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (14.10) is used. (1/1)
+        PASS: Formula (14.11) is used. (1/1)
+        PASS: Formula (14.12) is used. (1/1)
+        PASS: A correct value is assigned to V?S. (1/1)
+        PASS: A correct value is assigned to θ?V?S. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 25",description="p.458."
+========================================================================================================
+
+[X?L, X?C, X?S, ϴ?X?S, Z?T, ϴ?Z?T, I?T, V?R, V?L, V?C]
+
+
+%mathpiper,name="Problem 25",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9MLCBYP0MsIFg/Uywgz7Q/WD9TLCBaP1QsIM+0P1o/VCwgST9ULCBWP1IsIFY/TCwgVj9DXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMD8xNCA6PSBGb3JtdWxhKFg/TH7OqSA9PSAyKlBpKmY/Zn5IeipMP0x+SCwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEwLjE0IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzAyIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIqUGkqZj9mfkh6KkM/Q35GKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICAgICAgCiAgICAgICAgZjE0PzggOj0gRm9ybXVsYShaP1R+zqkgPT0gU3FydChYP1N+zqleMiArIFI/Un7OqV4yKSwgTGFiZWw6IjE0LjgiLCBQYWdlOiI0MzkiLCBEZXNjcmlwdGlvbjoiU2VyaWVzLiIpOwogICAgICAgIAogICAgICAgIGYxND85IDo9IEZvcm11bGEoz7Q/Wj9UfnJhZCA9PSBBcmNUYW4oWD9Tfs6pL1I/Un7OqSksIExhYmVsOiIxNC45IiwgUGFnZToiNDM5IiwgRGVzY3JpcHRpb246IlNlcmllcy4iKTsKICAgICAgICAKICAgICAgICBmMz8xIDo9IEZvcm11bGEoST9PTH5BID09IFY/T0x+Vi9SP09Mfs6pLCBMYWJlbDoiMy4xIiwgUGFnZToiNzgiKTsKICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJhIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1o/VF0pOwogICAgICAgIAogICAgICAgIGYzPzFiIDo9IEZvcm11bGEoZjM/MSwgTGFiZWw6ImIiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9ULCAnVj9PTCA8LSAnVj9MLCAnUj9PTCA8LSAnWD9MXSwgU3ViamVjdDonVj9MKTsKICAgICAgICAKICAgICAgICBmMz8xYyA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJjIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QywgJ1I/T0wgPC0gJ1g/Q10sIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgCiAgICAgICAgZjM/MWQgOj0gRm9ybXVsYShmMz8xLCBMYWJlbDoiZCIsIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP1IsICdSP09MIDwtICdSP1JdLCBTdWJqZWN0OidWP1IpOwogICAgICAgIAogICAgICAgIGYxND8xMCA6PSBGb3JtdWxhKFY/TEN+ViA9PSBWP0x+ViAtIFY/Q35WLCBMYWJlbDoiMTQuMTAiLCBQYWdlOiI0NDIiLCBEZXNjcmlwdGlvbjoiU2VyaWVzLiIpOwogICAgfQogICAgCiAgICBWP1MgOj0gNH5WOwogICAgCiAgICBSP1IgOj0gNzUwfs6pOwogICAgCiAgICBMP0wgOj0gNDd+bUg7CiAgICAKICAgIEM/QyA6PSAuMDIyfs68RjsKICAgIAogICAgZj9mIDo9IDgwMH5IejsKICAgIAogICAgWD9MIDo9IEV2YWx1YXRlRm9ybXVsYShmMTA/MTQsIM6pKTsKICAgIAogICAgWD9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMTI/MTEsIGvOqSk7CiAgICAKICAgIFg/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzIsIGvOqSk7CiAgICAKICAgIM+0P1g/UyA6PSBMQ1Nlcmllc1BoYXNlKFg/TCwgWD9DKTsKICAgIAogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/OCk7CiAgICAKICAgIM+0P1o/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzksIGRlZyk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWEsIM68QSk7CiAgICAKICAgIFY/TCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWIsIG1WKTsKICAgIAogICAgVj9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYywgVik7CiAgICAKICAgIFY/UiA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWQsIG1WKTsKICAgIAogICAgVj9MQyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEwLCBWKTsKfQoK");
+
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 25",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([X?L, X?C, X?S, ϴ?X?S, Z?T, ϴ?Z?T, I?T, V?R, V?L, V?C])
+{
+    Formulas()
+    {
+        f10?14 := Formula(X?L~Ω == 2*Pi*f?f~Hz*L?L~H, Label:"10.14", Page:"302");
+        f12?11 := Formula(X?C~Ω == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");
+        f14?2 := Formula(X?S~Ω == X?L~Ω - X?C~Ω, Label:"14.2", Page:"426", Description:"Series.");
+        f14?8 := Formula(Z?T~Ω == Sqrt(X?S~Ω^2 + R?R~Ω^2), Label:"14.8", Page:"439", Description:"Series.");
+        f14?9 := Formula(ϴ?Z?T~rad == ArcTan(X?S~Ω/R?R~Ω), Label:"14.9", Page:"439", Description:"Series.");
+        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"3.1", Page:"78");
+        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?S, 'R?OL <- 'Z?T]);
+        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);
+        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);
+        f3?1d := Formula(f3?1, Label:"d", Page:"78", Substitutions: ['I?OL <- 'I?T, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);
+        f14?10 := Formula(V?LC~V == V?L~V - V?C~V, Label:"14.10", Page:"442", Description:"Series.");
+    }
+
+    Givens()
+    {
+        V?S := 4~V;
+        R?R := 750~Ω;
+        L?L := 47~mH;
+        C?C := 0.022~μF;
+        f?f := 800~Hz;
+    }
+    
+    X?L := EvaluateFormula(f10?14, Ω);
+    
+    X?C := EvaluateFormula(f12?11, kΩ);
+    
+    X?S := EvaluateFormula(f14?2, kΩ);
+    
+    ϴ?X?S:= LCSeriesPhase(X?L, X?C);
+    
+    Z?T := EvaluateFormula(f14?8);
+    
+    ϴ?Z?T:= EvaluateFormula(f14?9, degree);
+    
+    I?T := EvaluateFormula(f3?1a, μA); 
+    
+    V?L := EvaluateFormula(f3?1b, mV);
+    
+    V?C := EvaluateFormula(f3?1c, V);
+    
+    V?R := EvaluateFormula(f3?1d, mV);
+    
+    V?LC := EvaluateFormula(f14?10, V);
+}
+%/mathpiper
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: (-3.985572974)~V
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      X?L: 236.2477676~Ω
+      X?C: 9.042894494~kΩ
+      X?S: (-8.806646726)~kΩ
+      ϴ?X?S: (-90)~deg
+      Z?T: 8.8385251367~kΩ
+      ϴ?Z?T: (-85.13226793)~degree
+      I?T: 452.5641935~μA
+      V?R: 339.4231451~mV
+      V?L: 106.9172804~mV
+      V?C: 4.092490254~V
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                 \
+      | ( 10.14 ) ( X?L == 2 * Pi * f?f * L?L )  ( No Transformation )  |
+      |                                                                 |
+      | ( 12.11 ) /                1          \  ( No Transformation )  |
+      |           | X?C == ------------------ |                         |
+      |           \        2 * Pi * f?f * C?C /                         |
+      |                                                                 |
+      | ( 14.2 )  ( X?S == X?L - X?C )           ( No Transformation )  |
+      |                                                                 |
+      | ( 14.8 )  /            /    2      2 \ \ ( No Transformation )  |
+      |           \ Z?T == Sqrt\ X?S  + R?R  / /                        |
+      |                                                                 |
+      | ( 14.9 )  /                / X?S \ \     ( No Transformation )  |
+      |           | ϴ?Z?T == ArcTan| --- | |                            |
+      |           \                \ R?R / /                            |
+      |                                                                 |
+      | ( 3.1 )   /         V?OL \               ( No Transformation )  |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1a )  /         V?OL \               /        V?S \         |
+      |           | I?OL == ---- |               | I?T == --- |         |
+      |           \         R?OL /               \        Z?T /         |
+      |                                                                 |
+      | ( 3.1b )  /         V?OL \               ( V?L == I?T * X?L )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1c )  /         V?OL \               ( V?C == I?T * X?C )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 3.1d )  /         V?OL \               ( V?R == I?T * R?R )   |
+      |           | I?OL == ---- |                                      |
+      |           \         R?OL /                                      |
+      |                                                                 |
+      | ( 14.10 ) ( V?LC == V?L - V?C )          ( No Transformation )  |
+      \                                                                 /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.14) X?L == 2*Pi*f?f*L?L
+       2: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       3: (14.2) X?S == X?L - X?C
+       4: (14.8) Z?T == Sqrt(X?S^2 + R?R^2)
+       5: (14.9) ϴ?Z?T == ArcTan(X?S/R?R)
+       6: (3.1) I?OL == V?OL/R?OL
+       7: (3.1a) I?OL == V?OL/R?OL ==> I?T == V?S/Z?T
+       8: (3.1b) I?OL == V?OL/R?OL ==> V?L == I?T*X?L
+       9: (3.1c) I?OL == V?OL/R?OL ==> V?C == I?T*X?C
+      10: (3.1d) I?OL == V?OL/R?OL ==> V?R == I?T*R?R
+      11: (14.10) V?LC == V?L - V?C
+      12: V?S := 4~V ==> 4~V
+      13: R?R := 750~Ω ==> 750~Ω
+      14: L?L := 47~mH ==> 47~mH
+      15: C?C := 0.022~μF ==> 0.022~μF
+      16: f?f := 800~Hz ==> 800~Hz
+      17: X?L := EvaluateFormula(f10?14, Ω) ==> 236.2477676~Ω
+      18: X?C := EvaluateFormula(f12?11, kΩ) ==> 9.042894494~kΩ
+      19: X?S := EvaluateFormula(f14?2, kΩ) ==> (-8.806646726)~kΩ
+      20: ϴ?X?S := LCSeriesPhase(X?L, X?C) ==> (-90)~deg
+      21: Z?T := EvaluateFormula(f14?8) ==> 8.8385251367~kΩ
+      22: ϴ?Z?T := EvaluateFormula(f14?9, degree) ==> (-85.13226793)~degree
+      23: I?T := EvaluateFormula(f3?1a, μA) ==> 452.5641935~μA
+      24: V?L := EvaluateFormula(f3?1b, mV) ==> 106.9172804~mV
+      25: V?C := EvaluateFormula(f3?1c, V) ==> 4.092490254~V
+      26: V?R := EvaluateFormula(f3?1d, mV) ==> 339.4231451~mV
+      27: V?LC := EvaluateFormula(f14?10, V) ==> (-3.985572974)~V
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 25"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (10.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?L_ == (((2*Pi)*f?f_)*L?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (12.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?C_ == (1/(((2*Pi)*f?f_)*C?C_))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?S_ == (X?L_ - X?C_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.8) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(Z?T_ == Sqrt(((X?S_^2) + (R?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.9) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?Z?T_ == ArcTan((X?S_/R?R_))))) !=? []);
+    }
+
+    FoldGrade("Formula (3.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.10) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(V?LC_ == (V?L_ - V?C_)))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?L, 236.2477676~Ω), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?C, 9.042894494~kΩ), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?S", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?S, (-8.806646726)~kΩ), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?X?S", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?X?S, (-90)~deg), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(Z?T, 8.8385251367~kΩ), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?Z?T, (-85.13226793)~deg), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?T, 452.5641935~μA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?R", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?R, 339.4231451~mV), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?L, 106.9172804~mV), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?C, 4.092490254~V), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 25",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (10.14) is used. (1/1)
+        PASS: Formula (12.11) is used. (1/1)
+        PASS: Formula (14.2) is used. (1/1)
+        PASS: Formula (14.8) is used. (1/1)
+        PASS: Formula (14.9) is used. (1/1)
+        PASS: Formula (3.1) is used. (1/1)
+        PASS: Formula (14.10) is used. (1/1)
+        PASS: A correct value is assigned to X?L. (1/1)
+        PASS: A correct value is assigned to X?C. (1/1)
+        PASS: A correct value is assigned to X?S. (1/1)
+        PASS: A correct value is assigned to ϴ?X?S. (1/1)
+        PASS: A correct value is assigned to Z?T. (1/1)
+        PASS: A correct value is assigned to ϴ?Z?T. (1/1)
+        PASS: A correct value is assigned to I?T. (1/1)
+        PASS: A correct value is assigned to V?R. (1/1)
+        PASS: A correct value is assigned to V?L. (1/1)
+        PASS: A correct value is assigned to V?C. (1/1)
+      
+        24/24 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 27",description="p.458."
+========================================================================================================
+
+[I?T, ϴ?I?T]
+
+
+%mathpiper,name="Problem 27",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbST9ULCDPtD9JP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZnA/NDQ0IDo9IEZvcm11bGEoST9MQ35BID09IEk/Q35BIC0gST9MfkEsIExhYmVsOiJwLjQ0NCIsIFBhZ2U6IjQ0NCIsIERlc2NyaXB0aW9uOiJQYXJhbGxlbC4iKTsKICAgICAgICAKICAgICAgICBmMTQ/MTMgOj0gRm9ybXVsYShJP1R+QSA9PSBTcXJ0KEk/TEN+QV4yICsgST9SfkFeMiksIExhYmVsOiIxNC4xMyIsIFBhZ2U6IjQ0NCIsIERlc2NyaXB0aW9uOiJQYXJhbGxlbC4iKTsKCiAgICAgICAgZjE0PzE0IDo9IEZvcm11bGEoz7Q/ST9UfnJhZCA9PSBBcmNUYW4oST9MQ35BIC8gST9SfkEpLCBMYWJlbDoiMTQuMTQiLCBQYWdlOiI0NDQiLCBEZXNjcmlwdGlvbjoiUGFyYWxsZWwuIik7ICAgIAogICAgfQogICAgCiAgICBJP1IgOj0gMTh+bUE7CiAgICAKICAgIEk/TCA6PSA0Mn5tQTsKICAgIAogICAgST9DIDo9IDh+bUE7CiAgICAKICAgIEk/TEMgOj0gRXZhbHVhdGVGb3JtdWxhKGZwPzQ0NCk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEzKTsKICAgIAogICAgz7Q/ST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/MTQsIGRlZyk7ICAgCn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 27",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([I?T, ϴ?I?T])
+{
+    Formulas()
+    {
+        fp?444 := Formula(I?LC~A == I?C~A - I?L~A, Label:"p.444", Page:"444", Description:"Parallel.");
+        f14?13 := Formula(I?T~A == Sqrt(I?LC~A^2 + I?R~A^2), Label:"14.13", Page:"444", Description:"Parallel.");
+        f14?14 := Formula(ϴ?I?T~rad == ArcTan(I?LC~A/I?R~A), Label:"14.14", Page:"444", Description:"Parallel.");
+    }
+
+    Givens()
+    {
+        I?R := 18~mA;
+        
+        I?L := 42~mA;
+        
+        I?C := 8~mA;
+    }
+    
+    I?LC := EvaluateFormula(fp?444);
+    
+    I?T := EvaluateFormula(f14?13);
+    
+    ϴ?I?T := EvaluateFormula(f14?14, degree);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: (-62.10272897)~degree
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      I?T: 38.47076812~mA
+      ϴ?I?T: (-62.10272897)~degree
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( p.444 ) ( I?LC == I?C - I?L )           ( No Transformation )  |
+      |                                                                  |
+      | ( 14.13 ) /            /     2      2 \ \ ( No Transformation )  |
+      |           \ I?T == Sqrt\ I?LC  + I?R  / /                        |
+      |                                                                  |
+      | ( 14.14 ) /                / I?LC \ \     ( No Transformation )  |
+      |           | ϴ?I?T == ArcTan| ---- | |                            |
+      |           \                \ I?R  / /                            |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (p.444) I?LC == I?C - I?L
+       2: (14.13) I?T == Sqrt(I?LC^2 + I?R^2)
+       3: (14.14) ϴ?I?T == ArcTan(I?LC/I?R)
+       4: I?R := 18~mA ==> 18~mA
+       5: I?L := 42~mA ==> 42~mA
+       6: I?C := 8~mA ==> 8~mA
+       7: I?LC := EvaluateFormula(fp?444) ==> (-34)~mA
+       8: I?T := EvaluateFormula(f14?13) ==> 38.47076812~mA
+       9: ϴ?I?T := EvaluateFormula(f14?14, degree) ==> (-62.10272897)~degree
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 27"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (p.444) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?LC_ == (I?C_ - I?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.13) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?T_ == Sqrt(((I?LC_^2) + (I?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?I?T_ == ArcTan((I?LC_/I?R_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?T, 38.47076812~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?I?T, (-62.10272897)~deg), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 27",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (p.444) is used. (1/1)
+        PASS: Formula (14.13) is used. (1/1)
+        PASS: Formula (14.14) is used. (1/1)
+        PASS: A correct value is assigned to I?T. (1/1)
+        PASS: A correct value is assigned to ϴ?I?T. (1/1)
+      
+        12/12 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 29",description="p.459."
+========================================================================================================
+
+[X?L, X?C, I?L, I?C, I?LC, I?R, I?T, ϴ?I?T, Z?T]
+
+
+%mathpiper,name="Problem 29",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9MLCBYP0MsIEk/TCwgST9DLCBJP0xDLCBJP1IsIEk/VCwgz7Q/ST9ULCBaP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgICAgICAKICAgICAgICBmMTA/MTQgOj0gRm9ybXVsYShYP0x+zqkgPT0gMipQaSpmP2Z+SHoqTD9MfkgsIAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMC4xNCIsIAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjMwMiIpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxMj8xMSA6PSBGb3JtdWxhKFg/Q37OqSA9PSAxLygyKlBpKmY/Zn5IeipDP0N+RiksIAogICAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiIxMi4xMSIsIAogICAgICAgICAgICAgICAgICAgICAgICAgIFBhZ2U6IjM3NyIpOwogICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzEgOj0gRm9ybXVsYShJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksIExhYmVsOiIzLjEiLCBQYWdlOiI3OCIpOwogICAgICAgIAogICAgICAgIGYzPzFhIDo9IEZvcm11bGEoZjM/MSwgTGFiZWw6ImEiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9MLCAnVj9PTCA8LSAnVj9TLCAnUj9PTCA8LSAnWD9MXSk7CiAgICAgICAgCiAgICAgICAgZjM/MWIgOj0gRm9ybXVsYShmMz8xLCBMYWJlbDoiYiIsIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0MsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP0NdKTsKICAgICAgICAKICAgICAgICBmMz8xYyA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJjIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/UiwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1I/Ul0pOwogICAgICAgIAogICAgICAgIGYzPzFkIDo9IEZvcm11bGEoZjM/MSwgTGFiZWw6ImQiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9UMiwgJ1Y/T0wgPC0gJ1Y/UzIsICdSP09MIDwtICdaP1RdLCBTdWJqZWN0OidaP1QpOwogICAgICAgIAogICAgICAgIGZwPzQ0NCA6PSBGb3JtdWxhKEk/TEN+QSA9PSBJP0N+QSAtIEk/TH5BLCBMYWJlbDoicC40NDQiLCBQYWdlOiI0NDQiLCBEZXNjcmlwdGlvbjoiUGFyYWxsZWwuIik7CiAgICAgICAgCiAgICAgICAgZjE0PzEzIDo9IEZvcm11bGEoST9UfkEgPT0gU3FydChJP0xDfkFeMiArIEk/Un5BXjIpLCBMYWJlbDoiMTQuMTMiLCBQYWdlOiI0NDQiLCBEZXNjcmlwdGlvbjoiUGFyYWxsZWwuIik7CiAgICAgIAogICAgICAgIGYxND8xNCA6PSBGb3JtdWxhKM+0P0k/VH5yYWQgPT0gQXJjVGFuKEk/TEN+QS9JP1J+QSksIExhYmVsOiIxNC4xNCIsIFBhZ2U6IjQ0NCIsIERlc2NyaXB0aW9uOiJQYXJhbGxlbC4iKTsgICAKICAgIH0KICAgIAogICAgVj9TIDo9IDE2flY7CiAgICAKICAgIFI/UiA6PSAxLjV+a86pOwogICAgCiAgICBMP0wgOj0gMTAwfm1IOwogICAgCiAgICBDP0MgOj0gLjF+zrxGOwogICAgCiAgICBmP2YgOj0gNTAwfkh6OwogICAgCiAgICBYP0wgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMD8xNCwgzqkpOwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSwga86pKTsKICAgIAogICAgST9MIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwogICAgCiAgICBJP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBtQSk7CiAgICAKICAgIEk/UiA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWMsIG1BKTsKICAgIAogICAgST9MQyA6PSBFdmFsdWF0ZUZvcm11bGEoZnA/NDQ0LCBtQSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEzKTsKICAgIAogICAgz7Q/ST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/MTQsIGRlZyk7CiAgICAKICAgIFY/UzIgOj0gVj9TIOKIoCAwfmRlZzsKICAgIAogICAgST9UMiA6PSBJP1Qg4oigIM+0P0k/VDsKICAgIAogICAgWj9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xZCwgzqkpOwp9Cgo=");
+
+%/mathpiper
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 29",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([X?L, X?C, I?L, I?C, I?LC, I?R, I?T, ϴ?I?T, Z?T])
+{
+    Formulas()
+    {
+        f10?14 := Formula(X?L~Ω == 2*Pi*f?f~Hz*L?L~H, Label:"10.14", Page:"302");
+        f12?11 := Formula(X?C~Ω == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");
+        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"3.1", Page:"78");
+        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions: ['I?OL <- 'I?L, 'V?OL <- 'V?S, 'R?OL <- 'X?L]);
+        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions: ['I?OL <- 'I?C, 'V?OL <- 'V?S, 'R?OL <- 'X?C]);
+        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions: ['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);
+        f3?1d := Formula(f3?1, Label:"d", Page:"78", Substitutions: ['I?OL <- 'I?T2, 'V?OL <- 'V?S2, 'R?OL <- 'Z?T], Subject: 'Z?T);
+        fp?444 := Formula(I?LC~A == I?C~A - I?L~A, Label:"p.444", Page:"444", Description:"Parallel.");
+        f14?13 := Formula(I?T~A == Sqrt(I?LC~A^2 + I?R~A^2), Label:"14.13", Page:"444", Description:"Parallel.");
+        f14?14 := Formula(ϴ?I?T~rad == ArcTan(I?LC~A/I?R~A), Label:"14.14", Page:"444", Description:"Parallel.");
+    }
+
+    Givens()
+    {
+        V?S := 16~V;
+        R?R := 1.5~kΩ;
+        L?L := 100~mH;
+        C?C := .1~μF;
+        f?f := 500~Hz;
+    }
+    
+    X?L := EvaluateFormula(f10?14, Ω);
+    
+    X?C := EvaluateFormula(f12?11, kΩ);
+    
+    I?L := EvaluateFormula(f3?1a, mA);
+    
+    I?C := EvaluateFormula(f3?1b, mA);
+    
+    I?R := EvaluateFormula(f3?1c, mA);
+    
+    I?LC := EvaluateFormula(fp?444, mA);
+    
+    I?T := EvaluateFormula(f14?13);
+    
+    ϴ?I?T := EvaluateFormula(f14?14, deg);
+    
+    Givens()
+    {
+        V?S2 := V?S ∠ 0~deg;    
+        I?T2 := I?T ∠ ϴ?I?T;
+    }
+    
+    Z?T := EvaluateFormula(f3?1d, Ω);
+}
+%/mathpiper
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: 339.5148535~Ω ∠ 76.91812215~deg
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      X?L: 314.1592654~Ω
+      X?C: 3.183098861~kΩ
+      I?L: 50.92958178~mA
+      I?C: 5.026548247~mA
+      I?LC: (-45.90303353)~mA
+      I?R: 10.66666667~mA
+      I?T: 47.126067787~mA
+      ϴ?I?T: (-76.91812215)~deg
+      Z?T: 339.5148535~Ω ∠ 76.91812215~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( 10.14 ) ( X?L == 2 * Pi * f?f * L?L )   ( No Transformation )  |
+      |                                                                  |
+      | ( 12.11 ) /                1          \   ( No Transformation )  |
+      |           | X?C == ------------------ |                          |
+      |           \        2 * Pi * f?f * C?C /                          |
+      |                                                                  |
+      | ( 3.1 )   /         V?OL \                ( No Transformation )  |
+      |           | I?OL == ---- |                                       |
+      |           \         R?OL /                                       |
+      |                                                                  |
+      | ( 3.1a )  /         V?OL \                /        V?S \         |
+      |           | I?OL == ---- |                | I?L == --- |         |
+      |           \         R?OL /                \        X?L /         |
+      |                                                                  |
+      | ( 3.1b )  /         V?OL \                /        V?S \         |
+      |           | I?OL == ---- |                | I?C == --- |         |
+      |           \         R?OL /                \        X?C /         |
+      |                                                                  |
+      | ( 3.1c )  /         V?OL \                /        V?S \         |
+      |           | I?OL == ---- |                | I?R == --- |         |
+      |           \         R?OL /                \        R?R /         |
+      |                                                                  |
+      | ( 3.1d )  /         V?OL \                /        V?S2 \        |
+      |           | I?OL == ---- |                | Z?T == ---- |        |
+      |           \         R?OL /                \        I?T2 /        |
+      |                                                                  |
+      | ( p.444 ) ( I?LC == I?C - I?L )           ( No Transformation )  |
+      |                                                                  |
+      | ( 14.13 ) /            /     2      2 \ \ ( No Transformation )  |
+      |           \ I?T == Sqrt\ I?LC  + I?R  / /                        |
+      |                                                                  |
+      | ( 14.14 ) /                / I?LC \ \     ( No Transformation )  |
+      |           | ϴ?I?T == ArcTan| ---- | |                            |
+      |           \                \ I?R  / /                            |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.14) X?L == 2*Pi*f?f*L?L
+       2: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       3: (3.1) I?OL == V?OL/R?OL
+       4: (3.1a) I?OL == V?OL/R?OL ==> I?L == V?S/X?L
+       5: (3.1b) I?OL == V?OL/R?OL ==> I?C == V?S/X?C
+       6: (3.1c) I?OL == V?OL/R?OL ==> I?R == V?S/R?R
+       7: (3.1d) I?OL == V?OL/R?OL ==> Z?T == V?S2/I?T2
+       8: (p.444) I?LC == I?C - I?L
+       9: (14.13) I?T == Sqrt(I?LC^2 + I?R^2)
+      10: (14.14) ϴ?I?T == ArcTan(I?LC/I?R)
+      11: V?S := 16~V ==> 16~V
+      12: R?R := 1.5~kΩ ==> 1.5~kΩ
+      13: L?L := 100~mH ==> 100~mH
+      14: C?C := .1~μF ==> .1~μF
+      15: f?f := 500~Hz ==> 500~Hz
+      16: X?L := EvaluateFormula(f10?14, Ω) ==> 314.1592654~Ω
+      17: X?C := EvaluateFormula(f12?11, kΩ) ==> 3.183098861~kΩ
+      18: I?L := EvaluateFormula(f3?1a, mA) ==> 50.92958178~mA
+      19: I?C := EvaluateFormula(f3?1b, mA) ==> 5.026548247~mA
+      20: I?R := EvaluateFormula(f3?1c, mA) ==> 10.66666667~mA
+      21: I?LC := EvaluateFormula(fp?444, mA) ==> (-45.90303353)~mA
+      22: I?T := EvaluateFormula(f14?13) ==> 47.126067787~mA
+      23: ϴ?I?T := EvaluateFormula(f14?14, deg) ==> (-76.91812215)~deg
+      24: V?S2 := V?S ∠ 0~deg ==> 16~V ∠ 0~deg
+      25: I?T2 := I?T ∠ ϴ?I?T ==> 47.126067787~mA ∠ (-76.91812215)~deg
+      26: Z?T := EvaluateFormula(f3?1d, Ω) ==> 339.5148535~Ω ∠ 76.91812215~deg
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 29"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (10.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?L_ == (((2*Pi)*f?f_)*L?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (12.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?C_ == (1/(((2*Pi)*f?f_)*C?C_))))) !=? []);
+    }
+
+    FoldGrade("Formula (3.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (p.444) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?LC_ == (I?C_ - I?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.13) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?T_ == Sqrt(((I?LC_^2) + (I?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?I?T_ == ArcTan((I?LC_/I?R_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?L, 314.1592654~Ω), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "X?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(X?C, 3.183098861~kΩ), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?L, 50.92958178~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?C, 5.026548247~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?LC", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?LC, (-45.90303353)~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?R", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?R, 10.66666667~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?T, 47.126067787~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?I?T, (-76.91812215)~deg), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(Z?T, 339.5148535~Ω ∠ 76.91812215~deg), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 29",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (10.14) is used. (1/1)
+        PASS: Formula (12.11) is used. (1/1)
+        PASS: Formula (3.1) is used. (1/1)
+        PASS: Formula (p.444) is used. (1/1)
+        PASS: Formula (14.13) is used. (1/1)
+        PASS: Formula (14.14) is used. (1/1)
+        PASS: A correct value is assigned to X?L. (1/1)
+        PASS: A correct value is assigned to X?C. (1/1)
+        PASS: A correct value is assigned to I?L. (1/1)
+        PASS: A correct value is assigned to I?C. (1/1)
+        PASS: A correct value is assigned to I?LC. (1/1)
+        PASS: A correct value is assigned to I?R. (1/1)
+        PASS: A correct value is assigned to I?T. (1/1)
+        PASS: A correct value is assigned to ϴ?I?T. (1/1)
+        PASS: A correct value is assigned to Z?T. (1/1)
+      
+        22/22 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 31",description="p.459."
+========================================================================================================
+
+[I?LC, I?R, I?T, ϴ?I?T, V?L, V?C, V?R, Z?T]
+
+
+%mathpiper,name="Problem 31",subtype="hint"
+
+Hint("ClByb2JsZW1Tb2x1dGlvbihbST9MQywgST9SLCBJP1QsIM+0P0k/VCwgVj9MLCBWP0MsIFY/UiwgWj9UXSkKewogICAgRm9ybXVsYXMoKQogICAgewogICAgICAgIGYxMD8xNCA6PSBGb3JtdWxhKFg/TH7OqSA9PSAyKlBpKmY/Zn5IeipMP0x+SCwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEwLjE0IiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzAyIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIqUGkqZj9mfkh6KkM/Q35GKSwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6IjEyLjExIiwgCiAgICAgICAgICAgICAgICAgICAgICAgICAgUGFnZToiMzc3Iik7CiAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIsIERlc2NyaXB0aW9uOiJTZXJpZXMuIik7CiAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xIDo9IEZvcm11bGEoST9PTH5BID09IFY/T0x+Vi9SP09Mfs6pLCBMYWJlbDoiMy4xIiwgUGFnZToiNzgiKTsKICAgICAgICAKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJhIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/TEMsICdWP09MIDwtICdWP1MsICdSP09MIDwtICdYP1NdKTsKICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJiIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/UiwgJ1Y/T0wgPC0gJ1Y/UywgJ1I/T0wgPC0gJ1I/Ul0pOwogICAgICAgIAogICAgICAgIGYzPzFjIDo9IEZvcm11bGEoZjM/MSwgTGFiZWw6ImMiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9UMiwgJ1Y/T0wgPC0gJ1Y/UzIsICdSP09MIDwtICdaP1RdLCBTdWJqZWN0OidaP1QpOwogICAgICAgIAogICAgICAgIGYzPzFkIDo9IEZvcm11bGEoZjM/MSwgTGFiZWw6ImQiLCBTdWJzdGl0dXRpb25zOlsnST9PTCA8LSAnST9MQywgJ1Y/T0wgPC0gJ1Y/TCwgJ1I/T0wgPC0gJ1g/TF0sIFN1YmplY3Q6J1Y/TCk7CiAgICAgICAgCiAgICAgICAgZjM/MWUgOj0gRm9ybXVsYShmMz8xLCBMYWJlbDoiZSIsIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP0xDLCAnVj9PTCA8LSAnVj9DLCAnUj9PTCA8LSAnWD9DXSwgU3ViamVjdDonVj9DKTsKICAgICAgICAKICAgICAgICBmMz8xZiA6PSBGb3JtdWxhKGYzPzEsIExhYmVsOiJmIiwgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/UiwgJ1Y/T0wgPC0gJ1Y/UiwgJ1I/T0wgPC0gJ1I/Ul0sIFN1YmplY3Q6J1Y/Uik7CiAgICAgICAgCiAgICAgICAgZjE0PzEzIDo9IEZvcm11bGEoST9UfkEgPT0gU3FydChJP0xDfkFeMiArIEk/Un5BXjIpLCBMYWJlbDoiMTQuMTMiLCBQYWdlOiI0NDQiLCBEZXNjcmlwdGlvbjoiUGFyYWxsZWwuIik7CiAgICAgIAogICAgICAgIGYxND8xNCA6PSBGb3JtdWxhKM+0P0k/VH5yYWQgPT0gQXJjVGFuKEk/TEN+QS9JP1J+QSksIExhYmVsOiIxNC4xNCIsIFBhZ2U6IjQ0NCIsIERlc2NyaXB0aW9uOiJQYXJhbGxlbC4iKTsgIAogICAgfQogICAgCiAgICBWP1MgOj0gMn5WOwogICAgUj9SIDo9IDMzMH7OqTsKICAgIEw/TCA6PSAyMn5tSDsKICAgIEM/QyA6PSAuMX7OvEY7CiAgICBmP2YgOj0gMn5rSHo7CiAgICAKICAgIFg/TCA6PSBFdmFsdWF0ZUZvcm11bGEoZjEwPzE0LCDOqSk7CiAgICAKICAgIFg/QyA6PSBFdmFsdWF0ZUZvcm11bGEoZjEyPzExLCDOqSk7CiAgICAKICAgIC8qCiAgICAvLyBFeGFtcGxlIDE0LjYgcC40NTIKICAgIFg/TCA6PSAxfmvOqTsKICAgIFg/QyA6PSA1fmvOqTsKICAgIFI/UiA6PSAzfmvOqTsKICAgIFY/UyA6PSAxMn5WOwogICAgKi8KICAgIAogICAgWD9TIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/Miwga86pKTsKICAgIAogICAgz7Q/WD9TIDo9IExDU2VyaWVzUGhhc2UoWD9MLCBYP0MpOwogICAgCiAgICBJP0xDIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYSwgbUEpOwogICAgCiAgICBJP1IgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFiLCBtQSk7CiAgICAKICAgIEk/VCA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEzKTsKICAgIAogICAgz7Q/ST9UIDo9IEV2YWx1YXRlRm9ybXVsYShmMTQ/MTQsIGRlZyk7IC8vdG9kbzp0azp0aGUgc2lnbiBvZiB0aGUgcmVzdWx0IGlzIG5vdCBoYW5kbGVkIGNvcnJlY3RseS4KICAgIAogICAgVj9TMiA6PSBWP1Mg4oigIDB+ZGVnOwogICAgCiAgICBJP1QyIDo9IEk/VCDiiKAgz7Q/ST9UOwogICAgCiAgICBaP1QgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFjLCDOqSk7CiAgICAKICAgIFY/TCA6PSBFdmFsdWF0ZUZvcm11bGEoZjM/MWQsIFYpOwogICAgCiAgICBWP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFlLCBWKTsKICAgIAogICAgVj9SIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xZiwgVik7Cn0KCg==");
+
+%/mathpiper
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+%mathpiper,name="Problem 31",subtype="problem",unassign_all="true",globalStateShow="true"
+
+ProblemSolution([I?LC, I?R, I?T, ϴ?I?T, V?L, V?C, V?R, Z?T])
+{
+    Formulas()
+    {
+        f10?14 := Formula(X?L~Ω == 2*Pi*f?f~Hz*L?L~H, Label:"10.14", Page:"302");
+        f12?11 := Formula(X?C~Ω == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");
+        f14?2 := Formula(X?S~Ω == X?L~Ω - X?C~Ω, Label:"14.2", Page:"426", Description:"Series.");
+        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~Ω, Label:"3.1", Page:"78");
+        f3?1a := Formula(f3?1, Label:"a", Page:"78", Substitutions: ['I?OL <- 'I?LC, 'V?OL <- 'V?S, 'R?OL <- 'X?S]);
+        f3?1b := Formula(f3?1, Label:"b", Page:"78", Substitutions: ['I?OL <- 'I?R, 'V?OL <- 'V?S, 'R?OL <- 'R?R]);
+        f3?1c := Formula(f3?1, Label:"c", Page:"78", Substitutions: ['I?OL <- 'I?T2, 'V?OL <- 'V?S2, 'R?OL <- 'Z?T], Subject: 'Z?T);
+        f3?1d := Formula(f3?1, Label:"d", Page:"78", Substitutions: ['I?OL <- 'I?LC, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);
+        f3?1e := Formula(f3?1, Label:"e", Page:"78", Substitutions: ['I?OL <- 'I?LC, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);
+        f3?1f := Formula(f3?1, Label:"f", Page:"78", Substitutions: ['I?OL <- 'I?R, 'V?OL <- 'V?R, 'R?OL <- 'R?R], Subject: 'V?R);
+        f14?13 := Formula(I?T~A == Sqrt(I?LC~A^2 + I?R~A^2), Label:"14.13", Page:"444", Description:"Parallel.");
+        f14?14 := Formula(ϴ?I?T~rad == ArcTan(I?LC~A/I?R~A), Label:"14.14", Page:"444", Description:"Parallel.");
+    }
+
+    Givens()
+    {
+        V?S := 2~V;
+        R?R := 330~Ω;
+        L?L := 22~mH;
+        C?C := .1~μF;
+        f?f := 2~kHz;
+    }
+    
+    X?L := EvaluateFormula(f10?14, Ω);
+    
+    X?C := EvaluateFormula(f12?11, kΩ);
+    
+    X?S := EvaluateFormula(f14?2, kΩ);
+    
+    ϴ?X?S := LCSeriesPhase(X?L, X?C);
+    
+    I?LC := EvaluateFormula(f3?1a, mA);
+    
+    I?R := EvaluateFormula(f3?1b, mA);
+    
+    I?T := EvaluateFormula(f14?13);
+    
+    ϴ?I?T := EvaluateFormula(f14?14, degree);
+    
+    Givens()
+    {
+        V?S2 := V?S ∠ 0~deg;    
+        I?T2 := I?T ∠ ϴ?I?T;
+    }
+    
+    Z?T := EvaluateFormula(f3?1c, Ω);
+    
+    V?L := EvaluateFormula(f3?1d, V);
+    
+    V?C := EvaluateFormula(f3?1e, V);
+    
+    V?R := EvaluateFormula(f3?1f, V);
+}
+
+%/mathpiper
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: 2~V
+      
+      Side Effects:
+      === ASKED-FOR VALUES ===
+      I?LC: (-3.851230349)~mA
+      I?R: 6.060606061~mA
+      I?T: 7.1807326245~mA
+      ϴ?I?T: (-32.43404051)~degree
+      V?L: (-1.064711734)~V
+      V?C: (-3.064711734)~V
+      V?R: 2~V
+      Z?T: 278.5231124~Ω ∠ 32.43404051~deg
+      
+      === FORMULAS (2D VIEW) ===
+      /                                                                  \
+      | ( 10.14 ) ( X?L == 2 * Pi * f?f * L?L )   ( No Transformation )  |
+      |                                                                  |
+      | ( 12.11 ) /                1          \   ( No Transformation )  |
+      |           | X?C == ------------------ |                          |
+      |           \        2 * Pi * f?f * C?C /                          |
+      |                                                                  |
+      | ( 14.2 )  ( X?S == X?L - X?C )            ( No Transformation )  |
+      |                                                                  |
+      | ( 3.1 )   /         V?OL \                ( No Transformation )  |
+      |           | I?OL == ---- |                                       |
+      |           \         R?OL /                                       |
+      |                                                                  |
+      | ( 3.1a )  /         V?OL \                /         V?S \        |
+      |           | I?OL == ---- |                | I?LC == --- |        |
+      |           \         R?OL /                \         X?S /        |
+      |                                                                  |
+      | ( 3.1b )  /         V?OL \                /        V?S \         |
+      |           | I?OL == ---- |                | I?R == --- |         |
+      |           \         R?OL /                \        R?R /         |
+      |                                                                  |
+      | ( 3.1c )  /         V?OL \                /        V?S2 \        |
+      |           | I?OL == ---- |                | Z?T == ---- |        |
+      |           \         R?OL /                \        I?T2 /        |
+      |                                                                  |
+      | ( 3.1d )  /         V?OL \                ( V?L == I?LC * X?L )  |
+      |           | I?OL == ---- |                                       |
+      |           \         R?OL /                                       |
+      |                                                                  |
+      | ( 3.1e )  /         V?OL \                ( V?C == I?LC * X?C )  |
+      |           | I?OL == ---- |                                       |
+      |           \         R?OL /                                       |
+      |                                                                  |
+      | ( 3.1f )  /         V?OL \                ( V?R == I?R * R?R )   |
+      |           | I?OL == ---- |                                       |
+      |           \         R?OL /                                       |
+      |                                                                  |
+      | ( 14.13 ) /            /     2      2 \ \ ( No Transformation )  |
+      |           \ I?T == Sqrt\ I?LC  + I?R  / /                        |
+      |                                                                  |
+      | ( 14.14 ) /                / I?LC \ \     ( No Transformation )  |
+      |           | ϴ?I?T == ArcTan| ---- | |                            |
+      |           \                \ I?R  / /                            |
+      \                                                                  /
+      
+      === STEPS (CODE VIEW) ===
+       1: (10.14) X?L == 2*Pi*f?f*L?L
+       2: (12.11) X?C == 1/(2*Pi*f?f*C?C)
+       3: (14.2) X?S == X?L - X?C
+       4: (3.1) I?OL == V?OL/R?OL
+       5: (3.1a) I?OL == V?OL/R?OL ==> I?LC == V?S/X?S
+       6: (3.1b) I?OL == V?OL/R?OL ==> I?R == V?S/R?R
+       7: (3.1c) I?OL == V?OL/R?OL ==> Z?T == V?S2/I?T2
+       8: (3.1d) I?OL == V?OL/R?OL ==> V?L == I?LC*X?L
+       9: (3.1e) I?OL == V?OL/R?OL ==> V?C == I?LC*X?C
+      10: (3.1f) I?OL == V?OL/R?OL ==> V?R == I?R*R?R
+      11: (14.13) I?T == Sqrt(I?LC^2 + I?R^2)
+      12: (14.14) ϴ?I?T == ArcTan(I?LC/I?R)
+      13: V?S := 2~V ==> 2~V
+      14: R?R := 330~Ω ==> 330~Ω
+      15: L?L := 22~mH ==> 22~mH
+      16: C?C := .1~μF ==> .1~μF
+      17: f?f := 2~kHz ==> 2~kHz
+      18: X?L := EvaluateFormula(f10?14, Ω) ==> 276.4601536~Ω
+      19: X?C := EvaluateFormula(f12?11, kΩ) ==> 0.7957747151~kΩ
+      20: X?S := EvaluateFormula(f14?2, kΩ) ==> (-0.5193145615)~kΩ
+      21: ϴ?X?S := LCSeriesPhase(X?L, X?C) ==> (-90)~deg
+      22: I?LC := EvaluateFormula(f3?1a, mA) ==> (-3.851230349)~mA
+      23: I?R := EvaluateFormula(f3?1b, mA) ==> 6.060606061~mA
+      24: I?T := EvaluateFormula(f14?13) ==> 7.1807326245~mA
+      25: ϴ?I?T := EvaluateFormula(f14?14, degree) ==> (-32.43404051)~degree
+      26: V?S2 := V?S ∠ 0~deg ==> 2~V ∠ 0~deg
+      27: I?T2 := I?T ∠ ϴ?I?T ==> 7.1807326245~mA ∠ (-32.43404051)~degree
+      28: Z?T := EvaluateFormula(f3?1c, Ω) ==> 278.5231124~Ω ∠ 32.43404051~deg
+      29: V?L := EvaluateFormula(f3?1d, V) ==> (-1.064711734)~V
+      30: V?C := EvaluateFormula(f3?1e, V) ==> (-3.064711734)~V
+      31: V?R := EvaluateFormula(f3?1f, V) ==> 2~V
+      
+      
+.   %/output
+
+
+
+
+
+%mathpiper_grade,name="Problem 31"
+
+{    FoldGrade("MathPiper version >= 282", 1, True)    {        StringToNumber(Version()) >=? 282;    }
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)    {        ExceptionCatch( PipeToString() Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;    }
+
+    FoldGrade("Formula (10.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?L_ == (((2*Pi)*f?f_)*L?L_)))) !=? []);
+    }
+
+    FoldGrade("Formula (12.11) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?C_ == (1/(((2*Pi)*f?f_)*C?C_))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.2) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(X?S_ == (X?L_ - X?C_)))) !=? []);
+    }
+
+    FoldGrade("Formula (3.1) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?OL_ == (V?OL_/R?OL_)))) !=? []);
+    }
+
+    FoldGrade("Formula (14.13) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(I?T_ == Sqrt(((I?LC_^2) + (I?R_^2)))))) !=? []);
+    }
+
+    FoldGrade("Formula (14.14) is used", 1, False)
+    {
+        (PositionsPattern2(UnitsStrip(?foldCode), ( '(ϴ?I?T_ == ArcTan((I?LC_/I?R_))))) !=? []);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?LC", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?LC, (-3.851230349)~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?R", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?R, 6.060606061~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(I?T, 7.1807326245~mA), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "ϴ?I?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(ϴ?I?T, (-32.43404051)~deg), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?L", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?L, (-1.064711734)~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?C", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?C, (-3.064711734)~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "V?R", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(V?R, 2~V), "", ExceptionGet()["message"]);
+    }
+
+    FoldGrade("A correct value is assigned to " + "Z?T", 1, False)
+    {
+        ExceptionCatch(UnitsEqual?(Z?T, 278.5231124~Ω ∠ 32.43404051~deg), "", ExceptionGet()["message"]);
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 31",mpversion="286",preserve="false"
+      Result: True
+      
+      Side Effects:
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used to assign a value to a variable. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: MathPiper version >= 282. (1/1)
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: Formula (10.14) is used. (1/1)
+        PASS: Formula (12.11) is used. (1/1)
+        PASS: Formula (14.2) is used. (1/1)
+        PASS: Formula (3.1) is used. (1/1)
+        PASS: Formula (14.13) is used. (1/1)
+        PASS: Formula (14.14) is used. (1/1)
+        PASS: A correct value is assigned to I?LC. (1/1)
+        PASS: A correct value is assigned to I?R. (1/1)
+        PASS: A correct value is assigned to I?T. (1/1)
+        PASS: A correct value is assigned to ϴ?I?T. (1/1)
+        PASS: A correct value is assigned to V?L. (1/1)
+        PASS: A correct value is assigned to V?C. (1/1)
+        PASS: A correct value is assigned to V?R. (1/1)
+        PASS: A correct value is assigned to Z?T. (1/1)
+      
+        21/21 passes
+.   %/output
+
+%/group
+
+

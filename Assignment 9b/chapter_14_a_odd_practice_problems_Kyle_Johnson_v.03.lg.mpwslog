@@ -1,0 +1,125 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="1",timestamp="2019-04-05 14:21:01.255",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="2",timestamp="2019-04-05 14:21:07.088",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="3",timestamp="2019-04-05 14:24:29.872",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9TLCDPtD9WP1NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzEgOj0gRm9ybXVsYShWP1N+ViA9PSBWP0x+ViAtIFY/Q35WLCBMYWJlbDoiMTQuMSIsIFBhZ2U6IjQyNCIpOwogICAgfQogICAgCiAgICBWP0wgOj0gMTB+VjsKICAgIAogICAgVj9DIDo9IDN+VjsKICAgIAogICAgVj9TIDo9IEFicyhFdmFsdWF0ZUZvcm11bGEoZjE0PzEpKTsKICAgIAogICAgz7Q/Vj9TIDo9IExDU2VyaWVzUGhhc2UoVj9MLCBWP0MpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="4",timestamp="2019-04-05 14:30:05.9",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([V?S, ??V?S])¶{¶    Formulas()¶    {¶        f14?1 := Formula(V?S~V == V?L~V - V?C~V, Label:"14.1", Page:"424", Description:"Series.");¶    }¶    ¶    V?L := 10~V;¶    ¶    V?C := 3~V;¶    ¶    V?S := Abs(EvaluateFormula(f14?1));¶    ¶    ??V?S := LCSeriesPhase(V?L, V?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="5",timestamp="2019-04-05 14:30:12.553",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="6",timestamp="2019-04-05 14:30:21.231",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9TLCDPtD9YP1NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIpOwogICAgfQogICAgCiAgICBYP0wgOj0gMzAwfs6pOwogICAgCiAgICBYP0MgOj0gMTgwfs6pOwogICAgCiAgICBYP1MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxND8yKTsKICAgIAogICAgz7Q/WD9TIDo9IExDU2VyaWVzUGhhc2UoWD9MLCBYP0MpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="7",timestamp="2019-04-05 14:32:32.496",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([X?S, ??X?S])¶{¶    Formulas()¶    {¶        f14?2 := Formula(X?S~? == X?L~? - X?C~?, Label:"14.2", Page:"426", Description:"Series.");¶    }¶    ¶    X?L := 300~?;¶    ¶    X?C := 180~?;¶    ¶    X?S := EvaluateFormula(f14?2);¶    ¶    ??X?S := LCSeriesPhase(X?L, X?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 3",sequence="8",timestamp="2019-04-05 14:32:36.527",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 5",sequence="9",timestamp="2019-04-05 14:32:47.391",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9TLCDPtD9YP1NdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzIgOj0gRm9ybXVsYShYP1N+zqkgPT0gWD9Mfs6pIC0gWD9Dfs6pLCBMYWJlbDoiMTQuMiIsIFBhZ2U6IjQyNiIpOwogICAgfQogICAgCiAgICBYP0wgOj0gMX5rzqk7CiAgICAKICAgIFg/QyA6PSA2MDB+zqk7CiAgICAKICAgIFg/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzIsIM6pKTsKICAgIAogICAgz7Q/WD9TIDo9IExDU2VyaWVzUGhhc2UoWD9MLCBYP0MpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="10",timestamp="2019-04-05 14:35:14.547",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([X?S, ??X?S])¶{¶    Formulas()¶    {¶        f14?2 := Formula(X?S~? == X?L~? - X?C~?, Label:"14.2", Page:"426", Description:"Series.");¶    }¶    ¶    X?L := 1~k?;¶    ¶    X?C := 600~ ?;¶    ¶    X?S := EvaluateFormula(f14?2, ?);¶    ¶    ??X?S := LCSeriesPhase(X?L, X?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 5",sequence="11",timestamp="2019-04-05 14:35:28.221",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 7",sequence="12",timestamp="2019-04-05 14:35:41.683",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9MLCBWP0MsIFY/Uywgz7Q/Vj9TXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYzPzEgOj0gRm9ybXVsYShJP09MfkEgPT0gVj9PTH5WL1I/T0x+zqksIExhYmVsOiIzLjEiLCBQYWdlOiI3OCIpOwoKICAgICAgICBmMz8xYSA6PSBGb3JtdWxhKGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJhIiwgCiAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0wsICdSP09MIDwtICdYP0xdLAogICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP0wpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMz8xYiA6PSBGb3JtdWxhKGYzPzEsCiAgICAgICAgICAgICAgICAgICAgICAgIExhYmVsOiJiIiwgCiAgICAgICAgICAgICAgICAgICAgICAgIFN1YnN0aXR1dGlvbnM6WydJP09MIDwtICdJP1QsICdWP09MIDwtICdWP0MsICdSP09MIDwtICdYP0NdLAogICAgICAgICAgICAgICAgICAgICAgICBTdWJqZWN0OidWP0MpOwogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICBmMTQ/MSA6PSBGb3JtdWxhKFY/U35WID09IFY/TH5WIC0gVj9DflYsIExhYmVsOiIxNC4xIiwgUGFnZToiNDI0Iik7CiAgICB9CiAgICAKICAgIFg/TCA6PSA4MH5vaG07CiAgICAKICAgIFg/QyA6PSA1NX7OqTsKICAgIAogICAgST9UIDo9IDUwfm1BOwogICAgCiAgICBWP0wgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCBWKTsKICAgIAogICAgVj9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYiwgVik7CiAgICAKICAgIFY/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEpOwogICAgCiAgICDPtD9WP1MgOj0gTENTZXJpZXNQaGFzZShWP0wsIFY/Qyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="13",timestamp="2019-04-05 15:19:23.462",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([V?L, V?C, V?S, ??V?S])¶{¶    Formulas()¶    {¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);¶        ¶        f? := Formula(f3?1, Label:"b", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?L);¶        ¶        f14?1 := Formula(V?S~V == V?L~V - V?C~V, Label:"14.1", Page:"424", Description:"Series.");¶    }¶    ¶    X?L := 80~?;¶    ¶    X?C := 55~?;¶    ¶    I?T := 50~mA;¶    ¶    V?L := EvaluateFormula(f3?1a, V);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?S := EvaluateFormula(f14?1);¶    ¶    ??V?S := LCSeriesPhase(V?L, V?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="14",timestamp="2019-04-05 15:20:42.908",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([V?L, V?C, V?S, ??V?S])¶{¶    Formulas()¶    {¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);¶        ¶        f? := Formula(f3?1, Label:"b", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        ¶        f14?1 := Formula(V?S~V == V?L~V - V?C~V, Label:"14.1", Page:"424", Description:"Series.");¶    }¶    ¶    X?L := 80~?;¶    ¶    X?C := 55~?;¶    ¶    I?T := 50~mA;¶    ¶    V?L := EvaluateFormula(f3?1a, V);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?S := EvaluateFormula(f14?1);¶    ¶    ??V?S := LCSeriesPhase(V?L, V?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="15",timestamp="2019-04-05 15:21:02.803",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([V?L, V?C, V?S, ??V?S])¶{¶    Formulas()¶    {¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        ¶        f14?1 := Formula(V?S~V == V?L~V - V?C~V, Label:"14.1", Page:"424", Description:"Series.");¶    }¶    ¶    X?L := 80~?;¶    ¶    X?C := 55~?;¶    ¶    I?T := 50~mA;¶    ¶    V?L := EvaluateFormula(f3?1a, V);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?S := EvaluateFormula(f14?1);¶    ¶    ??V?S := LCSeriesPhase(V?L, V?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 7",sequence="16",timestamp="2019-04-05 15:21:09.291",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 9",sequence="17",timestamp="2019-04-05 15:21:50.488",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbVj9MLCBWP0MsIFY/Uywgz7Q/Vj9TXSkKewogICAgRm9ybXVsYXMoKQogICAgeyAgIAogICAgICAgIGYxMD8xNCA6PSBGb3JtdWxhKFg/TH7OqSA9PSAyICogUGkgKiBmP2Z+SHogKiBMP0x+SCwgTGFiZWw6IjEwLjE0IiwgUGFnZToiMzAyIik7CiAgICAgICAgCiAgICAgICAgZjEyPzExIDo9IEZvcm11bGEoWD9Dfs6pID09IDEvKDIgKiBQaSAqIGY/Zn5IeiAqIEM/Q35GKSwgTGFiZWw6IjEyLjExIiwgUGFnZToiMzc3Iik7CiAgICAgICAgCiAgICAgICAgZjM/MSA6PSBGb3JtdWxhKEk/T0x+QSA9PSBWP09MflYvUj9PTH7OqSwgTGFiZWw6IjMuMSIsIFBhZ2U6Ijc4Iik7CgogICAgICAgIGYzPzFhIDo9IEZvcm11bGEoZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImEiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/TCwgJ1I/T0wgPC0gJ1g/TF0sCiAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/TCk7CiAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYzPzFiIDo9IEZvcm11bGEoZjM/MSwKICAgICAgICAgICAgICAgICAgICAgICAgTGFiZWw6ImIiLCAKICAgICAgICAgICAgICAgICAgICAgICAgU3Vic3RpdHV0aW9uczpbJ0k/T0wgPC0gJ0k/VCwgJ1Y/T0wgPC0gJ1Y/QywgJ1I/T0wgPC0gJ1g/Q10sCiAgICAgICAgICAgICAgICAgICAgICAgIFN1YmplY3Q6J1Y/Qyk7CiAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgIGYxND8xIDo9IEZvcm11bGEoVj9TflYgPT0gVj9MflYgLSBWP0N+ViwgTGFiZWw6IjE0LjEiLCBQYWdlOiI0MjQiKTsKICAgIH0KICAgIAogICAgZj9mIDo9IDF+a0h6OwogICAgCiAgICBMP0wgOj0gNDd+bUg7CiAgICAKICAgIEM/QyA6PSAxfs68RjsKICAgIAogICAgWD9MIDo9IEV2YWx1YXRlRm9ybXVsYShmMTA/MTQpOwogICAgCiAgICBYP0MgOj0gRXZhbHVhdGVGb3JtdWxhKGYxMj8xMSk7CiAgICAKICAgIEk/VCA6PSA4fm1BOwogICAgCiAgICBWP0wgOj0gRXZhbHVhdGVGb3JtdWxhKGYzPzFhLCBWKTsKICAgIAogICAgVj9DIDo9IEV2YWx1YXRlRm9ybXVsYShmMz8xYiwgVik7CiAgICAKICAgIFY/UyA6PSBFdmFsdWF0ZUZvcm11bGEoZjE0PzEpOwogICAgCiAgICDPtD9WP1MgOj0gTENTZXJpZXNQaGFzZShWP0wsIFY/Qyk7Cn0KCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="18",timestamp="2019-04-05 15:25:58.405",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([V?L, V?C, V?S, ??V?S])¶{¶    Formulas()¶    {¶        f10?14 := Formula(X?L~? == 2*Pi*f?f~Hz*L?L~H, Label:"10.14", Page:"302");¶        ¶        f12?11 := Formula(X?C~? == 1/(2*Pi*f?f~Hz*C?C~F), Label:"12.11", Page:"377");¶        ¶        f3?1 := Formula(I?OL~A == V?OL~V/R?OL~?, Label:"3.1", Page:"78");¶        ¶        f3?1a := Formula(f3?1, Label:"a", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?L, 'R?OL <- 'X?L], Subject: 'V?L);¶        ¶        f3?1b := Formula(f3?1, Label:"b", Substitutions:['I?OL <- 'I?T, 'V?OL <- 'V?C, 'R?OL <- 'X?C], Subject: 'V?C);¶        ¶        f14?1 := Formula(V?S~V == V?L~V - V?C~V, Label:"14.1", Page:"424", Description:"Series.");¶    }¶    ¶    f?f := 1~kHz;¶    ¶    L?L := 47~mH;¶    ¶    C?C := 1~?F;¶    ¶    X?L := EvaluateFormula(f10?14);¶    ¶    X?C := EvaluateFormula(f12?11);¶    ¶    I?T := 8~mA;¶    ¶    V?L := EvaluateFormula(f3?1a, V);¶    ¶    V?C := EvaluateFormula(f3?1b, V);¶    ¶    V?S := EvaluateFormula(f14?1);¶    ¶    ??V?S := LCSeriesPhase(V?L, V?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 9",sequence="19",timestamp="2019-04-05 15:26:05.135",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 11",sequence="20",timestamp="2019-04-05 15:40:14.921",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbST9ULCDPtD9JP1RdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzMgOj0gRm9ybXVsYShJP1R+QSA9PSBJP0N+QSAtIEk/TH5BLCBMYWJlbDoiMTQuMyIsIFBhZ2U6IjQyOCIsIERlc2NyaXB0aW9uOiJQYXJhbGxlbC4iKTsKICAgIH0KICAgIAogICAgST9MIDo9IDU2fm1BOwogICAgCiAgICBJP0MgOj0gOX5tQTsKICAgIAogICAgST9UIDo9IEFicyhFdmFsdWF0ZUZvcm11bGEoZjE0PzMpKTsKCiAgICDPtD9JP1QgOj0gTENQYXJhbGxlbFBoYXNlKEk/TCwgST9DKTsKfQoK");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 11",sequence="21",timestamp="2019-04-05 15:43:34.112",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([I?T, ??I?T])¶{¶    Formulas()¶    {¶        f14?3 := Formula(I?T~A == I?C~A - I?L~A, Label:"14.3", Page:"428", Description:"Parallel.");¶    }¶    ¶    I?L := 56~mA;¶    ¶    I?C := 9~mA;¶    ¶    I?T := Abs(EvaluateFormula(f14?3));¶    ¶    ??I?T := LCParallelPhase(I?L, I?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 11",sequence="22",timestamp="2019-04-05 15:43:43.217",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 13",sequence="23",timestamp="2019-04-05 15:43:51.249",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶Hint("ClByb2JsZW1Tb2x1dGlvbihbWD9QLCDPtD9YP1BdKQp7CiAgICBGb3JtdWxhcygpCiAgICB7ICAgCiAgICAgICAgZjE0PzUgOj0gRm9ybXVsYShYP1B+zqkgPT0gKFg/TH7OqSAqIC1YP0N+zqkpLyhYP0x+zqkgKyAtWD9Dfs6pKSwgTGFiZWw6IjE0LjUiLCBQYWdlOiI0MzAiLCBEZXNjcmlwdGlvbjoiUGFyYWxsZWwuIik7CiAgICB9CiAgICAKICAgIFg/TCA6PSAzMDB+zqk7CiAgICAKICAgIFg/QyA6PSAxODB+zqk7CiAgICAKICAgIFg/UCA6PSBBYnMoRXZhbHVhdGVGb3JtdWxhKGYxND81LCDOqSkpOyAvL3RvZG86dGs6c2hvdWxkIHRoZSBBYnMgYmUgdXNlZCBoZXJlIG9yIHBsYWNlZCBpbnRvIHRoZSBmb3JtdWxhPwoKICAgIM+0P1g/UCA6PSBMQ1BhcmFsbGVsUGhhc2UoWD9MLCBYP0MpOwp9Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 13",sequence="24",timestamp="2019-04-05 15:45:54.254",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+¶ProblemSolution([X?P, ??X?P])¶{¶    Formulas()¶    {¶        f14?5 := Formula(X?P~? == (X?L~? * -X?C~?)/(X?L~? + -X?C~?), Label:"14.5", Page:"430", Description:"Parallel.");¶    }¶    ¶    X?L := 300~?;¶    ¶    X?C := 180~?;¶    ¶    X?P := Abs(EvaluateFormula(f14?5, ?));¶    ¶    ??X?P := LCParallelPhase(X?L, X?C);¶}
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 13",sequence="25",timestamp="2019-04-05 15:46:02.744",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion="281"
+Not logged.
+
+%/info
+

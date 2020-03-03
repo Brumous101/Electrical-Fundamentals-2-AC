@@ -1,0 +1,265 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="11",timestamp="2019-01-23 20:43:34.223",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="12",timestamp="2019-01-23 20:43:38.657",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",sequence="13",timestamp="2019-01-24 11:37:01.789",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Capacitor_1 256 67 256 162 9.999999999999999E-6¶VoltageSource_1 162 67 162 162 5.0¶Wire_1 256 162 382 162¶Resistor_1 162 67 256 67 1000.0¶Voltmeter_2 382 67 382 162¶Wire_2 256 67 382 67¶Ammeter_4 162 162 256 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="14",timestamp="2019-01-24 11:37:20.436",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="15",timestamp="2019-01-24 11:37:31.05",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",sequence="16",timestamp="2019-01-24 11:52:53.895",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Capacitor_1 256 67 256 162 9.999999999999999E-6¶VoltageSource_1 162 67 162 162 5.0¶Wire_1 256 162 382 162¶Resistor_1 162 67 256 67 1000.0¶Voltmeter_2 382 67 382 162¶Wire_2 256 67 382 67¶Ammeter_4 162 162 256 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="17",timestamp="2019-01-24 12:08:09.6",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 162 67 162 162 11.0¶Resistor_2 319 36 319 130 22.0¶Resistor_3 319 130 319 225 33.0¶Wire_3 162 36 162 67¶Wire_4 319 36 162 36¶Wire_5 162 225 162 162¶Wire_6 162 225 319 225¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="18",timestamp="2019-01-24 12:09:01.848",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="19",timestamp="2019-01-24 12:10:49.49",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="20",timestamp="2019-01-24 12:40:11.84",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 351 36 351 67 1500.0¶Resistor_2 351 130 351 162 11000.0¶VoltageSource_1 193 67 193 99 5.0¶Wire_1 193 67 193 4¶Wire_2 193 4 351 4¶Wire_3 351 4 351 36¶Wire_4 351 67 351 130¶Wire_5 351 162 193 162¶Wire_6 193 162 193 99¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="21",timestamp="2019-01-24 12:40:19.628",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 351 36 351 67 1500.0¶Resistor_2 351 130 351 162 11000.0¶VoltageSource_1 193 67 193 99 5.0¶Wire_1 193 67 193 4¶Wire_2 193 4 351 4¶Wire_3 351 4 351 36¶Wire_4 351 67 351 130¶Wire_5 351 162 193 162¶Wire_6 193 162 193 99¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="22",timestamp="2019-01-24 12:40:24.541",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 351 36 351 67 1500.0¶Resistor_2 351 130 351 162 11000.0¶VoltageSource_1 193 67 193 99 5.0¶Wire_1 193 67 193 4¶Wire_2 193 4 351 4¶Wire_3 351 4 351 36¶Wire_4 351 67 351 130¶Wire_5 351 162 193 162¶Wire_6 193 162 193 99¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="23",timestamp="2019-01-24 12:40:42.809",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="24",timestamp="2019-01-24 12:42:37.364",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 382 67 445 67 51.0¶Resistor_2 477 99 477 162 39.0¶Resistor_3 477 225 477 288 10.0¶VoltageSource_1 351 130 351 225 1.0¶Wire_1 351 130 351 67¶Wire_2 351 67 382 67¶Wire_3 445 67 477 67¶Wire_4 477 67 477 99¶Wire_5 477 162 477 225¶Wire_6 477 288 477 319¶Wire_7 477 319 351 319¶Wire_8 351 319 351 225¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="25",timestamp="2019-01-24 12:42:51.986",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper();
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="26",timestamp="2019-01-24 12:44:53.928",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 288 99 288 162 8.0¶Resistor_1 319 36 351 36 220.0¶Resistor_2 382 67 382 99 270.0¶Resistor_3 382 130 382 162 470.0¶Resistor_4 351 193 319 193 360.0¶Wire_1 288 99 288 36¶Wire_2 288 36 319 36¶Wire_3 351 36 382 36¶Wire_4 382 36 382 67¶Wire_5 382 99 382 130¶Wire_6 382 162 382 193¶Wire_7 382 193 351 193¶Wire_8 319 193 288 193¶Wire_9 288 193 288 162¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="27",timestamp="2019-01-24 12:45:07.059",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 288 99 288 162 8.0¶Resistor_1 319 36 351 36 220.0¶Resistor_2 382 67 382 99 270.0¶Resistor_3 382 130 382 162 470.0¶Resistor_4 351 193 319 193 360.0¶Wire_1 288 99 288 36¶Wire_2 288 36 319 36¶Wire_3 351 36 382 36¶Wire_4 382 36 382 67¶Wire_5 382 99 382 130¶Wire_6 382 162 382 193¶Wire_7 382 193 351 193¶Wire_8 319 193 288 193¶Wire_9 288 193 288 162¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="28",timestamp="2019-01-24 12:45:21.595",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 288 99 288 162 8.0¶Resistor_1 319 36 351 36 220.0¶Resistor_2 382 67 382 99 270.0¶Resistor_3 382 130 382 162 470.0¶Resistor_4 351 193 319 193 360.0¶Wire_1 288 99 288 36¶Wire_2 288 36 319 36¶Wire_3 351 36 382 36¶Wire_4 382 36 382 67¶Wire_5 382 99 382 130¶Wire_6 382 162 382 193¶Wire_7 382 193 351 193¶Wire_8 319 193 288 193¶Wire_9 288 193 288 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="29",timestamp="2019-01-24 12:45:37.353",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(Netl/ist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="30",timestamp="2019-01-24 12:45:43.15",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="31",timestamp="2019-01-24 12:45:52.828",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="32",timestamp="2019-01-24 12:45:59.349",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="33",timestamp="2019-01-24 12:50:22.777",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 12000.0¶Resistor_2 288 193 288 256 1200.0¶Voltmeter_2 288 162 382 162¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_3 288 99 288 162¶Wire_4 288 162 288 193¶Wire_7 382 162 382 288¶Wire_9 288 288 288 256¶Wire_10 288 288 193 288¶Wire_11 193 288 193 225¶Wire_13 288 288 382 288¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="34",timestamp="2019-01-24 12:51:35.894",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 12000.0¶Resistor_2 288 193 288 256 1200.0¶Voltmeter_2 288 162 382 162¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_3 288 99 288 162¶Wire_4 288 162 288 193¶Wire_7 382 162 382 288¶Wire_9 288 288 288 256¶Wire_10 288 288 193 288¶Wire_11 193 288 193 225¶Wire_13 288 288 382 288¶";¶¶Voltmeter := 818mV¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="35",timestamp="2019-01-24 12:54:11.413",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 12000.0¶Resistor_2 288 193 288 256 1200.0¶Voltmeter_2 288 162 382 162¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_3 288 99 288 162¶Wire_4 288 162 288 193¶Wire_7 382 162 382 288¶Wire_9 288 288 288 256¶Wire_10 288 288 193 288¶Wire_11 193 288 193 225¶Wire_13 288 288 382 288¶";¶¶//Voltmeter = 818mV¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 5",sequence="36",timestamp="2019-01-24 12:54:21.452",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 12000.0¶Resistor_2 288 193 288 256 1200.0¶Voltmeter_2 288 162 382 162¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_3 288 99 288 162¶Wire_4 288 162 288 193¶Wire_7 382 162 382 288¶Wire_9 288 288 288 256¶Wire_10 288 288 193 288¶Wire_11 193 288 193 225¶Wire_13 288 288 382 288¶";¶¶//Voltmeter = 818mV¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",sequence="37",timestamp="2019-01-24 12:54:49.33",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Capacitor_1 256 67 256 162 9.999999999999999E-6¶VoltageSource_1 162 67 162 162 5.0¶Wire_1 256 162 382 162¶Resistor_1 162 67 256 67 1000.0¶Voltmeter_2 382 67 382 162¶Wire_2 256 67 382 67¶Ammeter_4 162 162 256 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="38",timestamp="2019-01-24 12:56:13.764",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 162 67 162 162 11.0¶Resistor_2 319 36 319 130 22.0¶Resistor_3 319 130 319 225 33.0¶Wire_3 162 36 162 67¶Wire_4 319 36 162 36¶Wire_5 162 225 162 162¶Wire_6 162 225 319 225¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="39",timestamp="2019-01-24 12:59:08.575",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 351 36 351 67 1500.0¶Resistor_2 351 130 351 162 11000.0¶VoltageSource_1 193 67 193 99 5.0¶Wire_1 193 67 193 4¶Wire_2 193 4 351 4¶Wire_3 351 4 351 36¶Wire_4 351 67 351 130¶Wire_5 351 162 193 162¶Wire_6 193 162 193 99¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="40",timestamp="2019-01-24 13:01:01.856",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 351 36 351 67 1500.0¶Resistor_2 351 130 351 162 11000.0¶VoltageSource_1 193 67 193 99 5.0¶Wire_1 193 67 193 4¶Wire_2 193 4 351 4¶Wire_3 351 4 351 36¶Wire_4 351 67 351 130¶Wire_5 351 162 193 162¶Wire_6 193 162 193 99¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="41",timestamp="2019-01-24 13:02:00.498",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="42",timestamp="2019-01-24 13:05:10.609",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 382 67 445 67 51.0¶Resistor_2 477 99 477 162 39.0¶Resistor_3 477 225 477 288 10.0¶VoltageSource_1 351 130 351 225 1.0¶Wire_1 351 130 351 67¶Wire_2 351 67 382 67¶Wire_3 445 67 477 67¶Wire_4 477 67 477 99¶Wire_5 477 162 477 225¶Wire_6 477 288 477 319¶Wire_7 477 319 351 319¶Wire_8 351 319 351 225¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 4",sequence="43",timestamp="2019-01-24 13:06:07.772",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_2 288 99 288 162 8.0¶Resistor_1 319 36 351 36 220.0¶Resistor_2 382 67 382 99 270.0¶Resistor_3 382 130 382 162 470.0¶Resistor_4 351 193 319 193 360.0¶Wire_1 288 99 288 36¶Wire_2 288 36 319 36¶Wire_3 351 36 382 36¶Wire_4 382 36 382 67¶Wire_5 382 99 382 130¶Wire_6 382 162 382 193¶Wire_7 382 193 351 193¶Wire_8 319 193 288 193¶Wire_9 288 193 288 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="44",timestamp="2019-01-24 13:08:36.108",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 12000.0¶Resistor_2 288 193 288 256 1200.0¶Voltmeter_2 288 162 382 162¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_3 288 99 288 162¶Wire_4 288 162 288 193¶Wire_7 382 162 382 288¶Wire_9 288 288 288 256¶Wire_10 288 288 193 288¶Wire_11 193 288 193 225¶Wire_13 288 288 382 288¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="45",timestamp="2019-01-24 13:11:31.062",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 27000.0¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_14 288 99 288 130¶Wire_15 288 130 288 162¶Resistor_3 288 162 288 225 15000.0¶Resistor_4 288 225 288 288 180000.0¶Wire_16 288 288 288 319¶Wire_17 288 319 193 319¶Wire_18 193 319 193 225¶Wire_19 288 319 382 319¶Wire_20 382 319 382 130¶Ammeter_4 288 130 382 130¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="46",timestamp="2019-01-24 13:11:38.036",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 27000.0¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_14 288 99 288 130¶Wire_15 288 130 288 162¶Resistor_3 288 162 288 225 15000.0¶Resistor_4 288 225 288 288 180000.0¶Wire_16 288 288 288 319¶Wire_17 288 319 193 319¶Wire_18 193 319 193 225¶Wire_19 288 319 382 319¶Wire_20 382 319 382 130¶Ammeter_4 288 130 382 130¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 6",sequence="47",timestamp="2019-01-24 13:12:02.845",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 27000.0¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_14 288 99 288 130¶Wire_15 288 130 288 162¶Resistor_3 288 162 288 225 15000.0¶Resistor_4 288 225 288 288 180000.0¶Wire_16 288 288 288 319¶Wire_17 288 319 193 319¶Wire_18 193 319 193 225¶Wire_19 288 319 382 319¶Wire_20 382 319 382 130¶Ammeter_4 288 130 382 130¶";¶¶////333?A¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="48",timestamp="2019-01-24 13:13:21.952",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_1 193 130 193 225 9.0¶Resistor_1 288 36 288 99 27000.0¶Wire_1 193 130 193 36¶Wire_2 193 36 288 36¶Wire_14 288 99 288 130¶Wire_15 288 130 288 162¶Resistor_3 288 162 288 225 15000.0¶Resistor_4 288 225 288 288 180000.0¶Wire_16 288 288 288 319¶Wire_17 288 319 193 319¶Wire_18 193 319 193 225¶Wire_19 288 319 382 319¶Wire_20 382 319 382 130¶Ammeter_4 288 130 382 130¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="49",timestamp="2019-01-24 13:14:37.824",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="50",timestamp="2019-01-24 13:24:59.939",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_2 634 67 634 130 27.0¶Resistor_3 634 193 634 256 15.0¶Wire_1 445 67 445 193¶Wire_2 445 256 445 414¶Wire_3 445 414 634 414¶Wire_4 634 414 634 382¶Wire_5 634 319 634 256¶Wire_7 634 67 634 36¶Wire_10 445 36 445 67¶VoltageSource_1 445 193 445 256 5.0¶Voltmeter_24 729 193 729 256¶Wire_21 634 130 634 193¶Wire_23 729 162 729 193¶Wire_24 634 414 729 414¶Wire_25 729 256 729 414¶Wire_27 445 36 508 36¶Wire_28 571 36 634 36¶Resistor_5 508 36 571 36 47.0¶Resistor_6 634 319 634 382 180.0¶Wire_29 634 36 729 36¶Wire_30 729 36 729 162¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="51",timestamp="2019-01-24 13:25:07.582",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_2 634 67 634 130 27.0¶Resistor_3 634 193 634 256 15.0¶Wire_1 445 67 445 193¶Wire_2 445 256 445 414¶Wire_3 445 414 634 414¶Wire_4 634 414 634 382¶Wire_5 634 319 634 256¶Wire_7 634 67 634 36¶Wire_10 445 36 445 67¶VoltageSource_1 445 193 445 256 5.0¶Voltmeter_24 729 193 729 256¶Wire_21 634 130 634 193¶Wire_23 729 162 729 193¶Wire_24 634 414 729 414¶Wire_25 729 256 729 414¶Wire_27 445 36 508 36¶Wire_28 571 36 634 36¶Resistor_5 508 36 571 36 47.0¶Resistor_6 634 319 634 382 180.0¶Wire_29 634 36 729 36¶Wire_30 729 36 729 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 7",sequence="52",timestamp="2019-01-24 13:26:15.086",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_2 634 67 634 130 27.0¶Resistor_3 634 193 634 256 15.0¶Wire_1 445 67 445 193¶Wire_2 445 256 445 414¶Wire_3 445 414 634 414¶Wire_4 634 414 634 382¶Wire_5 634 319 634 256¶Wire_7 634 67 634 36¶Wire_10 445 36 445 67¶VoltageSource_1 445 193 445 256 5.0¶Voltmeter_24 729 193 729 256¶Wire_21 634 130 634 193¶Wire_23 729 162 729 193¶Wire_24 634 414 729 414¶Wire_25 729 256 729 414¶Wire_27 445 36 508 36¶Wire_28 571 36 634 36¶Resistor_5 508 36 571 36 47.0¶Resistor_6 634 319 634 382 180.0¶Wire_29 634 36 729 36¶Wire_30 729 36 729 162¶";¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="53",timestamp="2019-01-24 13:29:33.238",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="54",timestamp="2019-01-24 13:31:11.055",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="55",timestamp="2019-01-24 13:31:54.459",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="56",timestamp="2019-01-24 13:35:20.885",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 414 99 477 99 220.0¶Resistor_2 603 99 666 99 330.0¶VoltageSource_1 351 256 351 193 9.0¶VoltageSource_2 729 193 729 256 3.0¶Resistor_3 508 351 571 351 110.0¶Voltmeter_2 508 414 571 414¶Voltmeter_4 414 36 477 36¶Voltmeter_6 603 36 666 36¶Wire_1 477 99 508 99¶Wire_2 477 36 508 36¶Wire_3 508 36 508 99¶Wire_4 414 36 382 36¶Wire_5 382 36 382 99¶Wire_6 382 99 414 99¶Wire_7 382 99 351 99¶Wire_8 351 99 351 193¶Wire_9 603 36 571 36¶Wire_10 571 36 571 99¶Wire_11 571 99 508 99¶Wire_12 571 99 603 99¶Wire_13 666 36 697 36¶Wire_14 697 36 697 99¶Wire_15 697 99 666 99¶Wire_16 697 99 729 99¶Wire_17 729 99 729 193¶Wire_18 729 256 729 351¶Wire_19 729 351 603 351¶Wire_20 571 414 603 414¶Wire_21 603 414 603 351¶Wire_22 603 351 571 351¶Wire_23 477 351 508 351¶Wire_24 477 351 477 414¶Wire_25 477 414 508 414¶Wire_26 477 351 351 351¶Wire_27 351 351 351 256¶";¶¶//R1 4V¶//R2 6V¶//R3 2V¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="57",timestamp="2019-01-24 13:35:46.55",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 8",sequence="58",timestamp="2019-01-24 13:36:18.788",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 414 99 477 99 220.0¶Resistor_2 603 99 666 99 330.0¶VoltageSource_1 351 256 351 193 9.0¶VoltageSource_2 729 193 729 256 3.0¶Resistor_3 508 351 571 351 110.0¶Voltmeter_2 508 414 571 414¶Voltmeter_4 414 36 477 36¶Voltmeter_6 603 36 666 36¶Wire_1 477 99 508 99¶Wire_2 477 36 508 36¶Wire_3 508 36 508 99¶Wire_4 414 36 382 36¶Wire_5 382 36 382 99¶Wire_6 382 99 414 99¶Wire_7 382 99 351 99¶Wire_8 351 99 351 193¶Wire_9 603 36 571 36¶Wire_10 571 36 571 99¶Wire_11 571 99 508 99¶Wire_12 571 99 603 99¶Wire_13 666 36 697 36¶Wire_14 697 36 697 99¶Wire_15 697 99 666 99¶Wire_16 697 99 729 99¶Wire_17 729 99 729 193¶Wire_18 729 256 729 351¶Wire_19 729 351 603 351¶Wire_20 571 414 603 414¶Wire_21 603 414 603 351¶Wire_22 603 351 571 351¶Wire_23 477 351 508 351¶Wire_24 477 351 477 414¶Wire_25 477 414 508 414¶Wire_26 477 351 351 351¶Wire_27 351 351 351 256¶";¶¶//R1 4V¶//R2 6V¶//R3 2V¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="59",timestamp="2019-01-24 13:39:57.906",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_3 288 225 288 162 4.0¶VoltageSource_4 823 162 823 225 16.0¶Voltmeter_8 351 36 414 36¶Voltmeter_10 634 36 697 36¶Voltmeter_12 634 351 697 351¶Voltmeter_14 351 351 414 351¶Resistor_4 351 288 414 288 1800.0¶Resistor_6 634 288 697 288 200.0¶Resistor_7 634 99 697 99 4700.0¶Resistor_8 351 99 414 99 3300.0¶Wire_28 351 36 351 99¶Wire_29 414 36 414 99¶Wire_30 351 99 288 99¶Wire_31 288 99 288 162¶Wire_32 414 99 634 99¶Wire_33 634 99 634 36¶Wire_34 697 36 697 99¶Wire_35 697 99 823 99¶Wire_36 823 99 823 162¶Wire_37 823 225 823 288¶Wire_38 697 288 823 288¶Wire_39 697 288 697 351¶Wire_40 634 351 634 288¶Wire_41 634 288 414 288¶Wire_42 414 288 414 351¶Wire_43 351 351 351 288¶Wire_44 351 288 288 288¶Wire_45 288 288 288 225¶";¶¶//R8 6.6V¶//R7 9.4V¶//R4 3.6V¶//R6 400mV¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 9",sequence="60",timestamp="2019-01-24 13:40:06.69",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶VoltageSource_3 288 225 288 162 4.0¶VoltageSource_4 823 162 823 225 16.0¶Voltmeter_8 351 36 414 36¶Voltmeter_10 634 36 697 36¶Voltmeter_12 634 351 697 351¶Voltmeter_14 351 351 414 351¶Resistor_4 351 288 414 288 1800.0¶Resistor_6 634 288 697 288 200.0¶Resistor_7 634 99 697 99 4700.0¶Resistor_8 351 99 414 99 3300.0¶Wire_28 351 36 351 99¶Wire_29 414 36 414 99¶Wire_30 351 99 288 99¶Wire_31 288 99 288 162¶Wire_32 414 99 634 99¶Wire_33 634 99 634 36¶Wire_34 697 36 697 99¶Wire_35 697 99 823 99¶Wire_36 823 99 823 162¶Wire_37 823 225 823 288¶Wire_38 697 288 823 288¶Wire_39 697 288 697 351¶Wire_40 634 351 634 288¶Wire_41 634 288 414 288¶Wire_42 414 288 414 351¶Wire_43 351 351 351 288¶Wire_44 351 288 288 288¶Wire_45 288 288 288 225¶";¶¶//R8 6.6V¶//R7 9.4V¶//R4 3.6V¶//R6 400mV¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 10",sequence="61",timestamp="2019-01-24 13:43:07.879",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 10",sequence="62",timestamp="2019-01-24 13:47:44.47",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶¶";¶¶ViewCircuitPiper(NetList:netList);
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 10",sequence="63",timestamp="2019-01-24 13:52:04.981",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶netList :=¶"¶Resistor_1 477 162 477 225 36.0¶Resistor_2 571 162 571 225 27.0¶Resistor_3 666 162 666 225 100.0¶Resistor_4 382 162 382 225 12.0¶VoltageSource_2 288 162 288 225 0.3¶Wire_1 288 162 288 99¶Wire_2 288 99 382 99¶Wire_3 382 99 382 162¶Wire_4 288 225 288 351¶Wire_5 382 225 382 256¶Wire_6 382 351 288 351¶Wire_7 382 351 382 319¶Wire_8 382 351 477 351¶Wire_9 477 351 477 319¶Wire_10 477 351 571 351¶Wire_11 571 351 571 319¶Wire_12 571 351 666 351¶Wire_13 666 319 666 351¶Wire_14 382 99 477 99¶Wire_15 477 99 571 99¶Wire_16 571 99 666 99¶Wire_17 666 99 666 162¶Wire_18 571 162 571 99¶Wire_19 477 162 477 99¶Ammeter_2 382 256 382 319¶Ammeter_6 477 256 477 319¶Ammeter_8 571 256 571 319¶Ammeter_10 666 256 666 319¶Wire_21 477 225 477 256¶Wire_22 571 225 571 256¶Wire_23 666 225 666 256¶";¶¶//R4 branch 1 25 mA¶//R1 branch 1 8.33 mA¶//R2 branch 3 11.1 mA¶//R3 branch 4 3 mA¶//current total 47.43 mA¶¶ViewCircuitPiper(Netlist:netList);
+
+%/info
+

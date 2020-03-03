@@ -1,0 +1,135 @@
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 0",sequence="1",timestamp="2019-01-21 17:11:08.12",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶[¶["firstName", "Kyle"],¶["lastName", "Johnson"],¶["ssuIDNumber", "264694"],¶];
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 0",sequence="2",timestamp="2019-01-21 17:11:18.308",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="3",timestamp="2019-01-21 17:25:27.292",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 999~volt;¶¶voltsPeakToPeak := 999~volt;¶¶period := .999~s;¶¶frequency := 999~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="obfuscate",sequence="4",timestamp="2019-01-21 17:25:35.318",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgNSwgMCwgMjAwMDAsIDUwMCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="5",timestamp="2019-01-21 17:35:14.949",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 25~volt;¶¶voltsPeakToPeak := 50~volt;¶¶period := .00021~s;¶¶frequency := 4762~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="6",timestamp="2019-01-21 17:35:19.08",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA1fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTB+dm9sdDsKCnBlcmlvZCA6PSAuMDAyfnM7CgpmcmVxdWVuY3kgOj0gNTAwfkh6OwoKVHJ1ZTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="obfuscate",sequence="7",timestamp="2019-01-21 17:35:49.758",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgNSwgMCwgMjAwMDAsIDUwMCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 1",sequence="8",timestamp="2019-01-21 17:36:55.016",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA1fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTB+dm9sdDsKCnBlcmlvZCA6PSAuMDAyfnM7CgpmcmVxdWVuY3kgOj0gNTAwfkh6OwoKVHJ1ZTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 1",sequence="9",timestamp="2019-01-21 17:37:32.673",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 5~volt;¶¶voltsPeakToPeak := 10~volt;¶¶period := .002~s;¶¶frequency := 500~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 1",sequence="10",timestamp="2019-01-21 17:37:35.035",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="11",timestamp="2019-01-21 17:39:01.564",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 999~volt;¶¶voltsPeakToPeak := 999~volt;¶¶period := .999~s;¶¶frequency := 999~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="obfuscate",sequence="12",timestamp="2019-01-21 17:39:04.88",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgOCwgMCwgMjAwMDAsIDM1MCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="13",timestamp="2019-01-21 17:40:40.979",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 8~volt;¶¶voltsPeakToPeak := 16~volt;¶¶period := .0015~s;¶¶frequency := 667~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 2",sequence="14",timestamp="2019-01-21 17:40:43.089",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 2",sequence="15",timestamp="2019-01-21 17:40:51.411",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA4fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTZ+dm9sdDsKCnBlcmlvZCA6PSAuMDAyOX5zOwoKZnJlcXVlbmN5IDo9IDM1MH5IejsKClRydWU7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="16",timestamp="2019-01-21 17:41:30.806",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 8~volt;¶¶voltsPeakToPeak := 16~volt;¶¶period := .003~s;¶¶frequency := 333~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 2",sequence="17",timestamp="2019-01-21 17:41:33.834",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 2",sequence="18",timestamp="2019-01-21 17:41:49.618",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA4fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTZ+dm9sdDsKCnBlcmlvZCA6PSAuMDAyOX5zOwoKZnJlcXVlbmN5IDo9IDM1MH5IejsKClRydWU7Cgo=");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 2",sequence="19",timestamp="2019-01-21 17:41:56.466",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 8~volt;¶¶voltsPeakToPeak := 16~volt;¶¶period := .0029~s;¶¶frequency := 350~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 2",sequence="20",timestamp="2019-01-21 17:42:08.792",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="21",timestamp="2019-01-21 17:42:23.783",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 999~volt;¶¶voltsPeakToPeak := 999~volt;¶¶period := .999~s;¶¶frequency := 999~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="22",timestamp="2019-01-21 17:42:31.636",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA3fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTR+dm9sdDsKCnBlcmlvZCA6PSAwLjAwMTI1fnM7CgpmcmVxdWVuY3kgOj0gODAwfkh6OwoKVHJ1ZTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="obfuscate",sequence="23",timestamp="2019-01-21 17:42:36.076",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶CnsKICAgIExvY2FsKG9zY2lsbG9zY29wZSwgc2lnbmFsKTsKICAgIAogICAgb3NjaWxsb3Njb3BlIDo9IFZpZXdPc2NpbGxvc2NvcGUoKTsKICAgIAogICAgLy9kb3VibGUgdlBlYWssIGRvdWJsZSBvZmZzZXQsIGludCBudW1iZXJPZlNhbXBsZXMsIGRvdWJsZSBzaWduYWxGcmVxdWVuY3ksIGRvdWJsZSBudW1iZXJPZkN5Y2xlc1RvR2VuZXJhdGUsIGRvdWJsZSBwaGFzZVNoaWZ0CiAgICBzaWduYWwgOj0gSmF2YUNhbGwoIm9yZy5tYXRocGlwZXIudWkuZ3VpLmFwcGxpY2F0aW9ucy52b3NjaWxsb3Njb3BlLm9zY2lsbG9zY29wZS5TaWduYWwiLCAiZ2VuZXJhdGVTaW51c29kaWFsIiwgNywgMCwgMjAwMDAsIDgwMCwgMTAwMCwgMCk7CiAgICAKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlIiwgIlNJR05BTCIsIHNpZ25hbCk7CiAgICBKYXZhQ2FsbChvc2NpbGxvc2NvcGUsICJzZXRWYWx1ZUJvb2xlYW4iLCAiUE9XRVIiLCBUcnVlKTsKICAgIEphdmFDYWxsKG9zY2lsbG9zY29wZSwgInNldFZhbHVlQm9vbGVhbiIsICJCVE5QT1dFUiIsIFRydWUpOwogICAgSmF2YUNhbGwob3NjaWxsb3Njb3BlLCAic2V0VmFsdWVCb29sZWFuIiwgIkJUTkxFRCIsIFRydWUpOwp9Cgo=
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="24",timestamp="2019-01-21 17:46:31.705",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA3fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTR+dm9sdDsKCnBlcmlvZCA6PSAwLjAwMTI1fnM7CgpmcmVxdWVuY3kgOj0gODAwfkh6OwoKVHJ1ZTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="hint",parent="Problem 3",sequence="25",timestamp="2019-01-21 17:48:04.667",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Hint("CnZvbHRzUGVhayA6PSA3fnZvbHQ7Cgp2b2x0c1BlYWtUb1BlYWsgOj0gMTR+dm9sdDsKCnBlcmlvZCA6PSAwLjAwMTI1fnM7CgpmcmVxdWVuY3kgOj0gODAwfkh6OwoKVHJ1ZTsKCg==");
+
+%/info
+
+%info,parentFoldType="mathpiper",parentFoldSubtype="problem",parent="Problem 3",sequence="26",timestamp="2019-01-21 17:48:24.481",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+¶voltsPeak := 7~volt;¶¶voltsPeakToPeak := 14~volt;¶¶period := .00125~s;¶¶frequency := 800~Hz;¶¶True;
+
+%/info
+
+%info,parentFoldType="mathpiper_grade",parent="Problem 3",sequence="27",timestamp="2019-01-21 17:48:28.156",username="Brumo",hostname="DESKTOP-2HHTJAH",hostaddresses="192.168.1.3",mpversion=".267"
+Not logged.
+
+%/info
+

@@ -1,0 +1,1702 @@
+v.01
+
+sections_10.1-10.45_problems.mpws
+
+Complete all of the problems in this worksheet by
+placing the code you write for each exercise into
+the empty fold which is provided in each exercise
+section. Each empty fold has a subtype attribute
+named "exercise". Immediately below each empty
+fold is a mathpiper_grade fold that contains code
+which will automatically grade the code you place
+into the fold above it.
+
+
+- The "truncate" attribute in a fold header limits
+the amount of output that a program will insert
+into the worksheet. This reduces the chances of
+crashing MathPiperIDE.
+
+- The "timeout" attribute in a fold header stops a
+running program after the specified number of
+milliseconds. This prevents programs that contain
+infinite loops from locking up MathPiperIDE.
+
+========================
+micro <ctrl>+; to get μ.
+ohm <ctrl>+; to get Ω.
+Compound units need to be in parentheses: 25~(mA/s) instead of 25~mA/s
+
+Obtaining only the right side of an equation.
+In> exp := 8 == 9
+Result: 8 == 9
+
+In> exp
+Result: 8 == 9
+
+In> In> exp[2]
+Result: 9
+
+
+============ Answers
+Solve the following practice problems from the book.
+
+1 1 150 μV
+2 3 2.5 mV
+3 5 2.27 μH
+4 7 452 μH
+5 9 104 mH
+6 11 11.6 mH
+7 13 .051
+8 15 87.3 uH
+9 17 532 ohm
+10 19 6mA,5.4V,41.7kOhm
+11 21 15.9kHz
+12 23 150
+13 25 518
+14 27 209-1047
+15 29 3V
+16 31 960V
+17 33 960 mA
+18 35 900V,133mA
+18 37 2.5A
+20 39 16.7 ohm
+21 41 48 ohm
+
+
+------------------------------
+
+steps := ZeroVector(10);
+
+steps[1] := '(V?L == L?L * (di/dt)); // (10.2)
+
+steps[2] := Substitute('L?L, 300~μH) steps[1];
+
+steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];
+
+steps[4] := NM(Eval(Substitute('(==), '(:=)) steps[3]) # μV);
+
+// */
+
+TableForm(steps);
+
+------------------------------
+
+steps := ZeroVector(10);
+
+steps[1] := '(X?L == V?rms / I?rms ); // (10.13)
+
+steps[2] := Solve(steps[1], 'I?rms)[1];
+
+steps[3] := Substitute('V?rms, 12~V) steps[2];
+
+steps[4] := Substitute('X?L, 2~kΩ) steps[3];
+
+steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mA);
+
+
+TableForm(steps);
+
+-------------------------------
+
+
+%group,name="Problem 0",description="Programmer's information."
+========================================================================================================
+Problem 0
+
+In the following fold, replace "xxx" with your
+first name, replace "yyy" with your last name, and
+replace "000000" with your SSU ID number:
+
+%mathpiper,name="Problem 0",subtype="problem",unassign_all="true",truncate="6000",timeout="5000"
+
+[
+["firstName", "Kyle"],
+["lastName", "Johnson"],
+["ssuIDNumber", "264694"],
+];
+
+%/mathpiper
+
+    %output,parent="Problem 0",mpversion=".269",preserve="false"
+      Result: [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]]
+.   %/output
+
+
+
+
+
+
+
+%mathpiper_grade,name="Problem 0"
+
+LocalSymbols(foldResult)
+{
+    // --------------------------------------------------------
+    
+    FoldGrade("The code does not throw an exception when evaluated", 1, True)
+    {
+        ExceptionCatch(foldResult := Eval(?foldCode[1]), "", 'Exception) !=? 'Exception;
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("MathPiper version >= .269", 1, True)
+    {
+        StringToNumber(Version()) >=? .269;
+    }
+    
+    //-----------------------------------------------------------------------------------------    
+    
+
+    FoldGrade("The code does not produce side effect output", 1, False)
+    LocalSymbols(procedureNames)
+    {
+        procedureNames := ProcedureList(?foldCode);
+        
+        !? Contains?(procedureNames,"Echo") &? !? Contains?(procedureNames,"Write") &? !? Contains?(procedureNames,"TableForm");
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'firstName' a string that is not 'xxx'", 1, True)
+    {
+        String?(foldResult["firstName"]) &? foldResult["firstName"] !=? "xxx";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'lastName' is a string that is not 'yyy'", 1, True)
+    {
+        String?(foldResult["lastName"]) &? foldResult["lastName"] !=? "yyy";
+    }
+    
+    // --------------------------------------------------------
+    
+    FoldGrade("The variable 'ssuIDNumber' is not '000000'", 1, True)
+    {
+        foldResult["ssuIDNumber"] !=? "000000" &? foldResult["ssuIDNumber"] !=? 0;
+    }
+}
+
+%/mathpiper_grade
+
+    %output,parent="Problem 0",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      YOUR CODE SHOULD BE FORMATTED LIKE THE FOLLOWING CODE: 
+      
+        [["firstName","Kyle"],["lastName","Johnson"],["ssuIDNumber","264694"]];
+      
+        PASS: The code does not throw an exception when parsed. (1/1)
+        PASS: The fold is not empty. (1/1)
+        PASS: The ':' operator is not used. (1/1)
+        PASS: The results of all arithmetic operations are assigned to a variable. For example 'count := (count + 1) is okay, but (count + 1) by itself not okay. (1/1)
+        PASS: The version of "Append" that does not end with a '!' is not used. (1/1)
+        ------------------------------------------
+        PASS: The code does not throw an exception when evaluated. (1/1)
+        PASS: MathPiper version >= .269. (1/1)
+        PASS: The code does not produce side effect output. (1/1)
+        PASS: The variable 'firstName' a string that is not 'xxx'. (1/1)
+        PASS: The variable 'lastName' is a string that is not 'yyy'. (1/1)
+        PASS: The variable 'ssuIDNumber' is not '000000'. (1/1)
+      
+        11/11 passes
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 1",description="Practice problem 1 p.319."
+========================================================================================================
+
+The result is in μV.
+
+
+%mathpiper,name="Problem 1",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAzMDB+zrxIKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJyhkaS9kdCksIDUwMH4obUEvcykpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbM10pICMgzrxWKTsKCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 1",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 1.)
+
+Calculate the value of V?L developed across a 300 μH coil when the instantaneous 
+rate of change in the component current equals 500 mA/s.
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(4);
+
+//Equation 10.2
+
+steps[1] := '(V?L == L?L * (di/dt));
+
+steps[2] := Substitute('L?L, 300~μH) steps[1];
+
+steps[3] := Substitute('(di/dt), 500~(mA/s)) steps[2];
+
+steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # μV);
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+150μV
+
+-------------------------------------------------------------------------------------
+*/
+
+
+%/mathpiper
+
+    %output,parent="Problem 1",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      V?L == L?L*di/dt
+      V?L == 300~μH*di/dt
+      V?L == 300~μH*500~(mA/s)
+      150~μV
+      /                                \
+      |              di                |
+      | V?L == L?L * --                |
+      |              dt                |
+      |                                |
+      |                   di           |
+      | V?L == 300 ~ μH * --           |
+      |                   dt           |
+      |                                |
+      |                         / mA \ |
+      | V?L == 300 ~ μH * 500 ~ | -- | |
+      |                         \ s  / |
+      |                                |
+      | 150 ~ μV                       |
+      \                                /
+      
+      
+.   %/output
+
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 2",description="Practice problem 3 p.319."
+========================================================================================================
+
+The result is in mV.
+
+
+
+%mathpiper,name="Problem 2",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhWP0wgPT0gTD9MICogKGRpL2R0KSk7IC8vICgxMC4yKQoKc3RlcHNbMl0gOj0gU3Vic3RpdHV0ZSgnTD9MLCAxMDB+bUgpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnKGRpL2R0KSwgMjV+KG1BL3MpKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzNdKSAjIG1WKTsKCg==");
+%/mathpiper
+
+
+
+%mathpiper,name="Problem 2",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 2.)
+Calculate the value of V?L developed across a 100 mH coil when the instantaneous 
+rate of change in the component current equals 25 mA/s.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(4);
+
+//Equation 10.2
+
+steps[1] := '(V?L == L?L * (di/dt));
+
+steps[2] := Substitute('L?L, 100~mH) steps[1];
+
+steps[3] := Substitute('(di/dt), 25~(mA/s)) steps[2];
+
+steps[4] := NM(Eval(Substitute('(==), '(:=)) steps [3]) # mV);
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+2.5mV
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 2",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      V?L == L?L*di/dt
+      V?L == 100~mH*di/dt
+      V?L == 100~mH*25~(mA/s)
+      2.5~mV
+      /                               \
+      |              di               |
+      | V?L == L?L * --               |
+      |              dt               |
+      |                               |
+      |                   di          |
+      | V?L == 100 ~ mH * --          |
+      |                   dt          |
+      |                               |
+      |                        / mA \ |
+      | V?L == 100 ~ mH * 25 ~ | -- | |
+      |                        \ s  / |
+      |                               |
+      | 2.5 ~ mV                      |
+      \                               /
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 3",description="Practice problem 5 p.320."
+========================================================================================================
+
+The result is in μH.
+
+
+
+%mathpiper,name="Problem 3",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDQqUGkqMTBeLTYpfihXYi8oQSptKSkpKSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0E/QSwgJygoUGkgKiBkXjIpLzQpKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ2QsIC4yfmNtKSBzdGVwc1szXTsKCnN0ZXBzWzVdIDo9IFN1YnN0aXR1dGUoJ04/dCwgMTIwKSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ2w/bCwgMi41fmNtKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSAjIM68SCk7CgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 3",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 3.)
+Calculate the value of the air-core inductor shown in Figure 10.42a on p. 320.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(7);
+
+//Equation 10.4
+
+steps[1] := '(L?L == (μm * N?t^2 * A?A)/ l?l);
+
+//There seems to be an error in the book. 
+//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the
+//only issue I could find in the problem to fix the answer from 22.74μH to 2.27μH
+
+steps[2] := Substitute('μm, '((4*Pi*10^-7)~(Wb/(A*m)))) steps[1]; 
+
+steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; 
+
+steps[4] := Substitute('d, .2~cm) steps[3]; 
+
+steps[5] := Substitute('N?t, 120) steps[4]; 
+
+steps[6] := Substitute('l?l, 2.5~cm) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # μH);
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+2.27μH
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 3",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      L?L == (μm*N?t^2*A?A)/l?l
+      L?L == ((4*Pi*10^(-7))~(Wb/(A*m))*N?t^2*A?A)/l?l
+      L?L == ((4*Pi*10^(-7))~(Wb/(A*m))*N?t^2*(Pi*d^2)/4)/l?l
+      L?L == ((4*Pi*10^(-7))~(Wb/(A*m))*N?t^2*(Pi*.2~cm^2)/4)/l?l
+      L?L == ((4*Pi*10^(-7))~(Wb/(A*m))*120^2*(Pi*.2~cm^2)/4)/l?l
+      L?L == ((4*Pi*10^(-7))~(Wb/(A*m))*120^2*(Pi*.2~cm^2)/4)/2.5~cm
+      2.273956856~μH
+      /                                                                 \
+      |                2                                                |
+      |        μm * N?t  * A?A                                          |
+      | L?L == ---------------                                          |
+      |              l?l                                                |
+      |                                                                 |
+      |        /            -( 7 ) \   /  Wb   \      2                 |
+      |        \ 4 * Pi * 10       / ~ | ----- | * N?t  * A?A           |
+      |                                \ A * m /                        |
+      | L?L == ----------------------------------------------           |
+      |                             l?l                                 |
+      |                                                                 |
+      |                                                         2       |
+      |        /            -( 7 ) \   /  Wb   \      2   Pi * d        |
+      |        \ 4 * Pi * 10       / ~ | ----- | * N?t  * -------       |
+      |                                \ A * m /             4          |
+      | L?L == --------------------------------------------------       |
+      |                               l?l                               |
+      |                                                                 |
+      |                                                               2 |
+      |        /            -( 7 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 4 * Pi * 10       / ~ | ----- | * N?t  * ------------- |
+      |                                \ A * m /                4       |
+      | L?L == -------------------------------------------------------- |
+      |                                  l?l                            |
+      |                                                                 |
+      |                                                               2 |
+      |        /            -( 7 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 4 * Pi * 10       / ~ | ----- | * 120  * ------------- |
+      |                                \ A * m /                4       |
+      | L?L == -------------------------------------------------------- |
+      |                                  l?l                            |
+      |                                                                 |
+      |                                                               2 |
+      |        /            -( 7 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 4 * Pi * 10       / ~ | ----- | * 120  * ------------- |
+      |                                \ A * m /                4       |
+      | L?L == -------------------------------------------------------- |
+      |                                2.5 ~ cm                         |
+      |                                                                 |
+      | 2.273956856 ~ μH                                                |
+      \                                                                 /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+%group,name="Problem 4",description="Practice problem 7 p.320."
+========================================================================================================
+
+The result is in μH.
+
+
+
+%mathpiper,name="Problem 4",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP0wgPT0gKM68P20gKiBOP3ReMiAqIEE/QSkgLyBsP2wpOyAvLyAoMTAuNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ868P20sICcoKDI1MCoxMF4tNil+KFdiLyhBKm0pKSkpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnQT9BLCAnKChQaSAqIGReMikvNCkpIHN0ZXBzWzJdOwoKc3RlcHNbNF0gOj0gU3Vic3RpdHV0ZSgnZCwgLjJ+Y20pIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gU3Vic3RpdHV0ZSgnTj90LCAxMjApIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnbD9sLCAyLjV+Y20pIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNl0pICMgzrxIKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 4",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 4",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 4.)
+Calculate the value of the iron-core inductor shown in Figure 10.43a on p. 320.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(7);
+
+steps[1] := '(L?L == (μm * N?t^2 * A?A)/ l?l);
+
+//There seems to be an error in the book. 
+//The previous owner overwrote the (4*Pi*10^-6) to (4*Pi*10^-7) which seems to be the
+//only issue I could find in the problem to fix the answer from 22.74μH to 2.27μH
+
+steps[2] := Substitute('μm, '((250*10^-6)~(Wb/(A*m)))) steps[1]; 
+
+steps[3] := Substitute('A?A, '((Pi * d^2)/4)) steps[2]; 
+
+steps[4] := Substitute('d, .2~cm) steps[3]; 
+
+steps[5] := Substitute('N?t, 120) steps[4]; 
+
+steps[6] := Substitute('l?l, 2.5~cm) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps [6]) # μH);
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+452μH
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 4",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      L?L == (μm*N?t^2*A?A)/l?l
+      L?L == ((250*10^(-6))~(Wb/(A*m))*N?t^2*A?A)/l?l
+      L?L == ((250*10^(-6))~(Wb/(A*m))*N?t^2*(Pi*d^2)/4)/l?l
+      L?L == ((250*10^(-6))~(Wb/(A*m))*N?t^2*(Pi*.2~cm^2)/4)/l?l
+      L?L == ((250*10^(-6))~(Wb/(A*m))*120^2*(Pi*.2~cm^2)/4)/l?l
+      L?L == ((250*10^(-6))~(Wb/(A*m))*120^2*(Pi*.2~cm^2)/4)/2.5~cm
+      452.3893424~μH
+      /                                                              \
+      |                2                                             |
+      |        μm * N?t  * A?A                                       |
+      | L?L == ---------------                                       |
+      |              l?l                                             |
+      |                                                              |
+      |        /         -( 6 ) \   /  Wb   \      2                 |
+      |        \ 250 * 10       / ~ | ----- | * N?t  * A?A           |
+      |                             \ A * m /                        |
+      | L?L == -------------------------------------------           |
+      |                            l?l                               |
+      |                                                              |
+      |                                                      2       |
+      |        /         -( 6 ) \   /  Wb   \      2   Pi * d        |
+      |        \ 250 * 10       / ~ | ----- | * N?t  * -------       |
+      |                             \ A * m /             4          |
+      | L?L == -----------------------------------------------       |
+      |                              l?l                             |
+      |                                                              |
+      |                                                            2 |
+      |        /         -( 6 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 250 * 10       / ~ | ----- | * N?t  * ------------- |
+      |                             \ A * m /                4       |
+      | L?L == ----------------------------------------------------- |
+      |                                 l?l                          |
+      |                                                              |
+      |                                                            2 |
+      |        /         -( 6 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 250 * 10       / ~ | ----- | * 120  * ------------- |
+      |                             \ A * m /                4       |
+      | L?L == ----------------------------------------------------- |
+      |                                 l?l                          |
+      |                                                              |
+      |                                                            2 |
+      |        /         -( 6 ) \   /  Wb   \      2   Pi * .2 ~ cm  |
+      |        \ 250 * 10       / ~ | ----- | * 120  * ------------- |
+      |                             \ A * m /                4       |
+      | L?L == ----------------------------------------------------- |
+      |                              2.5 ~ cm                        |
+      |                                                              |
+      | 452.3893424 ~ μH                                             |
+      \                                                              /
+      
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+%group,name="Problem 5",description="Practice problem 9 p.320."
+========================================================================================================
+
+The result is in mH.
+
+
+
+%mathpiper,name="Problem 5",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gTD8xICsgTD8yICsgTD8zKTsgLy8gKDEwLjUpCgpzdGVwc1syXSA6PSBTdWJzdGl0dXRlKCdMPzEsICcxMDB+bUgpIHN0ZXBzWzFdOwoKc3RlcHNbM10gOj0gU3Vic3RpdHV0ZSgnTD8yLCAnMy4zfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ0w/MywgNDcwfs68SCkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBOTShFdmFsKFN1YnN0aXR1dGUoJyg9PSksICcoOj0pKSBzdGVwc1s0XSkgIyBtSCk7CgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 5",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 5.)
+The coils shown in Figure 10.44a have a value of k = 0. Calculate the total inductance
+in the circuit. p. 320
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(5);
+
+//Equation 10.5
+
+steps[1] := '(L?T == L?1 + L?2 + L?3);
+
+steps[2] := Substitute('L?1, '100~mH) steps[1]; 
+
+steps[3] := Substitute('L?2, '3.3~mH) steps[2]; 
+
+steps[4] := Substitute('L?3, '470~μH) steps[3]; 
+
+steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mH); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+104mH
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 5",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      L?T == L?1 + L?2 + L?3
+      L?T == 100~mH + L?2 + L?3
+      L?T == 100~mH + 3.3~mH + L?3
+      L?T == 100~mH + 3.3~mH + 470~μH
+      103.77~mH
+      /                                       \
+      | L?T == L?1 + L?2 + L?3                |
+      |                                       |
+      | L?T == 100 ~ mH + L?2 + L?3           |
+      |                                       |
+      | L?T == 100 ~ mH + 3.3 ~ mH + L?3      |
+      |                                       |
+      | L?T == 100 ~ mH + 3.3 ~ mH + 470 ~ μH |
+      |                                       |
+      | 103.77 ~ mH                           |
+      \                                       /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+%group,name="Problem 6",description="Practice problem 11 p.321."
+========================================================================================================
+
+The result is in mH.
+
+
+%mathpiper,name="Problem 6",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gTD8xICsgTD8yICsgMiAqIEw/bSk7IC8vICgxMC4xMWEpCgpzdGVwc1syXSA6PSAnKEw/bSA9PSBrKlNxcnQoTD8xKkw/MikpOyAvLyAoMTAuOSkKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0w/bSwgc3RlcHNbMl1bMl0pIHN0ZXBzWzFdOwoKc3RlcHNbNF0gOj0gU3Vic3RpdHV0ZSgnaywgLjI1KSBzdGVwc1szXTsKCnN0ZXBzWzVdIDo9IFN1YnN0aXR1dGUoJ0w/MSwgMTB+bUgpIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnTD8yLCA0NzB+zrxIKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSAjIG1IKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 6",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+
+
+%mathpiper,name="Problem 6",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 6.)
+The inductores show in Figure 10.45a are connected in series-aiding fashion. Assuming
+that the coefficient of coupling between the two is 0.25, calculate the total 
+inductance in the circuit.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(7);
+
+//Equation 10.11a
+
+steps[1] := '(L?T == L?1 + L?2 + 2 * L?m);
+
+//Equation 10.9
+
+steps[2] := '(L?m == k*Sqrt(L?1*L?2)); 
+
+steps[3] := Substitute('L?m, steps[2][2]) steps[1]; 
+
+steps[4] := Substitute('k, .25) steps[3]; 
+
+steps[5] := Substitute('L?1, 10~mH) steps[4]; 
+
+steps[6] := Substitute('L?2, 470~μH) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]) # mH);
+
+TableForm(steps);
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+11.6mH
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 6",mpversion=".271",preserve="false"
+      Result: [L?T == L?1 + L?2 + 2*L?m,L?m == k*Sqrt(L?1*L?2),L?T == L?1 + L?2 + 2*k*Sqrt(L?1*L?2),L?T == L?1 + L?2 + 2*.25*Sqrt(L?1*L?2),L?T == 10~mH + L?2 + 2*.25*Sqrt(10~mH*L?2),L?T == 10~mH + 470~μH + 2*.25*Sqrt(10~mH*470~μH),11.55397417~mH]
+      
+      Side Effects:
+      L?T == L?1 + L?2 + 2*L?m
+      L?m == k*Sqrt(L?1*L?2)
+      L?T == L?1 + L?2 + 2*k*Sqrt(L?1*L?2)
+      L?T == L?1 + L?2 + 2*.25*Sqrt(L?1*L?2)
+      L?T == 10~mH + L?2 + 2*.25*Sqrt(10~mH*L?2)
+      L?T == 10~mH + 470~μH + 2*.25*Sqrt(10~mH*470~μH)
+      11.55397417~mH
+      
+.   %/output
+
+    %output,parent="Problem 6",mpversion=".269",preserve="true"
+      Result: [L?T == L?1 + L?2 + 2*L?m,L?T == L?1 + L?2 + 2*k*Sqrt(L?1*L?2),L?T == L?1 + L?2 + 2*.25*Sqrt(L?1*L?2),L?T == 10~mH + L?2 + 2*.25*Sqrt(10~mH*L?2),L?T == 10~mH + 470~μH + 2*.25*Sqrt(10~mH*470~μH),11.5539741694339~mH,0,0,0,0]
+      
+      Side Effects:
+      L?T == L?1 + L?2 + 2*L?m
+      L?T == L?1 + L?2 + 2*k*Sqrt(L?1*L?2)
+      L?T == L?1 + L?2 + 2*.25*Sqrt(L?1*L?2)
+      L?T == 10~mH + L?2 + 2*.25*Sqrt(10~mH*L?2)
+      L?T == 10~mH + 470~μH + 2*.25*Sqrt(10~mH*470~μH)
+      11.5539741694339~mH
+      0
+      0
+      0
+      0
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 7",description="Practice problem 13 p.321."
+========================================================================================================
+
+The result does not have any units.
+
+
+%mathpiper,name="Problem 7",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP00gPT0gaypTcXJ0KEw/MSpMPzIpKTsgLy8gKDEwLjkpCgpzdGVwc1syXSA6PSAnKEw/VCA9PSBMPzEgKyBMPzIgKyAyICogTD9NKTsgLy8gMTAuMTEuCgpzdGVwc1szXSA6PSBTb2x2ZShzdGVwc1syXSwgJ0w/TSlbMV07CgpzdGVwc1s0XSA6PSBTdWJzdGl0dXRlKCdMP00sIHN0ZXBzWzNdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzVdIDo9IFNvbHZlKHN0ZXBzWzRdLCAnaylbMV07CgpzdGVwc1s2XSA6PSBTdWJzdGl0dXRlKCdMP1QsIDM1LjR+bUgpIHN0ZXBzWzVdOwoKc3RlcHNbN10gOj0gU3Vic3RpdHV0ZSgnTD8xLCAyMi44fm1IKSBzdGVwc1s2XTsKCnN0ZXBzWzhdIDo9IFN1YnN0aXR1dGUoJ0w/MiwgMTF+bUgpIHN0ZXBzWzddOwoKc3RlcHNbOV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbOF0pKTsKCi8vICovCgpUYWJsZUZvcm0oc3RlcHMpOwoK");
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 7",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 7.)
+Determine the coefficient of coupling for the circuit show in Figure 10.46a. p. 321
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(9);
+
+//Equation 10.9
+
+steps[1] := '(L?M == k*Sqrt(L?1*L?2));
+
+//Equation 10.11
+
+steps[2] := '(L?T == L?1 + L?2 + 2 * L?M); 
+
+steps[3] := Solve(steps[2], 'L?M)[1]; 
+
+steps[4] := Substitute('L?M, steps[3][2]) steps[1]; 
+
+steps[5] := Solve(steps[4], 'k)[1]; 
+
+steps[6] := Substitute('L?T, 35.4~mH) steps[5]; 
+
+steps[7] := Substitute('L?1, 22.8~mH) steps[6]; 
+
+steps[8] := Substitute('L?2, 11~mH) steps[7]; 
+
+steps[9] := NM(Eval(Substitute('(==), '(:=)) steps[8]));
+
+TableForm(steps);
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+0.051
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 7",mpversion=".271",preserve="false"
+      Result: [L?M == k*Sqrt(L?1*L?2),L?T == L?1 + L?2 + 2*L?M,L?M == (-L?1 - L?2 + L?T)/2,(-L?1 - L?2 + L?T)/2 == k*Sqrt(L?1*L?2),k == (-L?1 - L?2 + L?T)/(2*Sqrt(L?1*L?2)),k == (-L?1 - L?2 + 35.4~mH)/(2*Sqrt(L?1*L?2)),k == (-22.8~mH - L?2 + 35.4~mH)/(2*Sqrt(22.8~mH*L?2)),k == (-22.8~mH - 11~mH + 35.4~mH)/(2*Sqrt(22.8~mH*11~mH)),0.05051568203]
+      
+      Side Effects:
+      L?M == k*Sqrt(L?1*L?2)
+      L?T == L?1 + L?2 + 2*L?M
+      L?M == (-L?1 - L?2 + L?T)/2
+      (-L?1 - L?2 + L?T)/2 == k*Sqrt(L?1*L?2)
+      k == (-L?1 - L?2 + L?T)/(2*Sqrt(L?1*L?2))
+      k == (-L?1 - L?2 + 35.4~mH)/(2*Sqrt(L?1*L?2))
+      k == (-22.8~mH - L?2 + 35.4~mH)/(2*Sqrt(22.8~mH*L?2))
+      k == (-22.8~mH - 11~mH + 35.4~mH)/(2*Sqrt(22.8~mH*11~mH))
+      0.05051568203
+      
+.   %/output
+
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 8",description="Practice problem 15 p.321."
+========================================================================================================
+
+The result is in μH.
+
+
+
+%mathpiper,name="Problem 8",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhMP1QgPT0gMS8oIDEvKEw/MSkgKyAxLyhMPzIpICsgIDEvKEw/MykgKSApOyAvLyAoMTAuNykKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ0w/MSwgMX5tSCkgc3RlcHNbMV07CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdMPzIsIDIuMn5tSCkgc3RlcHNbMl07CgpzdGVwc1s0XSA6PSBTdWJzdGl0dXRlKCdMPzMsIDEwMH7OvEgpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMgzrxIKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 8",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 8",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 8.)
+The circuit shown in Figure 10.47a has a value of k = 0. Calculate the total inductance
+in the circuit.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(5);
+
+//Equation 10.7
+//inductance in parallel is solved similarly to resistance
+
+steps[1] := '(L?T == 1/((1/ (L?1)) + (1/ (L?2)) + (1/ (L?3))));
+
+steps[2] := Substitute('L?1, 1~mH) steps[1]; 
+
+steps[3] := Substitute('L?2, 2.2~mH) steps[2]; 
+
+steps[4] := Substitute('L?3, 100~μH) steps[3]; 
+
+steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # μH ); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+87.3μH
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 8",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      L?T == 1/(1/L?1 + 1/L?2 + 1/L?3)
+      L?T == 1/(1/1~mH + 1/L?2 + 1/L?3)
+      L?T == 1/(1/1~mH + 1/2.2~mH + 1/L?3)
+      L?T == 1/(1/1~mH + 1/2.2~mH + 1/100~μH)
+      87.30158726~μH
+      /                                     \
+      |               1                     |
+      | L?T == ---------------              |
+      |         1     1     1               |
+      |        --- + --- + ---              |
+      |        L?1   L?2   L?3              |
+      |                                     |
+      |                1                    |
+      | L?T == ------------------           |
+      |          1       1     1            |
+      |        ------ + --- + ---           |
+      |        1 ~ mH   L?2   L?3           |
+      |                                     |
+      |                   1                 |
+      | L?T == -----------------------      |
+      |          1         1        1       |
+      |        ------ + -------- + ---      |
+      |        1 ~ mH   2.2 ~ mH   L?3      |
+      |                                     |
+      |                     1               |
+      | L?T == ---------------------------- |
+      |          1         1          1     |
+      |        ------ + -------- + -------- |
+      |        1 ~ mH   2.2 ~ mH   100 ~ μH |
+      |                                     |
+      | 87.30158726 ~ μH                    |
+      \                                     /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 9",description="Practice problem 17 p.321."
+========================================================================================================
+
+The result is in Ω.
+
+
+
+%mathpiper,name="Problem 9",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gMiAqIFBpICogZj9mICogTD9MICk7IC8vICgxMC4xNCkKCnN0ZXBzWzJdIDo9IFN1YnN0aXR1dGUoJ2Y/ZiwgMTgwfkh6KSBzdGVwc1sxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ0w/TCwgNDgwfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzNdKSAjIM6pKTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 9",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 9.)
+Calculate the value of X?L for the circuit shown in Figure 10.48a.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(4);
+
+//Equation 10.14
+
+steps[1] := '(X?L == 2 * Pi * f?f * L?L);
+
+steps[2] := Substitute('f?f, 180~Hz) steps[1]; 
+
+steps[3] := Substitute('L?L, 480~mH) steps[2]; 
+
+steps[4] := NM(Eval(Substitute('(==), '(:=)) steps[3]) # Ω); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+532Ω
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 9",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      X?L == 2*Pi*f?f*L?L
+      X?L == 2*Pi*180~Hz*L?L
+      X?L == 2*Pi*180~Hz*480~mH
+      542.8672104~Ω
+      /                                     \
+      | X?L == 2 * Pi * f?f * L?L           |
+      |                                     |
+      | X?L == 2 * Pi * 180 ~ Hz * L?L      |
+      |                                     |
+      | X?L == 2 * Pi * 180 ~ Hz * 480 ~ mH |
+      |                                     |
+      | 542.8672104 ~ Ω                     |
+      \                                     /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 10",description="Practice problem 19a p.322."
+========================================================================================================
+
+The result is in mA.
+
+
+
+%mathpiper,name="Problem 10",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gVj9ybXMgLyBJP3JtcyApOyAvLyAoMTAuMTMpCgpzdGVwc1syXSA6PSBTb2x2ZShzdGVwc1sxXSwgJ0k/cm1zKVsxXTsKCnN0ZXBzWzNdIDo9IFN1YnN0aXR1dGUoJ1Y/cm1zLCAxMn5WKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1g/TCwgMn5rzqkpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMgbUEpOwoKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 10",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 10",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 10.)
+The following table lists values for an inductive circuit.
+Complete the table.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(5);
+
+//Equation 10.13
+
+steps[1] := '(X?L == V?rms / I?rms);
+
+steps[2] := Solve(steps[1], 'I?rms)[1]; 
+
+steps[3] := Substitute('V?rms, 12~V) steps[2]; 
+
+steps[4] := Substitute('X?L, 2~kΩ) steps[3]; 
+
+steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # mA); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+6mA just part A.
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 10",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      X?L == V?rms/I?rms
+      I?rms == V?rms/X?L
+      I?rms == 12~V/X?L
+      I?rms == 12~V/2~kΩ
+      6~mA
+      /                 \
+      |        V?rms    |
+      | X?L == -----    |
+      |        I?rms    |
+      |                 |
+      |          V?rms  |
+      | I?rms == -----  |
+      |           X?L   |
+      |                 |
+      |          12 ~ V |
+      | I?rms == ------ |
+      |           X?L   |
+      |                 |
+      |          12 ~ V |
+      | I?rms == ------ |
+      |          2 ~ kΩ |
+      |                 |
+      | 6 ~ mA          |
+      \                 /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 11",description="Practice problem 21 p.322."
+========================================================================================================
+
+The result is in kHz.
+
+
+
+%mathpiper,name="Problem 11",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhYP0wgPT0gKDIgKiBQaSAqIGY/ZiAqIEw/TCkpOyAvLyAoMTAuMTQpCgpzdGVwc1syXSA6PSBTb2x2ZShzdGVwc1sxXSwgJ2Y/ZilbMV07CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdMP0wsIDEwfm1IKSBzdGVwc1syXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1g/TCwgMX5rzqkpIHN0ZXBzWzNdOwoKc3RlcHNbNV0gOj0gTk0oRXZhbChTdWJzdGl0dXRlKCcoPT0pLCAnKDo9KSkgc3RlcHNbNF0pICMga0h6KTsKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 11",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 11.)
+Determine the operating frequency of the circuit shown in Figure 10.49a.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(5);
+
+//Equation 10.14
+
+steps[1] := '(X?L == (2 * Pi * f?f * L?L));
+
+steps[2] := Solve(steps[1], 'f?f)[1]; 
+
+steps[3] := Substitute('L?L, 10~mH) steps[2]; 
+
+steps[4] := Substitute('X?L, 1~kΩ) steps[3]; 
+
+steps[5] := NM(Eval(Substitute('(==), '(:=)) steps[4]) # kHz); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+15.9kHz
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 11",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      X?L == 2*Pi*f?f*L?L
+      f?f == X?L/(2*L?L*Pi)
+      f?f == X?L/(2*10~mH*Pi)
+      f?f == 1~kΩ/(2*10~mH*Pi)
+      15.91549431~kHz
+      /                           \
+      | X?L == 2 * Pi * f?f * L?L |
+      |                           |
+      |            X?L            |
+      | f?f == ------------       |
+      |        2 * L?L * Pi       |
+      |                           |
+      |              X?L          |
+      | f?f == ----------------   |
+      |        2 * 10 ~ mH * Pi   |
+      |                           |
+      |             1 ~ kΩ        |
+      | f?f == ----------------   |
+      |        2 * 10 ~ mH * Pi   |
+      |                           |
+      | 15.91549431 ~ kHz         |
+      \                           /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 12",description="Practice problem 23 p.322."
+========================================================================================================
+
+The result has no units.
+
+
+
+%mathpiper,name="Problem 12",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09IFY/UyAvIEk/SSk7CgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgOH7OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdWP1MsIDEyflYpIHN0ZXBzWzRdOwoKc3RlcHNbNl0gOj0gU3Vic3RpdHV0ZSgnST9JLCAxMH5tQSkgc3RlcHNbNV07CgpzdGVwc1s3XSA6PSBOTShFdmFsKFN1YnN0aXR1dGUoJyg9PSksICcoOj0pKSBzdGVwc1s2XSkpOwoKClRhYmxlRm9ybShzdGVwcyk7Cgo=");
+%/mathpiper
+
+    %output,parent="Problem 12",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 12",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 12.)
+Calculate the Q of the inductor shown in Figure 10.50a.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(7);
+
+//Equation 10.24
+
+steps[1] := '(Q?Q == X?L / R?W);
+
+steps[2] := '(X?L == V?S / I?I); 
+
+steps[3] := Substitute('X?L, steps[2][2]) steps[1]; 
+
+steps[4] := Substitute('R?W, 8~Ω) steps[3]; 
+
+steps[5] := Substitute('V?S, 12~V) steps[4]; 
+
+steps[6] := Substitute('I?I, 10~mA) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+150
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 12",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      Q?Q == X?L/R?W
+      X?L == V?S/I?I
+      Q?Q == (V?S/I?I)/R?W
+      Q?Q == (V?S/I?I)/8~Ω
+      Q?Q == (12~V/I?I)/8~Ω
+      Q?Q == (12~V/10~mA)/8~Ω
+      150.0
+      /                \
+      |        X?L     |
+      | Q?Q == ---     |
+      |        R?W     |
+      |                |
+      |        V?S     |
+      | X?L == ---     |
+      |        I?I     |
+      |                |
+      |        V?S     |
+      |        ---     |
+      |        I?I     |
+      | Q?Q == ---     |
+      |        R?W     |
+      |                |
+      |         V?S    |
+      |         ---    |
+      |         I?I    |
+      | Q?Q == -----   |
+      |        8 ~ Ω   |
+      |                |
+      |        12 ~ V  |
+      |        ------  |
+      |         I?I    |
+      | Q?Q == ------  |
+      |        8 ~ Ω   |
+      |                |
+      |        12 ~ V  |
+      |        ------- |
+      |        10 ~ mA |
+      | Q?Q == ------- |
+      |         8 ~ Ω  |
+      |                |
+      | 150.0          |
+      \                /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 13",description="Practice problem 25 p.322."
+========================================================================================================
+
+The result has no units.
+
+
+
+%mathpiper,name="Problem 13",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09ICgyICogUGkgKiBmP2YgKiBMP0wgIyDOqSkpOyAvLyAoMTAuMTQpCgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgNH7OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdmP2YsIDF+a0h6KSBzdGVwc1s0XTsKCnN0ZXBzWzZdIDo9IFN1YnN0aXR1dGUoJ0w/TCwgMzMwfm1IKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSk7CgoKVGFibGVGb3JtKHN0ZXBzKTsKCg==");
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 13",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 13.)
+Calculate the Q of the inductor shown in Figure 10.51a.
+
+-------------------------------------------------------------------------------------
+*/
+
+steps := ZeroVector(7);
+
+//Equation 10.24
+
+steps[1] := '(Q?Q == X?L / R?W);
+
+//Equation 10.14
+
+steps[2] := '(X?L == (2 * Pi * f?f * L?L # Ω)); 
+
+steps[3] := Substitute('X?L, steps[2][2]) steps[1]; 
+
+steps[4] := Substitute('R?W, 4~Ω) steps[3]; 
+
+steps[5] := Substitute('f?f, 1~kHz) steps[4]; 
+
+steps[6] := Substitute('L?L, 330~mH) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6])); 
+
+UnparseMath2D(TableForm(steps));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+518
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 13",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      Q?Q == X?L/R?W
+      X?L == (2*Pi*f?f*L?L # Ω)
+      Q?Q == (2*Pi*f?f*L?L # Ω)/R?W
+      Q?Q == (2*Pi*f?f*L?L # Ω)/4~Ω
+      Q?Q == (2*Pi*1~kHz*L?L # Ω)/4~Ω
+      Q?Q == (2*Pi*1~kHz*330~mH # Ω)/4~Ω
+      518.362788
+      /                                        \
+      |        X?L                             |
+      | Q?Q == ---                             |
+      |        R?W                             |
+      |                                        |
+      | X?L == ( 2 * Pi * f?f * L?L # Ω )      |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                 R?W                    |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                4 ~ Ω                   |
+      |                                        |
+      |        2 * Pi * 1 ~ kHz * L?L # Ω      |
+      | Q?Q == --------------------------      |
+      |                  4 ~ Ω                 |
+      |                                        |
+      |        2 * Pi * 1 ~ kHz * 330 ~ mH # Ω |
+      | Q?Q == ------------------------------- |
+      |                     4 ~ Ω              |
+      |                                        |
+      | 518.362788                             |
+      \                                        /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+
+%group,name="Problem 15",description="Practice problem 27 p.322."
+========================================================================================================
+
+The result is in Hz.
+
+
+
+%mathpiper,name="Problem 15",subtype="hint"
+Hint("CnN0ZXBzIDo9IFplcm9WZWN0b3IoMTApOwoKc3RlcHNbMV0gOj0gJyhRP1EgPT0gWD9MIC8gUj9XICk7IC8vICgxMC4yNCkKCnN0ZXBzWzJdIDo9ICcoWD9MID09ICgyICogUGkgKiBmP2YgKiBMP0wgIyDOqSkpOyAvLyAoMTAuMTQpCgpzdGVwc1szXSA6PSBTdWJzdGl0dXRlKCdYP0wsIHN0ZXBzWzJdWzJdKSBzdGVwc1sxXTsKCnN0ZXBzWzRdIDo9IFN1YnN0aXR1dGUoJ1I/VywgM37OqSkgc3RlcHNbM107CgpzdGVwc1s1XSA6PSBTdWJzdGl0dXRlKCdmP2YsIDEwfmtIeikgc3RlcHNbNF07CgpzdGVwc1s2XSA6PSBTdWJzdGl0dXRlKCdMP0wsIDEwfm1IKSBzdGVwc1s1XTsKCnN0ZXBzWzddIDo9IE5NKEV2YWwoU3Vic3RpdHV0ZSgnKD09KSwgJyg6PSkpIHN0ZXBzWzZdKSk7CgoKVGFibGVGb3JtKHN0ZXBzKTsKCg==");
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".271",preserve="false"
+      Result: True
+.   %/output
+
+
+
+%mathpiper,name="Problem 15",subtype="problem",unassign_all="true"
+
+/*
+-------------------------------------------------------------------------------------
+Problem 15.)
+The source shown in Figure 10.52a is variable over a frequency range of 10 to 50 kHz.
+Calculate the range of Q values for the inductor.
+
+-------------------------------------------------------------------------------------
+*/
+
+//----------------------------Solving for Lower Range--------------------------------
+
+steps := ZeroVector(8);
+
+steps2 := ZeroVector(8);
+
+//Equation 10.24
+
+steps[1] := '(Q?Q == X?L / R?W);
+
+//Equation 10.14
+
+steps[2] := '(X?L ==(2 * Pi * f?f * L?L # Ω)); 
+
+steps[3] := Substitute('X?L, steps[2][2]) steps[1]; 
+
+steps[4] := Substitute('R?W, 3~Ω) steps[3]; 
+
+steps[5] := Substitute('f?f, 10~kHz) steps[4]; 
+
+steps[6] := Substitute('L?L, 10~mH) steps[5]; 
+
+steps[7] := NM(Eval(Substitute('(==), '(:=)) steps[6]));
+
+steps[8] := Echo("The Lower range is: " + steps[7]);
+
+//----------------------------Now Solving for Upper Range----------------------------
+
+//Equation 10.24
+
+steps2[1] := '(Q?Q == X?L / R?W);
+
+//Equation 10.14
+
+steps2[2] := '(X?L ==(2 * Pi * f?f * L?L # Ω)); 
+
+steps2[3] := Substitute('X?L, steps[2][2]) steps2[1]; 
+
+steps2[4] := Substitute('R?W, 3~Ω) steps2[3]; 
+
+steps2[5] := Substitute('f?f, 50~kHz) steps2[4]; 
+
+steps2[6] := Substitute('L?L, 10~mH) steps2[5]; 
+
+steps2[7] := NM(Eval(Substitute('(==), '(:=)) steps2[6]));
+
+steps2[8] := Echo("The Upper range is: " + steps2[7]);
+
+UnparseMath2D(TableForm(steps));
+
+UnparseMath2D(TableForm(steps2));
+
+/*
+-------------------------------------------------------------------------------------
+Answer:
+209 to 1047
+
+-------------------------------------------------------------------------------------
+*/
+
+%/mathpiper
+
+    %output,parent="Problem 15",mpversion=".271",preserve="false"
+      Result: True
+      
+      Side Effects:
+      The Lower range is: 209.4395103
+      The Upper range is: 1047.197551
+      Q?Q == X?L/R?W
+      X?L == (2*Pi*f?f*L?L # Ω)
+      Q?Q == (2*Pi*f?f*L?L # Ω)/R?W
+      Q?Q == (2*Pi*f?f*L?L # Ω)/3~Ω
+      Q?Q == (2*Pi*10~kHz*L?L # Ω)/3~Ω
+      Q?Q == (2*Pi*10~kHz*10~mH # Ω)/3~Ω
+      209.4395103
+      True
+      /                                        \
+      |        X?L                             |
+      | Q?Q == ---                             |
+      |        R?W                             |
+      |                                        |
+      | X?L == ( 2 * Pi * f?f * L?L # Ω )      |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                 R?W                    |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                3 ~ Ω                   |
+      |                                        |
+      |        2 * Pi * 10 ~ kHz * L?L # Ω     |
+      | Q?Q == ---------------------------     |
+      |                   3 ~ Ω                |
+      |                                        |
+      |        2 * Pi * 10 ~ kHz * 10 ~ mH # Ω |
+      | Q?Q == ------------------------------- |
+      |                     3 ~ Ω              |
+      |                                        |
+      | 209.4395103                            |
+      |                                        |
+      | True                                   |
+      \                                        /
+      
+      Q?Q == X?L/R?W
+      X?L == (2*Pi*f?f*L?L # Ω)
+      Q?Q == (2*Pi*f?f*L?L # Ω)/R?W
+      Q?Q == (2*Pi*f?f*L?L # Ω)/3~Ω
+      Q?Q == (2*Pi*50~kHz*L?L # Ω)/3~Ω
+      Q?Q == (2*Pi*50~kHz*10~mH # Ω)/3~Ω
+      1047.197551
+      True
+      /                                        \
+      |        X?L                             |
+      | Q?Q == ---                             |
+      |        R?W                             |
+      |                                        |
+      | X?L == ( 2 * Pi * f?f * L?L # Ω )      |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                 R?W                    |
+      |                                        |
+      |        2 * Pi * f?f * L?L # Ω          |
+      | Q?Q == ----------------------          |
+      |                3 ~ Ω                   |
+      |                                        |
+      |        2 * Pi * 50 ~ kHz * L?L # Ω     |
+      | Q?Q == ---------------------------     |
+      |                   3 ~ Ω                |
+      |                                        |
+      |        2 * Pi * 50 ~ kHz * 10 ~ mH # Ω |
+      | Q?Q == ------------------------------- |
+      |                     3 ~ Ω              |
+      |                                        |
+      | 1047.197551                            |
+      |                                        |
+      | True                                   |
+      \                                        /
+      
+      
+.   %/output
+
+%/group
+
+
+
+
+
+
+===========================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======== Topics to cover
+- Solving (needs a [1] after it).
+- Check the steps[x] sequences.
+- For variables without substripts, add them: f -> f?f.
+- == vs :=.
+exp := '(a == b)
+exp[1] and exp[2]
+
+'(X?L == (2 * Pi * f?f * L?L # Ω)); // (10.14) (Unless going to solve.)
